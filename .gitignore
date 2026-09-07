@@ -1,0 +1,13 @@
+data/raw/
+data/interim/
+data/processed/
+*.zip
+*.gz
+.venv/
+__pycache__/
+*.duckdb
+*.duckdb.wal
+.secrets/
+*.salt
+_freeze/
+.quarto/

@@ -1,0 +1,113 @@
+[
+ {
+  "day": "20210615",
+  "meta_n": 2104,
+  "zip_n": 2081,
+  "zip_in_meta": 2081,
+  "sha256_zip": "fb3b92c0e0f51515",
+  "hits": {
+   "ma_fe_processual": 38,
+   "ajuizamento_massificado": 7,
+   "procuracao_irregular": 1,
+   "abuso_direito_acao": 4
+  },
+  "core_docs": 12,
+  "tipo": {
+   "DECISAO": 1952,
+   "ACORDAO": 152
+  }
+ },
+ {
+  "day": "20240612",
+  "meta_n": 2891,
+  "zip_n": 2840,
+  "zip_in_meta": 2840,
+  "sha256_zip": "2d5f645d837a0cb5",
+  "hits": {
+   "ma_fe_processual": 50,
+   "ajuizamento_massificado": 11,
+   "fracionamento": 1,
+   "predatori_any": 2,
+   "abuso_direito_acao": 1
+  },
+  "core_docs": 13,
+  "tipo": {
+   "DECISÃO": 2103,
+   "ACÓRDÃO": 788
+  }
+ },
+ {
+  "day": "20241113",
+  "meta_n": 2993,
+  "zip_n": 2924,
+  "zip_in_meta": 2924,
+  "sha256_zip": "b9e0138413d4950e",
+  "hits": {
+   "ma_fe_processual": 77,
+   "captacao_indevida": 2,
+   "advocacia_predatoria": 3,
+   "predatori_any": 5,
+   "ajuizamento_massificado": 7,
+   "abuso_direito_acao": 2,
+   "litigancia_predatoria": 1
+  },
+  "core_docs": 15,
+  "tipo": {
+   "DECISÃO": 2006,
+   "ACÓRDÃO": 987
+  }
+ },
+ {
+  "day": "20250611",
+  "meta_n": 2327,
+  "zip_n": 2311,
+  "zip_in_meta": 2311,
+  "sha256_zip": "ec70a5ecc76ee37a",
+  "hits": {
+   "litigancia_predatoria": 1,
+   "predatori_any": 2,
+   "ajuizamento_massificado": 7,
+   "abuso_direito_acao": 5,
+   "ma_fe_processual": 26,
+   "captacao_indevida": 2,
+   "documentos_repetidos": 1
+  },
+  "core_docs": 14,
+  "tipo": {
+   "DECISÃO": 2210,
+   "ACÓRDÃO": 117
+  }
+ },
+ {
+  "day": "20260311",
+  "meta_n": 4648,
+  "zip_n": 17,
+  "zip_in_meta": 17,
+  "sha256_zip": "1d915528c59dfec8",
+  "hits": {
+   "ajuizamento_massificado": 2
+  },
+  "core_docs": 2,
+  "tipo": {
+   "DECISÃO": 2940,
+   "ACÓRDÃO": 1708
+  }
+ },
+ {
+  "day": "20260826",
+  "meta_n": 2285,
+  "zip_n": 412,
+  "zip_in_meta": 412,
+  "sha256_zip": "45f5787440453b66",
+  "hits": {
+   "ma_fe_processual": 1,
+   "ajuizamento_massificado": 1,
+   "abuso_direito_acao": 1
+  },
+  "core_docs": 2,
+  "tipo": {
+   "DECISÃO": 1976,
+   "ACÓRDÃO": 309
+  }
+ }
+]

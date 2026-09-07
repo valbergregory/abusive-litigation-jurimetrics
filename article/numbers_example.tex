@@ -1,0 +1,12 @@
+% numbers_example.tex — what the export script must generate as outputs/overleaf/numbers.tex.
+% Every number quoted in the prose is a macro, so the text never carries a typed value.
+% In main.tex: \input{numbers.tex}  then write "...the median award was \medianAwardBRL{}..."
+%
+% R example (write from the pipeline, never by hand):
+%   cat(sprintf("\\newcommand{\\medianAwardBRL}{%s}\n", format(med, big.mark = ".", decimal.mark = ",")),
+%       file = "outputs/overleaf/numbers.tex", append = TRUE)
+% Python example:
+%   f.write(f"\\newcommand{{\\medianAwardBRL}}{{{med:,.0f}}}\n")
+\newcommand{\nDecisions}{[generated]}
+\newcommand{\medianAwardBRL}{[generated]}
+\newcommand{\judgeShareVariance}{[generated]}
