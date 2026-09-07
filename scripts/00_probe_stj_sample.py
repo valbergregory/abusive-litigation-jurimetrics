@@ -45,11 +45,11 @@ def fetch(name, kind):
     fn = os.path.join(
         RAW,
         ("textos" if kind == "ZIP" else "metadados")
-        + name.replace(".zip", "")
+        + name.replace(".zip", "").replace("metadados", "")
         + (".zip" if kind == "ZIP" else ".json"),
     )
     if not os.path.exists(fn):
-        for i in range(3):
+        for _ in range(3):
             try:
                 urllib.request.urlretrieve(r["url"], fn)
                 break
