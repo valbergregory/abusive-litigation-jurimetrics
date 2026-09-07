@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below. The article citation will be added upon publication."
+type: software
+title: "abusive-litigation-jurimetrics: research code for 'Detecting Patterns of Abusive Litigation: An Explainable and Human-Centered Jurimetric Framework'"
+version: 0.1.0
+date-released: 2026-09-07
+license: MIT
+repository-code: "https://github.com/valbergregory/abusive-litigation-jurimetrics"
+authors:
+  - family-names: Gregory
+    given-names: Valber
+keywords:
+  - jurimetrics
+  - abusive litigation
+  - predatory litigation
+  - explainable machine learning
+  - judicial governance
+  - Brazil
+  - STJ
+  - DataJud
