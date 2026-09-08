@@ -65,3 +65,7 @@ The portfolio-wide policy lives in [docs/AI_POLICY_AND_REPRODUCIBILITY.md](docs/
 ## Safeguards (non-negotiable)
 
 No automated decision; mandatory human review; configurable threshold; every alert stores its reasons; no inference of fraud; no exposure of people (salted hashes, salt outside the repository, aggregate reporting only, no nominal rankings); impact assessment for vulnerable litigants; LGPD compliance; documented limitations; contestation mechanism in the research prototype.
+
+## License
+
+Code: MIT ([LICENSE](LICENSE)). Text, documentation and data: see [LICENSING.md](LICENSING.md).
