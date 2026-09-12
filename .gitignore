@@ -11,6 +11,8 @@ __pycache__/
 *.salt
 _freeze/
 .quarto/
+logs/*_run.out
+logs/*_run.err
 
 # --- Texto do artigo (local; nao versionado). Publicar apenas o PDF final em artigo/ ---
 overleaf/

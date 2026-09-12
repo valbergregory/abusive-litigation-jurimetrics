@@ -1,0 +1,820 @@
+{
+ "run_at": "2026-09-12T16:02:18",
+ "source": "D:\\Claude code - projetos\\STJ-Moral-Damages-Jurimetrics\\data\\raw\\stj_integras",
+ "keys_in_mirror": 1287,
+ "keys_processed_this_run": 2,
+ "documents": 3482383,
+ "texts": 2975817,
+ "by_tipo_documento": {
+  "ACORDAO": 846927,
+  "DECISAO": 2635456
+ },
+ "by_year": [
+  {
+   "year": "2021",
+   "keys": 243,
+   "meta_rows": 533230,
+   "text_in_meta": 525240,
+   "coverage_pct": 98.5
+  },
+  {
+   "year": "2022",
+   "keys": 169,
+   "meta_rows": 560137,
+   "text_in_meta": 518840,
+   "coverage_pct": 92.6
+  },
+  {
+   "year": "2023",
+   "keys": 231,
+   "meta_rows": 559212,
+   "text_in_meta": 519340,
+   "coverage_pct": 92.9
+  },
+  {
+   "year": "2024",
+   "keys": 238,
+   "meta_rows": 640938,
+   "text_in_meta": 632348,
+   "coverage_pct": 98.7
+  },
+  {
+   "year": "2025",
+   "keys": 242,
+   "meta_rows": 705287,
+   "text_in_meta": 661293,
+   "coverage_pct": 93.8
+  },
+  {
+   "year": "2026",
+   "keys": 164,
+   "meta_rows": 483579,
+   "text_in_meta": 134335,
+   "coverage_pct": 27.8
+  }
+ ],
+ "low_coverage_keys": [
+  {
+   "key": "20220614",
+   "meta_rows": 2390,
+   "text_in_meta": 345
+  },
+  {
+   "key": "20220615",
+   "meta_rows": 2272,
+   "text_in_meta": 705
+  },
+  {
+   "key": "20220928",
+   "meta_rows": 3516,
+   "text_in_meta": 774
+  },
+  {
+   "key": "20221003",
+   "meta_rows": 3425,
+   "text_in_meta": 469
+  },
+  {
+   "key": "20221005",
+   "meta_rows": 2774,
+   "text_in_meta": 1174
+  },
+  {
+   "key": "20221006",
+   "meta_rows": 2028,
+   "text_in_meta": 675
+  },
+  {
+   "key": "20221007",
+   "meta_rows": 1832,
+   "text_in_meta": 482
+  },
+  {
+   "key": "20221010",
+   "meta_rows": 3312,
+   "text_in_meta": 655
+  },
+  {
+   "key": "20221011",
+   "meta_rows": 1806,
+   "text_in_meta": 189
+  },
+  {
+   "key": "20221013",
+   "meta_rows": 2837,
+   "text_in_meta": 1150
+  },
+  {
+   "key": "20221014",
+   "meta_rows": 1244,
+   "text_in_meta": 335
+  },
+  {
+   "key": "20221017",
+   "meta_rows": 3396,
+   "text_in_meta": 843
+  },
+  {
+   "key": "20221018",
+   "meta_rows": 2121,
+   "text_in_meta": 331
+  },
+  {
+   "key": "20221019",
+   "meta_rows": 2761,
+   "text_in_meta": 1090
+  },
+  {
+   "key": "20221201",
+   "meta_rows": 4349,
+   "text_in_meta": 1366
+  },
+  {
+   "key": "20221205",
+   "meta_rows": 2093,
+   "text_in_meta": 420
+  },
+  {
+   "key": "20221214",
+   "meta_rows": 4240,
+   "text_in_meta": 1446
+  },
+  {
+   "key": "20221216",
+   "meta_rows": 3393,
+   "text_in_meta": 1318
+  },
+  {
+   "key": "20230123",
+   "meta_rows": 137,
+   "text_in_meta": 8
+  },
+  {
+   "key": "20230303",
+   "meta_rows": 1409,
+   "text_in_meta": 681
+  },
+  {
+   "key": "20230417",
+   "meta_rows": 1861,
+   "text_in_meta": 192
+  },
+  {
+   "key": "20230425",
+   "meta_rows": 1967,
+   "text_in_meta": 163
+  },
+  {
+   "key": "20230516",
+   "meta_rows": 2466,
+   "text_in_meta": 168
+  },
+  {
+   "key": "20230519",
+   "meta_rows": 3295,
+   "text_in_meta": 1152
+  },
+  {
+   "key": "20230619",
+   "meta_rows": 3138,
+   "text_in_meta": 702
+  },
+  {
+   "key": "20230710",
+   "meta_rows": 159,
+   "text_in_meta": 6
+  },
+  {
+   "key": "20230711",
+   "meta_rows": 124,
+   "text_in_meta": 13
+  },
+  {
+   "key": "20230726",
+   "meta_rows": 1376,
+   "text_in_meta": 13
+  },
+  {
+   "key": "20230802",
+   "meta_rows": 4284,
+   "text_in_meta": 71
+  },
+  {
+   "key": "20230905",
+   "meta_rows": 935,
+   "text_in_meta": 398
+  },
+  {
+   "key": "20231006",
+   "meta_rows": 3455,
+   "text_in_meta": 981
+  },
+  {
+   "key": "20231009",
+   "meta_rows": 1434,
+   "text_in_meta": 190
+  },
+  {
+   "key": "20231116",
+   "meta_rows": 2879,
+   "text_in_meta": 1093
+  },
+  {
+   "key": "20231212",
+   "meta_rows": 2649,
+   "text_in_meta": 554
+  },
+  {
+   "key": "20250423",
+   "meta_rows": 3495,
+   "text_in_meta": 1310
+  },
+  {
+   "key": "20250424",
+   "meta_rows": 3677,
+   "text_in_meta": 224
+  },
+  {
+   "key": "20250425",
+   "meta_rows": 3651,
+   "text_in_meta": 294
+  },
+  {
+   "key": "20251104",
+   "meta_rows": 4466,
+   "text_in_meta": 27
+  },
+  {
+   "key": "20251105",
+   "meta_rows": 3440,
+   "text_in_meta": 21
+  },
+  {
+   "key": "20251106",
+   "meta_rows": 4918,
+   "text_in_meta": 10
+  },
+  {
+   "key": "20251107",
+   "meta_rows": 2264,
+   "text_in_meta": 4
+  },
+  {
+   "key": "20251110",
+   "meta_rows": 3412,
+   "text_in_meta": 13
+  },
+  {
+   "key": "20251111",
+   "meta_rows": 2220,
+   "text_in_meta": 5
+  },
+  {
+   "key": "20251211",
+   "meta_rows": 3428,
+   "text_in_meta": 378
+  },
+  {
+   "key": "20251212",
+   "meta_rows": 3571,
+   "text_in_meta": 324
+  },
+  {
+   "key": "20260114",
+   "meta_rows": 395,
+   "text_in_meta": 8
+  },
+  {
+   "key": "20260115",
+   "meta_rows": 1548,
+   "text_in_meta": 11
+  },
+  {
+   "key": "20260116",
+   "meta_rows": 959,
+   "text_in_meta": 7
+  },
+  {
+   "key": "20260126",
+   "meta_rows": 907,
+   "text_in_meta": 0
+  },
+  {
+   "key": "20260203",
+   "meta_rows": 900,
+   "text_in_meta": 5
+  },
+  {
+   "key": "20260204",
+   "meta_rows": 3660,
+   "text_in_meta": 32
+  },
+  {
+   "key": "20260205",
+   "meta_rows": 7681,
+   "text_in_meta": 22
+  },
+  {
+   "key": "20260206",
+   "meta_rows": 3511,
+   "text_in_meta": 12
+  },
+  {
+   "key": "20260209",
+   "meta_rows": 2718,
+   "text_in_meta": 5
+  },
+  {
+   "key": "20260210",
+   "meta_rows": 4029,
+   "text_in_meta": 11
+  },
+  {
+   "key": "20260211",
+   "meta_rows": 2232,
+   "text_in_meta": 2
+  },
+  {
+   "key": "20260212",
+   "meta_rows": 4960,
+   "text_in_meta": 1
+  },
+  {
+   "key": "20260213",
+   "meta_rows": 4589,
+   "text_in_meta": 3
+  },
+  {
+   "key": "20260218",
+   "meta_rows": 4378,
+   "text_in_meta": 48
+  },
+  {
+   "key": "20260219",
+   "meta_rows": 3239,
+   "text_in_meta": 6
+  },
+  {
+   "key": "20260220",
+   "meta_rows": 4383,
+   "text_in_meta": 39
+  },
+  {
+   "key": "20260223",
+   "meta_rows": 2516,
+   "text_in_meta": 53
+  },
+  {
+   "key": "20260224",
+   "meta_rows": 2496,
+   "text_in_meta": 36
+  },
+  {
+   "key": "20260225",
+   "meta_rows": 1970,
+   "text_in_meta": 24
+  },
+  {
+   "key": "20260226",
+   "meta_rows": 2822,
+   "text_in_meta": 5
+  },
+  {
+   "key": "20260227",
+   "meta_rows": 1545,
+   "text_in_meta": 84
+  },
+  {
+   "key": "20260302",
+   "meta_rows": 4929,
+   "text_in_meta": 523
+  },
+  {
+   "key": "20260303",
+   "meta_rows": 4911,
+   "text_in_meta": 534
+  },
+  {
+   "key": "20260304",
+   "meta_rows": 2956,
+   "text_in_meta": 374
+  },
+  {
+   "key": "20260305",
+   "meta_rows": 5373,
+   "text_in_meta": 569
+  },
+  {
+   "key": "20260306",
+   "meta_rows": 3759,
+   "text_in_meta": 368
+  },
+  {
+   "key": "20260309",
+   "meta_rows": 4140,
+   "text_in_meta": 19
+  },
+  {
+   "key": "20260310",
+   "meta_rows": 4001,
+   "text_in_meta": 20
+  },
+  {
+   "key": "20260311",
+   "meta_rows": 4648,
+   "text_in_meta": 19
+  },
+  {
+   "key": "20260312",
+   "meta_rows": 6147,
+   "text_in_meta": 46
+  },
+  {
+   "key": "20260313",
+   "meta_rows": 3292,
+   "text_in_meta": 601
+  },
+  {
+   "key": "20260316",
+   "meta_rows": 3335,
+   "text_in_meta": 876
+  },
+  {
+   "key": "20260318",
+   "meta_rows": 3130,
+   "text_in_meta": 1270
+  },
+  {
+   "key": "20260319",
+   "meta_rows": 5968,
+   "text_in_meta": 500
+  },
+  {
+   "key": "20260320",
+   "meta_rows": 3596,
+   "text_in_meta": 1108
+  },
+  {
+   "key": "20260323",
+   "meta_rows": 2831,
+   "text_in_meta": 773
+  },
+  {
+   "key": "20260325",
+   "meta_rows": 3131,
+   "text_in_meta": 1474
+  },
+  {
+   "key": "20260326",
+   "meta_rows": 5463,
+   "text_in_meta": 1550
+  },
+  {
+   "key": "20260327",
+   "meta_rows": 2727,
+   "text_in_meta": 794
+  },
+  {
+   "key": "20260330",
+   "meta_rows": 4803,
+   "text_in_meta": 950
+  },
+  {
+   "key": "20260331",
+   "meta_rows": 2972,
+   "text_in_meta": 576
+  },
+  {
+   "key": "20260414",
+   "meta_rows": 2979,
+   "text_in_meta": 473
+  },
+  {
+   "key": "20260415",
+   "meta_rows": 2550,
+   "text_in_meta": 449
+  },
+  {
+   "key": "20260416",
+   "meta_rows": 2401,
+   "text_in_meta": 410
+  },
+  {
+   "key": "20260417",
+   "meta_rows": 4029,
+   "text_in_meta": 639
+  },
+  {
+   "key": "20260428",
+   "meta_rows": 5074,
+   "text_in_meta": 1243
+  },
+  {
+   "key": "20260429",
+   "meta_rows": 3180,
+   "text_in_meta": 782
+  },
+  {
+   "key": "20260504",
+   "meta_rows": 3832,
+   "text_in_meta": 1729
+  },
+  {
+   "key": "20260505",
+   "meta_rows": 3848,
+   "text_in_meta": 842
+  },
+  {
+   "key": "20260506",
+   "meta_rows": 4438,
+   "text_in_meta": 732
+  },
+  {
+   "key": "20260507",
+   "meta_rows": 4201,
+   "text_in_meta": 611
+  },
+  {
+   "key": "20260508",
+   "meta_rows": 2967,
+   "text_in_meta": 479
+  },
+  {
+   "key": "20260514",
+   "meta_rows": 3034,
+   "text_in_meta": 97
+  },
+  {
+   "key": "20260515",
+   "meta_rows": 4028,
+   "text_in_meta": 1721
+  },
+  {
+   "key": "20260519",
+   "meta_rows": 3485,
+   "text_in_meta": 557
+  },
+  {
+   "key": "20260520",
+   "meta_rows": 2970,
+   "text_in_meta": 635
+  },
+  {
+   "key": "20260521",
+   "meta_rows": 4670,
+   "text_in_meta": 362
+  },
+  {
+   "key": "20260522",
+   "meta_rows": 3308,
+   "text_in_meta": 469
+  },
+  {
+   "key": "20260528",
+   "meta_rows": 5860,
+   "text_in_meta": 2677
+  },
+  {
+   "key": "20260608",
+   "meta_rows": 3891,
+   "text_in_meta": 1858
+  },
+  {
+   "key": "20260609",
+   "meta_rows": 3875,
+   "text_in_meta": 655
+  },
+  {
+   "key": "20260610",
+   "meta_rows": 2737,
+   "text_in_meta": 769
+  },
+  {
+   "key": "20260611",
+   "meta_rows": 3599,
+   "text_in_meta": 0
+  },
+  {
+   "key": "20260612",
+   "meta_rows": 2893,
+   "text_in_meta": 1
+  },
+  {
+   "key": "20260615",
+   "meta_rows": 2099,
+   "text_in_meta": 0
+  },
+  {
+   "key": "20260616",
+   "meta_rows": 3550,
+   "text_in_meta": 1
+  },
+  {
+   "key": "20260617",
+   "meta_rows": 2463,
+   "text_in_meta": 2
+  },
+  {
+   "key": "20260618",
+   "meta_rows": 4149,
+   "text_in_meta": 8
+  },
+  {
+   "key": "20260619",
+   "meta_rows": 3210,
+   "text_in_meta": 6
+  },
+  {
+   "key": "20260622",
+   "meta_rows": 3344,
+   "text_in_meta": 18
+  },
+  {
+   "key": "20260623",
+   "meta_rows": 4078,
+   "text_in_meta": 3
+  },
+  {
+   "key": "20260624",
+   "meta_rows": 2145,
+   "text_in_meta": 7
+  },
+  {
+   "key": "20260625",
+   "meta_rows": 3795,
+   "text_in_meta": 728
+  },
+  {
+   "key": "20260629",
+   "meta_rows": 3846,
+   "text_in_meta": 1464
+  },
+  {
+   "key": "20260703",
+   "meta_rows": 6499,
+   "text_in_meta": 3235
+  },
+  {
+   "key": "20260706",
+   "meta_rows": 2577,
+   "text_in_meta": 1249
+  },
+  {
+   "key": "20260713",
+   "meta_rows": 402,
+   "text_in_meta": 110
+  },
+  {
+   "key": "20260715",
+   "meta_rows": 1024,
+   "text_in_meta": 185
+  },
+  {
+   "key": "20260716",
+   "meta_rows": 2784,
+   "text_in_meta": 283
+  },
+  {
+   "key": "20260717",
+   "meta_rows": 1231,
+   "text_in_meta": 268
+  },
+  {
+   "key": "20260804",
+   "meta_rows": 2089,
+   "text_in_meta": 610
+  },
+  {
+   "key": "20260805",
+   "meta_rows": 4636,
+   "text_in_meta": 561
+  },
+  {
+   "key": "20260806",
+   "meta_rows": 3945,
+   "text_in_meta": 829
+  },
+  {
+   "key": "20260807",
+   "meta_rows": 2299,
+   "text_in_meta": 14
+  },
+  {
+   "key": "20260812",
+   "meta_rows": 2251,
+   "text_in_meta": 13
+  },
+  {
+   "key": "20260813",
+   "meta_rows": 3713,
+   "text_in_meta": 11
+  },
+  {
+   "key": "20260814",
+   "meta_rows": 3788,
+   "text_in_meta": 34
+  },
+  {
+   "key": "20260817",
+   "meta_rows": 4968,
+   "text_in_meta": 15
+  },
+  {
+   "key": "20260818",
+   "meta_rows": 4680,
+   "text_in_meta": 74
+  },
+  {
+   "key": "20260819",
+   "meta_rows": 2927,
+   "text_in_meta": 48
+  },
+  {
+   "key": "20260820",
+   "meta_rows": 2407,
+   "text_in_meta": 20
+  },
+  {
+   "key": "20260821",
+   "meta_rows": 3334,
+   "text_in_meta": 77
+  },
+  {
+   "key": "20260824",
+   "meta_rows": 3968,
+   "text_in_meta": 4
+  },
+  {
+   "key": "20260825",
+   "meta_rows": 1845,
+   "text_in_meta": 228
+  },
+  {
+   "key": "20260826",
+   "meta_rows": 2285,
+   "text_in_meta": 412
+  },
+  {
+   "key": "20260827",
+   "meta_rows": 5166,
+   "text_in_meta": 261
+  },
+  {
+   "key": "20260828",
+   "meta_rows": 3799,
+   "text_in_meta": 449
+  },
+  {
+   "key": "20260831",
+   "meta_rows": 2619,
+   "text_in_meta": 23
+  },
+  {
+   "key": "20260901",
+   "meta_rows": 3409,
+   "text_in_meta": 33
+  },
+  {
+   "key": "20260902",
+   "meta_rows": 5433,
+   "text_in_meta": 79
+  },
+  {
+   "key": "20260903",
+   "meta_rows": 6865,
+   "text_in_meta": 37
+  },
+  {
+   "key": "20260904",
+   "meta_rows": 4537,
+   "text_in_meta": 31
+  }
+ ],
+ "zip_present_but_empty_or_unreadable": [],
+ "missing_meta": [],
+ "missing_zip": [
+  "20260611",
+  "20260615"
+ ],
+ "minutes": 0.0,
+ "per_key_this_run": [
+  {
+   "key": "20260611",
+   "meta_file": true,
+   "zip_file": false,
+   "meta_rows": 3599,
+   "text_rows": 0,
+   "text_in_meta": 0,
+   "seconds": 0.06
+  },
+  {
+   "key": "20260615",
+   "meta_file": true,
+   "zip_file": false,
+   "meta_rows": 2099,
+   "text_rows": 0,
+   "text_in_meta": 0,
+   "seconds": 0.04
+  }
+ ]
+}
