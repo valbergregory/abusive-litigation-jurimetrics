@@ -11,3 +11,5 @@ __pycache__/
 *.salt
 _freeze/
 .quarto/
+logs/*_run.out
+logs/*_run.err

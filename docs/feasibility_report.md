@@ -182,3 +182,35 @@ Recomendação: adotar a diretriz da outra sessão nos dois primeiros pontos (La
 4. Protocolo de anotação (taxonomia por Anexo A + intensidade) e revisão manual de ≥ 1.000 candidatos.
 5. Ingestão das atas (só campos de ponte na primeira passagem; partes/advogados ficam fora até o protocolo ético do Desenho C).
 6. Reavaliar go/no-go com os números reais.
+
+---
+
+## 10. Atualização de 12/09/2026 — passo 10 executado (ingestão completa das íntegras, sem download)
+
+Executado sem intervenção do pesquisador porque não dependia de decisão nem de download: os 11,4 GB de ZIP+JSON já
+estavam no disco (espelho baixado em 07–08/09 pelo projeto irmão `STJ-Moral-Damages-Jurimetrics`, com SHA-256), e o
+script `scripts/10_ingest_stj_integras.py` só lê esse espelho (`--source`), grava Parquet por chave em
+`data/interim/stj_integras/{meta,text}/` (6,0 GB, zstd), cria as views `documents`/`document_text` em `data/alj.duckdb`
+e registra cada arquivo-fonte em `logs/raw_hashes.tsv`. Nome do relator só como hash salgado; nenhum nome de parte.
+
+**Números medidos (`logs/10_ingest_stj_integras.json`):** 1.287 chaves (1.281 diárias + 4 mensais de 2022 + 2 dias de
+2026 sem ZIP no CKAN); **3.482.383 documentos** (2.635.456 decisões, 846.927 acórdãos) e **2.975.817 textos**.
+
+| Ano | Chaves | Metadados | Com texto | Cobertura |
+|---|---|---|---|---|
+| 2021 | 243 | 533.230 | 525.240 | 98,5 % |
+| 2022 | 169 | 560.137 | 518.840 | 92,6 % |
+| 2023 | 231 | 559.212 | 519.340 | 92,9 % |
+| 2024 | 238 | 640.938 | 632.348 | 98,7 % |
+| 2025 | 242 | 705.287 | 661.293 | 93,8 % |
+| 2026 | 164 | 483.579 | 134.335 | **27,8 %** |
+
+- 147 chaves com cobertura < 50 % (102 em 2026; 18 em 2022; 16 em 2023; 11 em 2025) — é propriedade da fonte (os ZIP do
+  espelho batem byte a byte com o tamanho publicado no CKAN), não do download. Exemplo: 02/08/2023 tem 4.284 metadados e 71 textos.
+- `textos20260126.zip` está corrompido na origem (cabeçalhos locais presentes, diretório central ilegível; 3,9 MB, publicado
+  em 11/02/2026); tratado como zero textos. 11/06 e 15/06/2026 não têm ZIP no CKAN.
+- Critério de go/no-go "cobertura de texto 2026 explicada/recuperada": **não recuperada** → aplicar a alternativa prevista
+  (“usar só até 2025”), salvo se o STJ republicar os recursos de 2026.
+
+Continua pendente do pesquisador: desenho A/B/B+C, revisão de `docs/annotation_protocol.md` e autorização dos passos 11
+(espelhos), 12 (atas, só campos de ponte) e 20+ (léxico v2 e candidatos).

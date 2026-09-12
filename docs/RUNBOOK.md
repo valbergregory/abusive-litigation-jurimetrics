@@ -26,14 +26,14 @@ Writes: `.venv/` (git-ignored), `uv.lock` (committed). ~2 min. Optional extras: 
 Manual downloads of phase 0 (dictionaries, espelhos sample, CNJ acts, SGT tables) are listed with SHA-256 in `logs/raw_hashes.tsv`.
 Result: `docs/feasibility_report.md`.
 
-## Phase 1 — corpus and annotation (pending researcher approval)
+## Phase 1 — corpus and annotation (step 10 executed 2026-09-12 from the local mirror; design A/B/B+C and steps 11+ still pending researcher approval)
 
 | # | Planned script | Reads | Writes | Est. time |
 |---|---|---|---|---|
-| 10 | `10_ingest_stj_integras.py` | all daily ZIP+JSON since 2021-01-04 (11.2 GB) | `data/interim/stj_integras/*.parquet` (metadata + text), DuckDB table `documents` | 2–4 h download, 20 min parse |
+| 10 | `uv run python scripts/10_ingest_stj_integras.py [--source DIR] [--keys FROM TO] [--limit N] [--force]` (**run 2026-09-12: 3,482,383 documents, 2,975,817 texts, 6.0 GB Parquet, ~10 min**) | local mirror of all daily/monthly ZIP+JSON since 2021-01-04 (11.4 GB, 1.287 keys; default = sibling repo `STJ-Moral-Damages-Jurimetrics/data/raw/stj_integras`, downloaded with SHA-256 on 2026-09-07/08 — nothing is downloaded by this script) | `data/interim/stj_integras/{meta,text}/<key>.parquet` (rapporteur salted-hashed, no party names), `data/alj.duckdb` (views `documents`, `document_text`; table `ingest_log`), `logs/raw_hashes.tsv`, `logs/10_ingest_stj_integras.json` (counts only) | ~1–2 h parse, resumable per key |
 | 11 | `11_ingest_stj_espelhos.py` | 10 órgãos × monthly JSON (0.5 GB) + initial ZIPs (0.5 GB) | `espelhos.parquet`, tables `citations`, `legislation` | 30 min |
 | 12 | `12_ingest_stj_bridge.py` | acervo snapshot + atas since 2023-06-30 (4.2 GB; **bridge fields only**) | `bridge.parquet` (`numeroRegistro` ↔ `numeroUnico`) | 1–2 h |
-| 13 | `13_check_text_coverage.py` | tables `documents` | `logs/13_text_coverage.json`, figure | 5 min |
+| 13 | ~~`13_check_text_coverage.py`~~ folded into step 10: `by_year` / `low_coverage_keys` in `logs/10_ingest_stj_integras.json` (2026 = 27.8 %, see feasibility §10) | — | — | — |
 | 20 | `20_lexicon_candidates.py` | `documents`, `espelhos`, `config/lexicon_v2.yaml` | `candidates.parquet` with context windows | 15 min |
 | 21 | annotation UI / spreadsheet export | `candidates.parquet` | `data/annotations/gold_v1.parquet` (researcher-labelled) | manual |
 | 22 | `22_validate_lexicon.py` | gold set | precision/recall/F1 per pattern → `logs/22_lexicon_validation.json` | 1 min |
@@ -43,4 +43,4 @@ Go/no-go review after step 22 (criteria in `docs/feasibility_report.md` §7).
 
 ## Export to the manuscript (every phase)
 
-`uv run python scripts/90_export_overleaf.py` → `outputs/overleaf/tables/*.tex` (booktabs), `outputs/overleaf/figures/*.{pdf,png}`, `outputs/overleaf/numbers.tex` (one `\newcommand` per number cited in the article). Copy the folder to Overleaf; never type numbers by hand.
+`uv run python scripts/90_export_overleaf.py` (added 2026-09-12; `src/alj/export_overleaf.py`) → `outputs/overleaf/tables/*.tex` (booktabs), `outputs/overleaf/figures/*.{pdf,png}`, `outputs/overleaf/numbers.tex` (one `\newcommand` per number cited in the article). Copy the folder to Overleaf; never type numbers by hand.
