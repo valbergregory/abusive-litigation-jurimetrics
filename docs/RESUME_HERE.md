@@ -1,5 +1,14 @@
 # RETOMAR AQUI — artigo 5 (litigância abusiva)
 
+> **DECISÕES DO PESQUISADOR — 23/09/2026**
+> 1. **Atas autorizadas** (4,2 GB) → baixadas por `scripts/12b_download_atas.py` e ingeridas pelo passo 12
+>    (só campos de ponte; partes e advogados continuam fora até o protocolo ético do desenho C).
+> 2. **Desenho B** (sinalização judicial + trajetória processual via DataJud).
+> 3. **Protocolo de anotação confirmado** na v0.1 (escalas S3/S2/S1/S0/NA · A1–A20/T1198/MAFE · M0–M5 · D1–D5).
+> 4. Anotação: passo a passo em `docs/COMO_ANOTAR.md`.
+> 5. Conferência do léxico: passo a passo em `docs/COMO_CONFERIR_O_LEXICO.md`.
+> 6. **Push feito** em 23/09 (6 commits, `b5afe2b..d8bab88`).
+
 Atualizado em 22/09/2026, ao fim da sessão "faça tudo que puder sem minha permissão".
 Leia este arquivo primeiro; o detalhe técnico está em `docs/feasibility_report.md` §11 e em `docs/RUNBOOK.md`.
 

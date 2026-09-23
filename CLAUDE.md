@@ -3,6 +3,9 @@
 ## Purpose
 Research code for the article *Detecting Patterns of Abusive Litigation: An Explainable and Human-Centered Jurimetric Framework*. Single researcher (law, PhD economics, judiciary, information systems). Article in English; conversation with the researcher in Brazilian Portuguese; decision documents in `docs/` may be in Portuguese.
 
+## Design decided by the researcher on 2026-09-23
+**Design B**: judicial signalling as the label + procedural trajectory through the DataJud bridge, with the *atas de distribuição* authorised and ingested (bridge fields only). Design C (actor layer) stays out unless an ethics protocol is written and approved.
+
 ## Stack (decided 2026-09-05, see docs/feasibility_report.md §0)
 - **Python only** (3.13) + **SQL via DuckDB**. No R in the core pipeline; an optional R appendix may read Parquet exports.
 - Environment: `uv` (`pyproject.toml` + `uv.lock`). Never `pip install` into the global interpreter.
@@ -38,6 +41,6 @@ Master copy: `docs/AI_POLICY_AND_REPRODUCIBILITY.md` (identical across the five 
 - Normative texts (extracted): `data/raw/cnj/*.txt` (Rec. 159/2024 with annexes A–C, Res. 615/2025, Rede de Litigância Abusiva page, Berna news).
 - Measurement instrument: `config/lexicon_v2.yaml` (**v2.2.0**, 53 patterns in five tiers: 7 strict, 24 conduct, 9 sanction, 8 normative, 5 neighbour; 4 exclusions, 2 negation markers) + `src/alj/lexicon.py`; every pattern has an example asserted in `tests/test_lexicon.py`.
 - Phase-1 modules: `src/alj/{lexicon,annotation,validation,bridge,espelhos,db,manifest}.py`; scripts 11/11b (espelhos + backlog ZIP probe), 12 (bridge), 19 (refresh views), 20 (candidates), 21 (annotation sample), 22 (validation), 23 (lexicon on espelhos), 24 (source crosscheck), 80 (tables/numbers), 81 (figures), 90 (Overleaf), 91 (reference verification).
-- Annotation: worksheet and strata in `docs/annotation_protocol.md` (appendix A); files in `data/annotations/` are git-ignored because they carry decision snippets.
+- Annotation: `docs/COMO_ANOTAR.md` (researcher's walkthrough) and `docs/COMO_CONFERIR_O_LEXICO.md` (instrument review); worksheet and strata in `docs/annotation_protocol.md` (appendix A); files in `data/annotations/` are git-ignored because they carry decision snippets.
 - Literature: `docs/literature_map.md` (verified by `scripts/91_verify_references.py`), candidates in `article/references_candidates.bib` — never `references.bib` without approval.
 - AI use log: `docs/ai_usage_log.md` — every tool, date, what went in, what came out and what was done with it (this is what the article's disclosure is built from).
