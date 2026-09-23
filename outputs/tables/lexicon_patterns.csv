@@ -28,18 +28,24 @@ notificacao_extrajudicial_sem_prova,conduct,17;18,
 cessao_direito_demandar,conduct,20,
 desistencia_apos_indeferimento,conduct,3,
 ausencia_pretensao_resistida,conduct,17;19,
+requerimento_administrativo_previo,conduct,17;19,v2.1: criterion the courts use to test interesse de agir; 2.919 documents in 2024-2026
+desconhecimento_da_acao,conduct,11,v2.1: the party does not know the action or the lawyer — one of the strongest indications in practice
 ma_fe_art_80,sanction,,
 multa_ma_fe_art_81,sanction,,
 ato_atentatorio_art_77,sanction,,
 emenda_ou_indeferimento_inicial,sanction,12,
 extincao_sem_merito,sanction,10;12,"the outcome that Annex A items 10 and 12 lead to; `art. 485, I/IV` alone matched any lowercase 'i'"
 oficio_oab_ou_mp,sanction,13,
+autenticidade_postulacao,sanction,11;12,v2.1: the literal formula of Tema 1198 (emenda to prove interesse de agir and authenticity); 314 docs
+firma_reconhecida,sanction,11,v2.1: the measure most often imposed when the power of attorney is doubted; 814 docs in 2024-2026
 apuracao_indicios,sanction,,
 rec_cnj_159,normative,,
 res_cnj_615,normative,,
 tema_1198,normative,,
-numopede,normative,,
+numopede,normative,,"v2.2: NUMPEDE (the TJPB spelling, Portaria CGJ 02/2019) added after measuring 43 documents; NUMOPEDE alone matches 890"
 rede_litigancia_abusiva,normative,,
+sumula_tjba_predatoria,normative,,"v2.2: TJBA summaries 46 and 54 (multiple identical actions; fragmenting claims). Restricted to the TJBA after measuring: the loose form 'Súmula 46 do TJ…' matched 19 documents of other courts, the restricted one matches 1 — kept for precision and because the design may later include the state courts"
+comunicado_cg_tjsp,normative,,"v2.2: the TJSP Corregedoria communications that ground NUMOPEDE screening (CG 02/2017, CG 424/2024); 309 documents in this corpus — the most cited state-level instrument"
 art_286_ii,normative,10,scoped (?-i:…) so the roman numeral is not matched case-insensitively (valid in Python re and RE2)
 ma_fe_processual_mencao,neighbour,,"phase 0 §3: 26–77 hits/day; neighbouring concept, kept for contrast and for the sanction tier"
 abuso_direito_acao,neighbour,,"includes criminal HC reiteration; ambiguous, therefore neighbour and not strict"

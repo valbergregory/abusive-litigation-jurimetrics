@@ -1,0 +1,137 @@
+{
+ "run_at": "2026-09-23T00:41:50",
+ "input": "notes/dois_scispace_br_20260923.txt",
+ "checked": 12,
+ "verified": 11,
+ "unresolved": 1,
+ "title_mismatch": 0,
+ "out": "notes/references_candidates_br.bib",
+ "results": [
+  {
+   "doi": "10.51891/rease.v9i9.11541",
+   "status": "verified",
+   "source": "crossref",
+   "title": "AS DEMANDAS PREDATÓRIAS COMO FATOR DE VIOLAÇÃO DO PRINCÍPIO DA RAZOÁVEL DURAÇÃO DO PROCESSO",
+   "year": "2023",
+   "venue": "Revista Ibero-Americana de Humanidades, Ciências e Educação",
+   "type": "article",
+   "citations": 0,
+   "expected_title": null
+  },
+  {
+   "doi": "10.55892/jrg.v7i14.1173",
+   "status": "verified",
+   "source": "crossref",
+   "title": "A atuação da ordem dos advogados do Brasil seccional Tocantins nas discussões acerca da chamada litigância predatória",
+   "year": "2024",
+   "venue": "Revista JRG de Estudos Acadêmicos",
+   "type": "article",
+   "citations": 0,
+   "expected_title": null
+  },
+  {
+   "doi": "10.55892/jrg.v8i18.2044",
+   "status": "verified",
+   "source": "crossref",
+   "title": "Demandas Predatórias: uma análise comparativa da compreensão e impacto no âmbito da advocacia e do judiciário",
+   "year": "2025",
+   "venue": "Revista JRG de Estudos Acadêmicos",
+   "type": "article",
+   "citations": 0,
+   "expected_title": null
+  },
+  {
+   "doi": "10.69849/revistaft/ni10202411110704",
+   "status": "verified",
+   "source": "crossref",
+   "title": "A EXIGÊNCIA DE POLÍTICAS PÚBLICAS PARA A CONTENÇÃO DA LITIGÂNCIA PREDATÓRIA ",
+   "year": "2024",
+   "venue": "Revista ft",
+   "type": "article",
+   "citations": 0,
+   "expected_title": null
+  },
+  {
+   "doi": "10.69849/revistaft/ni10202411151457",
+   "status": "verified",
+   "source": "crossref",
+   "title": "JUDICIALIZAÇÃO PREDATÓRIA: CAUSAS, CONSEQUÊNCIAS E IMPACTOS FINANCEIROS",
+   "year": "2024",
+   "venue": "Revista ft",
+   "type": "article",
+   "citations": 0,
+   "expected_title": null
+  },
+  {
+   "doi": "10.55905/revconv.17n.8-167",
+   "status": "verified",
+   "source": "crossref",
+   "title": "Dano processual nas ações de família: assédio processual e suas implicações aos direitos da personalidade",
+   "year": "2024",
+   "venue": "CONTRIBUCIONES A LAS CIENCIAS SOCIALES",
+   "type": "article",
+   "citations": 0,
+   "expected_title": null
+  },
+  {
+   "doi": "10.33448/rsd-v14i9.49620",
+   "status": "verified",
+   "source": "crossref",
+   "title": "Do vexatious litigant ao assédio processual: Uma aplicação do direito comparado para o combate ao litígio abusivo nas ações de família",
+   "year": "2025",
+   "venue": "Research, Society and Development",
+   "type": "article",
+   "citations": 0,
+   "expected_title": null
+  },
+  {
+   "doi": "10.11606/d.2.2023.tde-28022024-080851",
+   "status": "verified",
+   "source": "crossref",
+   "title": "Acesso à justiça e litigância habitual: meios consensuais adequados e incentivos eficazes",
+   "year": "",
+   "venue": "Universidade de São Paulo. Agência de Bibliotecas e Coleções Digitais",
+   "type": "phdthesis",
+   "citations": 0,
+   "expected_title": null
+  },
+  {
+   "doi": "10.20396/RDBCI.V18I0.8658889",
+   "status": "verified",
+   "source": "crossref",
+   "title": "Análise bibliométrica dos artigos científicos de jurimetria publicados no Brasil",
+   "year": "2020",
+   "venue": "RDBCI Revista Digital de Biblioteconomia e Ciência da Informação",
+   "type": "article",
+   "citations": 7,
+   "expected_title": null
+  },
+  {
+   "doi": "10.31501/ealr.v10i2.9637",
+   "status": "unresolved",
+   "expected_title": null
+  },
+  {
+   "doi": "10.59490/dgo.2025.1049",
+   "status": "verified",
+   "source": "crossref",
+   "title": "Transforming Justice",
+   "year": "2025",
+   "venue": "Conference on Digital Government Research",
+   "type": "inproceedings",
+   "citations": 2,
+   "expected_title": null
+  },
+  {
+   "doi": "10.1609/aies.v8i3.36774",
+   "status": "verified",
+   "source": "crossref",
+   "title": "Towards Responsible AI Governance in the Brazilian Judiciary",
+   "year": "2025",
+   "venue": "Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society",
+   "type": "article",
+   "citations": 1,
+   "expected_title": null
+  }
+ ]
+}

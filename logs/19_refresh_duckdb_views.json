@@ -1,12 +1,12 @@
 {
- "run_at": "2026-09-22T23:09:59",
+ "run_at": "2026-09-23T00:43:25",
  "db": "data\\alj.duckdb",
  "views": {
   "documents": 3482383,
   "document_text": 2975817,
-  "candidates": 150897,
-  "candidate_hits": 304248,
-  "bridge": null,
+  "candidates": 158792,
+  "candidate_hits": 325099,
+  "bridge": 333636,
   "espelhos": 165850,
   "espelho_citations": 220335,
   "espelho_legislation": 93209
