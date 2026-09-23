@@ -10,7 +10,7 @@ para `article/references.bib` sem a aprovação do pesquisador.
 
 | bloco | obras verificadas |
 |---|---|
-| 1. Litigância abusiva, vexatória e frívola | Galanter revisitado — *Do the "Haves" Still Come Out Ahead?* (1999, `10.2307/3115150`); Fabiani/Silva? — *Why the "Haves" Come Out Ahead in Brazil?* (2016, `10.2139/SSRN.2716242`); Cunha & Barros — *Litigância abusiva, medidas de combate e a devida intersecção com a análise econômica do direito* (2025, `10.70982/rejef.v1i7.97`) |
+| 1. Litigância abusiva, vexatória e frívola | Galanter revisitado — *Do the "Haves" Still Come Out Ahead?* (1999, `10.2307/3115150`); Gabbay, Silva, Asperti & Costa — *Why the "Haves" Come Out Ahead in Brazil?* (2016, `10.2139/SSRN.2716242`); Cunha & Barros — *Litigância abusiva, medidas de combate e a devida intersecção com a análise econômica do direito* (2025, `10.70982/rejef.v1i7.97`) |
 | 2. Triagem e porta de entrada | *Twombly and Iqbal at the State Level* (J. Empirical Legal Studies, 2017, `10.1111/jels.12152`) |
 | 3. NLP sobre decisões judiciais | Aletras et al. (ECtHR, 2016, `10.7717/peerj-cs.93`); Chalkidis et al. (ACL 2019, `10.18653/v1/P19-1424`); Medvedeva et al. (ICTAI 2019, `10.1109/ICTAI.2019.00275`); **Correia et al., anotação fina de entidades no STF** (IPM 2022, `10.1016/j.ipm.2021.102794`); **pipeline de anotação semântica de decisões brasileiras** (JURIX 2024, `10.3233/FAIA241248`) |
 | 4. Rótulo fraco e anotação | Elkan & Noto (KDD 2008, `10.1145/1401890.1401920`); Bekker & Davis, *survey* de PU learning (2018, `10.48550/arXiv.1811.04820`); *Efficient Training for Positive Unlabeled Learning* (TPAMI 2019, `10.1109/TPAMI.2018.2860995`) |
@@ -84,17 +84,17 @@ BibTeX em `notes/references_candidates_br.bib`.
 
 | obra | ano | DOI |
 |---|---|---|
-| *As demandas predatórias como fator de violação do princípio da razoável duração* | 2023 | `10.51891/rease.v9i9.11541` |
-| *A atuação da OAB seccional Tocantins nas discussões* (demandas predatórias) | 2024 | `10.55892/jrg.v7i14.1173` |
-| *Demandas predatórias: uma análise comparativa da compreensão e impacto* | 2025 | `10.55892/jrg.v8i18.2044` |
-| *A exigência de políticas públicas para a contenção da litigância predatória* | 2024 | `10.69849/revistaft/ni10202411110704` |
-| *Judicialização predatória: causas, consequências e impactos financeiros* | 2024 | `10.69849/revistaft/ni10202411151457` |
-| *Dano processual nas ações de família: assédio processual e suas implicações* | 2024 | `10.55905/revconv.17n.8-167` |
-| *Do vexatious litigant ao assédio processual: uma aplicação do direito comparado* | 2025 | `10.33448/rsd-v14i9.49620` |
-| *Acesso à justiça e litigância habitual: meios consensuais adequados e incentivos* (dissertação, USP) | 2023 | `10.11606/d.2.2023.tde-28022024-080851` |
-| *Análise bibliométrica dos artigos científicos de jurimetria publicados no Brasil* | 2020 | `10.20396/RDBCI.V18I0.8658889` |
-| *Transforming Justice* (governança digital no Judiciário) | 2025 | `10.59490/dgo.2025.1049` |
-| *Towards Responsible AI Governance in the Brazilian Judiciary* (AIES) | 2025 | `10.1609/aies.v8i3.36774` |
+| Sousa & Medrado — *As demandas predatórias como fator de violação do princípio da razoável duração* | 2023 | `10.51891/rease.v9i9.11541` |
+| Silva & Mezzaroba — *A atuação da OAB seccional Tocantins nas discussões sobre litigância predatória* | 2024 | `10.55892/jrg.v7i14.1173` |
+| Decarli & Cavalcante — *Demandas predatórias: uma análise comparativa da compreensão e impacto* | 2025 | `10.55892/jrg.v8i18.2044` |
+| Januário — *A exigência de políticas públicas para a contenção da litigância predatória* | 2024 | `10.69849/revistaft/ni10202411110704` |
+| Parada — *Judicialização predatória: causas, consequências e impactos financeiros* | 2024 | `10.69849/revistaft/ni10202411151457` |
+| Volante & Cardin — *Dano processual nas ações de família: assédio processual* | 2024 | `10.55905/revconv.17n.8-167` |
+| Rocha — *Do vexatious litigant ao assédio processual: uma aplicação do direito comparado* | 2025 | `10.33448/rsd-v14i9.49620` |
+| Teixeira — *Acesso à justiça e litigância habitual* (dissertação, USP) | 2023 | `10.11606/d.2.2023.tde-28022024-080851` |
+| Maia & Bezerra — *Análise bibliométrica dos artigos científicos de jurimetria no Brasil* (Google Scholar, 2002–2019) | 2020 | `10.20396/RDBCI.V18I0.8658889` |
+| Suriani & Pacheco — *Transforming Justice* (empírico: dashboards e projetos de IA do CNJ, 2021–2023) | 2025 | `10.59490/dgo.2025.1049` |
+| Fonseca — *Towards Responsible AI Governance in the Brazilian Judiciary* (AIES; levantamento CNJ de 140 modelos, documentos e entrevistas) | 2025 | `10.1609/aies.v8i3.36774` |
 
 Observação de qualidade: boa parte sai de periódicos de fluxo contínuo e baixo fator de impacto. São úteis para
 mostrar que o tema é discutido, **não** como evidência empírica — e o próprio levantamento diz isso.
@@ -154,3 +154,72 @@ Dois achados laterais igualmente úteis: **não há avaliação quantitativa ind
 (sensibilidade, especificidade, VPP, taxa de falsos positivos ou desfechos posteriores dos casos sinalizados); e
 nos periódicos de referência (Revista de Processo, RDC, REED, Direito GV, Civil Procedure Review) a busca não
 produziu conjunto substancial de artigos dedicados à **mensuração empírica** do fenômeno.
+
+## 8. Ressalvas de confiabilidade da rodada (declaradas pela própria ferramenta)
+
+Registradas aqui porque mudam o peso que se pode dar ao levantamento:
+
+1. **Contaminação de contexto no recuperador de texto integral.** A ferramenta avisou que, em parte dos
+   registros, atribuiu trechos de um artigo sobre demandas predatórias a outros trabalhos. Por isso ela passou a
+   usar metadados/abstracts quando verificáveis e **não atribuiu referências bibliográficas a um trabalho cuja
+   lista de referências não pôde inspecionar com segurança**. Consequência prática para nós: as *citações
+   internas* relatadas (quem cita quem) não são confiáveis; os **metadados dos artigos**, esses sim, foram
+   confirmados por DOI no Crossref.
+2. **FGV, IPEA, Insper e ABJ: lacuna de recuperação, não ausência.** A ferramenta afirmou não ter obtido
+   registros bibliográficos completos o bastante para atribuir títulos e URLs a essas instituições, e recusou-se
+   a completar de memória. Esses relatórios precisam de busca direta nos sites institucionais.
+3. **EALR — *Efficiency of Courts of Justice in Brazil* (2019, DEA sobre indicadores do CNJ, questiona a
+   especificação do IPC-Jus):** o DOI sugerido (`10.31501/ealr.v10i2.9637`) **não resolve** no Crossref nem no
+   DataCite, e a busca por título também não o encontrou — a revista provavelmente não deposita DOI no Crossref.
+   Fica em quarentena até conferência direta no site da EALR.
+
+## 9. Núcleo documental obrigatório (literatura cinzenta que é fonte primária)
+
+Não é literatura secundária descartável: é a genealogia institucional do conceito que o artigo mede.
+
+| documento | papel no artigo |
+|---|---|
+| CNJ, **Justiça em Números** (séries anuais) | estoque, casos novos, congestionamento, produtividade — contexto do volume |
+| CNJ, **DataJud** | universo processual estruturado; é a ponte do desenho B |
+| CNJ, **Recomendação 159/2024** | fonte primária da taxonomia de indícios (Anexo A = camada de conduta do léxico) |
+| CNJ, **Resolução 332/2020** | primeiro marco de ética e governança de IA judicial |
+| CNJ, **Resolução 615/2025** | governança baseada em risco, supervisão humana, IA generativa |
+| STJ, **Tema Repetitivo 1198** | legitimidade e limites das medidas diante de **indícios** |
+
+Redação do Tema 1198 recuperada na rodada (conferir no inteiro teor antes de citar):
+
+> "Constatados indícios de litigância abusiva, o juiz pode exigir, de modo fundamentado e com observância à
+> razoabilidade do caso concreto, a emenda da petição inicial a fim de demonstrar o interesse de agir e a
+> autenticidade da postulação, respeitadas as regras de distribuição do ônus da prova."
+
+A palavra decisiva é **"indícios"**: o precedente não converte um conjunto de características em prova de abuso —
+há um passo de apreciação judicial fundamentada. É exatamente a arquitetura do sistema (indícios computacionais →
+triagem → revisão humana ≠ decisão automatizada) e deve ser dito assim na seção normativa.
+
+## 10. Distinção conceitual que o artigo não pode perder
+
+A literatura de litigiosidade impõe uma cadeia de não-equivalências:
+
+**volume ≠ repetição ≠ litigância habitual ≠ abuso ≠ predatoriedade.**
+
+Um banco ou ente público é *repeat player* por ser repetidamente demandado; um escritório pode propor milhares de
+demandas legítimas; e a tutela de direitos homogêneos gera litigância massificada sem abuso nenhum. É o mesmo
+motivo pelo qual a camada `neighbour` do léxico existe (demandas repetitivas, IRDR) e pelo qual "não sinalizado"
+nunca é escrito como "legítimo" (CLAUDE.md §3).
+
+## 11. Não verificado — não citar
+
+Lista fechada do que ficou sem metadado confirmado e **não pode** entrar na bibliografia sem conferência direta:
+estudos acadêmicos específicos sobre o NUMOPEDE/TJSP; relatórios da ABJ, do Insper, da FGV e do IPEA
+especificamente sobre litigância predatória; artigos sobre o fenômeno na Revista de Processo, RDC, REED, Direito
+GV e Civil Procedure Review; os títulos exatos das obras de Câmara e de Scarpinella Bueno citadas nos textos
+recuperados; edição e ISBN de todos os manuais processuais listados na §6; e o artigo da EALR (§8.3).
+
+## 12. Aviso sobre a seção "como eu formularia a lacuna" da resposta
+
+A resposta do SciSpace traz, ao final, quatro parágrafos redigidos propondo como enunciar a lacuna brasileira no
+artigo. **Esse texto é prosa gerada por IA e não entra no manuscrito** — nem parafraseado (`CLAUDE.md` §11 e
+política §2: a prosa é do autor). Ele serve, no máximo, como conferência de completude depois que o autor
+escrever a sua própria introdução: os pontos que ele levanta — sinalização judicial documentada como variável
+observável, recusa de equiparar o resultado do modelo a uma conclusão jurídica, e triagem sujeita a revisão
+humana — já estão no `CLAUDE.md` e no relatório de viabilidade, escritos antes e de forma independente.

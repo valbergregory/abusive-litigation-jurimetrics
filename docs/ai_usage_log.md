@@ -97,9 +97,20 @@ pesquisador (`docs/annotation_protocol.md`; `CLAUDE.md` §2).
   cada DOI — **16 sugeridos, 16 resolvidos, 0 inventados, 0 com título divergente**
   (`logs/91_verify_references.json`). Só o que resolveu entrou em `notes/references_candidates.bib`, e nada
   entra em `article/references.bib` sem aprovação do pesquisador.
-- **Limite honesto da ferramenta, registrado:** ela **se recusou** a contar recorrência de livros nas listas de
-  referências, dizendo que não as recuperou completas e que não produziria contagens sem inspecioná-las. A
-  tabela de livros brasileiros saiu vazia por isso. A contagem de livros exige outra fonte (OpenAlex/Scopus) ou
+- **Limites honestos da ferramenta, registrados:**
+  1. ela **se recusou** a contar recorrência de livros nas listas de referências, dizendo que não as recuperou
+     completas e que não produziria contagens sem inspecioná-las — daí a tabela de livros brasileiros vazia;
+  2. na rodada brasileira ela avisou que o recuperador de texto integral **contaminou contexto entre registros**
+     (atribuiu trechos de um artigo sobre demandas predatórias a outros trabalhos) e, por isso, passou a usar
+     apenas metadados/abstracts verificáveis. **Consequência: as citações internas que ela relata — quem cita
+     quem — não são confiáveis;** os metadados dos artigos, esses foram confirmados por DOI no Crossref;
+  3. ela declarou não ter recuperado registros completos de FGV, IPEA, Insper e ABJ, classificando isso como
+     **lacuna de recuperação, não ausência da literatura** — esses relatórios exigem busca direta. A contagem de livros exige outra fonte (OpenAlex/Scopus) ou
   leitura direta das listas — está registrado em `docs/literature_map.md` §2.
-- **Efeito no artigo:** nenhuma prosa foi gerada por IA (CLAUDE.md §11). O levantamento entra como insumo
-  bibliográfico e como base das três lacunas descritas em `docs/literature_map.md` §3.
+- **Efeito no artigo:** nenhuma prosa de IA entra no manuscrito (CLAUDE.md §11). A resposta da rodada brasileira
+  inclui quatro parágrafos propondo *como enunciar a lacuna*; esse texto foi deliberadamente **não copiado** para
+  o repositório e está sinalizado em `docs/literature_map.md` §12 como material que o autor não deve reaproveitar,
+  nem parafraseado. O que entra é insumo bibliográfico verificado e o registro das lacunas.
+- **Resultado consolidado das duas rodadas:** 28 DOIs sugeridos, **27 resolvidos, 1 não resolvido**
+  (`10.31501/ealr.v10i2.9637`, em quarentena), **0 inventados**. O mapa está em `docs/literature_map.md`, com a
+  lista fechada de "não verificado — não citar" na §11.
