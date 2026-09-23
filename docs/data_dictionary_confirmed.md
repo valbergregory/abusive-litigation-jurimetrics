@@ -21,7 +21,15 @@ Only fields actually observed in downloaded files or API responses. Source dicti
 
 Coverage observed: text present for 97–99 % of metadata rows in 2021–2025; 0.4–22 % in 2026 (to be investigated).
 
-## STJ — espelhos de acórdãos (monthly `<AAAAMMDD>.json`, one dataset per órgão)
+## STJ — espelhos de acórdãos (monthly `<AAAAMMDD>.json` + one initial backlog `<AAAAMMDD>.zip`, one dataset per órgão)
+
+**Medido em 23/09/2026:** o ZIP inicial de cada conjunto **não** duplica a série mensal — traz o acervo histórico
+(Corte Especial: 14.223 registros de 1989 a 2022-06, 92 em comum). Com os dez ZIPs, o corpus vai de 165.850 para
+877.353 espelhos. Campos idênticos aos dos JSON mensais; os membros do ZIP são JSON com a mesma estrutura.
+Valores ausentes chegam como a **string** `"None"`; `dataPublicacao` = `"DJE  DATA:dd/mm/aaaa"`; `dataDecisao` =
+`aaaammdd`; `referenciasLegislativas` e `acordaosSimilares` são *reprs* de lista Python dentro do JSON;
+`jurisprudenciaCitada` traz cada citação entre `<<…>>`, precedida do tribunal.
+
 
 `id`, `numeroProcesso`, `numeroRegistro`, `siglaClasse`, `descricaoClasse`, `nomeOrgaoJulgador`, `ministroRelator`, `dataPublicacao` (text, e.g. `DJE DATA:19/06/2024`), `ementa`, `tipoDeDecisao`, `dataDecisao`, `decisao`, `jurisprudenciaCitada` (text; precedents wrapped as `<<REsp 1816742>>`), `notas`, `informacoesComplementares`, `termosAuxiliares`, `teseJuridica`, `tema`, `referenciasLegislativas` (list of text blocks `LEG:FED LEI:010406 ANO:2002 … ART:00966`), `acordaosSimilares` (list), `numeroDocumento`, `classePadronizada` (both null in sample).
 

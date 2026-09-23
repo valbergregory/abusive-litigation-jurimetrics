@@ -1,0 +1,64 @@
+{
+ "run_at": "2026-09-23T11:19:36",
+ "unit": "numero_registro (one STJ case), not document",
+ "totals": {
+  "integras_registrations": 2392434,
+  "espelhos_registrations": 817967,
+  "shared_registrations": 179030
+ },
+ "agreement_on_shared_cases": {
+  "both_strict": 92,
+  "strict_integras_only": 221,
+  "strict_espelho_only": 68,
+  "both_candidate": 2468,
+  "candidate_integras_only": 14215,
+  "candidate_espelho_only": 776,
+  "strict_recall_of_espelhos_pct": 29.4
+ },
+ "strict_by_year": [
+  {
+   "year": "2021",
+   "integras_strict": 66,
+   "with_espelho": 21,
+   "espelho_also_strict": 3,
+   "pct": 14.3
+  },
+  {
+   "year": "2022",
+   "integras_strict": 79,
+   "with_espelho": 24,
+   "espelho_also_strict": 5,
+   "pct": 20.8
+  },
+  {
+   "year": "2023",
+   "integras_strict": 70,
+   "with_espelho": 17,
+   "espelho_also_strict": 2,
+   "pct": 11.8
+  },
+  {
+   "year": "2024",
+   "integras_strict": 707,
+   "with_espelho": 74,
+   "espelho_also_strict": 15,
+   "pct": 20.3
+  },
+  {
+   "year": "2025",
+   "integras_strict": 1116,
+   "with_espelho": 139,
+   "espelho_also_strict": 53,
+   "pct": 38.1
+  },
+  {
+   "year": "2026",
+   "integras_strict": 446,
+   "with_espelho": 38,
+   "espelho_also_strict": 14,
+   "pct": 36.8
+  }
+ ],
+ "note": "the espelhos only cover collegiate judgments from 2022-05 onwards, so a case decided monocratically has no espelho by construction; read the coverage column before the agreement",
+ "k_min": 5
+}

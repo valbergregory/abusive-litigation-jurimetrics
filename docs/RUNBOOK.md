@@ -31,7 +31,8 @@ Result: `docs/feasibility_report.md`.
 | # | Planned script | Reads | Writes | Est. time |
 |---|---|---|---|---|
 | 10 | `uv run python scripts/10_ingest_stj_integras.py [--source DIR] [--keys FROM TO] [--limit N] [--force]` (**run 2026-09-12: 3,482,383 documents, 2,975,817 texts, 6.0 GB Parquet, ~10 min**) | local mirror of all daily/monthly ZIP+JSON since 2021-01-04 (11.4 GB, 1.287 keys; default = sibling repo `STJ-Moral-Damages-Jurimetrics/data/raw/stj_integras`, downloaded with SHA-256 on 2026-09-07/08 — nothing is downloaded by this script) | `data/interim/stj_integras/{meta,text}/<key>.parquet` (rapporteur salted-hashed, no party names), `data/alj.duckdb` (views `documents`, `document_text`; table `ingest_log`), `logs/raw_hashes.tsv`, `logs/10_ingest_stj_integras.json` (counts only) | ~1–2 h parse, resumable per key |
-| 11 | `uv run python scripts/11_ingest_stj_espelhos.py [--orgaos …] [--workers 6] [--no-download] [--limit-files N]` (**written and run 2026-09-22**) | CKAN `package_show` of the 10 bodies at run time → 52 monthly JSON each (~85 MB per body, ~0.9 GB total; the initial ZIPs are listed but not unpacked) | `data/raw/stj_espelhos/<orgao>/*.json`, `data/interim/espelhos/{espelhos,citations,legislation}/*.parquet`, views `espelhos`, `espelho_citations`, `espelho_legislation`, `logs/11_ingest_stj_espelhos.json` | download-bound: the portal serves ~80 kB/s per connection, so 6 workers ≈ 30–60 min; resumable (a file whose size matches the published size is never fetched again) |
+| 11 | `uv run python scripts/11_ingest_stj_espelhos.py [--orgaos …] [--workers 6] [--no-download] [--no-zips] [--limit-files N]` (**run 2026-09-22; ZIP backlog added 2026-09-23 → 877.353 espelhos, 2,0 M citations, 1,2 M legislative references, back to 1989**) | CKAN `package_show` of the 10 bodies at run time → 52 monthly JSON each (~85 MB per body) **plus the initial backlog ZIP** (~11–20 MB each, the historical acervo since 1989) | `data/raw/stj_espelhos/<orgao>/*.json`, `data/interim/espelhos/{espelhos,citations,legislation}/*.parquet`, views `espelhos`, `espelho_citations`, `espelho_legislation`, `logs/11_ingest_stj_espelhos.json` | download-bound: the portal serves ~80 kB/s per connection, so 6 workers ≈ 30–60 min; resumable (a file whose size matches the published size is never fetched again) |
+| 11b | `uv run python scripts/11b_probe_espelho_zip.py [--orgao corte-especial]` (**run 2026-09-23**) | one dataset's initial ZIP (CKAN) | `logs/11b_probe_espelho_zip.json` — measured 14.223 records / 12.390 registrations, 1989–2022, only 92 shared with the monthly series, i.e. the ZIP is NOT a duplicate | ~2 min, downloads ~11 MB and deletes it |
 | 12 | `uv run python scripts/12_ingest_stj_bridge.py [--acervo FILE] [--atas DIR] [--limit N]` (**written and run 2026-09-22 on the acervo snapshot + the single sample ata**) | `data/raw/stj/acervo_processos_tramitando_*.json.gz` (77 MB, already in the repo) and, with `--atas DIR`, a local mirror of the atas since 2023-06-30 (**bridge fields only**; the 4.2 GB download stays a separate authorised step) | `data/interim/bridge/*.parquet` (`numeroRegistro` ↔ `numeroUnico` + CNJ segment/tribunal/DataJud alias), view `bridge`, `logs/12_ingest_stj_bridge.json` (coverage by year) | ~2 min for the acervo |
 | 13 | ~~`13_check_text_coverage.py`~~ folded into step 10: `by_year` / `low_coverage_keys` in `logs/10_ingest_stj_integras.json` (2026 = 27.8 %, see feasibility §10) | — | — | — |
 | 19 | `uv run python scripts/19_refresh_duckdb_views.py [--only view …]` | all Parquet directories | rebuilds every view of `data/alj.duckdb` (the database is a derived artefact; run this after a step whose log says `views_created: false`, i.e. the file was locked by another step) | seconds |
@@ -40,6 +41,7 @@ Result: `docs/feasibility_report.md`.
 | 21b | **researcher's manual review** — fill `label1_status` (S3/S2/S1/S0/NA), `label2_grounds` (A1…A20/T1198/MAFE), `label3_measure` (M0…M5), `label4_domain` (D1…D5) and `justification`, per `docs/annotation_protocol.md` §§2–6; save as `data/annotations/gold_v1.csv` (git-ignored) | the worksheet | the gold set | days, by hand |
 | 22 | `uv run python scripts/22_validate_lexicon.py [--gold FILE] [--self-test]` (**written 2026-09-22; `--self-test` passes, real run waits for the gold set**) | `data/annotations/gold_v1.csv` (+ the blind round, if any), `logs/21_…json` for the inverse-sampling weights | precision/recall/F1 raw **and** weighted back to the population, per-pattern precision (k ≥ 5), Cohen's κ and the §7 go/no-go verdicts → `logs/22_lexicon_validation.json` | 1 min |
 | 23 | `uv run python scripts/23_lexicon_espelhos.py [--orgaos …]` (**written 2026-09-22**) | `data/interim/espelhos/espelhos/*.parquet` (ementa + decisão + notas) and the same lexicon | `data/interim/candidates_espelhos/{docs,hits}/*.parquet`, views `espelho_candidates`, `espelho_candidate_hits`, `logs/23_lexicon_espelhos.json` | ~2 min; needs step 11 |
+| 24 | `uv run python scripts/24_crosscheck_integras_espelhos.py` (**written and run 2026-09-23**) | `candidates`, `espelho_candidates`, metadata | agreement between the two public sources on the same `numeroRegistro` → `logs/24_crosscheck_integras_espelhos.json` (**when the íntegra names the phenomenon the espelho names it in 29,4 % of the shared cases**) | ~2 min |
 | 30 | `30_fetch_datajud_trajectories.py` (not written) | bridge + DataJud (STJ + origin) | `trajectories.parquet`, table `movements` | hours, background |
 
 ### Running the whole thing
@@ -69,6 +71,7 @@ from it by stratified sampling in step 21, and step 22 weights the estimates bac
 
 ```bash
 uv run python scripts/80_build_outputs.py      # logs/*.json + the lexicon YAML -> outputs/tables/*.csv + outputs/numbers.json
+uv run python scripts/81_build_figures.py      # logs/*.json -> outputs/figures/*.{pdf,png} (4 descriptive figures)
 uv run python scripts/90_export_overleaf.py    # -> outputs/overleaf/{tables/*.tex, figures/, numbers.tex}
 ```
 
@@ -79,6 +82,6 @@ Copy `outputs/overleaf/` to Overleaf; never type a number by hand (policy §13).
 
 ## Phase 1 status (2026-09-22)
 
-Done: 10, 11, 12 (acervo), 19, 20, 21, 80, 90 — plus `22 --self-test`. Waiting on the researcher: the design
+Done: 10, 11 (JSON + ZIP backlog), 11b, 12 (acervo), 19, 20, 21, 23, 24, 80, 81, 90 — plus `22 --self-test`. Waiting on the researcher: the design
 choice (A / B / B+C), the review of `docs/annotation_protocol.md`, the manual annotation (step 21b) and the
 authorisation to download the 4.2 GB of atas (the historical half of the bridge).

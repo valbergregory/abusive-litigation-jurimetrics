@@ -166,3 +166,34 @@ def test_create_views_builds_a_view_from_parquet(tmp_path: Path):
     assert counts == {"bridge": 2}
     assert con.execute("SELECT count(*) FROM bridge").fetchone()[0] == 2
     con.close()
+
+
+def test_read_espelhos_zip_reads_every_json_member(tmp_path: Path):
+    """The initial backlog ZIP of each dataset is read in memory, member by member."""
+    import zipfile
+
+    from alj.espelhos import iter_zip_records, read_espelhos_zip
+
+    src = tmp_path / "20220507.zip"
+    with zipfile.ZipFile(src, "w") as zf:
+        zf.writestr("parte1.json", json.dumps([RECORD, RECORD], ensure_ascii=False))
+        zf.writestr("parte2.json", json.dumps([RECORD], ensure_ascii=False))
+        zf.writestr("leiame.txt", "ignorado")
+    assert len(list(iter_zip_records(src))) == 3
+
+    esp, cit, leg = read_espelhos_zip(src, orgao_slug="corte-especial", salt=SALT)
+    assert esp.height == 3 and cit.height == 6 and leg.height == 6
+    assert set(esp["source_file"]) == {"20220507.zip"}
+    assert list(esp.columns) == list(ESPELHO_SCHEMA)
+
+
+def test_read_espelhos_zip_skips_unreadable_members(tmp_path: Path):
+    import zipfile
+
+    from alj.espelhos import read_espelhos_zip
+
+    src = tmp_path / "quebrado.zip"
+    with zipfile.ZipFile(src, "w") as zf:
+        zf.writestr("bom.json", json.dumps([RECORD], ensure_ascii=False))
+        zf.writestr("ruim.json", "{isto nao e json")
+    assert read_espelhos_zip(src, orgao_slug="o", salt=SALT)[0].height == 1

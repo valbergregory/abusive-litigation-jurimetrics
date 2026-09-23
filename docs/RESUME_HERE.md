@@ -80,7 +80,17 @@ Os padrões campeões de volume são de linguagem processual comum (`extincao_se
 quiser que a camada de conduta seja mais restritiva, é melhor ajustar `config/lexicon_v2.yaml` **antes** de anotar —
 uma nova varredura completa custa 49 min e repovoa o estrato `control_flagged`, hoje vazio.
 
-## O que eu fiz nesta sessão (tudo local, nada pushado)
+## O que eu fiz em 23/09 pela manhã (sem depender de você)
+
+- **Espelhos completos**: sondei o ZIP inicial (`scripts/11b`), descobri que não era duplicata e reingeri tudo —
+  **877.353 espelhos**, 2,0 M citações, 1,2 M referências legislativas, desde 1989.
+- **Passo 24 (novo)**: as duas fontes concordam pouco — quando a íntegra nomeia o fenômeno, o espelho o nomeia
+  em **29,4 %** dos casos compartilhados. Um estudo só sobre ementas perderia ~70 % dos casos sinalizados.
+- **Passo 81 (novo)**: quatro figuras descritivas em `outputs/figures` (termo estrito por ano, candidatos por
+  camada, cobertura da ponte contra o limiar de 70 %, padrões mais frequentes), já no export do Overleaf.
+- §12 do relatório de viabilidade, RUNBOOK, dicionário de dados e `dodo.py` atualizados; 226 testes.
+
+## O que eu fiz na sessão anterior (tudo local, nada pushado)
 
 - **Léxico v2.0.0** versionado (47 padrões em 5 camadas, 4 exclusões, 2 negações) + motor com pré-filtro RE2
   (25 s → 0,8 s por dia de publicação) e triagem por padrão; 208 testes, um exemplo asseverado por padrão.
@@ -97,6 +107,6 @@ uma nova varredura completa custa 49 min e repovoa o estrato `control_flagged`, 
 
 1. `control_flagged` vazio até a próxima varredura completa (o passo 20 agora grava os quase-acertos).
 2. Passo 30 (`30_fetch_datajud_trajectories.py`) não escrito — só faz sentido depois de D-1.
-3. Espelhos: os ZIPs iniciais de 2022 não foram descompactados (duplicam os JSONs mensais; reconciliar se
-   alguém questionar a cobertura de mai–dez/2022).
+3. ~~Espelhos: ZIPs iniciais~~ **RESOLVIDO em 23/09** — não eram duplicata: traziam o acervo histórico desde
+   1989. Corpus de espelhos foi de 165.850 para **877.353** registros (§12.1 do relatório).
 4. Commit local de 22/09 **sem push** — o repositório é público e o push é decisão sua.

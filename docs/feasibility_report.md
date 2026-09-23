@@ -311,3 +311,53 @@ está em `dodo.py` (`uv run doit list`), as views do DuckDB são reconstruíveis
 3. Autorizar (ou não) o download das **atas** (4,2 GB, só campos de ponte na primeira passagem).
 4. A anotação em si: `data/annotations/gold_v1_sample.csv` → `gold_v1.csv` → passo 22 (que já roda em
    `--self-test`) → tabela §7 preenchida com números reais.
+
+---
+
+## 12. Atualização de 23/09/2026 — espelhos completos, cruzamento entre fontes e figuras
+
+Sessão sem decisões do pesquisador: só o que podia avançar sozinho.
+
+### 12.1 Os ZIPs dos espelhos não eram duplicata (correção de um erro nosso)
+
+O passo 11 ignorava o ZIP inicial de cada conjunto, supondo que duplicasse a série mensal. A sondagem
+`scripts/11b_probe_espelho_zip.py` (Corte Especial, 10,6 MB) mediu o contrário: **14.223 registros, 12.390
+números de registro distintos, publicados entre 17/05/1989 e 07/06/2022, com apenas 92 em comum** com os
+arquivos mensais. O passo 11 passou a ingerir os ZIPs (`--no-zips` desliga), e o corpus de espelhos saltou de
+165.850 para **877.353 registros** (817.967 registros distintos), com **2.006.425 citações** de jurisprudência e
+**1.244.914 referências legislativas**. Ou seja, havia uma década e meia de acórdãos fora do nosso alcance.
+
+Consequência para o desenho: a janela do artigo continua 2021–2025 (as íntegras só começam em 2021), mas os
+espelhos históricos passam a permitir (a) séries longas de contexto, (b) validação fora da janela e (c) o grafo
+de citações com profundidade real.
+
+### 12.2 As duas fontes discordam sobre o mesmo caso (passo 24, novo)
+
+Unindo por `numeroRegistro`: 179.030 casos estão nas duas fontes. Entre eles, **quando a íntegra nomeia o
+fenômeno, o espelho o nomeia em apenas 29,4 % das vezes** (92 de 313); 68 casos aparecem só no espelho. No
+conjunto de candidatos a diferença é da mesma ordem: 14.215 só nas íntegras contra 776 só nos espelhos.
+
+Isso tem três consequências que valem estar no artigo:
+
+1. **um estudo feito só sobre ementas perderia cerca de 70 % dos casos sinalizados** — é a justificativa empírica
+   para usar as íntegras como corpus primário, e não a base mais fácil;
+2. o fenômeno é frequentemente dito na fundamentação e **não** chega ao espelho, que é a face pesquisável do
+   tribunal: quem consulta a jurisprudência pelo caminho normal não vê a maior parte dos casos;
+3. os 68 casos só no espelho indicam decisões cuja íntegra não temos (cobertura) ou documentos diferentes do
+   mesmo processo — precisam de conferência antes de qualquer afirmação.
+
+Por ano, a taxa sobe com a consolidação do vocabulário: 14,3 % (2021), 20,8 % (2022), 11,8 % (2023), 20,3 %
+(2024), 38,4 % (2025). Números em `logs/24_crosscheck_integras_espelhos.json`, com supressão k ≥ 5.
+
+### 12.3 Figuras (passo 81, novo)
+
+Quatro figuras descritivas, geradas só de logs, em `outputs/figures` e exportadas para o Overleaf:
+série do termo estrito por ano (a quebra de 2024–25), candidatos por camada e ano, cobertura da ponte contra o
+limiar de 70 % da §7, e os padrões mais frequentes com a camada vizinha marcada à parte. Nenhuma depende de
+rótulo — não existe rótulo ainda.
+
+### 12.4 O que isso muda nas suas decisões
+
+Nada do que estava pendente foi decidido aqui, mas a §12.2 reforça a D-1: se a ponte não for resolvida pelas
+atas, o artigo fica sem trajetória processual **e** sem poder usar o caminho mais barato (espelhos), porque a
+cobertura deles sobre o fenômeno é baixa. As duas limitações se somam no mesmo ponto.
