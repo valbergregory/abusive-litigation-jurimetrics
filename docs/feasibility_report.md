@@ -361,3 +361,45 @@ rótulo — não existe rótulo ainda.
 Nada do que estava pendente foi decidido aqui, mas a §12.2 reforça a D-1: se a ponte não for resolvida pelas
 atas, o artigo fica sem trajetória processual **e** sem poder usar o caminho mais barato (espelhos), porque a
 cobertura deles sobre o fenômeno é baixa. As duas limitações se somam no mesmo ponto.
+
+---
+
+## 13. Atualização de 23/09/2026 (tarde) — decisões do pesquisador e a ponte resolvida
+
+### 13.1 As decisões
+
+1. **Atas autorizadas.** 2. **Desenho B.** 3. **Protocolo confirmado na v0.1.** 4 e 5. Anotação e conferência do
+léxico com passo a passo escrito (`docs/COMO_ANOTAR.md`, `docs/COMO_CONFERIR_O_LEXICO.md`). 6. **Push feito**
+(seis commits, `b5afe2b..d8bab88`).
+
+### 13.2 Atas de distribuição ingeridas — o critério de ponte foi atendido
+
+`scripts/12b_download_atas.py` (novo) baixou os **1.010 recursos publicados, 4,14 GB, em 13,2 minutos, sem uma
+falha**; o passo 12 ingeriu **1.000 dias** distintos (30/06/2023 a 09/09/2026), lendo **apenas campos de ponte** —
+partes e advogados continuam fora (CLAUDE.md §§4–5). A ponte passou de 333.636 para **2.543.847 pares**
+(1.604.423 números de registro distintos).
+
+Cobertura dos **candidatos** por ano de publicação:
+
+| 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
+|---|---|---|---|---|---|
+| 2,3 % | 3,8 % | 28,9 % | **91,2 %** | **92,8 %** | 88,6 % |
+
+**O critério da §7 (≥ 70 %) está atendido para 2024–2025**, que é exatamente o período em que o fenômeno aparece
+(642 e 1.580 documentos com termo estrito). 2023 fica em 28,9 % porque as atas começam em 30/06/2023, e
+2021–2022 continuam sem ponte pública — limitação estrutural, não do nosso método.
+
+**Consequência para o desenho B:** a trajetória processual via DataJud é viável para o núcleo do fenômeno
+(2024–2025) e parcial para o segundo semestre de 2023. A análise com trajetória deve ser declarada nesse recorte,
+com 2021–2023 entrando apenas na parte textual (desenho A dentro do B).
+
+### 13.3 Duas correções de qualidade de dados
+
+- Seis recursos do CKAN são publicados **sem a extensão `.json`** (`ata20230803` a `ata20230808`). Eles foram
+  baixados mas ficaram fora do `glob` do passo 12 — seis dias sumiriam da ponte em silêncio. O downloader passou
+  a normalizar o nome e o passo 12 a aceitar as duas formas; os seis dias entraram.
+- Cinco nomes aparecem **duas vezes** na listagem do CKAN, com tamanho idêntico (mesma ata publicada duas vezes).
+  Não há perda: 1.010 recursos → 1.000 dias distintos.
+
+Completude da série: 1.000 dias entre 30/06/2023 e 09/09/2026; as doze lacunas maiores que quatro dias coincidem
+com recesso forense (a maior é 30/06 → 01/08/2023) e feriados.

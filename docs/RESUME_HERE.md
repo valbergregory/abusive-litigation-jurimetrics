@@ -19,6 +19,14 @@ revisar o protocolo e anotar** — nenhum rótulo, modelo ou resultado existe, p
 
 ## Suas decisões, em ordem de impacto
 
+### ✅ D-1 RESOLVIDA (23/09) — atas baixadas e ingeridas
+
+1.010 recursos, 4,14 GB, 13,2 min, zero falhas; 1.000 dias (30/06/2023 a 09/09/2026), só campos de ponte.
+A ponte foi de 333.636 para **2.543.847 pares** e a cobertura dos candidatos passou a **91,2 % (2024)** e
+**92,8 % (2025)** — critério da §7 atendido. Detalhe em §13 do relatório.
+
+<details><summary>pergunta original (mantida para registro)</summary>
+
 ### D-1. Atas de distribuição: autoriza o download de ~4,2 GB? (decide o desenho)
 
 A ponte `numeroRegistro` → número CNJ → DataJud, feita só com a foto do acervo, cobre **1,3 % a 2,2 %** dos
@@ -30,7 +38,9 @@ As atas cobrem tudo o que foi distribuído desde 30/06/2023 e resolveriam o hist
 - **Não** → o estudo converge para o **desenho A** (documento como unidade, sem trajetória processual), que
   responde RQ1, RQ2 e RQ5, mas não RQ3 nem RQ4.
 
-### D-2. Desenho A, B ou B+C?
+</details>
+
+### ✅ D-2 RESOLVIDA — desenho **B**
 
 Recomendação inalterada: **B**, condicionado a D-1. O C (camada de advogados/partes com hash salgado) exige
 protocolo ético seu e, pelo volume medido, tende a não acrescentar poder explicativo suficiente para justificar o

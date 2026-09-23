@@ -80,7 +80,12 @@ def main(argv: list[str] | None = None) -> int:
         print(f"{len(resources)} atas, {round(published_bytes / 1e9, 2)} GB published", flush=True)
 
         def local_path(res: dict) -> Path:
-            return OUT / (res.get("name") or Path(res["url"]).name)
+            # six resources are published without the .json suffix (ata20230803…08); normalise the local name,
+            # otherwise step 12 would not glob them and the days would silently go missing from the bridge
+            name = res.get("name") or Path(res["url"]).name
+            if not name.lower().endswith(".json"):
+                name += ".json"
+            return OUT / name
 
         pending = [x for x in resources
                    if not local_path(x).exists() or local_path(x).stat().st_size != (x.get("size") or 0)]

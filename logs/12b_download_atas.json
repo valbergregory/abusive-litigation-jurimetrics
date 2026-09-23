@@ -1,0 +1,14 @@
+{
+ "run_at": "2026-09-23T11:41:11",
+ "dataset": "atas-de-distribuicao",
+ "resources_listed": 1010,
+ "downloaded_this_run": 1010,
+ "gigabytes_downloaded": 4.17,
+ "files_on_disk": 999,
+ "gigabytes_on_disk": 4.14,
+ "first": "ata20230630.json",
+ "last": "ata20260909.json",
+ "errors": [],
+ "minutes": 13.2,
+ "next": "uv run python scripts/12_ingest_stj_bridge.py --atas data/raw/stj_atas   # bridge fields only"
+}
