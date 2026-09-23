@@ -17,12 +17,23 @@
 # - Accents are written as character classes because the published text mixes accented and unaccented forms;
 #   matching is case-insensitive and whitespace-tolerant (`\s+` absorbs the line breaks of the .txt sources).
 #
-version: 2.0.0
+version: 2.2.0
 created: 2026-09-22
 source_norms:
   - "Recomendação CNJ nº 159/2024 (Anexo A — lista exemplificativa de condutas processuais potencialmente abusivas)"
   - "Resolução CNJ nº 615/2025"
   - "STJ, Tema 1198 (afetado 2023-05-09, julgado 2025-03-13, publicado 2026-06-11)"
+  - "Súmulas 46 e 54 do TJBA (ajuizamento múltiplo e fracionamento de pedidos como litigância predatória)"
+# v2.1.0 / v2.2.0 (2026-09-22): criteria and normative instruments that courts actually use were missing from
+# v2.0.0. They came from two jurisprudence surveys run in Jus IA (Jusbrasil) on the researcher's account and were
+# ACCEPTED ONLY AFTER BEING MEASURED IN THIS CORPUS (docs/ai_usage_log.md §2):
+#   kept   — autenticidade da postulação 314 docs, firma reconhecida 814, prévio requerimento administrativo
+#            2.919, desconhecimento da ação/do advogado 414, Comunicado CG (TJSP/NUMOPEDE) 309, NUMPEDE 43,
+#            Súmulas 46/54 do TJBA 1 (kept for precision, rare in an STJ corpus);
+#   dropped — Diretriz Estratégica 7/CNJ (2 docs), Enunciados EPM/CGJ-TJSP (0), Ato TRT21-GP 228/2023 (0):
+#            real instruments, but absent from this corpus, so they are not part of the instrument.
+# No decision of the corpus was sent to that service and no label came from it: the survey informed the
+# *instrument*, which is still validated against the researcher's human gold set.
 options:
   # context window kept per hit, in characters before/after the match (used by scripts/20_lexicon_candidates.py)
   window_before: 320
@@ -155,6 +166,16 @@ patterns:
     tier: conduct
     annex_a: [17, 19]
     regex: '(aus[êe]ncia|falta|inexist[êe]ncia)\s+de\s+(pretens[ãa]o\s+resistida|interesse\s+(de|em)\s+agir\s+(pr[ée]vio|demonstrado))'
+  - id: requerimento_administrativo_previo
+    tier: conduct
+    annex_a: [17, 19]
+    regex: '(pr[ée]vio\s+requerimento\s+administrativo|requerimento\s+administrativo\s+pr[ée]vio)'
+    note: "v2.1: criterion the courts use to test interesse de agir; 2.919 documents in 2024-2026"
+  - id: desconhecimento_da_acao
+    tier: conduct
+    annex_a: [11]
+    regex: '(desconhec\w+)[^.]{0,80}?(a\s+(exist[êe]ncia\s+d[ao]\s+)?a[çc][ãa]o|o\s+pr[óo]prio\s+advogado|a\s+demanda|o\s+patrono)'
+    note: "v2.1: the party does not know the action or the lawyer — one of the strongest indications in practice"
 
   # ---------------------------------------------------------------- sanction: measures and consequences
   - id: ma_fe_art_80
@@ -182,6 +203,16 @@ patterns:
     tier: sanction
     annex_a: [13]
     regex: '(of[íi]cio|comunica[çc][ãa]o|expedi[çc][ãa]o\s+de\s+of[íi]cio)[^.]{0,120}?(OAB|Ordem\s+dos\s+Advogados|Minist[ée]rio\s+P[úu]blico|Tribunal\s+de\s+[ÉE]tica)'
+  - id: autenticidade_postulacao
+    tier: sanction
+    annex_a: [11, 12]
+    regex: 'autenticidade\s+d[ao]\s+postula[çc][ãa]o'
+    note: "v2.1: the literal formula of Tema 1198 (emenda to prove interesse de agir and authenticity); 314 docs"
+  - id: firma_reconhecida
+    tier: sanction
+    annex_a: [11]
+    regex: '(firma\s+reconhecida|reconhecimento\s+de\s+firma)'
+    note: "v2.1: the measure most often imposed when the power of attorney is doubted; 814 docs in 2024-2026"
   - id: apuracao_indicios
     tier: sanction
     annex_a: []
@@ -203,11 +234,26 @@ patterns:
   - id: numopede
     tier: normative
     annex_a: []
-    regex: 'NUMOPEDE|N[úu]cleo\s+de\s+Monitoramento\s+de\s+Perfis\s+de\s+Demandas'
+    regex: 'NUMOPEDE|NUMPEDE|N[úu]cleo\s+de\s+Monitoramento\s+d[eo]\s+Perfi[ls]\s*(de\s+)?Demandas'
+    note: "v2.2: NUMPEDE (the TJPB spelling, Portaria CGJ 02/2019) added after measuring 43 documents; NUMOPEDE
+      alone matches 890" 
   - id: rede_litigancia_abusiva
     tier: normative
     annex_a: []
     regex: 'Rede\s+de\s+(Combate\s+[àa]\s+)?Litig[âa]ncia\s+Abusiva'
+  - id: sumula_tjba_predatoria
+    tier: normative
+    annex_a: []
+    regex: 'S[úu]mula[s]?\s+n?[º°.]?\s*(46|54)[^.]{0,40}?(TJBA|TJ[/\-\s]?BA|Tribunal\s+de\s+Justi[çc]a\s+d[ao]\s+Bahia)'
+    note: "v2.2: TJBA summaries 46 and 54 (multiple identical actions; fragmenting claims). Restricted to the TJBA
+      after measuring: the loose form 'Súmula 46 do TJ…' matched 19 documents of other courts, the restricted one
+      matches 1 — kept for precision and because the design may later include the state courts"
+  - id: comunicado_cg_tjsp
+    tier: normative
+    annex_a: []
+    regex: 'Comunicado\s+CG\s+n?[º°.]?\s*\d{1,4}'
+    note: "v2.2: the TJSP Corregedoria communications that ground NUMOPEDE screening (CG 02/2017, CG 424/2024);
+      309 documents in this corpus — the most cited state-level instrument"
   - id: art_286_ii
     tier: normative
     annex_a: [10]

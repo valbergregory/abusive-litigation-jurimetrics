@@ -51,7 +51,29 @@ Depois: salve como `gold_v1.csv`, anote `gold_v1_reannotation.csv` cego (135 doc
 rode `uv run python scripts/22_validate_lexicon.py` — ele já calcula precisão/revocação/F1 crus **e** ponderados,
 com e sem S2, κ e a tabela §7 preenchida.
 
-### D-5. Léxico v2.1: quer ajustar antes de anotar?
+### D-5. Léxico v2.2 — **já feito em 22/09, com a Jus IA**; confirma?
+
+Você mandou usar a Jus IA. Usei-a na sua conta, com **uma** consulta de escopo bibliográfico (nenhum documento do
+corpus foi enviado, nada dela virou rótulo — registro completo em `docs/ai_usage_log.md`). Ela apontou cinco
+critérios que os tribunais usam e que **não estavam** no léxico; eu medi cada um neste corpus antes de aceitar:
+
+| padrão novo (v2.1.0 → v2.2.0) | documentos no corpus |
+|---|---|
+| `autenticidade_postulacao` (fórmula literal do Tema 1198) | 314 |
+| `firma_reconhecida` | 814 |
+| `requerimento_administrativo_previo` | 2.919 |
+| `desconhecimento_da_acao` (parte não conhece a ação ou o advogado) | 414 |
+| `sumula_tjba_predatoria` (Súmulas 46 e 54 do TJBA, forma restrita) | 1 |
+| `comunicado_cg_tjsp` (Comunicados CG 02/2017 e 424/2024, CGJ-TJSP/NUMOPEDE) | 309 |
+| `numopede` ampliado para a grafia NUMPEDE (TJPB) | +43 |
+
+E a medição **descartou** três sugestões dela: Diretriz Estratégica 7/CNJ (2 documentos), Enunciados EPM/CGJ-TJSP (0) e Ato TRT21-GP 228/2023 (0). São atos reais, mas ausentes deste corpus.
+
+A varredura completa com a v2.2 foi relançada (≈49 min) e a planilha de anotação será regerada com a **mesma
+semente**, para ficar comparável. Se você preferir anotar sobre a v2.0, é só dizer — mas o momento barato de
+trocar o instrumento é agora, antes da anotação.
+
+### D-5b. Mais alguma coisa do léxico a ajustar?
 
 Os padrões campeões de volume são de linguagem processual comum (`extincao_sem_merito` 63 k documentos,
 `representacao_irregular` 33 k). Isso é intencional (o Anexo A descreve condutas, não termos de arte), mas se você

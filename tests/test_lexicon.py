@@ -62,6 +62,8 @@ EXAMPLES: dict[str, str] = {
     "cessao_direito_demandar": "Foi juntado instrumento de cessão do direito de demandar.",
     "desistencia_apos_indeferimento": "Pediu desistência da ação após o indeferimento da tutela de urgência.",
     "ausencia_pretensao_resistida": "Reconhecida a ausência de pretensão resistida antes do ajuizamento.",
+    "requerimento_administrativo_previo": "Não houve prévio requerimento administrativo à seguradora.",
+    "desconhecimento_da_acao": "A autora, ouvida em juízo, desconhecia a ação e o próprio advogado constituído.",
     # sanction
     "ma_fe_art_80": "Caracterizada a litigância de má-fé, com condenação em multa.",
     "multa_ma_fe_art_81": "Aplico a multa do art. 81 do CPC.",
@@ -70,6 +72,8 @@ EXAMPLES: dict[str, str] = {
     "extincao_sem_merito": "Processo extinto sem resolução do mérito por ausência de interesse.",
     "oficio_oab_ou_mp": "Determino a expedição de ofício à OAB para apuração.",
     "apuracao_indicios": "Há indícios de litigância predatória a serem apurados.",
+    "autenticidade_postulacao": "Determinou a emenda para comprovar o interesse de agir e a autenticidade da postulação.",
+    "firma_reconhecida": "Exigiu procuração com firma reconhecida diante da dúvida sobre a representação.",
     # normative
     "rec_cnj_159": "Nos termos da Recomendação CNJ nº 159/2024.",
     "res_cnj_615": "Aplica-se a Resolução CNJ nº 615/2025.",
@@ -77,6 +81,8 @@ EXAMPLES: dict[str, str] = {
     "numopede": "Encaminhe-se ao NUMOPEDE do tribunal de origem.",
     "rede_litigancia_abusiva": "Integra a Rede de Combate à Litigância Abusiva.",
     "art_286_ii": "Deveria ter pedido distribuição por dependência (art. 286, II, do CPC).",
+    "sumula_tjba_predatoria": "Aplicou-se a Súmula 46 do TJBA sobre ajuizamento múltiplo de ações idênticas.",
+    "comunicado_cg_tjsp": "O juízo invocou o Comunicado CG nº 424/2024 da Corregedoria-Geral da Justiça.",
     # neighbour
     "ma_fe_processual_mencao": "Não se cogita de litigância de má-fé.",
     "abuso_direito_acao": "Configura abuso do direito de ação.",

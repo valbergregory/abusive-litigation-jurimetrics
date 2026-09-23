@@ -14,8 +14,8 @@ __pycache__/
 *.salt
 _freeze/
 .quarto/
-logs/*_run.out
-logs/*_run.err
+logs/*_run*.out
+logs/*_run*.err
 
 # doit state (derived)
 .doit.db

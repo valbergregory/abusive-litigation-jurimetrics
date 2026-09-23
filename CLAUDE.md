@@ -39,3 +39,4 @@ Master copy: `docs/AI_POLICY_AND_REPRODUCIBILITY.md` (identical across the five 
 - Measurement instrument: `config/lexicon_v2.yaml` (47 patterns in five tiers: 7 strict, 22 conduct, 7 sanction, 6 normative, 5 neighbour; 4 exclusions, 2 negation markers) + `src/alj/lexicon.py`; every pattern has an example asserted in `tests/test_lexicon.py`.
 - Phase-1 modules: `src/alj/{lexicon,annotation,validation,bridge,espelhos,db}.py`; scripts 11 (espelhos), 12 (bridge), 19 (refresh views), 20 (candidates), 21 (annotation sample), 22 (validation), 80 (outputs), 90 (Overleaf).
 - Annotation: worksheet and strata in `docs/annotation_protocol.md` (appendix A); files in `data/annotations/` are git-ignored because they carry decision snippets.
+- AI use log: `docs/ai_usage_log.md` — every tool, date, what went in, what came out and what was done with it (this is what the article's disclosure is built from).

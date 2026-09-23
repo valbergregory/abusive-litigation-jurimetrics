@@ -1,0 +1,18 @@
+# DOIs sugeridos pelo SciSpace GPT em 23/09/2026 (conversa "Literature Review Abusive Litigation")
+# formato: DOI <TAB> título esperado (quando o SciSpace o informou)
+10.70982/rejef.v1i7.97	Litigancia abusiva, medidas de combate e a devida intersecao com a analise economica do direito
+10.1111/jels.12152
+10.7717/peerj-cs.93	Predicting Judicial Decisions of the European Court of Human Rights
+10.18653/v1/P19-1424	Neural Legal Judgment Prediction in English
+10.1016/j.ipm.2021.102794	Fine-grained Legal Entity Annotation: A Case Study on the Brazilian Supreme Court
+10.3233/FAIA241248
+10.1109/ICTAI.2019.00275
+10.1145/1401890.1401920	Learning Classifiers from Only Positive and Unlabeled Data
+10.1109/TPAMI.2018.2860995
+10.48550/arXiv.1811.04820
+10.1145/3630106.3658999
+10.1145/2939672.2939778	Why Should I Trust You
+10.2307/3115150
+10.2139/SSRN.2716242
+10.1515/GJ-2020-0018
+10.12818/P.0304-2340.2019V75P443

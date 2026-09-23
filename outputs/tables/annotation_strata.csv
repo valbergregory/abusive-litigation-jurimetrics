@@ -1,7 +1,7 @@
 stratum,available,sampled
-strict,2322,600
-strict_negated,142,120
-conduct_multi,2091,300
-conduct_sanction,4164,180
-control_flagged,0,0
-control_unflagged,2681528,150
+strict,2349,600
+strict_negated,115,115
+conduct_multi,2409,300
+conduct_sanction,5003,180
+control_flagged,6250,100
+control_unflagged,2673928,150

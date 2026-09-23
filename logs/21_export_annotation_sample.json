@@ -1,5 +1,5 @@
 {
- "run_at": "2026-09-22T23:13:15",
+ "run_at": "2026-09-23T00:43:43",
  "seed": 20260922,
  "years": [
   "2021",
@@ -8,54 +8,59 @@
  "strata": [
   {
    "stratum": "strict",
-   "available": 2322,
+   "available": 2349,
    "sampled": 600,
    "requested": 600
   },
   {
    "stratum": "strict_negated",
-   "available": 142,
-   "sampled": 120,
+   "available": 115,
+   "sampled": 115,
    "requested": 120
   },
   {
    "stratum": "conduct_multi",
-   "available": 2091,
+   "available": 2409,
    "sampled": 300,
    "requested": 300
   },
   {
    "stratum": "conduct_sanction",
-   "available": 4164,
+   "available": 5003,
    "sampled": 180,
    "requested": 180
   },
   {
    "stratum": "control_flagged",
-   "available": 0,
-   "sampled": 0,
+   "available": 6250,
+   "sampled": 100,
    "requested": 100
   },
   {
    "stratum": "control_unflagged",
-   "available": 2681528,
+   "available": 2673928,
    "sampled": 150,
    "requested": 150
   }
  ],
- "sample_rows": 1349,
- "duplicates_removed": 1,
- "reannotation_rows": 135,
+ "sample_rows": 1443,
+ "duplicates_removed": 2,
+ "reannotation_rows": 144,
  "by_year_stratum": [
   {
    "year": "2021",
    "stratum": "conduct_multi",
-   "n": 16
+   "n": 21
   },
   {
    "year": "2021",
    "stratum": "conduct_sanction",
    "n": 19
+  },
+  {
+   "year": "2021",
+   "stratum": "control_flagged",
+   "n": 21
   },
   {
    "year": "2021",
@@ -70,17 +75,22 @@
   {
    "year": "2021",
    "stratum": "strict_negated",
-   "n": 2
+   "n": 3
   },
   {
    "year": "2022",
    "stratum": "conduct_multi",
-   "n": 50
+   "n": 48
   },
   {
    "year": "2022",
    "stratum": "conduct_sanction",
-   "n": 30
+   "n": 32
+  },
+  {
+   "year": "2022",
+   "stratum": "control_flagged",
+   "n": 16
   },
   {
    "year": "2022",
@@ -95,17 +105,22 @@
   {
    "year": "2022",
    "stratum": "strict_negated",
-   "n": 6
+   "n": 7
   },
   {
    "year": "2023",
    "stratum": "conduct_multi",
-   "n": 141
+   "n": 135
   },
   {
    "year": "2023",
    "stratum": "conduct_sanction",
-   "n": 79
+   "n": 70
+  },
+  {
+   "year": "2023",
+   "stratum": "control_flagged",
+   "n": 19
   },
   {
    "year": "2023",
@@ -115,22 +130,27 @@
   {
    "year": "2023",
    "stratum": "strict",
-   "n": 19
+   "n": 18
   },
   {
    "year": "2023",
    "stratum": "strict_negated",
-   "n": 6
+   "n": 7
   },
   {
    "year": "2024",
    "stratum": "conduct_multi",
-   "n": 44
+   "n": 47
   },
   {
    "year": "2024",
    "stratum": "conduct_sanction",
-   "n": 18
+   "n": 28
+  },
+  {
+   "year": "2024",
+   "stratum": "control_flagged",
+   "n": 31
   },
   {
    "year": "2024",
@@ -140,12 +160,12 @@
   {
    "year": "2024",
    "stratum": "strict",
-   "n": 151
+   "n": 155
   },
   {
    "year": "2024",
    "stratum": "strict_negated",
-   "n": 48
+   "n": 29
   },
   {
    "year": "2025",
@@ -155,7 +175,12 @@
   {
    "year": "2025",
    "stratum": "conduct_sanction",
-   "n": 33
+   "n": 30
+  },
+  {
+   "year": "2025",
+   "stratum": "control_flagged",
+   "n": 12
   },
   {
    "year": "2025",
@@ -165,12 +190,12 @@
   {
    "year": "2025",
    "stratum": "strict",
-   "n": 390
+   "n": 387
   },
   {
    "year": "2025",
    "stratum": "strict_negated",
-   "n": 58
+   "n": 69
   }
  ],
  "files": {
