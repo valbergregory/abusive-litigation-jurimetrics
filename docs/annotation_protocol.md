@@ -43,3 +43,46 @@ Mark every item the decision mentions as grounds (A1–A20 as numbered in the an
 - Do not infer intent, fraud or bad faith beyond what the decision states.
 - Do not label lawyers, firms or parties. The object is the decision's reasoning.
 - Do not treat lower-court findings as established facts; code them as `S2`.
+
+---
+
+## Appendix (added 2026-09-22 by Claude Code) — how the protocol is operationalised
+
+This appendix does **not** change the taxonomy above: it records how the code implements it, so that revising
+§§2–5 means revising one place. Nothing here is a label.
+
+### A.1 Worksheet columns (`scripts/21_export_annotation_sample.py`)
+
+`data/annotations/gold_v1_sample.csv` carries, per row: the document identifiers (`doc_id` = `<key>-<seq>`,
+publication date, class, subject codes, `numero_registro`), the machine's hints (`patterns`, `annex_a_items`,
+`tiers`, `negated_all`, `context_1..3` = ±320 characters around the three most informative hits) and the **empty**
+label columns, named after this protocol: `label1_status` (§2), `label2_grounds` (§3), `label3_measure` (§4),
+`label4_domain` (§5), `justification` and `minutes_spent` (§6.1–6.2), `annotator`, `annotation_date`,
+`protocol_version` (§6.4). Save the filled file as `data/annotations/gold_v1.csv` (git-ignored, §6.4).
+
+### A.2 Sampling frame (`src/alj/annotation.py`)
+
+Step 20 flags ~4 % of the corpus, because the *conduct* and *sanction* tiers of the lexicon describe Annex A
+conducts in ordinary procedural language. Reading all of them is impossible, so the gold set is a **stratified
+sample with a fixed seed** (default 20260922), and it deliberately includes documents the lexicon never flagged:
+
+| stratum | default size | why |
+|---|---|---|
+| `strict` | 600 | the phenomenon is named — expected `S3`/`S2` |
+| `strict_negated` | 120 | the term appears inside a rejection — expected `S1`/`S0` (validity check) |
+| `conduct_multi` | 300 | ≥ 2 Annex A conducts without the term — the phenomenon before the vocabulary |
+| `conduct_sanction` | 180 | one conduct plus an applied measure |
+| `control_flagged` | 100 | near misses (a pattern fired but an exclusion dropped it) |
+| `control_unflagged` | 150 | never flagged: **the denominator of recall** |
+
+Total ≈ 1.450 documents, which satisfies the go/no-go criterion of ≥ 1.000 reviewed candidates (§7 of the
+feasibility report). Sizes are overridable (`--size strict=800`).
+
+### A.3 Estimation (`scripts/22_validate_lexicon.py`, `src/alj/validation.py`)
+
+* positive class `{S3, S2}`, reported **with and without `S2`**, as §2 requires;
+* `NA` rows are excluded from the estimates and counted apart;
+* because the sample is stratified, every estimate is reported raw **and** weighted by `available / sampled`
+  (inverse sampling fraction), which is the only way the population precision and recall are interpretable;
+* per-pattern precision and Annex A frequencies are published only for cells with ≥ 5 documents (CLAUDE.md §4);
+* Cohen's κ on `label1_status` (and on the grounds set) from the blind round of §6.3.

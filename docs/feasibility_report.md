@@ -214,3 +214,100 @@ e registra cada arquivo-fonte em `logs/raw_hashes.tsv`. Nome do relator só como
 
 Continua pendente do pesquisador: desenho A/B/B+C, revisão de `docs/annotation_protocol.md` e autorização dos passos 11
 (espelhos), 12 (atas, só campos de ponte) e 20+ (léxico v2 e candidatos).
+
+---
+
+## 11. Atualização de 22/09/2026 — passos 11, 12, 19, 20, 21, 23, 80 e 90 executados
+
+Sessão pedida como "faça tudo que puder sem minha permissão para dar andamento". Nada de irreversível foi feito:
+os downloads são de dados abertos, todo arquivo novo está sob `data/` (ignorado no git) e as decisões de desenho
+continuam suas. Instrumento, amostragem e métricas ficaram prontos; **nenhum rótulo foi produzido**.
+
+### 11.1 Instrumento: léxico v2.0.0 (`config/lexicon_v2.yaml`)
+
+47 padrões em cinco camadas — 7 **estritos** (nomeiam o fenômeno), 22 de **conduta** (um a um os itens do Anexo A
+da Rec. 159/2024), 7 de **sanção/medida** (arts. 77, 80, 81, 321/330 do CPC, ofício à OAB/MP, extinção sem mérito),
+6 **normativos** (Rec. 159, Res. 615, Tema 1198, NUMOPEDE, Rede, art. 286, II) e 5 **vizinhos** (litigância de
+má-fé, abuso do direito de ação, lide temerária, recurso protelatório, demandas repetitivas) —, 4 exclusões de
+falsos amigos medidos na fase 0 e 2 marcadores de negação. Cada padrão tem um exemplo asseverado em
+`tests/test_lexicon.py`, e o mesmo teste prova que o pré-filtro empurrado ao DuckDB nunca descarta um acerto do
+padrão exato (208 testes no total).
+
+### 11.2 Varredura das íntegras (passo 20)
+
+2.975.817 textos lidos em **48,9 min**: 156.780 pré-filtrados (5,27 %), **150.897 candidatos** (5,07 %) e 304.248
+acertos com janela de contexto de ±320 caracteres. As exclusões dispararam 1.120 vezes (978 no maquinário do IRDR,
+142 em "custo de captação de recursos"), confirmando os falsos amigos da §3. 4.431 candidatos têm **todos** os
+acertos dentro de uma negação ("afastada a alegação de…") — são o estrato de validade da anotação, não ocorrências.
+
+Série do **termo estrito** por ano de publicação (documentos):
+
+| 2021 | 2022 | 2023 | 2024 | 2025 | 2026 (parcial) |
+|---|---|---|---|---|---|
+| 49 | 107 | 86 | **642** | **1.580** | 486 |
+
+A quebra em 2024–2025 é o que a §3 previa (Rec. 159/2024 + afetação e julgamento do Tema 1198) e é o primeiro
+resultado mensurável do projeto. 1.554 documentos têm termo estrito **sem** nenhuma conduta do Anexo A e 618 têm
+termo estrito **com** conduta — a diferença entre nomear e fundamentar, que a anotação vai qualificar.
+
+Padrões mais frequentes (documentos): `extincao_sem_merito` 63.260, `representacao_irregular` 33.505,
+`ma_fe_processual_mencao` 21.226 (camada vizinha), `ma_fe_art_80` 13.741, `demandas_repetitivas` 11.223 (vizinha),
+`oficio_oab_ou_mp` 7.625, `ato_atentatorio_art_77` 6.937. **Consequência metodológica:** as camadas de conduta e
+sanção descrevem o Anexo A em linguagem processual comum, então o conjunto de candidatos é um **quadro de leitura**,
+não uma classe. Daí a amostragem estratificada do passo 21 e a ponderação pelo inverso da fração amostral no
+passo 22 — sem isso, qualquer precisão calculada sobre a planilha seria enviesada.
+
+### 11.3 Espelhos de acórdãos (passos 11 e 23)
+
+Baixados e ingeridos os 10 órgãos julgadores: **165.850 espelhos** (mai/2022 a ago/2026), **220.335 citações** de
+jurisprudência e **93.209 referências legislativas** estruturadas, 551,6 MB em 10,9 min (o portal serve ~80 kB/s por
+conexão; 6 downloads em paralelo resolveram). O mesmo léxico sobre ementa + decisão + notas dá **3.003 candidatos**
+(1,81 %), dos quais **171 com termo estrito** — mesma ordem de grandeza da sondagem da fase 0 (0,34 % em um mês da
+Terceira Turma, onde o vocabulário já estava consolidado).
+
+### 11.4 Ponte `numeroRegistro` ↔ CNJ (passo 12)
+
+Da foto do acervo em tramitação (04/09/2026, 77 MB já no repositório, **só campos de ponte**): **333.636 pares**
+distintos, 14 com dígito verificador inválido (registrado, não corrigido), TJSP 68.999, STJ 51.044, TJMG 20.514,
+TJRS 17.352, TJRJ 15.639, TJSC 14.979. Cobertura dos **candidatos** por ano de publicação:
+
+| 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
+|---|---|---|---|---|---|
+| 1,6 % | 1,3 % | 1,4 % | 2,2 % | 7,2 % | 31,7 % |
+
+**Critério de go/no-go "ponte ≥ 70 %": não atendido com o acervo isolado** — e não poderia ser, porque o acervo só
+lista o que está pendente. Ou se autorizam as **atas de distribuição** (1.005 arquivos, ~4,2 GB, cobrem tudo o que
+foi distribuído desde 30/06/2023) ou o desenho B fica restrito a 2025–2026 e o estudo tende ao desenho A. Essa é
+hoje a decisão de maior impacto no artigo.
+
+### 11.5 Amostra de anotação (passo 21)
+
+1.349 documentos, semente 20260922, anos 2021–2025: 600 `strict`, 120 `strict_negated`, 300 `conduct_multi`,
+179 `conduct_sanction`, 150 `control_unflagged` (o denominador da revocação). 135 documentos saem em segunda via,
+cegos, para o κ da §6.3 do protocolo. O estrato `control_flagged` (quase-acertos derrubados por exclusão) saiu
+**vazio**: o passo 20 só passou a gravar esses documentos depois desta varredura, e ele se preenche na próxima
+execução completa — provavelmente a do léxico v2.1, após a revisão do protocolo.
+
+### 11.6 Achado de qualidade dos dados
+
+Os arquivos de metadados publicados **repetem documentos literalmente**: 15.650 linhas (0,45 %), por exemplo o
+`seqDocumento` 190666544 de 25/05/2023, que aparece 17 vezes. Os textos não repetem. Logo o corpus tem
+3.482.383 linhas e **3.466.733 documentos distintos** — é o número distinto que vai ao artigo
+(`\CorpusDocumentsDistinct`), e todo join com os metadados passou a ser feito sobre a versão deduplicada.
+
+### 11.7 Reprodutibilidade
+
+`logs/raw_hashes.tsv` foi unificado em um único formato (`sha256 · bytes · date · licence · source · file`,
+identidade pelo **caminho**, porque os dez órgãos publicam arquivos de mesmo nome) e passou a ser gerado por um só
+módulo (`src/alj/manifest.py`), com teste que falha se algum passo voltar a escrever outro layout. O DAG do `doit`
+está em `dodo.py` (`uv run doit list`), as views do DuckDB são reconstruíveis a partir do Parquet
+(`scripts/19_refresh_duckdb_views.py`) e os números do manuscrito saem de `scripts/80_build_outputs.py` +
+`scripts/90_export_overleaf.py` (8 tabelas booktabs e 30 macros em `outputs/overleaf/`).
+
+### 11.8 O que continua sendo decisão do pesquisador
+
+1. **Desenho A / B / B+C** (§5) — hoje o B depende de 11.4.
+2. Revisão do `docs/annotation_protocol.md` (o apêndice A registra como o código o operacionaliza).
+3. Autorizar (ou não) o download das **atas** (4,2 GB, só campos de ponte na primeira passagem).
+4. A anotação em si: `data/annotations/gold_v1_sample.csv` → `gold_v1.csv` → passo 22 (que já roda em
+   `--self-test`) → tabela §7 preenchida com números reais.

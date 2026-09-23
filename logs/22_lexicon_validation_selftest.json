@@ -1,0 +1,131 @@
+{
+ "run_at": "2026-09-22T22:41:34",
+ "mode": "self-test",
+ "rows": 7,
+ "estimates": {
+  "s3_s2": {
+   "raw": {
+    "tp": 2.0,
+    "fp": 2.0,
+    "fn": 1.0,
+    "tn": 1.0,
+    "precision": 0.5,
+    "recall": 0.6667,
+    "f1": 0.5714
+   },
+   "weighted": {
+    "tp": 1500.0,
+    "fp": 40750.0,
+    "fn": 1000000.0,
+    "tn": 1000000.0,
+    "precision": 0.0355,
+    "recall": 0.0015,
+    "f1": 0.0029
+   },
+   "confirmed": 3
+  },
+  "s3_only": {
+   "raw": {
+    "tp": 1.0,
+    "fp": 3.0,
+    "fn": 1.0,
+    "tn": 1.0,
+    "precision": 0.25,
+    "recall": 0.5,
+    "f1": 0.3333
+   },
+   "weighted": {
+    "tp": 750.0,
+    "fp": 41500.0,
+    "fn": 1000000.0,
+    "tn": 1000000.0,
+    "precision": 0.0178,
+    "recall": 0.0007,
+    "f1": 0.0014
+   },
+   "confirmed": 2
+  }
+ },
+ "per_pattern": [
+  {
+   "pattern_id": "procuracao_irregular",
+   "annotated": 1,
+   "signalled": 1,
+   "precision": 1.0,
+   "suppressed_k_lt_5": false
+  },
+  {
+   "pattern_id": "litigancia_predatoria",
+   "annotated": 3,
+   "signalled": 2,
+   "precision": 0.6667,
+   "suppressed_k_lt_5": false
+  },
+  {
+   "pattern_id": "gratuidade_sem_comprovacao",
+   "annotated": 1,
+   "signalled": 0,
+   "precision": 0.0,
+   "suppressed_k_lt_5": false
+  },
+  {
+   "pattern_id": "peticoes_padronizadas",
+   "annotated": 1,
+   "signalled": 0,
+   "precision": 0.0,
+   "suppressed_k_lt_5": false
+  }
+ ],
+ "grounds": [
+  {
+   "ground": "A11",
+   "documents": 2,
+   "suppressed_k_lt_5": false
+  },
+  {
+   "ground": "A12",
+   "documents": 1,
+   "suppressed_k_lt_5": false
+  },
+  {
+   "ground": "A7",
+   "documents": 1,
+   "suppressed_k_lt_5": false
+  }
+ ],
+ "kappa_example": 0.5556,
+ "go_no_go": [
+  {
+   "criterion": "candidates reviewed",
+   "value": 6,
+   "threshold_go": 1000,
+   "verdict": "no-go"
+  },
+  {
+   "criterion": "confirmed with reasons (S3 or S2)",
+   "value": 3,
+   "threshold_go": 300,
+   "verdict": "no-go",
+   "note": "150-300 -> design A only; < 150 -> descriptive study"
+  },
+  {
+   "criterion": "lexical trigger precision",
+   "value": 0.5,
+   "threshold_go": 0.3,
+   "verdict": "go"
+  },
+  {
+   "criterion": "annotation agreement (Cohen kappa)",
+   "value": 0.81,
+   "threshold_go": 0.75,
+   "verdict": "go"
+  },
+  {
+   "criterion": "bridge to DataJud for confirmed cases distributed >= 2023-06-30",
+   "value": null,
+   "threshold_go": 0.7,
+   "verdict": "not measured yet",
+   "note": "40-70% -> partial design B; < 40% -> design A"
+  }
+ ]
+}

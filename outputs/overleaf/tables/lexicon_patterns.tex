@@ -1,0 +1,57 @@
+\begin{table}[htbp]
+\centering
+\label{tab:lexicon_patterns}
+\begin{tabular}{llll}
+\toprule
+pattern\_id & tier & annex\_a\_items & note \\
+\midrule
+litigancia\_predatoria & strict &  & core term; from 2024 onwards in the íntegras (phase 0 §3) \\
+litigancia\_abusiva & strict &  &  \\
+advocacia\_predatoria & strict &  &  \\
+litigiosidade\_artificial & strict &  &  \\
+demanda\_artificial & strict & 7;9 &  \\
+assedio\_processual & strict & 14 &  \\
+judicializacao\_predatoria & strict &  &  \\
+gratuidade\_sem\_comprovacao & conduct & 1 & Annex A item 1; frequent alone, hence only a conduct-tier signal \\
+foro\_distinto\_domicilio & conduct & 4 &  \\
+documentos\_desatualizados & conduct & 5;12 &  \\
+comprovante\_residencia\_terceiro & conduct & 5 &  \\
+fracionamento & conduct & 6 &  \\
+fracionamento\_perifrase & conduct & 6 &  \\
+peticoes\_padronizadas & conduct & 2;7 &  \\
+causa\_de\_pedir\_generica & conduct & 7;8;9 &  \\
+pedidos\_vagos & conduct & 9;19 &  \\
+demanda\_identica\_sem\_dependencia & conduct & 10 &  \\
+procuracao\_irregular & conduct & 11;18 &  \\
+assinatura\_nao\_qualificada & conduct & 11 &  \\
+representacao\_irregular & conduct & 11 &  \\
+ausencia\_documentos\_essenciais & conduct & 12 &  \\
+concentracao\_poucos\_patronos & conduct & 13 &  \\
+captacao\_indevida & conduct & 13 & phase 0 §3: frequent false positive with financial vocabulary — see exclusion captacao\_financeira \\
+pressao\_beneficio\_extraprocessual & conduct & 15 &  \\
+valor\_causa\_aleatorio & conduct & 16 &  \\
+notificacao\_extrajudicial\_sem\_prova & conduct & 17;18 &  \\
+cessao\_direito\_demandar & conduct & 20 &  \\
+desistencia\_apos\_indeferimento & conduct & 3 &  \\
+ausencia\_pretensao\_resistida & conduct & 17;19 &  \\
+ma\_fe\_art\_80 & sanction &  &  \\
+multa\_ma\_fe\_art\_81 & sanction &  &  \\
+ato\_atentatorio\_art\_77 & sanction &  &  \\
+emenda\_ou\_indeferimento\_inicial & sanction & 12 &  \\
+extincao\_sem\_merito & sanction & 10;12 & the outcome that Annex A items 10 and 12 lead to; `art. 485, I/IV` alone matched any lowercase 'i' \\
+oficio\_oab\_ou\_mp & sanction & 13 &  \\
+apuracao\_indicios & sanction &  &  \\
+rec\_cnj\_159 & normative &  &  \\
+res\_cnj\_615 & normative &  &  \\
+tema\_1198 & normative &  &  \\
+numopede & normative &  &  \\
+rede\_litigancia\_abusiva & normative &  &  \\
+art\_286\_ii & normative & 10 & scoped (?-i:…) so the roman numeral is not matched case-insensitively (valid in Python re and RE2) \\
+ma\_fe\_processual\_mencao & neighbour &  & phase 0 §3: 26–77 hits/day; neighbouring concept, kept for contrast and for the sanction tier \\
+abuso\_direito\_acao & neighbour &  & includes criminal HC reiteration; ambiguous, therefore neighbour and not strict \\
+lide\_temeraria & neighbour &  &  \\
+recurso\_protelatorio & neighbour &  &  \\
+demandas\_repetitivas & neighbour &  & phase 0 §3: pure noise (IRDR machinery). Kept only to measure and subtract it. \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -32,7 +32,8 @@ import duckdb
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from alj.stj_integras import file_sha256, key_of, read_metadata, read_texts  # noqa: E402
+from alj.manifest import record_download  # noqa: E402
+from alj.stj_integras import key_of, read_metadata, read_texts  # noqa: E402
 
 DEFAULT_MIRROR = ROOT.parent / "STJ-Moral-Damages-Jurimetrics" / "data" / "raw" / "stj_integras"
 INTERIM = ROOT / "data" / "interim" / "stj_integras"
@@ -50,16 +51,8 @@ def load_salt() -> bytes:
 
 
 def record_hash(path: Path, url_hint: str, seen: set[str]) -> None:
-    """Append `sha256<TAB>size<TAB>date<TAB>licence<TAB>source<TAB>file` to logs/raw_hashes.tsv (once per file)."""
-    name = path.name
-    if name in seen:
-        return
-    line = "\t".join(
-        [file_sha256(path), str(path.stat().st_size), dt.date.today().isoformat(), "CC-BY (STJ open data)", url_hint, name]
-    )
-    with open(HASHES, "a", encoding="utf-8") as f:
-        f.write(line + "\n")
-    seen.add(name)
+    """One manifest line (sha256, size, date, licence, source, file) per file — see alj.manifest."""
+    record_download(path, url_hint, HASHES, seen=seen, root=ROOT)
 
 
 def main() -> int:

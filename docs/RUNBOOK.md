@@ -26,21 +26,59 @@ Writes: `.venv/` (git-ignored), `uv.lock` (committed). ~2 min. Optional extras: 
 Manual downloads of phase 0 (dictionaries, espelhos sample, CNJ acts, SGT tables) are listed with SHA-256 in `logs/raw_hashes.tsv`.
 Result: `docs/feasibility_report.md`.
 
-## Phase 1 — corpus and annotation (step 10 executed 2026-09-12 from the local mirror; design A/B/B+C and steps 11+ still pending researcher approval)
+## Phase 1 — corpus and annotation (steps 10–12 and 19–22 written and run; the **design choice A / B / B+C**, the review of the annotation protocol, the manual annotation and the 4.2 GB atas download still wait for the researcher)
 
 | # | Planned script | Reads | Writes | Est. time |
 |---|---|---|---|---|
 | 10 | `uv run python scripts/10_ingest_stj_integras.py [--source DIR] [--keys FROM TO] [--limit N] [--force]` (**run 2026-09-12: 3,482,383 documents, 2,975,817 texts, 6.0 GB Parquet, ~10 min**) | local mirror of all daily/monthly ZIP+JSON since 2021-01-04 (11.4 GB, 1.287 keys; default = sibling repo `STJ-Moral-Damages-Jurimetrics/data/raw/stj_integras`, downloaded with SHA-256 on 2026-09-07/08 — nothing is downloaded by this script) | `data/interim/stj_integras/{meta,text}/<key>.parquet` (rapporteur salted-hashed, no party names), `data/alj.duckdb` (views `documents`, `document_text`; table `ingest_log`), `logs/raw_hashes.tsv`, `logs/10_ingest_stj_integras.json` (counts only) | ~1–2 h parse, resumable per key |
-| 11 | `11_ingest_stj_espelhos.py` | 10 órgãos × monthly JSON (0.5 GB) + initial ZIPs (0.5 GB) | `espelhos.parquet`, tables `citations`, `legislation` | 30 min |
-| 12 | `12_ingest_stj_bridge.py` | acervo snapshot + atas since 2023-06-30 (4.2 GB; **bridge fields only**) | `bridge.parquet` (`numeroRegistro` ↔ `numeroUnico`) | 1–2 h |
+| 11 | `uv run python scripts/11_ingest_stj_espelhos.py [--orgaos …] [--workers 6] [--no-download] [--limit-files N]` (**written and run 2026-09-22**) | CKAN `package_show` of the 10 bodies at run time → 52 monthly JSON each (~85 MB per body, ~0.9 GB total; the initial ZIPs are listed but not unpacked) | `data/raw/stj_espelhos/<orgao>/*.json`, `data/interim/espelhos/{espelhos,citations,legislation}/*.parquet`, views `espelhos`, `espelho_citations`, `espelho_legislation`, `logs/11_ingest_stj_espelhos.json` | download-bound: the portal serves ~80 kB/s per connection, so 6 workers ≈ 30–60 min; resumable (a file whose size matches the published size is never fetched again) |
+| 12 | `uv run python scripts/12_ingest_stj_bridge.py [--acervo FILE] [--atas DIR] [--limit N]` (**written and run 2026-09-22 on the acervo snapshot + the single sample ata**) | `data/raw/stj/acervo_processos_tramitando_*.json.gz` (77 MB, already in the repo) and, with `--atas DIR`, a local mirror of the atas since 2023-06-30 (**bridge fields only**; the 4.2 GB download stays a separate authorised step) | `data/interim/bridge/*.parquet` (`numeroRegistro` ↔ `numeroUnico` + CNJ segment/tribunal/DataJud alias), view `bridge`, `logs/12_ingest_stj_bridge.json` (coverage by year) | ~2 min for the acervo |
 | 13 | ~~`13_check_text_coverage.py`~~ folded into step 10: `by_year` / `low_coverage_keys` in `logs/10_ingest_stj_integras.json` (2026 = 27.8 %, see feasibility §10) | — | — | — |
-| 20 | `20_lexicon_candidates.py` | `documents`, `espelhos`, `config/lexicon_v2.yaml` | `candidates.parquet` with context windows | 15 min |
-| 21 | annotation UI / spreadsheet export | `candidates.parquet` | `data/annotations/gold_v1.parquet` (researcher-labelled) | manual |
-| 22 | `22_validate_lexicon.py` | gold set | precision/recall/F1 per pattern → `logs/22_lexicon_validation.json` | 1 min |
-| 30 | `30_fetch_datajud_trajectories.py` | bridge + DataJud (STJ + origin) | `trajectories.parquet`, table `movements` | hours, background |
+| 19 | `uv run python scripts/19_refresh_duckdb_views.py [--only view …]` | all Parquet directories | rebuilds every view of `data/alj.duckdb` (the database is a derived artefact; run this after a step whose log says `views_created: false`, i.e. the file was locked by another step) | seconds |
+| 20 | `uv run python scripts/20_lexicon_candidates.py [--keys FROM TO] [--sample N] [--force]` (**written and run 2026-09-22**) | `data/interim/stj_integras/text/*.parquet` + `config/lexicon_v2.yaml` (v2.0.0, 47 patterns; 36 in the candidate tiers) | `data/interim/candidates/{docs,hits}/<key>.parquet` (one row per candidate document; one row per hit with a ±320-char context window, the exclusion that fired and the negation hint), views `candidates`, `candidate_hits`, table `lexicon_run_log`, `logs/20_lexicon_candidates.json` | ~1.8 s per publication day (≈ 40 min for the 1.285 days), resumable per key |
+| 21 | `uv run python scripts/21_export_annotation_sample.py [--seed N] [--size NAME=N] [--max-year 2025]` (**written and run 2026-09-22**) | the candidate Parquet + the íntegras metadata (reads Parquet directly, so it never locks the database) | `data/annotations/gold_v1_sample.csv` (stratified worksheet with empty label columns), `gold_v1_reannotation.csv` (10 %, hints stripped, for κ), `README_annotation.md`, `logs/21_export_annotation_sample.json` | ~1 min |
+| 21b | **researcher's manual review** — fill `label1_status` (S3/S2/S1/S0/NA), `label2_grounds` (A1…A20/T1198/MAFE), `label3_measure` (M0…M5), `label4_domain` (D1…D5) and `justification`, per `docs/annotation_protocol.md` §§2–6; save as `data/annotations/gold_v1.csv` (git-ignored) | the worksheet | the gold set | days, by hand |
+| 22 | `uv run python scripts/22_validate_lexicon.py [--gold FILE] [--self-test]` (**written 2026-09-22; `--self-test` passes, real run waits for the gold set**) | `data/annotations/gold_v1.csv` (+ the blind round, if any), `logs/21_…json` for the inverse-sampling weights | precision/recall/F1 raw **and** weighted back to the population, per-pattern precision (k ≥ 5), Cohen's κ and the §7 go/no-go verdicts → `logs/22_lexicon_validation.json` | 1 min |
+| 23 | `uv run python scripts/23_lexicon_espelhos.py [--orgaos …]` (**written 2026-09-22**) | `data/interim/espelhos/espelhos/*.parquet` (ementa + decisão + notas) and the same lexicon | `data/interim/candidates_espelhos/{docs,hits}/*.parquet`, views `espelho_candidates`, `espelho_candidate_hits`, `logs/23_lexicon_espelhos.json` | ~2 min; needs step 11 |
+| 30 | `30_fetch_datajud_trajectories.py` (not written) | bridge + DataJud (STJ + origin) | `trajectories.parquet`, table `movements` | hours, background |
+
+### Running the whole thing
+
+`dodo.py` (added 2026-09-22) wires the steps as a `doit` DAG:
+
+```bash
+uv run doit list         # every task with its one-line description
+uv run doit              # candidates -> annotation_sample -> outputs -> overleaf (no network, no manual step)
+uv run doit espelhos     # the download task must be asked for by name
+```
+
+`doit` never starts network traffic on its own (`espelhos` is outside the default tasks) and `validate` skips
+itself with a message while `data/annotations/gold_v1.csv` does not exist.
 
 Go/no-go review after step 22 (criteria in `docs/feasibility_report.md` §7).
 
+### Why step 20 flags ~4 % of the corpus
+
+The *conduct* and *sanction* tiers describe Annex A conducts in ordinary procedural language ("ausência de
+documentos essenciais", "extinto sem resolução do mérito"), so they match far more decisions than the strict terms
+("litigância predatória"). That is by design: the strict terms alone would only find the phenomenon after the
+vocabulary existed (2024+). The candidate set is therefore a **reading frame**, not a class; the gold set is drawn
+from it by stratified sampling in step 21, and step 22 weights the estimates back to the population.
+
 ## Export to the manuscript (every phase)
 
-`uv run python scripts/90_export_overleaf.py` (added 2026-09-12; `src/alj/export_overleaf.py`) → `outputs/overleaf/tables/*.tex` (booktabs), `outputs/overleaf/figures/*.{pdf,png}`, `outputs/overleaf/numbers.tex` (one `\newcommand` per number cited in the article). Copy the folder to Overleaf; never type numbers by hand.
+```bash
+uv run python scripts/80_build_outputs.py      # logs/*.json + the lexicon YAML -> outputs/tables/*.csv + outputs/numbers.json
+uv run python scripts/90_export_overleaf.py    # -> outputs/overleaf/{tables/*.tex, figures/, numbers.tex}
+```
+
+Step 80 (added 2026-09-22) reads only the JSON logs written by the steps that measured each value, suppresses
+cells with fewer than 5 documents and writes no table for a log that does not exist yet. Step 90 (2026-09-12;
+`src/alj/export_overleaf.py`) turns the CSVs into booktabs tables and the numbers into one `\newcommand` each.
+Copy `outputs/overleaf/` to Overleaf; never type a number by hand (policy §13).
+
+## Phase 1 status (2026-09-22)
+
+Done: 10, 11, 12 (acervo), 19, 20, 21, 80, 90 — plus `22 --self-test`. Waiting on the researcher: the design
+choice (A / B / B+C), the review of `docs/annotation_protocol.md`, the manual annotation (step 21b) and the
+authorisation to download the 4.2 GB of atas (the historical half of the bridge).

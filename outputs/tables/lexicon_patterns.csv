@@ -1,0 +1,48 @@
+pattern_id,tier,annex_a_items,note
+litigancia_predatoria,strict,,core term; from 2024 onwards in the íntegras (phase 0 §3)
+litigancia_abusiva,strict,,
+advocacia_predatoria,strict,,
+litigiosidade_artificial,strict,,
+demanda_artificial,strict,7;9,
+assedio_processual,strict,14,
+judicializacao_predatoria,strict,,
+gratuidade_sem_comprovacao,conduct,1,"Annex A item 1; frequent alone, hence only a conduct-tier signal"
+foro_distinto_domicilio,conduct,4,
+documentos_desatualizados,conduct,5;12,
+comprovante_residencia_terceiro,conduct,5,
+fracionamento,conduct,6,
+fracionamento_perifrase,conduct,6,
+peticoes_padronizadas,conduct,2;7,
+causa_de_pedir_generica,conduct,7;8;9,
+pedidos_vagos,conduct,9;19,
+demanda_identica_sem_dependencia,conduct,10,
+procuracao_irregular,conduct,11;18,
+assinatura_nao_qualificada,conduct,11,
+representacao_irregular,conduct,11,
+ausencia_documentos_essenciais,conduct,12,
+concentracao_poucos_patronos,conduct,13,
+captacao_indevida,conduct,13,phase 0 §3: frequent false positive with financial vocabulary — see exclusion captacao_financeira
+pressao_beneficio_extraprocessual,conduct,15,
+valor_causa_aleatorio,conduct,16,
+notificacao_extrajudicial_sem_prova,conduct,17;18,
+cessao_direito_demandar,conduct,20,
+desistencia_apos_indeferimento,conduct,3,
+ausencia_pretensao_resistida,conduct,17;19,
+ma_fe_art_80,sanction,,
+multa_ma_fe_art_81,sanction,,
+ato_atentatorio_art_77,sanction,,
+emenda_ou_indeferimento_inicial,sanction,12,
+extincao_sem_merito,sanction,10;12,"the outcome that Annex A items 10 and 12 lead to; `art. 485, I/IV` alone matched any lowercase 'i'"
+oficio_oab_ou_mp,sanction,13,
+apuracao_indicios,sanction,,
+rec_cnj_159,normative,,
+res_cnj_615,normative,,
+tema_1198,normative,,
+numopede,normative,,
+rede_litigancia_abusiva,normative,,
+art_286_ii,normative,10,scoped (?-i:…) so the roman numeral is not matched case-insensitively (valid in Python re and RE2)
+ma_fe_processual_mencao,neighbour,,"phase 0 §3: 26–77 hits/day; neighbouring concept, kept for contrast and for the sanction tier"
+abuso_direito_acao,neighbour,,"includes criminal HC reiteration; ambiguous, therefore neighbour and not strict"
+lide_temeraria,neighbour,,
+recurso_protelatorio,neighbour,,
+demandas_repetitivas,neighbour,,phase 0 §3: pure noise (IRDR machinery). Kept only to measure and subtract it.

@@ -2,7 +2,13 @@
 
 *An Explainable and Human-Centered Jurimetric Framework* — research repository (Python + SQL).
 
-**Status:** phase 0 (feasibility) completed on 2026-09-05. See [docs/feasibility_report.md](docs/feasibility_report.md) (in Portuguese, the decision document) before anything else. No model, label or result exists yet.
+**Status (2026-09-22):** phase 0 (feasibility) closed on 2026-09-05; phase 1 corpus work runs end to end —
+the íntegras (3.48 M documents), the espelhos de acórdãos (165.8 k, with their citations and legislative
+references), the `numeroRegistro` ↔ CNJ bridge from the acervo snapshot, the versioned lexicon v2 and the
+stratified annotation worksheet. **No label, no model and no result exists yet**: the gold set is annotated by
+the researcher (`docs/annotation_protocol.md`), and the study design (A / B / B+C) is still his decision.
+Read [docs/feasibility_report.md](docs/feasibility_report.md) (Portuguese, the decision document) and
+[docs/RESUME_HERE.md](docs/RESUME_HERE.md) before anything else.
 
 ## What this project is
 
@@ -21,9 +27,10 @@ A jurimetric study of Brazilian judicial decisions that *explicitly* recognise i
 ## Layout
 
 ```
-scripts/        numbered, reproducible steps (00–02 = feasibility probes; 10+ = phase 1, planned)
-src/alj/        shared helpers (CNJ number parsing, DataJud date handling) with unit tests in tests/
-config/         versioned measurement instruments (lexicons, model configs) — phase 1
+scripts/        numbered, reproducible steps (00–02 feasibility probes; 10–23 phase 1; 80/90 manuscript export)
+dodo.py         doit DAG wiring the steps (`uv run doit list`)
+src/alj/        shared modules: cnj, stj_integras, espelhos, bridge, lexicon, annotation, validation, db, manifest
+config/         versioned measurement instruments — `lexicon_v2.yaml` (47 patterns in five tiers)
 article/        LaTeX skeleton for Overleaf (author writes all prose); tables/figures/numbers.tex are generated
 outputs/        pipeline exports for the manuscript (outputs/overleaf/), git-ignored except README files
 data/raw/       downloads (git-ignored; SHA-256 in logs/raw_hashes.tsv)
@@ -50,7 +57,10 @@ python -m uv run python scripts/01_probe_datajud.py      # DataJud fields + muni
 python -m uv run python scripts/02_probe_bridge.py       # STJ -> CNJ number -> DataJud linkage test
 ```
 
-Phase 1 will add `uv` (environment + lockfile, interpreter version pinned, `pip freeze` copy in `logs/`), a `doit` DAG, DuckDB schema, unit tests, `docs/RUNBOOK.md` (numbered steps: what each reads, writes, how long it takes), a download manifest (URL, date, SHA-256, licence), `CITATION.cff`, `LICENSE` (MIT for code, CC-BY for text) and a Zenodo release before submission.
+Those reproducibility artefacts now exist: `uv` environment + lockfile, the `doit` DAG in `dodo.py`, DuckDB
+views rebuilt from Parquet by `scripts/19_refresh_duckdb_views.py`, 200+ unit tests, `docs/RUNBOOK.md`, the
+download manifest `logs/raw_hashes.tsv` (sha256, bytes, date, licence, source, file), `CITATION.cff` and
+`LICENSE`. The Zenodo release comes before submission.
 
 ## Reproducibility and AI-use policy
 
@@ -60,7 +70,7 @@ The portfolio-wide policy lives in [docs/AI_POLICY_AND_REPRODUCIBILITY.md](docs/
 - Only local models unless the researcher authorises a paid API in writing.
 - Patterns are reported in aggregate (tribunal, class, subject, period). No lawyer, firm or party is ever labelled nominally.
 - An export step will write `outputs/overleaf/` (booktabs tables, PDF/PNG figures, `numbers.tex` with one `\newcommand` per number cited) so that every figure in the manuscript traces back to code.
-- Claude Code writes code, tests, SQL, configuration, documentation and runbooks. Whether it may also draft manuscript prose, and whether the manuscript is Quarto or an Overleaf LaTeX skeleton, is a pending decision of the researcher (see feasibility report §8).
+- Claude Code writes code, tests, SQL, configuration, documentation and runbooks, never manuscript prose (CLAUDE.md §11). The manuscript is the Overleaf LaTeX skeleton in `article/`; numbers reach it only through `scripts/80_build_outputs.py` + `scripts/90_export_overleaf.py`.
 
 ## Safeguards (non-negotiable)
 

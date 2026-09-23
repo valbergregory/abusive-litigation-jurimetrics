@@ -36,3 +36,6 @@ Master copy: `docs/AI_POLICY_AND_REPRODUCIBILITY.md` (identical across the five 
 - Confirmed fields: `docs/data_dictionary_confirmed.md`.
 - Probes: `scripts/00_probe_stj_sample.py`, `01_probe_datajud.py`, `02_probe_bridge.py`; results in `logs/`.
 - Normative texts (extracted): `data/raw/cnj/*.txt` (Rec. 159/2024 with annexes A–C, Res. 615/2025, Rede de Litigância Abusiva page, Berna news).
+- Measurement instrument: `config/lexicon_v2.yaml` (47 patterns in five tiers: 7 strict, 22 conduct, 7 sanction, 6 normative, 5 neighbour; 4 exclusions, 2 negation markers) + `src/alj/lexicon.py`; every pattern has an example asserted in `tests/test_lexicon.py`.
+- Phase-1 modules: `src/alj/{lexicon,annotation,validation,bridge,espelhos,db}.py`; scripts 11 (espelhos), 12 (bridge), 19 (refresh views), 20 (candidates), 21 (annotation sample), 22 (validation), 80 (outputs), 90 (Overleaf).
+- Annotation: worksheet and strata in `docs/annotation_protocol.md` (appendix A); files in `data/annotations/` are git-ignored because they carry decision snippets.
