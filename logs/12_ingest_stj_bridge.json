@@ -1,229 +1,6222 @@
 {
- "run_at": "2026-09-22T23:10:11",
+ "run_at": "2026-09-23T11:49:36",
  "files": [
   {
    "source": "acervo",
    "file": "acervo_processos_tramitando_20260904.json.gz",
-   "rows": 333629,
-   "seconds": 9.4,
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230630.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230801.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230802.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230803.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230804.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230805.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230806.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230807.json",
+   "rows": 2730,
+   "seconds": 0.1,
    "skipped": false
   },
   {
    "source": "ata",
-   "file": "atas_ata20250101.json",
-   "rows": 7,
-   "seconds": 0.0,
-   "skipped": false
+   "file": "ata20230808.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230809.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230810.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230812.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230813.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230814.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230815.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230816.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230817.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230818.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230820.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230821.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230822.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230823.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230824.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230825.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230826.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230827.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230828.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230829.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230830.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230831.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230901.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230902.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230903.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230904.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230905.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230906.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230907.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230908.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230909.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230910.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230911.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230912.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230913.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230914.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230915.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230916.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230917.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230918.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230919.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230920.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230921.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230922.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230923.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230924.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230925.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230926.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230927.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230928.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230929.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20230930.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231001.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231002.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231003.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231004.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231005.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231006.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231007.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231008.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231009.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231010.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231011.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231012.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231013.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231014.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231015.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231016.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231017.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231018.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231019.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231020.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231021.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231022.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231023.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231024.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231025.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231026.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231027.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231028.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231029.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231030.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231031.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231101.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231102.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231103.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231104.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231105.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231106.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231107.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231108.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231109.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231110.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231111.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231112.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231113.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231114.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231115.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231116.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231117.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231118.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231119.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231120.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231121.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231122.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231123.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231124.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231125.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231126.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231127.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231128.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231129.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231130.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231201.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231202.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231203.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231204.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231205.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231206.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231207.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231208.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231209.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231210.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231211.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231212.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231213.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231214.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231215.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231216.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231217.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231218.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231219.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231220.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231221.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231222.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231223.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231224.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231225.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20231226.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240108.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240109.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240110.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240111.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240112.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240113.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240114.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240115.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240116.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240117.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240118.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240119.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240120.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240121.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240122.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240123.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240124.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240125.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240126.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240127.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240129.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240130.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240131.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240201.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240202.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240203.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240204.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240205.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240206.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240207.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240208.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240209.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240210.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240211.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240212.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240213.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240214.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240215.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240216.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240217.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240218.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240219.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240220.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240221.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240222.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240223.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240224.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240225.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240226.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240227.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240228.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240229.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240301.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240302.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240303.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240304.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240305.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240306.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240307.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240308.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240309.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240310.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240311.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240312.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240313.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240314.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240315.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240316.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240317.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240318.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240319.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240320.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240321.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240322.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240401.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240402.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240403.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240404.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240405.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240406.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240407.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240408.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240409.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240410.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240411.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240412.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240413.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240414.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240415.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240416.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240417.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240418.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240419.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240420.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240421.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240422.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240423.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240424.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240425.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240426.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240427.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240428.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240429.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240430.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240501.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240502.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240503.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240504.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240505.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240506.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240507.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240508.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240509.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240510.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240511.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240512.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240513.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240514.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240515.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240516.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240517.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240518.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240519.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240520.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240521.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240522.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240523.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240524.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240525.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240526.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240527.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240528.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240529.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240530.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240531.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240601.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240602.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240603.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240604.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240605.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240606.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240607.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240608.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240609.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240610.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240611.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240612.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240613.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240614.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240615.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240617.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240618.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240619.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240620.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240621.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240622.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240623.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240624.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240625.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240626.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240627.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240628.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240629.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240630.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240701.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240702.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240703.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240704.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240705.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240706.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240707.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240708.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240709.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240710.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240711.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240712.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240713.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240714.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240715.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240716.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240717.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240718.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240719.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240720.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240721.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240722.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240723.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240724.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240725.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240726.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240727.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240728.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240729.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240730.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240731.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240801.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240802.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240803.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240804.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240805.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240806.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240807.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240808.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240809.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240810.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240811.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240812.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240813.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240814.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240815.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240816.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240817.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240818.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240819.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240820.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240821.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240822.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240823.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240824.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240825.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240826.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240827.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240828.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240829.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240830.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240831.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240901.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240902.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240903.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240904.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240905.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240906.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240907.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240908.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240909.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240910.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240911.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240912.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240913.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240914.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240915.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240916.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240917.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240918.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240919.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240920.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240921.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240922.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240923.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240924.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240925.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240926.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240927.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240928.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240929.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20240930.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241001.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241002.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241003.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241004.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241005.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241006.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241007.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241008.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241009.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241010.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241011.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241012.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241013.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241014.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241015.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241016.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241017.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241018.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241019.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241020.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241021.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241022.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241023.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241024.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241025.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241026.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241027.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241028.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241029.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241030.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241031.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241101.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241102.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241103.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241104.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241105.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241106.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241107.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241108.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241109.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241110.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241111.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241112.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241113.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241114.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241115.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241116.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241117.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241118.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241119.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241120.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241121.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241122.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241123.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241124.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241125.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241126.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241127.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241128.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241129.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241130.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241201.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241202.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241203.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241204.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241205.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241206.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241207.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241208.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241209.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241210.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241211.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241212.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241213.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241214.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241215.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241216.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241217.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241218.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241219.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241220.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241221.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241222.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241223.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241224.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241225.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241226.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241227.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241228.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241229.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241230.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20241231.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250101.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250102.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250103.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250104.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250105.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250106.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250107.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250108.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250109.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250110.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250111.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250112.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250113.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250114.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250115.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250116.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250117.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250119.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250120.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250121.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250122.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250123.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250124.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250126.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250127.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250128.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250129.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250130.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250131.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250201.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250202.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250203.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250204.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250205.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250206.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250207.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250208.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250209.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250210.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250211.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250212.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250213.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250214.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250215.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250216.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250217.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250218.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250219.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250220.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250221.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250222.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250223.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250224.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250225.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250226.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250227.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250228.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250301.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250302.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250303.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250304.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250305.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250306.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250307.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250308.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250309.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250310.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250311.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250312.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250313.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250314.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250315.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250316.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250317.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250318.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250319.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250320.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250321.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250322.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250323.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250324.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250325.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250326.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250327.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250328.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250329.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250330.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250331.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250401.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250402.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250403.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250404.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250405.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250406.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250407.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250408.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250409.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250410.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250411.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250412.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250413.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250414.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250415.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250416.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250417.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250418.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250419.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250420.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250421.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250422.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250423.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250424.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250425.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250426.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250427.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250428.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250429.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250430.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250501.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250502.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250503.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250504.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250505.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250506.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250507.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250508.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250509.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250510.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250511.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250512.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250513.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250514.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250515.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250516.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250517.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250518.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250519.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250520.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250521.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250522.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250523.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250524.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250525.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250526.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250527.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250528.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250529.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250530.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250531.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250601.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250602.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250603.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250618.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250619.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250620.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250621.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250622.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250623.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250624.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250625.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250626.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250627.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250628.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250629.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250630.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250701.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250702.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250703.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250704.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250705.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250706.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250707.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250708.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250709.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250710.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250711.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250712.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250713.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250714.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250715.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250716.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250717.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250718.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250719.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250720.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250721.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250722.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250723.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250724.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250725.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250726.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250727.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250728.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250729.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250730.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250731.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250801.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250803.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250804.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250805.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250806.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250807.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250808.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250809.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250810.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250811.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250812.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250813.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250814.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250815.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250816.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250817.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250818.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250819.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250820.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250821.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250822.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250823.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250824.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250825.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250826.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250827.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250828.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250829.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250830.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250831.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250901.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250902.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250903.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250904.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250905.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250906.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250907.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250908.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250909.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250910.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250911.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250912.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250913.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250914.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250915.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250916.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250917.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250918.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250919.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250920.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250921.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250922.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250923.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250924.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250925.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250926.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250927.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250929.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20250930.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251001.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251002.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251003.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251004.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251005.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251006.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251007.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251008.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251009.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251013.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251014.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251015.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251016.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251017.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251018.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251019.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251020.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251021.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251022.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251031.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251101.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251102.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251103.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251104.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251105.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251106.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251107.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251108.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251109.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251110.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251111.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251112.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251113.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251114.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251115.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251116.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251117.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251118.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251119.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251120.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251121.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251122.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251123.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251124.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251125.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251126.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251127.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251209.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251210.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251211.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251212.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251213.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251214.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251215.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251216.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251217.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251218.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251219.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251220.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251221.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251222.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251223.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251224.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251225.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251226.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251227.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251228.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251229.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20251230.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260115.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260116.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260117.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260119.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260120.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260121.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260122.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260123.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260210.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260211.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260212.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260213.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260214.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260215.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260216.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260217.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260218.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260219.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260220.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260221.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260224.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260225.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260226.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260227.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260228.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260312.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260313.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260314.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260315.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260316.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260317.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260318.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260319.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260320.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260323.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260324.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260325.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260326.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260327.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260328.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260329.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260330.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260331.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260401.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260402.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260403.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260404.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260405.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260406.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260407.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260408.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260409.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260410.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260411.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260412.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260413.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260414.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260415.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260416.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260417.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260418.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260419.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260422.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260423.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260424.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260425.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260426.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260427.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260428.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260429.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260430.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260501.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260502.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260503.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260504.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260505.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260506.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260507.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260508.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260509.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260510.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260511.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260512.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260513.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260514.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260520.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260521.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260522.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260523.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260524.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260525.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260526.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260527.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260528.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260529.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260530.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260531.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260601.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260602.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260603.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260604.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260605.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260606.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260607.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260608.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260609.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260610.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260611.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260612.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260613.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260614.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260616.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260617.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260618.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260619.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260620.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260621.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260622.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260623.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260624.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260625.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260626.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260701.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260702.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260703.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260704.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260705.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260706.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260707.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260708.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260709.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260710.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260711.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260715.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260716.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260717.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260718.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260719.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260720.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260721.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260722.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260723.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260724.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260725.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260727.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260728.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260729.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260730.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260731.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260801.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260802.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260803.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260804.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260805.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260806.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260807.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260808.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260809.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260810.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260811.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260812.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260813.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260814.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260815.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260816.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260817.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260818.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260819.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260820.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260821.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260822.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260823.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260824.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260825.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260903.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260904.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260905.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260906.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260907.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260908.json",
+   "rows": null,
+   "skipped": true
+  },
+  {
+   "source": "ata",
+   "file": "ata20260909.json",
+   "rows": null,
+   "skipped": true
   }
  ],
- "bridge_rows": 333636,
- "distinct_numero_registro": 333636,
- "cnj_check_digit_invalid": 14,
+ "bridge_rows": 2543847,
+ "distinct_numero_registro": 1604423,
+ "cnj_check_digit_invalid": 55,
  "by_tribunal_top25_k_ge_5": [
   {
    "tribunal": "8.26",
    "datajud_alias": "api_publica_tjsp",
-   "n": 68999
+   "n": 545574
   },
   {
    "tribunal": "3.00",
    "datajud_alias": "api_publica_stj",
-   "n": 51044
-  },
-  {
-   "tribunal": "8.13",
-   "datajud_alias": "api_publica_tjmg",
-   "n": 20514
+   "n": 463005
   },
   {
    "tribunal": "8.21",
    "datajud_alias": "api_publica_tjrs",
-   "n": 17352
+   "n": 146277
   },
   {
-   "tribunal": "8.19",
-   "datajud_alias": "api_publica_tjrj",
-   "n": 15639
+   "tribunal": "8.13",
+   "datajud_alias": "api_publica_tjmg",
+   "n": 140161
   },
   {
    "tribunal": "8.24",
    "datajud_alias": "api_publica_tjsc",
-   "n": 14979
+   "n": 115750
   },
   {
-   "tribunal": "8.09",
-   "datajud_alias": "api_publica_tjgo",
-   "n": 14227
+   "tribunal": "8.19",
+   "datajud_alias": "api_publica_tjrj",
+   "n": 111086
   },
   {
    "tribunal": "8.16",
    "datajud_alias": "api_publica_tjpr",
-   "n": 13106
-  },
-  {
-   "tribunal": "4.01",
-   "datajud_alias": "api_publica_trf1",
-   "n": 12568
+   "n": 101796
   },
   {
    "tribunal": "4.04",
    "datajud_alias": "api_publica_trf4",
-   "n": 12001
+   "n": 87989
   },
   {
-   "tribunal": "8.07",
-   "datajud_alias": "api_publica_tjdft",
-   "n": 10583
+   "tribunal": "8.09",
+   "datajud_alias": "api_publica_tjgo",
+   "n": 87527
   },
   {
    "tribunal": "4.03",
    "datajud_alias": "api_publica_trf3",
-   "n": 10571
+   "n": 76401
   },
   {
-   "tribunal": "8.11",
-   "datajud_alias": "api_publica_tjmt",
-   "n": 8484
+   "tribunal": "8.07",
+   "datajud_alias": "api_publica_tjdft",
+   "n": 71725
+  },
+  {
+   "tribunal": "4.01",
+   "datajud_alias": "api_publica_trf1",
+   "n": 59521
   },
   {
    "tribunal": "8.05",
    "datajud_alias": "api_publica_tjba",
-   "n": 6146
+   "n": 51232
   },
   {
-   "tribunal": "4.02",
-   "datajud_alias": "api_publica_trf2",
-   "n": 6070
-  },
-  {
-   "tribunal": "8.06",
-   "datajud_alias": "api_publica_tjce",
-   "n": 5018
+   "tribunal": "8.11",
+   "datajud_alias": "api_publica_tjmt",
+   "n": 49090
   },
   {
    "tribunal": "8.12",
    "datajud_alias": "api_publica_tjms",
-   "n": 4839
+   "n": 45923
   },
   {
-   "tribunal": "4.05",
-   "datajud_alias": "api_publica_trf5",
-   "n": 4336
-  },
-  {
-   "tribunal": "8.02",
-   "datajud_alias": "api_publica_tjal",
-   "n": 4298
+   "tribunal": "4.02",
+   "datajud_alias": "api_publica_trf2",
+   "n": 38220
   },
   {
    "tribunal": "8.17",
    "datajud_alias": "api_publica_tjpe",
-   "n": 4027
+   "n": 35277
   },
   {
-   "tribunal": "8.08",
-   "datajud_alias": "api_publica_tjes",
-   "n": 3443
+   "tribunal": "8.06",
+   "datajud_alias": "api_publica_tjce",
+   "n": 34335
   },
   {
-   "tribunal": "8.14",
-   "datajud_alias": "api_publica_tjpa",
-   "n": 3368
+   "tribunal": "4.05",
+   "datajud_alias": "api_publica_trf5",
+   "n": 33044
+  },
+  {
+   "tribunal": "8.02",
+   "datajud_alias": "api_publica_tjal",
+   "n": 27028
   },
   {
    "tribunal": "8.10",
    "datajud_alias": "api_publica_tjma",
-   "n": 2991
+   "n": 26602
+  },
+  {
+   "tribunal": "8.15",
+   "datajud_alias": "api_publica_tjpb",
+   "n": 24982
   },
   {
    "tribunal": "8.20",
    "datajud_alias": "api_publica_tjrn",
-   "n": 2824
+   "n": 23218
   },
   {
-   "tribunal": "8.18",
-   "datajud_alias": "api_publica_tjpi",
-   "n": 2620
+   "tribunal": "8.08",
+   "datajud_alias": "api_publica_tjes",
+   "n": 22324
+  },
+  {
+   "tribunal": "8.25",
+   "datajud_alias": "api_publica_tjse",
+   "n": 22317
   }
  ],
  "document_coverage_by_year": [
   {
    "year": "2021",
    "documents": 533230,
-   "bridged": 3037,
-   "pct": 0.6
+   "bridged": 6825,
+   "pct": 1.3
   },
   {
    "year": "2022",
    "documents": 560137,
-   "bridged": 3701,
-   "pct": 0.7
+   "bridged": 13286,
+   "pct": 2.4
   },
   {
    "year": "2023",
    "documents": 559212,
-   "bridged": 5872,
-   "pct": 1.1
+   "bridged": 171664,
+   "pct": 30.7
   },
   {
    "year": "2024",
    "documents": 640938,
-   "bridged": 10490,
-   "pct": 1.6
+   "bridged": 586659,
+   "pct": 91.5
   },
   {
    "year": "2025",
    "documents": 705287,
-   "bridged": 36871,
-   "pct": 5.2
+   "bridged": 655950,
+   "pct": 93.0
   },
   {
    "year": "2026",
    "documents": 483579,
-   "bridged": 179038,
-   "pct": 37.0
+   "bridged": 436863,
+   "pct": 90.3
   }
  ],
  "candidate_coverage_by_year": [
   {
    "year": "2021",
-   "candidates": 21437,
-   "bridged": 346,
-   "pct": 1.6
+   "candidates": 23350,
+   "bridged": 527,
+   "pct": 2.3
   },
   {
    "year": "2022",
-   "candidates": 24444,
-   "bridged": 309,
-   "pct": 1.3
+   "candidates": 26177,
+   "bridged": 992,
+   "pct": 3.8
   },
   {
    "year": "2023",
-   "candidates": 31068,
-   "bridged": 427,
-   "pct": 1.4
+   "candidates": 32296,
+   "bridged": 9323,
+   "pct": 28.9
   },
   {
    "year": "2024",
-   "candidates": 35785,
-   "bridged": 788,
-   "pct": 2.2
+   "candidates": 37044,
+   "bridged": 33789,
+   "pct": 91.2
   },
   {
    "year": "2025",
-   "candidates": 34066,
-   "bridged": 2449,
-   "pct": 7.2
+   "candidates": 35566,
+   "bridged": 33008,
+   "pct": 92.8
   },
   {
    "year": "2026",
-   "candidates": 7282,
-   "bridged": 2306,
-   "pct": 31.7
+   "candidates": 7586,
+   "bridged": 6720,
+   "pct": 88.6
   }
  ],
- "atas_ingested": 1,
+ "atas_ingested": 1000,
  "note": "acervo is a snapshot of pending cases: low coverage for older years is expected and is why the atas de distribuição (2023-06-30 onwards) are needed for the historical bridge",
  "views_created": true,
- "minutes": 0.2
+ "minutes": 0.0
 }

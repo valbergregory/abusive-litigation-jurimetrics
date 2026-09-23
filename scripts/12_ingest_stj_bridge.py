@@ -80,7 +80,8 @@ def main(argv: list[str] | None = None) -> int:
     else:
         print(f"no acervo snapshot in {RAW} — pass --acervo FILE", file=sys.stderr)
     if args.atas:
-        atas = sorted(Path(args.atas).glob("ata*.json")) + sorted(Path(args.atas).glob("ata*.json.gz"))
+        folder = Path(args.atas)
+        atas = sorted({p for pat in ("ata*.json", "ata*.json.gz", "ata*[0-9]") for p in folder.glob(pat)})
         todo.extend(("ata", p) for p in atas)
         print(f"atas: {len(atas)} file(s) in {args.atas}")
     else:
