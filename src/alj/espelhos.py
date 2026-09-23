@@ -22,7 +22,11 @@ from __future__ import annotations
 import ast
 import datetime as dt
 import hashlib
+import io
+import json
 import re
+import zipfile
+from collections.abc import Iterable, Iterator
 from pathlib import Path
 
 import polars as pl
@@ -231,18 +235,16 @@ def espelho_row(record: dict, *, orgao_slug: str, source_file: str, salt: bytes)
     }
 
 
-def read_espelhos(
-    path: str | Path, *, orgao_slug: str, salt: bytes, limit: int | None = None
+def _frames(
+    records: Iterable[dict], *, orgao_slug: str, source_file: str, salt: bytes, limit: int | None = None
 ) -> tuple[pl.DataFrame, pl.DataFrame, pl.DataFrame]:
-    """Read one published file into ``(espelhos, citations, legislation)`` frames."""
-    path = Path(path)
     rows: list[dict] = []
     citations: list[dict] = []
     legislation: list[dict] = []
-    for n, record in enumerate(iter_json_records(path)):
+    for n, record in enumerate(records):
         if limit is not None and n >= limit:
             break
-        row = espelho_row(record, orgao_slug=orgao_slug, source_file=path.name, salt=salt)
+        row = espelho_row(record, orgao_slug=orgao_slug, source_file=source_file, salt=salt)
         if row is None:
             continue
         rows.append(row)
@@ -256,3 +258,34 @@ def read_espelhos(
         pl.DataFrame(citations, schema=CITATION_SCHEMA) if citations else pl.DataFrame(schema=CITATION_SCHEMA),
         pl.DataFrame(legislation, schema=LEGISLATION_SCHEMA) if legislation else pl.DataFrame(schema=LEGISLATION_SCHEMA),
     )
+
+
+def read_espelhos(
+    path: str | Path, *, orgao_slug: str, salt: bytes, limit: int | None = None
+) -> tuple[pl.DataFrame, pl.DataFrame, pl.DataFrame]:
+    """Read one published JSON file into ``(espelhos, citations, legislation)`` frames."""
+    path = Path(path)
+    return _frames(iter_json_records(path), orgao_slug=orgao_slug, source_file=path.name, salt=salt, limit=limit)
+
+
+def iter_zip_records(path: str | Path) -> Iterator[dict]:
+    """Yield the records of every JSON member of a published ZIP, without extracting it to disk."""
+    with zipfile.ZipFile(path) as zf:
+        for name in zf.namelist():
+            if not name.lower().endswith(".json"):
+                continue
+            with zf.open(name) as fh:
+                try:
+                    data = json.load(io.TextIOWrapper(fh, encoding="utf-8"))
+                except (json.JSONDecodeError, UnicodeDecodeError):
+                    continue
+            yield from (r for r in (data if isinstance(data, list) else [data]) if isinstance(r, dict))
+
+
+def read_espelhos_zip(
+    path: str | Path, *, orgao_slug: str, salt: bytes, limit: int | None = None
+) -> tuple[pl.DataFrame, pl.DataFrame, pl.DataFrame]:
+    """Read the initial backlog ZIP of a dataset — measured in 2026-09-23 to hold decisions back to 1989, with
+    almost no overlap with the monthly series (probe: `scripts/11b_probe_espelho_zip.py`)."""
+    path = Path(path)
+    return _frames(iter_zip_records(path), orgao_slug=orgao_slug, source_file=path.name, salt=salt, limit=limit)

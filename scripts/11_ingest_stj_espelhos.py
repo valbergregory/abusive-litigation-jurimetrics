@@ -5,8 +5,10 @@ hard-coded resource URL), downloads the monthly JSON files that are missing loca
 total — and parses them into Parquet with `alj.espelhos`. Every download appends a SHA-256 line to
 logs/raw_hashes.tsv (CLAUDE.md §7); a file already on disk with the published size is not downloaded again.
 
-The initial ZIP resources (the 2022 backlog) are listed in the log but NOT unpacked here: they duplicate the
-monthly JSONs of 2022 and would need a separate reconciliation step.
+The initial ZIP of each dataset is ingested too (since 2026-09-23). It is NOT a duplicate of the monthly
+series: the probe in `scripts/11b_probe_espelho_zip.py` measured 14,223 records for the Corte Especial alone,
+published between 1989 and 2022-06, with 92 registrations in common with the monthly files. Use `--no-zips` to
+skip them.
 
 Writes:
   data/raw/stj_espelhos/<orgao>/<file>.json          the published files (git-ignored)
@@ -37,7 +39,7 @@ if hasattr(sys.stdout, "reconfigure"):
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from alj.db import connect_or_memory, create_views  # noqa: E402
-from alj.espelhos import read_espelhos  # noqa: E402
+from alj.espelhos import read_espelhos, read_espelhos_zip  # noqa: E402
 from alj.manifest import record_download  # noqa: E402
 
 CKAN = "https://dadosabertos.web.stj.jus.br/api/3/action/package_show"
@@ -73,6 +75,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--orgaos", nargs="*", default=list(ORGAOS), choices=list(ORGAOS))
     ap.add_argument("--no-download", action="store_true", help="parse only what is already on disk")
+    ap.add_argument("--no-zips", action="store_true", help="skip the initial backlog ZIP of each dataset")
     ap.add_argument("--limit-files", type=int, help="at most N published files per body (smoke run)")
     ap.add_argument("--limit-records", type=int, help="at most N records per file (smoke run)")
     ap.add_argument("--force", action="store_true", help="re-parse files whose Parquet already exists")
@@ -117,11 +120,12 @@ def main(argv: list[str] | None = None) -> int:
                 continue
             jsons = sorted((r for r in res if (r.get("format") or "").upper() == "JSON"),
                            key=lambda r: r.get("name") or "")
-            zips = [r for r in res if (r.get("format") or "").upper() == "ZIP"]
+            zips = [] if args.no_zips else [r for r in res if (r.get("format") or "").upper() == "ZIP"]
             totals["zips"] += len(zips)
-            inventory[slug] = jsons[: args.limit_files] if args.limit_files else jsons
+            chosen = jsons[: args.limit_files] if args.limit_files else jsons
+            inventory[slug] = chosen + zips
             (RAW / slug).mkdir(parents=True, exist_ok=True)
-            print(f"  {slug}: {len(inventory[slug])} JSON resources, {len(zips)} ZIP (not unpacked)", flush=True)
+            print(f"  {slug}: {len(chosen)} JSON + {len(zips)} ZIP resources", flush=True)
 
         def local_path(slug: str, r: dict) -> Path:
             return RAW / slug / (r.get("name") or Path(r["url"]).name)
@@ -170,11 +174,13 @@ def main(argv: list[str] | None = None) -> int:
                 local = local_path(slug, r)
                 if not local.exists():
                     continue
-                stem = f"{slug}_{local.stem}"
+                is_zip = local.suffix.lower() == ".zip"
+                stem = f"{slug}_{'zip_' if is_zip else ''}{local.stem}"
                 target = INTERIM / "espelhos" / f"{stem}.parquet"
                 if target.exists() and not args.force and not args.limit_records:
                     continue
-                esp, cit, leg = read_espelhos(local, orgao_slug=slug, salt=salt, limit=args.limit_records)
+                reader = read_espelhos_zip if is_zip else read_espelhos
+                esp, cit, leg = reader(local, orgao_slug=slug, salt=salt, limit=args.limit_records)
                 if esp.height:
                     esp.write_parquet(target)
                 if cit.height:
@@ -229,7 +235,8 @@ def main(argv: list[str] | None = None) -> int:
         "run_at": dt.datetime.now().isoformat(timespec="seconds"),
         "orgaos": per_orgao,
         "totals": {**totals, "megabytes_downloaded": round(totals["bytes"] / 1e6, 1)},
-        "note": "ZIP resources (2022 backlog) are listed but not unpacked; they duplicate the monthly JSONs",
+        "note": ("the initial ZIP of each dataset is ingested since 2026-09-23: it holds the historical backlog "
+                 "(measured back to 1989) and is not a duplicate of the monthly series — see logs/11b_probe_espelho_zip.json"),
         **stats,
         "minutes": round((time.time() - t_all) / 60, 1),
     }

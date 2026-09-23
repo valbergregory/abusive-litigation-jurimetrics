@@ -25,7 +25,7 @@ LOG = ROOT / "logs"
 DATA = ROOT / "data"
 
 DOIT_CONFIG = {
-    "default_tasks": ["candidates", "annotation_sample", "outputs", "overleaf"],
+    "default_tasks": ["candidates", "annotation_sample", "outputs", "figures", "overleaf"],
     "verbosity": 2,
 }
 
@@ -119,9 +119,23 @@ def task_outputs():
     }
 
 
+def task_figures():
+    """81 - build the descriptive figures from the logs (PDF for LaTeX + PNG)."""
+    return {
+        "actions": [_script("81_build_figures.py")],
+        "targets": [LOG / "81_build_figures.json"],
+        "uptodate": [False],
+    }
+
+
+def task_crosscheck():
+    """24 - measure how much the integras and the espelhos agree on the same case."""
+    return {"actions": [_script("24_crosscheck_integras_espelhos.py")], "uptodate": [False]}
+
+
 def task_overleaf():
     """90 - export outputs/ to outputs/overleaf/ (booktabs tables, numbers.tex)."""
-    return {"actions": [_script("90_export_overleaf.py")], "task_dep": ["outputs"], "uptodate": [False]}
+    return {"actions": [_script("90_export_overleaf.py")], "task_dep": ["outputs", "figures"], "uptodate": [False]}
 
 
 def task_tests():

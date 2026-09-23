@@ -1,179 +1,323 @@
 {
- "run_at": "2026-09-22T22:47:59",
+ "run_at": "2026-09-23T11:16:49",
  "orgaos": [
   {
    "orgao": "corte-especial",
-   "json_resources": 52,
-   "files_on_disk": 52,
-   "espelhos": 3637,
-   "citations": 4480,
-   "legislation": 2646,
-   "seconds": 1.7
+   "json_resources": 53,
+   "files_on_disk": 53,
+   "espelhos": 14223,
+   "citations": 27574,
+   "legislation": 20190,
+   "seconds": 2.7
   },
   {
    "orgao": "primeira-secao",
-   "json_resources": 52,
-   "files_on_disk": 52,
-   "espelhos": 4212,
-   "citations": 8565,
-   "legislation": 5941,
-   "seconds": 1.9
+   "json_resources": 53,
+   "files_on_disk": 53,
+   "espelhos": 21971,
+   "citations": 49048,
+   "legislation": 44933,
+   "seconds": 4.7
   },
   {
    "orgao": "segunda-secao",
-   "json_resources": 52,
-   "files_on_disk": 52,
-   "espelhos": 2473,
-   "citations": 3922,
-   "legislation": 1772,
-   "seconds": 1.3
+   "json_resources": 53,
+   "files_on_disk": 53,
+   "espelhos": 10294,
+   "citations": 20819,
+   "legislation": 14302,
+   "seconds": 1.7
   },
   {
    "orgao": "terceira-secao",
-   "json_resources": 52,
-   "files_on_disk": 52,
-   "espelhos": 1834,
-   "citations": 2926,
-   "legislation": 1890,
-   "seconds": 1.3
+   "json_resources": 53,
+   "files_on_disk": 53,
+   "espelhos": 16661,
+   "citations": 28293,
+   "legislation": 26818,
+   "seconds": 2.3
   },
   {
    "orgao": "primeira-turma",
-   "json_resources": 52,
-   "files_on_disk": 52,
-   "espelhos": 12583,
-   "citations": 19556,
-   "legislation": 8740,
-   "seconds": 3.2
+   "json_resources": 53,
+   "files_on_disk": 53,
+   "espelhos": 102956,
+   "citations": 249143,
+   "legislation": 178219,
+   "seconds": 20.2
   },
   {
    "orgao": "segunda-turma",
-   "json_resources": 52,
-   "files_on_disk": 52,
-   "espelhos": 18083,
-   "citations": 26553,
-   "legislation": 11518,
-   "seconds": 4.1
+   "json_resources": 53,
+   "files_on_disk": 53,
+   "espelhos": 137386,
+   "citations": 362630,
+   "legislation": 247253,
+   "seconds": 28.9
   },
   {
    "orgao": "terceira-turma",
-   "json_resources": 52,
-   "files_on_disk": 52,
-   "espelhos": 30824,
-   "citations": 36715,
-   "legislation": 15412,
-   "seconds": 5.6
+   "json_resources": 53,
+   "files_on_disk": 53,
+   "espelhos": 37489,
+   "citations": 67213,
+   "legislation": 60017,
+   "seconds": 7.0
   },
   {
    "orgao": "quarta-turma",
-   "json_resources": 52,
-   "files_on_disk": 52,
-   "espelhos": 27856,
-   "citations": 37147,
-   "legislation": 15255,
-   "seconds": 5.2
+   "json_resources": 53,
+   "files_on_disk": 53,
+   "espelhos": 85888,
+   "citations": 207740,
+   "legislation": 125922,
+   "seconds": 16.8
   },
   {
    "orgao": "quinta-turma",
-   "json_resources": 53,
-   "files_on_disk": 52,
-   "espelhos": 35147,
-   "citations": 45669,
-   "legislation": 16037,
-   "seconds": 6.5
+   "json_resources": 54,
+   "files_on_disk": 53,
+   "espelhos": 166121,
+   "citations": 493549,
+   "legislation": 262463,
+   "seconds": 31.1
   },
   {
    "orgao": "sexta-turma",
-   "json_resources": 52,
-   "files_on_disk": 52,
-   "espelhos": 29201,
-   "citations": 34802,
-   "legislation": 13998,
-   "seconds": 5.3
+   "json_resources": 53,
+   "files_on_disk": 53,
+   "espelhos": 118514,
+   "citations": 280081,
+   "legislation": 171588,
+   "seconds": 22.6
   }
  ],
  "totals": {
-  "files": 521,
-  "downloaded": 497,
-  "bytes": 551612624,
-  "espelhos": 165850,
-  "citations": 220335,
-  "legislation": 93209,
+  "files": 531,
+  "downloaded": 11,
+  "bytes": 465990950,
+  "espelhos": 711503,
+  "citations": 1786090,
+  "legislation": 1151705,
   "zips": 10,
-  "megabytes_downloaded": 551.6
+  "megabytes_downloaded": 466.0
  },
- "note": "ZIP resources (2022 backlog) are listed but not unpacked; they duplicate the monthly JSONs",
- "views_created": false,
+ "note": "the initial ZIP of each dataset is ingested since 2026-09-23: it holds the historical backlog (measured back to 1989) and is not a duplicate of the monthly series — see logs/11b_probe_espelho_zip.json",
+ "views_created": true,
  "rows": {
-  "espelhos": 165850,
-  "distinct_numero_registro": 155496
+  "espelhos": 877353,
+  "distinct_numero_registro": 817967
  },
  "by_year": [
   {
-   "year": 2005,
-   "espelhos": 1,
+   "year": 1989,
+   "espelhos": 1426,
    "with_tema": 0,
-   "with_citations": 0
+   "with_citations": 4
+  },
+  {
+   "year": 1990,
+   "espelhos": 3951,
+   "with_tema": 0,
+   "with_citations": 6
+  },
+  {
+   "year": 1991,
+   "espelhos": 6119,
+   "with_tema": 0,
+   "with_citations": 26
+  },
+  {
+   "year": 1992,
+   "espelhos": 7533,
+   "with_tema": 0,
+   "with_citations": 30
+  },
+  {
+   "year": 1993,
+   "espelhos": 10145,
+   "with_tema": 0,
+   "with_citations": 299
+  },
+  {
+   "year": 1994,
+   "espelhos": 11255,
+   "with_tema": 0,
+   "with_citations": 421
+  },
+  {
+   "year": 1995,
+   "espelhos": 10092,
+   "with_tema": 0,
+   "with_citations": 65
+  },
+  {
+   "year": 1996,
+   "espelhos": 12725,
+   "with_tema": 1,
+   "with_citations": 90
+  },
+  {
+   "year": 1997,
+   "espelhos": 16561,
+   "with_tema": 0,
+   "with_citations": 124
+  },
+  {
+   "year": 1998,
+   "espelhos": 18313,
+   "with_tema": 0,
+   "with_citations": 203
+  },
+  {
+   "year": 1999,
+   "espelhos": 18954,
+   "with_tema": 0,
+   "with_citations": 254
+  },
+  {
+   "year": 2000,
+   "espelhos": 16898,
+   "with_tema": 0,
+   "with_citations": 3262
+  },
+  {
+   "year": 2001,
+   "espelhos": 12139,
+   "with_tema": 0,
+   "with_citations": 7037
+  },
+  {
+   "year": 2002,
+   "espelhos": 22427,
+   "with_tema": 0,
+   "with_citations": 13520
+  },
+  {
+   "year": 2003,
+   "espelhos": 20690,
+   "with_tema": 0,
+   "with_citations": 13366
+  },
+  {
+   "year": 2004,
+   "espelhos": 25028,
+   "with_tema": 0,
+   "with_citations": 16933
+  },
+  {
+   "year": 2005,
+   "espelhos": 29648,
+   "with_tema": 0,
+   "with_citations": 21396
+  },
+  {
+   "year": 2006,
+   "espelhos": 27968,
+   "with_tema": 0,
+   "with_citations": 19813
+  },
+  {
+   "year": 2007,
+   "espelhos": 22651,
+   "with_tema": 0,
+   "with_citations": 17406
+  },
+  {
+   "year": 2008,
+   "espelhos": 22758,
+   "with_tema": 11,
+   "with_citations": 18498
+  },
+  {
+   "year": 2009,
+   "espelhos": 19106,
+   "with_tema": 131,
+   "with_citations": 15936
+  },
+  {
+   "year": 2010,
+   "espelhos": 19593,
+   "with_tema": 165,
+   "with_citations": 16537
+  },
+  {
+   "year": 2011,
+   "espelhos": 23764,
+   "with_tema": 43,
+   "with_citations": 20392
+  },
+  {
+   "year": 2012,
+   "espelhos": 25789,
+   "with_tema": 78,
+   "with_citations": 22064
   },
   {
    "year": 2013,
-   "espelhos": 2,
-   "with_tema": 0,
-   "with_citations": 2
+   "espelhos": 30189,
+   "with_tema": 66,
+   "with_citations": 25830
   },
   {
    "year": 2014,
-   "espelhos": 1,
-   "with_tema": 0,
-   "with_citations": 0
+   "espelhos": 31589,
+   "with_tema": 78,
+   "with_citations": 26887
   },
   {
    "year": 2015,
-   "espelhos": 2,
-   "with_tema": 0,
-   "with_citations": 1
+   "espelhos": 35798,
+   "with_tema": 47,
+   "with_citations": 29431
+  },
+  {
+   "year": 2016,
+   "espelhos": 33450,
+   "with_tema": 45,
+   "with_citations": 28597
   },
   {
    "year": 2017,
-   "espelhos": 2,
-   "with_tema": 0,
-   "with_citations": 1
+   "espelhos": 36997,
+   "with_tema": 76,
+   "with_citations": 31164
   },
   {
    "year": 2018,
-   "espelhos": 12,
-   "with_tema": 0,
-   "with_citations": 3
+   "espelhos": 35005,
+   "with_tema": 96,
+   "with_citations": 29285
   },
   {
    "year": 2019,
-   "espelhos": 29,
-   "with_tema": 1,
-   "with_citations": 7
+   "espelhos": 34383,
+   "with_tema": 148,
+   "with_citations": 28039
   },
   {
    "year": 2020,
-   "espelhos": 34,
-   "with_tema": 0,
-   "with_citations": 5
+   "espelhos": 26613,
+   "with_tema": 142,
+   "with_citations": 21029
   },
   {
    "year": 2021,
-   "espelhos": 94,
-   "with_tema": 0,
-   "with_citations": 17
+   "espelhos": 29300,
+   "with_tema": 255,
+   "with_citations": 21860
   },
   {
    "year": 2022,
-   "espelhos": 22125,
-   "with_tema": 157,
-   "with_citations": 11043
+   "espelhos": 34936,
+   "with_tema": 248,
+   "with_citations": 17896
   },
   {
    "year": 2023,
-   "espelhos": 29093,
+   "espelhos": 29096,
    "with_tema": 215,
-   "with_citations": 19602
+   "with_citations": 19604
   },
   {
    "year": 2024,
@@ -197,43 +341,43 @@
  "by_orgao": [
   {
    "orgao": "quinta-turma",
-   "espelhos": 35147
-  },
-  {
-   "orgao": "terceira-turma",
-   "espelhos": 30824
-  },
-  {
-   "orgao": "sexta-turma",
-   "espelhos": 29201
-  },
-  {
-   "orgao": "quarta-turma",
-   "espelhos": 27856
+   "espelhos": 201268
   },
   {
    "orgao": "segunda-turma",
-   "espelhos": 18083
+   "espelhos": 155469
+  },
+  {
+   "orgao": "sexta-turma",
+   "espelhos": 147715
   },
   {
    "orgao": "primeira-turma",
-   "espelhos": 12583
+   "espelhos": 115539
+  },
+  {
+   "orgao": "quarta-turma",
+   "espelhos": 113744
+  },
+  {
+   "orgao": "terceira-turma",
+   "espelhos": 68313
   },
   {
    "orgao": "primeira-secao",
-   "espelhos": 4212
-  },
-  {
-   "orgao": "corte-especial",
-   "espelhos": 3637
-  },
-  {
-   "orgao": "segunda-secao",
-   "espelhos": 2473
+   "espelhos": 26183
   },
   {
    "orgao": "terceira-secao",
-   "espelhos": 1834
+   "espelhos": 18495
+  },
+  {
+   "orgao": "corte-especial",
+   "espelhos": 17860
+  },
+  {
+   "orgao": "segunda-secao",
+   "espelhos": 12767
   }
  ],
  "top_legislation": [
@@ -241,92 +385,92 @@
    "kind": null,
    "number": null,
    "year": null,
-   "n": 33570
-  },
-  {
-   "kind": "LEI",
-   "number": "13105",
-   "year": "2015",
-   "n": 16137
-  },
-  {
-   "kind": "DEL",
-   "number": "3689",
-   "year": "1941",
-   "n": 8547
-  },
-  {
-   "kind": "DEL",
-   "number": "2848",
-   "year": "1940",
-   "n": 5040
-  },
-  {
-   "kind": "LEI",
-   "number": "11343",
-   "year": "2006",
-   "n": 3396
-  },
-  {
-   "kind": "LEI",
-   "number": "10406",
-   "year": "2002",
-   "n": 2688
+   "n": 374007
   },
   {
    "kind": "LEI",
    "number": "5869",
    "year": "1973",
-   "n": 1712
+   "n": 133587
+  },
+  {
+   "kind": "DEL",
+   "number": "3689",
+   "year": "1941",
+   "n": 86838
+  },
+  {
+   "kind": "DEL",
+   "number": "2848",
+   "year": "1940",
+   "n": 60578
   },
   {
    "kind": "LEI",
-   "number": "8078",
-   "year": "1990",
-   "n": 955
-  },
-  {
-   "kind": "LEI",
-   "number": "7210",
-   "year": "1984",
-   "n": 844
+   "number": "13105",
+   "year": "2015",
+   "n": 42854
   },
   {
    "kind": "LEI",
    "number": "5172",
    "year": "1966",
-   "n": 752
+   "n": 25008
   },
   {
    "kind": "LEI",
-   "number": "9656",
-   "year": "1998",
-   "n": 547
+   "number": "11343",
+   "year": "2006",
+   "n": 24902
   },
   {
    "kind": "LEI",
-   "number": "13964",
-   "year": "2019",
-   "n": 544
+   "number": "10406",
+   "year": "2002",
+   "n": 13241
   },
   {
    "kind": "LEI",
-   "number": "11101",
-   "year": "2005",
-   "n": 540
+   "number": "3071",
+   "year": "1916",
+   "n": 13095
   },
   {
    "kind": "LEI",
-   "number": "8429",
-   "year": "1992",
-   "n": 354
+   "number": "8213",
+   "year": "1991",
+   "n": 10001
   },
   {
    "kind": "LEI",
-   "number": "8906",
-   "year": "1994",
-   "n": 321
+   "number": "8072",
+   "year": "1990",
+   "n": 9421
+  },
+  {
+   "kind": "LEI",
+   "number": "7210",
+   "year": "1984",
+   "n": 8637
+  },
+  {
+   "kind": "LEI",
+   "number": "8078",
+   "year": "1990",
+   "n": 7177
+  },
+  {
+   "kind": "CFD",
+   "number": "0",
+   "year": "1988",
+   "n": 6718
+  },
+  {
+   "kind": "LEI",
+   "number": "6830",
+   "year": "1980",
+   "n": 6684
   }
  ],
- "minutes": 10.9
+ "minutes": 3.4
 }
