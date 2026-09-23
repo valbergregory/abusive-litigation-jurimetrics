@@ -1,0 +1,181 @@
+{
+ "run_at": "2026-09-22T23:13:15",
+ "seed": 20260922,
+ "years": [
+  "2021",
+  "2025"
+ ],
+ "strata": [
+  {
+   "stratum": "strict",
+   "available": 2322,
+   "sampled": 600,
+   "requested": 600
+  },
+  {
+   "stratum": "strict_negated",
+   "available": 142,
+   "sampled": 120,
+   "requested": 120
+  },
+  {
+   "stratum": "conduct_multi",
+   "available": 2091,
+   "sampled": 300,
+   "requested": 300
+  },
+  {
+   "stratum": "conduct_sanction",
+   "available": 4164,
+   "sampled": 180,
+   "requested": 180
+  },
+  {
+   "stratum": "control_flagged",
+   "available": 0,
+   "sampled": 0,
+   "requested": 100
+  },
+  {
+   "stratum": "control_unflagged",
+   "available": 2681528,
+   "sampled": 150,
+   "requested": 150
+  }
+ ],
+ "sample_rows": 1349,
+ "duplicates_removed": 1,
+ "reannotation_rows": 135,
+ "by_year_stratum": [
+  {
+   "year": "2021",
+   "stratum": "conduct_multi",
+   "n": 16
+  },
+  {
+   "year": "2021",
+   "stratum": "conduct_sanction",
+   "n": 19
+  },
+  {
+   "year": "2021",
+   "stratum": "control_unflagged",
+   "n": 29
+  },
+  {
+   "year": "2021",
+   "stratum": "strict",
+   "n": 18
+  },
+  {
+   "year": "2021",
+   "stratum": "strict_negated",
+   "n": 2
+  },
+  {
+   "year": "2022",
+   "stratum": "conduct_multi",
+   "n": 50
+  },
+  {
+   "year": "2022",
+   "stratum": "conduct_sanction",
+   "n": 30
+  },
+  {
+   "year": "2022",
+   "stratum": "control_unflagged",
+   "n": 19
+  },
+  {
+   "year": "2022",
+   "stratum": "strict",
+   "n": 22
+  },
+  {
+   "year": "2022",
+   "stratum": "strict_negated",
+   "n": 6
+  },
+  {
+   "year": "2023",
+   "stratum": "conduct_multi",
+   "n": 141
+  },
+  {
+   "year": "2023",
+   "stratum": "conduct_sanction",
+   "n": 79
+  },
+  {
+   "year": "2023",
+   "stratum": "control_unflagged",
+   "n": 34
+  },
+  {
+   "year": "2023",
+   "stratum": "strict",
+   "n": 19
+  },
+  {
+   "year": "2023",
+   "stratum": "strict_negated",
+   "n": 6
+  },
+  {
+   "year": "2024",
+   "stratum": "conduct_multi",
+   "n": 44
+  },
+  {
+   "year": "2024",
+   "stratum": "conduct_sanction",
+   "n": 18
+  },
+  {
+   "year": "2024",
+   "stratum": "control_unflagged",
+   "n": 40
+  },
+  {
+   "year": "2024",
+   "stratum": "strict",
+   "n": 151
+  },
+  {
+   "year": "2024",
+   "stratum": "strict_negated",
+   "n": 48
+  },
+  {
+   "year": "2025",
+   "stratum": "conduct_multi",
+   "n": 49
+  },
+  {
+   "year": "2025",
+   "stratum": "conduct_sanction",
+   "n": 33
+  },
+  {
+   "year": "2025",
+   "stratum": "control_unflagged",
+   "n": 28
+  },
+  {
+   "year": "2025",
+   "stratum": "strict",
+   "n": 390
+  },
+  {
+   "year": "2025",
+   "stratum": "strict_negated",
+   "n": 58
+  }
+ ],
+ "files": {
+  "worksheet": "data\\annotations\\gold_v1_sample.csv",
+  "reannotation": "data\\annotations\\gold_v1_reannotation.csv",
+  "readme": "data\\annotations\\README_annotation.md"
+ }
+}

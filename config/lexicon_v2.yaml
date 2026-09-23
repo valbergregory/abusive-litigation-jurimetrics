@@ -1,0 +1,266 @@
+# Lexicon v2 — measurement instrument for judicially *signalled* abusive litigation
+#
+# Policy (docs/AI_POLICY_AND_REPRODUCIBILITY.md §5.3, CLAUDE.md §12): this file is the versioned instrument.
+# A hit is NEVER a label (CLAUDE.md §2). Labels come from the researcher's manual review
+# (docs/annotation_protocol.md). Precision/recall/F1 of every pattern is reported against the gold set
+# by scripts/22_validate_lexicon.py.
+#
+# Design notes
+# - `tier` groups patterns by what a hit can possibly mean, not by importance:
+#     strict     the decision names the phenomenon ("litigância predatória", "assédio processual");
+#     conduct    the decision describes one of the 20 conducts of Annex A of Rec. CNJ 159/2024;
+#     sanction   the decision applies or discusses a measure/sanction (CPC arts. 77/80/81, 286 II, 321, 485 I);
+#     normative  the decision cites the governing norms/precedents (Rec. 159, Res. 615, Tema 1198, NUMOPEDE);
+#     neighbour  neighbouring concepts that are *not* equivalent (litigância de má-fé, IRDR, abuse of appeal).
+# - `annex_a` lists the Annex A item numbers the pattern is meant to capture (empty for strict/normative/neighbour).
+# - Phase-0 measurements that motivated each choice are in docs/feasibility_report.md §3.
+# - Accents are written as character classes because the published text mixes accented and unaccented forms;
+#   matching is case-insensitive and whitespace-tolerant (`\s+` absorbs the line breaks of the .txt sources).
+#
+version: 2.0.0
+created: 2026-09-22
+source_norms:
+  - "Recomendação CNJ nº 159/2024 (Anexo A — lista exemplificativa de condutas processuais potencialmente abusivas)"
+  - "Resolução CNJ nº 615/2025"
+  - "STJ, Tema 1198 (afetado 2023-05-09, julgado 2025-03-13, publicado 2026-06-11)"
+options:
+  # context window kept per hit, in characters before/after the match (used by scripts/20_lexicon_candidates.py)
+  window_before: 320
+  window_after: 320
+  # a document becomes a candidate when at least one pattern of one of these tiers survives the exclusions
+  candidate_tiers: [strict, conduct, sanction]
+  # cap on stored hits per document/pattern (keeps "carimbo" decisions from dominating the Parquet)
+  max_hits_per_pattern: 3
+
+patterns:
+  # ---------------------------------------------------------------- strict: the phenomenon is named
+  - id: litigancia_predatoria
+    tier: strict
+    annex_a: []
+    regex: 'litig[âa]ncia\s+predat[óo]ria'
+    note: "core term; from 2024 onwards in the íntegras (phase 0 §3)"
+  - id: litigancia_abusiva
+    tier: strict
+    annex_a: []
+    regex: 'litig[âa]ncia\s+abusiva'
+  - id: advocacia_predatoria
+    tier: strict
+    annex_a: []
+    regex: 'advocacia\s+predat[óo]ria'
+  - id: litigiosidade_artificial
+    tier: strict
+    annex_a: []
+    regex: 'litigiosidade\s+(artificial|predat[óo]ria|abusiva|fabricada)'
+  - id: demanda_artificial
+    tier: strict
+    annex_a: [7, 9]
+    regex: '(demandas?|a[çc][õo]es|lides?)\s+(artificia|fabricad|fict[íi]ci|simulad)'
+  - id: assedio_processual
+    tier: strict
+    annex_a: [14]
+    regex: 'ass[ée]dio\s+(processual|judici[áa]rio)'
+  - id: judicializacao_predatoria
+    tier: strict
+    annex_a: []
+    regex: 'judicializa[çc][ãa]o\s+(predat[óo]ria|abusiva|em\s+massa|massificada)'
+
+  # ---------------------------------------------------------------- conduct: Annex A items
+  - id: gratuidade_sem_comprovacao
+    tier: conduct
+    annex_a: [1]
+    regex: '(gratuidade|justi[çc]a\s+gratuita|assist[êe]ncia\s+judici[áa]ria)[^.]{0,160}?(sem\s+(qualquer\s+)?(comprova|justificativa|prova|demonstra)|aus[êe]ncia\s+de\s+comprova|n[ãa]o\s+comprov)'
+    note: "Annex A item 1; frequent alone, hence only a conduct-tier signal"
+  - id: foro_distinto_domicilio
+    tier: conduct
+    annex_a: [4]
+    regex: '(ajuizad|distribu[íi]d|proposta)[^.]{0,120}?(comarca|ju[íi]zo|se[çc][ãa]o\s+judici[áa]ria|foro)[^.]{0,80}?(distint|diferente|alheio|estranho)[^.]{0,80}?(domic[íi]lio|resid[êe]ncia|local\s+do\s+fato)'
+  - id: documentos_desatualizados
+    tier: conduct
+    annex_a: [5, 12]
+    regex: 'documentos?[^.]{0,120}?(incompletos?|ileg[íi]ve|desatualizad|em\s+nome\s+de\s+terceiro|sem\s+rela[çc][ãa]o\s+com\s+a\s+causa\s+de\s+pedir)'
+  - id: comprovante_residencia_terceiro
+    tier: conduct
+    annex_a: [5]
+    regex: 'comprovante\s+de\s+(resid[êe]ncia|endere[çc]o)[^.]{0,120}?(em\s+nome\s+de\s+terceiro|de\s+terceiro|desatualizad|ileg[íi]ve|adulterad)'
+  - id: fracionamento
+    tier: conduct
+    annex_a: [6]
+    regex: 'fracionamento\s+(indevido\s+)?(de\s+|d[ao]s?\s+)?(demandas?|pedidos?|a[çc][õo]es|pretens|cr[ée]ditos?)'
+  - id: fracionamento_perifrase
+    tier: conduct
+    annex_a: [6]
+    regex: '(v[áa]rias|m[úu]ltiplas|diversas|in[úu]meras|sucessivas)\s+(a[çc][õo]es|demandas?)[^.]{0,160}?(mesm[oa]\s+(tema|objeto|causa\s+de\s+pedir|contrato|rela[çc][ãa]o)|fracionad|desmembrad)'
+  - id: peticoes_padronizadas
+    tier: conduct
+    annex_a: [2, 7]
+    regex: '(peti[çc][õo]es|peti[çc][ãa]o)\s+iniciais?[^.]{0,140}?(padroniza|id[êe]ntic|gen[ée]ric|modelo|formul[áa]ri|copiad)'
+  - id: causa_de_pedir_generica
+    tier: conduct
+    annex_a: [7, 8, 9]
+    regex: 'causas?\s+de\s+pedir[^.]{0,140}?(gen[ée]ric|id[êe]ntic|alternativ|hipot[ée]tic|sem\s+(a\s+devida\s+)?particulariza)'
+  - id: pedidos_vagos
+    tier: conduct
+    annex_a: [9, 19]
+    regex: 'pedidos?[^.]{0,120}?(vagos?|gen[ée]ric|hipot[ée]tic)[^.]{0,120}?(sem|n[ãa]o\s+guarda|aus[êe]ncia)'
+  - id: demanda_identica_sem_dependencia
+    tier: conduct
+    annex_a: [10]
+    regex: '(demanda|a[çc][ãa]o|processo)[^.]{0,120}?(id[êe]ntic|an[áa]log)[^.]{0,160}?(sem\s+(men[çc][ãa]o|pedido\s+de\s+distribui[çc][ãa]o\s+por\s+depend[êe]ncia)|distribui[çc][ãa]o\s+por\s+depend[êe]ncia|art(igo)?\.?\s*286)'
+  - id: procuracao_irregular
+    tier: conduct
+    annex_a: [11, 18]
+    regex: 'procura[çc][ãa]o[^.]{0,140}?(irregular|falsa|gen[ée]rica|sem\s+poderes|desatualizada|incompleta|em\s+branco|preenchid[ao]\s+(a\s+m[ãa]o|manualmente)|outorgad[ao]\s+por\s+(mandante\s+)?(j[áa]\s+)?falecid)'
+  - id: assinatura_nao_qualificada
+    tier: conduct
+    annex_a: [11]
+    regex: 'assinatura\s+eletr[ôo]nica[^.]{0,140}?(n[ãa]o\s+qualificada|sem\s+certificado|ICP[- ]?Brasil)'
+  - id: representacao_irregular
+    tier: conduct
+    annex_a: [11]
+    regex: 'irregularidade\s+(na|de)\s+representa[çc][ãa]o\s+processual'
+  - id: ausencia_documentos_essenciais
+    tier: conduct
+    annex_a: [12]
+    regex: '(aus[êe]ncia|falta|n[ãa]o\s+juntada)\s+(de\s+)?documentos?\s+(essenciais|indispens[áa]veis|comprobat[óo]rios)'
+  - id: concentracao_poucos_patronos
+    tier: conduct
+    annex_a: [13]
+    regex: '(concentra[çc][ãa]o|grande\s+(volume|quantidade)|elevado\s+n[úu]mero)[^.]{0,160}?(demandas?|a[çc][õo]es)[^.]{0,160}?(mesm[oa]\s+(patrono|advogad|escrit[óo]rio)|poucos?\s+(profissionais|advogad)|patroc[íi]nio)'
+  - id: captacao_indevida
+    tier: conduct
+    annex_a: [13]
+    regex: 'capta[çc][ãa]o\s+(indevida|il[íi]cita|irregular|de\s+client)'
+    note: "phase 0 §3: frequent false positive with financial vocabulary — see exclusion captacao_financeira"
+  - id: pressao_beneficio_extraprocessual
+    tier: conduct
+    annex_a: [15]
+    regex: '(press[ãa]o|coa[çc][ãa]o|constrangimento)[^.]{0,160}?(acordo|benef[íi]cio\s+extraprocessual|satisfa[çc][ãa]o\s+de\s+cr[ée]dito)'
+  - id: valor_causa_aleatorio
+    tier: conduct
+    annex_a: [16]
+    regex: 'valor\s+d[ae]\s+causa[^.]{0,140}?(aleat[óo]ri|arbitr[áa]ri|sem\s+rela[çc][ãa]o|desproporcional|excessiv|elevad[oa]\s+e\s+aleat)'
+  - id: notificacao_extrajudicial_sem_prova
+    tier: conduct
+    annex_a: [17, 18]
+    regex: 'notifica[çc][ãa]o\s+extrajudicial[^.]{0,180}?(sem\s+(regular\s+)?comprova|sem\s+prova\s+de\s+recebimento|e-?mail\s+inexistente|endere[çc]o\s+inexistente|sem\s+procura[çc][ãa]o)'
+  - id: cessao_direito_demandar
+    tier: conduct
+    annex_a: [20]
+    regex: 'cess[ãa]o\s+(de\s+)?(do\s+)?(direito\s+de\s+demandar|de\s+cr[ée]dito\s+futuro|de\s+eventual\s+cr[ée]dito)'
+  - id: desistencia_apos_indeferimento
+    tier: conduct
+    annex_a: [3]
+    regex: '(desist[êe]ncia|ren[úu]ncia)[^.]{0,160}?(ap[óo]s\s+(o\s+)?(indeferimento|intima[çc][ãa]o\s+para\s+comprova|determina[çc][ãa]o\s+de\s+emenda)|quando\s+intimad[ao]\s+(a|para)\s+comprovar)'
+  - id: ausencia_pretensao_resistida
+    tier: conduct
+    annex_a: [17, 19]
+    regex: '(aus[êe]ncia|falta|inexist[êe]ncia)\s+de\s+(pretens[ãa]o\s+resistida|interesse\s+(de|em)\s+agir\s+(pr[ée]vio|demonstrado))'
+
+  # ---------------------------------------------------------------- sanction: measures and consequences
+  - id: ma_fe_art_80
+    tier: sanction
+    annex_a: []
+    regex: '(art(igo)?\.?\s*80|litig[âa]ncia\s+de\s+m[áa][-\s]f[ée])[^.]{0,120}?(condena|multa|reconhec|configurad)'
+  - id: multa_ma_fe_art_81
+    tier: sanction
+    annex_a: []
+    regex: 'art(igo)?\.?\s*81[^.]{0,80}?(CPC|C[óo]digo\s+de\s+Processo)'
+  - id: ato_atentatorio_art_77
+    tier: sanction
+    annex_a: []
+    regex: '(ato\s+atentat[óo]rio\s+[àa]\s+dignidade\s+da\s+justi[çc]a|art(igo)?\.?\s*77[^.]{0,60}?(§\s*2|par[áa]grafo\s+segundo))'
+  - id: emenda_ou_indeferimento_inicial
+    tier: sanction
+    annex_a: [12]
+    regex: '(indeferimento\s+d[ae]\s+(peti[çc][ãa]o\s+)?inicial|art(igo)?\.?\s*321|art(igo)?\.?\s*330)[^.]{0,160}?(documento|emenda|comprova)'
+  - id: extincao_sem_merito
+    tier: sanction
+    annex_a: [10, 12]
+    regex: '(extin(ta|to|[çc][ãa]o))[^.]{0,120}?sem\s+resolu[çc][ãa]o\s+d[eo]\s+m[ée]rito'
+    note: "the outcome that Annex A items 10 and 12 lead to; `art. 485, I/IV` alone matched any lowercase 'i'"
+  - id: oficio_oab_ou_mp
+    tier: sanction
+    annex_a: [13]
+    regex: '(of[íi]cio|comunica[çc][ãa]o|expedi[çc][ãa]o\s+de\s+of[íi]cio)[^.]{0,120}?(OAB|Ordem\s+dos\s+Advogados|Minist[ée]rio\s+P[úu]blico|Tribunal\s+de\s+[ÉE]tica)'
+  - id: apuracao_indicios
+    tier: sanction
+    annex_a: []
+    regex: '(ind[íi]cios?|suspeita)[^.]{0,120}?(litig[âa]ncia\s+(predat[óo]ria|abusiva)|fraude\s+processual|ades[ãa]o\s+fraudulenta)'
+
+  # ---------------------------------------------------------------- normative: governing norms and precedents
+  - id: rec_cnj_159
+    tier: normative
+    annex_a: []
+    regex: 'Recomenda[çc][ãa]o\s+(CNJ\s+)?n?[º°.]?\s*159'
+  - id: res_cnj_615
+    tier: normative
+    annex_a: []
+    regex: 'Resolu[çc][ãa]o\s+(CNJ\s+)?n?[º°.]?\s*615'
+  - id: tema_1198
+    tier: normative
+    annex_a: []
+    regex: '(Tema|tema)\s+(repetitivo\s+)?n?[º°.]?\s*1\.?198'
+  - id: numopede
+    tier: normative
+    annex_a: []
+    regex: 'NUMOPEDE|N[úu]cleo\s+de\s+Monitoramento\s+de\s+Perfis\s+de\s+Demandas'
+  - id: rede_litigancia_abusiva
+    tier: normative
+    annex_a: []
+    regex: 'Rede\s+de\s+(Combate\s+[àa]\s+)?Litig[âa]ncia\s+Abusiva'
+  - id: art_286_ii
+    tier: normative
+    annex_a: [10]
+    regex: 'art(igo)?\.?\s*286\s*,?\s*(?-i:(II|inciso\s+II))'
+    note: "scoped (?-i:…) so the roman numeral is not matched case-insensitively (valid in Python re and RE2)"
+
+  # ---------------------------------------------------------------- neighbour: related but not equivalent
+  - id: ma_fe_processual_mencao
+    tier: neighbour
+    annex_a: []
+    regex: 'litig[âa]ncia\s+de\s+m[áa][-\s]f[ée]'
+    note: "phase 0 §3: 26–77 hits/day; neighbouring concept, kept for contrast and for the sanction tier"
+  - id: abuso_direito_acao
+    tier: neighbour
+    annex_a: []
+    regex: 'abuso\s+do\s+direito\s+de\s+(a[çc][ãa]o|demandar|litigar|acesso|recorrer)'
+    note: "includes criminal HC reiteration; ambiguous, therefore neighbour and not strict"
+  - id: lide_temeraria
+    tier: neighbour
+    annex_a: []
+    regex: 'lide\s+temer[áa]ria|demanda\s+temer[áa]ria'
+  - id: recurso_protelatorio
+    tier: neighbour
+    annex_a: []
+    regex: 'car[áa]ter\s+(manifestamente\s+)?protelat[óo]rio'
+  - id: demandas_repetitivas
+    tier: neighbour
+    annex_a: []
+    regex: 'demandas\s+repetitivas|recursos\s+repetitivos|IRDR'
+    note: "phase 0 §3: pure noise (IRDR machinery). Kept only to measure and subtract it."
+
+# Exclusions are evaluated on the context window of each hit; a hit whose window matches an exclusion that
+# `applies_to` its pattern (or `all`) is dropped and counted in the log under `dropped_by_exclusion`.
+exclusions:
+  - id: captacao_financeira
+    regex: 'capta[çc][ãa]o\s+(de\s+)?(recursos|poupan[çc]a|dep[óo]sitos|investimento|mercado)|custo\s+de\s+capta[çc][ãa]o'
+    applies_to: [captacao_indevida]
+    note: "phase 0 §3: 'custo de captação de recursos' in banking cases"
+  - id: irdr_machinery
+    regex: '(instaura[çc][ãa]o|admiss[ãa]o|julgamento)\s+de\s+(IRDR|incidente\s+de\s+resolu[çc][ãa]o\s+de\s+demandas\s+repetitivas)|afeta[çc][ãa]o\s+ao\s+rito\s+dos\s+recursos\s+repetitivos'
+    applies_to: [demandas_repetitivas]
+  - id: cessao_civil_comum
+    regex: 'cess[ãa]o\s+de\s+cr[ée]dito[^.]{0,80}?(precat[óo]rio|tribut[áa]ri|factoring|endosso)'
+    applies_to: [cessao_direito_demandar]
+  - id: doutrina_ou_norma_citada
+    regex: '(disp[õo]e|estabelece|prev[êe])\s+(a\s+)?Recomenda[çc][ãa]o\s+(CNJ\s+)?n?[º°.]?\s*159[^.]{0,40}?Anexo'
+    applies_to: []
+    note: "kept inactive (applies_to empty): quoting Annex A is itself informative; measured, not dropped"
+
+# Negation/rejection markers: they do NOT drop the hit. They set `negated_hint = true` so the researcher's
+# triage can start with the decisions where the term was *rejected* ("não configurada a litigância predatória").
+negations:
+  - id: nao_configurada
+    regex: '(n[ãa]o\s+(h[áa]|houve|se\s+(verifica|configura|reconhece)|restou|est[áa]|[ée])[^.]{0,80}?(configurad|caracterizad|demonstrad|comprovad|presente)|afastad[ao]\s+a\s+(alega[çc][ãa]o|tese|preliminar)|n[ãa]o\s+se\s+cogita|inexist[êe]ncia\s+de)'
+  - id: mera_alegacao
+    regex: '(mera|simples)\s+(alega[çc][ãa]o|suspeita|conjectura)|alega[çc][ãa]o\s+gen[ée]rica'

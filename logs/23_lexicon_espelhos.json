@@ -1,0 +1,2765 @@
+{
+ "run_at": "2026-09-22T22:50:58",
+ "lexicon_version": "2.0.0",
+ "espelhos_available": 165850,
+ "files_scanned": 519,
+ "totals": {
+  "files": 519,
+  "prefiltered": 3065,
+  "candidates": 3003,
+  "hits": 5821
+ },
+ "candidate_rate_pct": 1.811,
+ "views_created": false,
+ "by_pattern": [
+  {
+   "pattern_id": "extincao_sem_merito",
+   "tier": "sanction",
+   "documents": 1384
+  },
+  {
+   "pattern_id": "ma_fe_processual_mencao",
+   "tier": "neighbour",
+   "documents": 445
+  },
+  {
+   "pattern_id": "ma_fe_art_80",
+   "tier": "sanction",
+   "documents": 282
+  },
+  {
+   "pattern_id": "representacao_irregular",
+   "tier": "conduct",
+   "documents": 250
+  },
+  {
+   "pattern_id": "pressao_beneficio_extraprocessual",
+   "tier": "conduct",
+   "documents": 189
+  },
+  {
+   "pattern_id": "ato_atentatorio_art_77",
+   "tier": "sanction",
+   "documents": 176
+  },
+  {
+   "pattern_id": "pedidos_vagos",
+   "tier": "conduct",
+   "documents": 162
+  },
+  {
+   "pattern_id": "oficio_oab_ou_mp",
+   "tier": "sanction",
+   "documents": 126
+  },
+  {
+   "pattern_id": "procuracao_irregular",
+   "tier": "conduct",
+   "documents": 121
+  },
+  {
+   "pattern_id": "multa_ma_fe_art_81",
+   "tier": "sanction",
+   "documents": 98
+  },
+  {
+   "pattern_id": "tema_1198",
+   "tier": "normative",
+   "documents": 87
+  },
+  {
+   "pattern_id": "apuracao_indicios",
+   "tier": "sanction",
+   "documents": 87
+  },
+  {
+   "pattern_id": "litigancia_predatoria",
+   "tier": "strict",
+   "documents": 85
+  },
+  {
+   "pattern_id": "gratuidade_sem_comprovacao",
+   "tier": "conduct",
+   "documents": 79
+  },
+  {
+   "pattern_id": "litigancia_abusiva",
+   "tier": "strict",
+   "documents": 76
+  },
+  {
+   "pattern_id": "ausencia_documentos_essenciais",
+   "tier": "conduct",
+   "documents": 67
+  },
+  {
+   "pattern_id": "demandas_repetitivas",
+   "tier": "neighbour",
+   "documents": 66
+  },
+  {
+   "pattern_id": "recurso_protelatorio",
+   "tier": "neighbour",
+   "documents": 63
+  },
+  {
+   "pattern_id": "emenda_ou_indeferimento_inicial",
+   "tier": "sanction",
+   "documents": 55
+  },
+  {
+   "pattern_id": "causa_de_pedir_generica",
+   "tier": "conduct",
+   "documents": 51
+  },
+  {
+   "pattern_id": "advocacia_predatoria",
+   "tier": "strict",
+   "documents": 42
+  },
+  {
+   "pattern_id": "documentos_desatualizados",
+   "tier": "conduct",
+   "documents": 31
+  },
+  {
+   "pattern_id": "ausencia_pretensao_resistida",
+   "tier": "conduct",
+   "documents": 22
+  },
+  {
+   "pattern_id": "abuso_direito_acao",
+   "tier": "neighbour",
+   "documents": 21
+  },
+  {
+   "pattern_id": "valor_causa_aleatorio",
+   "tier": "conduct",
+   "documents": 21
+  },
+  {
+   "pattern_id": "fracionamento",
+   "tier": "conduct",
+   "documents": 20
+  },
+  {
+   "pattern_id": "assinatura_nao_qualificada",
+   "tier": "conduct",
+   "documents": 11
+  },
+  {
+   "pattern_id": "art_286_ii",
+   "tier": "normative",
+   "documents": 9
+  },
+  {
+   "pattern_id": "captacao_indevida",
+   "tier": "conduct",
+   "documents": 6
+  },
+  {
+   "pattern_id": "lide_temeraria",
+   "tier": "neighbour",
+   "documents": 5
+  }
+ ],
+ "strict_documents": 171,
+ "minutes": 0.7,
+ "per_file": [
+  {
+   "file": "corte-especial_20220531.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "corte-especial_20220630.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20220731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20220831.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20220930.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "corte-especial_20221031.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20221130.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20221231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20230131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20230228.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20230331.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20230430.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "corte-especial_20230531.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20230630.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20230731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20230831.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "corte-especial_20230930.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "corte-especial_20231031.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20231130.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20231231.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "corte-especial_20240131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20240229.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20240331.parquet",
+   "prefiltered": 1,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20240430.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20240531.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20240630.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20240731.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "corte-especial_20240831.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20240930.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20241031.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20241130.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20241231.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20250131.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20250228.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20250331.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20250430.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20250531.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20250630.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "corte-especial_20250731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20250831.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20250930.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20251031.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20251130.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20251231.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20260131.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20260228.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20260331.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "corte-especial_20260430.parquet",
+   "prefiltered": 1,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20260531.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "corte-especial_20260630.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "corte-especial_20260731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "corte-especial_20260831.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20220531.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-secao_20220630.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20220731.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20220831.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-secao_20220930.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-secao_20221031.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-secao_20221130.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20221231.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-secao_20230131.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20230228.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20230331.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20230430.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "primeira-secao_20230531.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-secao_20230630.parquet",
+   "prefiltered": 3,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-secao_20230731.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "primeira-secao_20230831.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20230930.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20231031.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "primeira-secao_20231130.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20231231.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20240131.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20240229.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-secao_20240331.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-secao_20240430.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-secao_20240531.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20240630.parquet",
+   "prefiltered": 7,
+   "candidates": 7
+  },
+  {
+   "file": "primeira-secao_20240731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-secao_20240831.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20240930.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "primeira-secao_20241031.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20241130.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-secao_20241231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-secao_20250131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-secao_20250228.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "primeira-secao_20250331.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-secao_20250430.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-secao_20250531.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20250630.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-secao_20250731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-secao_20250831.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-secao_20250930.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20251031.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20251130.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-secao_20251231.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20260131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-secao_20260228.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-secao_20260331.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-secao_20260430.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20260531.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "primeira-secao_20260630.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20260731.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-secao_20260831.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20220531.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-turma_20220630.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-turma_20220731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-turma_20220831.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20220930.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-turma_20221031.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "primeira-turma_20221130.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20221231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-turma_20230131.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-turma_20230228.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-turma_20230331.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-turma_20230430.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20230531.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-turma_20230630.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20230731.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "primeira-turma_20230831.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-turma_20230930.parquet",
+   "prefiltered": 12,
+   "candidates": 12
+  },
+  {
+   "file": "primeira-turma_20231031.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-turma_20231130.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20231231.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-turma_20240131.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-turma_20240229.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-turma_20240331.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "primeira-turma_20240430.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "primeira-turma_20240531.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "primeira-turma_20240630.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-turma_20240731.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-turma_20240831.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-turma_20240930.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20241031.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "primeira-turma_20241130.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20241231.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-turma_20250131.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20250228.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20250331.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-turma_20250430.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "primeira-turma_20250531.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20250630.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "primeira-turma_20250731.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-turma_20250831.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "primeira-turma_20250930.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "primeira-turma_20251031.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "primeira-turma_20251130.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-turma_20251231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-turma_20260131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-turma_20260228.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-turma_20260331.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-turma_20260430.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-turma_20260531.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "primeira-turma_20260630.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "primeira-turma_20260731.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "primeira-turma_20260831.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "quarta-turma_20220531.parquet",
+   "prefiltered": 7,
+   "candidates": 7
+  },
+  {
+   "file": "quarta-turma_20220630.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "quarta-turma_20220731.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quarta-turma_20220831.parquet",
+   "prefiltered": 9,
+   "candidates": 9
+  },
+  {
+   "file": "quarta-turma_20220930.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "quarta-turma_20221031.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "quarta-turma_20221130.parquet",
+   "prefiltered": 13,
+   "candidates": 13
+  },
+  {
+   "file": "quarta-turma_20221231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quarta-turma_20230131.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "quarta-turma_20230228.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "quarta-turma_20230331.parquet",
+   "prefiltered": 117,
+   "candidates": 117
+  },
+  {
+   "file": "quarta-turma_20230430.parquet",
+   "prefiltered": 12,
+   "candidates": 11
+  },
+  {
+   "file": "quarta-turma_20230531.parquet",
+   "prefiltered": 10,
+   "candidates": 9
+  },
+  {
+   "file": "quarta-turma_20230630.parquet",
+   "prefiltered": 17,
+   "candidates": 17
+  },
+  {
+   "file": "quarta-turma_20230731.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "quarta-turma_20230831.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "quarta-turma_20230930.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "quarta-turma_20231031.parquet",
+   "prefiltered": 6,
+   "candidates": 4
+  },
+  {
+   "file": "quarta-turma_20231130.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "quarta-turma_20231231.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "quarta-turma_20240131.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quarta-turma_20240229.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "quarta-turma_20240331.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "quarta-turma_20240430.parquet",
+   "prefiltered": 11,
+   "candidates": 11
+  },
+  {
+   "file": "quarta-turma_20240531.parquet",
+   "prefiltered": 9,
+   "candidates": 9
+  },
+  {
+   "file": "quarta-turma_20240630.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "quarta-turma_20240731.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "quarta-turma_20240831.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "quarta-turma_20240930.parquet",
+   "prefiltered": 10,
+   "candidates": 9
+  },
+  {
+   "file": "quarta-turma_20241031.parquet",
+   "prefiltered": 7,
+   "candidates": 7
+  },
+  {
+   "file": "quarta-turma_20241130.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quarta-turma_20241231.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quarta-turma_20250131.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quarta-turma_20250228.parquet",
+   "prefiltered": 7,
+   "candidates": 7
+  },
+  {
+   "file": "quarta-turma_20250331.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "quarta-turma_20250430.parquet",
+   "prefiltered": 23,
+   "candidates": 22
+  },
+  {
+   "file": "quarta-turma_20250531.parquet",
+   "prefiltered": 15,
+   "candidates": 15
+  },
+  {
+   "file": "quarta-turma_20250630.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "quarta-turma_20250731.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "quarta-turma_20250831.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "quarta-turma_20250930.parquet",
+   "prefiltered": 12,
+   "candidates": 12
+  },
+  {
+   "file": "quarta-turma_20251031.parquet",
+   "prefiltered": 14,
+   "candidates": 13
+  },
+  {
+   "file": "quarta-turma_20251130.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "quarta-turma_20251231.parquet",
+   "prefiltered": 57,
+   "candidates": 56
+  },
+  {
+   "file": "quarta-turma_20260131.parquet",
+   "prefiltered": 21,
+   "candidates": 21
+  },
+  {
+   "file": "quarta-turma_20260228.parquet",
+   "prefiltered": 26,
+   "candidates": 26
+  },
+  {
+   "file": "quarta-turma_20260331.parquet",
+   "prefiltered": 103,
+   "candidates": 100
+  },
+  {
+   "file": "quarta-turma_20260430.parquet",
+   "prefiltered": 49,
+   "candidates": 49
+  },
+  {
+   "file": "quarta-turma_20260531.parquet",
+   "prefiltered": 61,
+   "candidates": 60
+  },
+  {
+   "file": "quarta-turma_20260630.parquet",
+   "prefiltered": 132,
+   "candidates": 130
+  },
+  {
+   "file": "quarta-turma_20260731.parquet",
+   "prefiltered": 42,
+   "candidates": 40
+  },
+  {
+   "file": "quarta-turma_20260831.parquet",
+   "prefiltered": 55,
+   "candidates": 55
+  },
+  {
+   "file": "quinta-turma_20220531.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20220630.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quinta-turma_20220731.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "quinta-turma_20220831.parquet",
+   "prefiltered": 5,
+   "candidates": 4
+  },
+  {
+   "file": "quinta-turma_20220930.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quinta-turma_20221031.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "quinta-turma_20221130.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "quinta-turma_20221231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20230131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20230228.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "quinta-turma_20230331.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "quinta-turma_20230430.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quinta-turma_20230531.parquet",
+   "prefiltered": 5,
+   "candidates": 4
+  },
+  {
+   "file": "quinta-turma_20230630.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "quinta-turma_20230731.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "quinta-turma_20230831.parquet",
+   "prefiltered": 7,
+   "candidates": 6
+  },
+  {
+   "file": "quinta-turma_20230930.parquet",
+   "prefiltered": 3,
+   "candidates": 2
+  },
+  {
+   "file": "quinta-turma_20231031.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "quinta-turma_20231130.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "quinta-turma_20231231.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quinta-turma_20240131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20240229.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20240331.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "quinta-turma_20240430.parquet",
+   "prefiltered": 2,
+   "candidates": 1
+  },
+  {
+   "file": "quinta-turma_20240531.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20240630.parquet",
+   "prefiltered": 2,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20240731.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quinta-turma_20240831.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quinta-turma_20240930.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "quinta-turma_20241031.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "quinta-turma_20241130.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "quinta-turma_20241231.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "quinta-turma_20250131.parquet",
+   "prefiltered": 15,
+   "candidates": 15
+  },
+  {
+   "file": "quinta-turma_20250228.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "quinta-turma_20250331.parquet",
+   "prefiltered": 13,
+   "candidates": 13
+  },
+  {
+   "file": "quinta-turma_20250430.parquet",
+   "prefiltered": 4,
+   "candidates": 2
+  },
+  {
+   "file": "quinta-turma_20250531.parquet",
+   "prefiltered": 7,
+   "candidates": 7
+  },
+  {
+   "file": "quinta-turma_20250630.parquet",
+   "prefiltered": 12,
+   "candidates": 11
+  },
+  {
+   "file": "quinta-turma_20250731.parquet",
+   "prefiltered": 9,
+   "candidates": 9
+  },
+  {
+   "file": "quinta-turma_20250831.parquet",
+   "prefiltered": 11,
+   "candidates": 11
+  },
+  {
+   "file": "quinta-turma_20250930.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "quinta-turma_20251031.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20251130.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20251231.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "quinta-turma_20260131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20260228.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20260331.parquet",
+   "prefiltered": 2,
+   "candidates": 1
+  },
+  {
+   "file": "quinta-turma_20260430.parquet",
+   "prefiltered": 1,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20260531.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "quinta-turma_20260630.parquet",
+   "prefiltered": 40,
+   "candidates": 34
+  },
+  {
+   "file": "quinta-turma_20260731.parquet",
+   "prefiltered": 3,
+   "candidates": 2
+  },
+  {
+   "file": "quinta-turma_20260831.parquet",
+   "prefiltered": 24,
+   "candidates": 21
+  },
+  {
+   "file": "segunda-secao_20220531.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20220630.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20220731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20220831.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "segunda-secao_20220930.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20221031.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-secao_20221130.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20221231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20230131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20230228.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20230331.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20230430.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20230531.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "segunda-secao_20230630.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20230731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20230831.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20230930.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20231031.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-secao_20231130.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20231231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20240131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20240331.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20240430.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20240531.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20240630.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20240731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20240831.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20240930.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20241031.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20241130.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20241231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20250131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20250228.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-secao_20250331.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20250430.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20250531.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-secao_20250630.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20250731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20250831.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20250930.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "segunda-secao_20251031.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20251130.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "segunda-secao_20251231.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-secao_20260131.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "segunda-secao_20260228.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "segunda-secao_20260331.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "segunda-secao_20260430.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20260531.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-secao_20260630.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "segunda-secao_20260731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-secao_20260831.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "segunda-turma_20220531.parquet",
+   "prefiltered": 9,
+   "candidates": 9
+  },
+  {
+   "file": "segunda-turma_20220630.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "segunda-turma_20220731.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-turma_20220831.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "segunda-turma_20220930.parquet",
+   "prefiltered": 10,
+   "candidates": 9
+  },
+  {
+   "file": "segunda-turma_20221031.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "segunda-turma_20221130.parquet",
+   "prefiltered": 17,
+   "candidates": 16
+  },
+  {
+   "file": "segunda-turma_20221231.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "segunda-turma_20230131.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "segunda-turma_20230228.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "segunda-turma_20230331.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "segunda-turma_20230430.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "segunda-turma_20230531.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "segunda-turma_20230630.parquet",
+   "prefiltered": 11,
+   "candidates": 11
+  },
+  {
+   "file": "segunda-turma_20230731.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-turma_20230831.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "segunda-turma_20230930.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "segunda-turma_20231031.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "segunda-turma_20231130.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "segunda-turma_20231231.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "segunda-turma_20240131.parquet",
+   "prefiltered": 9,
+   "candidates": 8
+  },
+  {
+   "file": "segunda-turma_20240229.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-turma_20240331.parquet",
+   "prefiltered": 7,
+   "candidates": 7
+  },
+  {
+   "file": "segunda-turma_20240430.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "segunda-turma_20240531.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "segunda-turma_20240630.parquet",
+   "prefiltered": 9,
+   "candidates": 9
+  },
+  {
+   "file": "segunda-turma_20240731.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "segunda-turma_20240831.parquet",
+   "prefiltered": 11,
+   "candidates": 11
+  },
+  {
+   "file": "segunda-turma_20240930.parquet",
+   "prefiltered": 6,
+   "candidates": 6
+  },
+  {
+   "file": "segunda-turma_20241031.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-turma_20241130.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "segunda-turma_20241231.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-turma_20250131.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "segunda-turma_20250228.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-turma_20250331.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "segunda-turma_20250430.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "segunda-turma_20250531.parquet",
+   "prefiltered": 9,
+   "candidates": 9
+  },
+  {
+   "file": "segunda-turma_20250630.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-turma_20250731.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "segunda-turma_20250831.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-turma_20250930.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "segunda-turma_20251031.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "segunda-turma_20251130.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "segunda-turma_20251231.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-turma_20260131.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "segunda-turma_20260228.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "segunda-turma_20260331.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "segunda-turma_20260430.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "segunda-turma_20260531.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "segunda-turma_20260630.parquet",
+   "prefiltered": 34,
+   "candidates": 34
+  },
+  {
+   "file": "segunda-turma_20260731.parquet",
+   "prefiltered": 18,
+   "candidates": 18
+  },
+  {
+   "file": "segunda-turma_20260831.parquet",
+   "prefiltered": 30,
+   "candidates": 30
+  },
+  {
+   "file": "sexta-turma_20220531.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "sexta-turma_20220630.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "sexta-turma_20220731.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "sexta-turma_20220831.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "sexta-turma_20220930.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "sexta-turma_20221031.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "sexta-turma_20221130.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "sexta-turma_20221231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "sexta-turma_20230131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "sexta-turma_20230228.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "sexta-turma_20230331.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "sexta-turma_20230430.parquet",
+   "prefiltered": 11,
+   "candidates": 9
+  },
+  {
+   "file": "sexta-turma_20230531.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "sexta-turma_20230630.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "sexta-turma_20230731.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "sexta-turma_20230831.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "sexta-turma_20230930.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "sexta-turma_20231031.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "sexta-turma_20231130.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "sexta-turma_20231231.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "sexta-turma_20240131.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "sexta-turma_20240229.parquet",
+   "prefiltered": 1,
+   "candidates": 0
+  },
+  {
+   "file": "sexta-turma_20240331.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "sexta-turma_20240430.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "sexta-turma_20240531.parquet",
+   "prefiltered": 4,
+   "candidates": 2
+  },
+  {
+   "file": "sexta-turma_20240630.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "sexta-turma_20240731.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "sexta-turma_20240831.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "sexta-turma_20240930.parquet",
+   "prefiltered": 4,
+   "candidates": 1
+  },
+  {
+   "file": "sexta-turma_20241031.parquet",
+   "prefiltered": 14,
+   "candidates": 14
+  },
+  {
+   "file": "sexta-turma_20241130.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "sexta-turma_20241231.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "sexta-turma_20250131.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "sexta-turma_20250228.parquet",
+   "prefiltered": 14,
+   "candidates": 14
+  },
+  {
+   "file": "sexta-turma_20250331.parquet",
+   "prefiltered": 24,
+   "candidates": 24
+  },
+  {
+   "file": "sexta-turma_20250430.parquet",
+   "prefiltered": 17,
+   "candidates": 17
+  },
+  {
+   "file": "sexta-turma_20250531.parquet",
+   "prefiltered": 19,
+   "candidates": 19
+  },
+  {
+   "file": "sexta-turma_20250630.parquet",
+   "prefiltered": 17,
+   "candidates": 17
+  },
+  {
+   "file": "sexta-turma_20250731.parquet",
+   "prefiltered": 19,
+   "candidates": 19
+  },
+  {
+   "file": "sexta-turma_20250831.parquet",
+   "prefiltered": 12,
+   "candidates": 10
+  },
+  {
+   "file": "sexta-turma_20250930.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "sexta-turma_20251031.parquet",
+   "prefiltered": 9,
+   "candidates": 9
+  },
+  {
+   "file": "sexta-turma_20251130.parquet",
+   "prefiltered": 1,
+   "candidates": 0
+  },
+  {
+   "file": "sexta-turma_20251231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "sexta-turma_20260131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "sexta-turma_20260228.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "sexta-turma_20260331.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "sexta-turma_20260430.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "sexta-turma_20260531.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "sexta-turma_20260630.parquet",
+   "prefiltered": 39,
+   "candidates": 39
+  },
+  {
+   "file": "sexta-turma_20260731.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "sexta-turma_20260831.parquet",
+   "prefiltered": 25,
+   "candidates": 25
+  },
+  {
+   "file": "terceira-secao_20220531.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20220630.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-secao_20220731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20220831.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20220930.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20221031.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20221130.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-secao_20221231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20230131.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-secao_20230228.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20230331.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20230430.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20230531.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20230630.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20230731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20230831.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "terceira-secao_20230930.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20231031.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20231130.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20231231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20240131.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20240229.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20240331.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-secao_20240430.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20240531.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20240630.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-secao_20240731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20240831.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20240930.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20241031.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "terceira-secao_20241130.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20241231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20250131.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "terceira-secao_20250228.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20250331.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-secao_20250430.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20250531.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20250630.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20250731.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-secao_20250831.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20250930.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20251031.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20251130.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20251231.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20260131.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "terceira-secao_20260228.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-secao_20260331.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "terceira-secao_20260430.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "terceira-secao_20260531.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20260630.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-secao_20260731.parquet",
+   "prefiltered": 0,
+   "candidates": 0
+  },
+  {
+   "file": "terceira-secao_20260831.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-turma_20220531.parquet",
+   "prefiltered": 9,
+   "candidates": 9
+  },
+  {
+   "file": "terceira-turma_20220630.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "terceira-turma_20220731.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-turma_20220831.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "terceira-turma_20220930.parquet",
+   "prefiltered": 9,
+   "candidates": 9
+  },
+  {
+   "file": "terceira-turma_20221031.parquet",
+   "prefiltered": 13,
+   "candidates": 13
+  },
+  {
+   "file": "terceira-turma_20221130.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "terceira-turma_20221231.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "terceira-turma_20230131.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "terceira-turma_20230228.parquet",
+   "prefiltered": 3,
+   "candidates": 3
+  },
+  {
+   "file": "terceira-turma_20230331.parquet",
+   "prefiltered": 14,
+   "candidates": 14
+  },
+  {
+   "file": "terceira-turma_20230430.parquet",
+   "prefiltered": 9,
+   "candidates": 8
+  },
+  {
+   "file": "terceira-turma_20230531.parquet",
+   "prefiltered": 18,
+   "candidates": 18
+  },
+  {
+   "file": "terceira-turma_20230630.parquet",
+   "prefiltered": 9,
+   "candidates": 9
+  },
+  {
+   "file": "terceira-turma_20230731.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "terceira-turma_20230831.parquet",
+   "prefiltered": 7,
+   "candidates": 7
+  },
+  {
+   "file": "terceira-turma_20230930.parquet",
+   "prefiltered": 18,
+   "candidates": 18
+  },
+  {
+   "file": "terceira-turma_20231031.parquet",
+   "prefiltered": 12,
+   "candidates": 12
+  },
+  {
+   "file": "terceira-turma_20231130.parquet",
+   "prefiltered": 16,
+   "candidates": 16
+  },
+  {
+   "file": "terceira-turma_20231231.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "terceira-turma_20240131.parquet",
+   "prefiltered": 10,
+   "candidates": 9
+  },
+  {
+   "file": "terceira-turma_20240229.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "terceira-turma_20240331.parquet",
+   "prefiltered": 18,
+   "candidates": 18
+  },
+  {
+   "file": "terceira-turma_20240430.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "terceira-turma_20240531.parquet",
+   "prefiltered": 16,
+   "candidates": 16
+  },
+  {
+   "file": "terceira-turma_20240630.parquet",
+   "prefiltered": 7,
+   "candidates": 7
+  },
+  {
+   "file": "terceira-turma_20240731.parquet",
+   "prefiltered": 4,
+   "candidates": 4
+  },
+  {
+   "file": "terceira-turma_20240831.parquet",
+   "prefiltered": 11,
+   "candidates": 11
+  },
+  {
+   "file": "terceira-turma_20240930.parquet",
+   "prefiltered": 14,
+   "candidates": 14
+  },
+  {
+   "file": "terceira-turma_20241031.parquet",
+   "prefiltered": 11,
+   "candidates": 11
+  },
+  {
+   "file": "terceira-turma_20241130.parquet",
+   "prefiltered": 12,
+   "candidates": 12
+  },
+  {
+   "file": "terceira-turma_20241231.parquet",
+   "prefiltered": 2,
+   "candidates": 2
+  },
+  {
+   "file": "terceira-turma_20250131.parquet",
+   "prefiltered": 1,
+   "candidates": 1
+  },
+  {
+   "file": "terceira-turma_20250228.parquet",
+   "prefiltered": 16,
+   "candidates": 16
+  },
+  {
+   "file": "terceira-turma_20250331.parquet",
+   "prefiltered": 19,
+   "candidates": 19
+  },
+  {
+   "file": "terceira-turma_20250430.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "terceira-turma_20250531.parquet",
+   "prefiltered": 23,
+   "candidates": 23
+  },
+  {
+   "file": "terceira-turma_20250630.parquet",
+   "prefiltered": 13,
+   "candidates": 13
+  },
+  {
+   "file": "terceira-turma_20250731.parquet",
+   "prefiltered": 8,
+   "candidates": 8
+  },
+  {
+   "file": "terceira-turma_20250831.parquet",
+   "prefiltered": 5,
+   "candidates": 5
+  },
+  {
+   "file": "terceira-turma_20250930.parquet",
+   "prefiltered": 40,
+   "candidates": 39
+  },
+  {
+   "file": "terceira-turma_20251031.parquet",
+   "prefiltered": 25,
+   "candidates": 25
+  },
+  {
+   "file": "terceira-turma_20251130.parquet",
+   "prefiltered": 45,
+   "candidates": 44
+  },
+  {
+   "file": "terceira-turma_20251231.parquet",
+   "prefiltered": 81,
+   "candidates": 81
+  },
+  {
+   "file": "terceira-turma_20260131.parquet",
+   "prefiltered": 28,
+   "candidates": 28
+  },
+  {
+   "file": "terceira-turma_20260228.parquet",
+   "prefiltered": 10,
+   "candidates": 10
+  },
+  {
+   "file": "terceira-turma_20260331.parquet",
+   "prefiltered": 13,
+   "candidates": 13
+  },
+  {
+   "file": "terceira-turma_20260430.parquet",
+   "prefiltered": 22,
+   "candidates": 21
+  },
+  {
+   "file": "terceira-turma_20260531.parquet",
+   "prefiltered": 32,
+   "candidates": 31
+  },
+  {
+   "file": "terceira-turma_20260630.parquet",
+   "prefiltered": 104,
+   "candidates": 104
+  },
+  {
+   "file": "terceira-turma_20260731.parquet",
+   "prefiltered": 33,
+   "candidates": 32
+  },
+  {
+   "file": "terceira-turma_20260831.parquet",
+   "prefiltered": 32,
+   "candidates": 32
+  }
+ ]
+}

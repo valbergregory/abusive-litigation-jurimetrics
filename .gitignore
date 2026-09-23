@@ -1,6 +1,9 @@
 data/raw/
 data/interim/
 data/processed/
+# annotation files hold decision snippets and the researcher's labels: local only (public repo)
+data/annotations/
+data/exports/
 *.zip
 *.gz
 .venv/
@@ -13,6 +16,10 @@ _freeze/
 .quarto/
 logs/*_run.out
 logs/*_run.err
+
+# doit state (derived)
+.doit.db
+.doit.db.*
 
 # --- Texto do artigo (local; nao versionado). Publicar apenas o PDF final em artigo/ ---
 overleaf/

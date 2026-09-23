@@ -1,0 +1,10696 @@
+{
+ "run_at": "2026-09-22T23:06:51",
+ "lexicon": {
+  "path": "config\\lexicon_v2.yaml",
+  "version": "2.0.0",
+  "patterns": 47,
+  "candidate_tiers": [
+   "strict",
+   "conduct",
+   "sanction"
+  ]
+ },
+ "sample_mode": false,
+ "keys_available": 1285,
+ "keys_scanned_this_run": 1285,
+ "totals": {
+  "excluded_hits": 1120,
+  "negated_all_docs": 4431,
+  "docs_scanned": 2975817,
+  "prefiltered": 156780,
+  "candidates": 150897,
+  "hits": 304248
+ },
+ "prefilter_rate_pct": 5.27,
+ "candidate_rate_pct": 5.071,
+ "stage_b_precision_of_prefilter_pct": 96.2,
+ "minutes": 48.9,
+ "by_year": [
+  {
+   "year": "2021",
+   "candidates": 21437,
+   "strict": 49,
+   "conduct": 8847,
+   "sanction": 12944,
+   "negated_all": 644
+  },
+  {
+   "year": "2022",
+   "candidates": 23882,
+   "strict": 107,
+   "conduct": 9376,
+   "sanction": 15297,
+   "negated_all": 663
+  },
+  {
+   "year": "2023",
+   "candidates": 28447,
+   "strict": 86,
+   "conduct": 12569,
+   "sanction": 18353,
+   "negated_all": 643
+  },
+  {
+   "year": "2024",
+   "candidates": 35783,
+   "strict": 642,
+   "conduct": 13234,
+   "sanction": 22813,
+   "negated_all": 844
+  },
+  {
+   "year": "2025",
+   "candidates": 34066,
+   "strict": 1580,
+   "conduct": 13576,
+   "sanction": 20588,
+   "negated_all": 1311
+  },
+  {
+   "year": "2026",
+   "candidates": 7282,
+   "strict": 486,
+   "conduct": 3630,
+   "sanction": 3776,
+   "negated_all": 326
+  }
+ ],
+ "by_pattern": [
+  {
+   "pattern_id": "extincao_sem_merito",
+   "tier": "sanction",
+   "hits": 91924,
+   "documents": 63260,
+   "negated": 2977
+  },
+  {
+   "pattern_id": "representacao_irregular",
+   "tier": "conduct",
+   "hits": 36134,
+   "documents": 33505,
+   "negated": 248
+  },
+  {
+   "pattern_id": "ma_fe_processual_mencao",
+   "tier": "neighbour",
+   "hits": 45993,
+   "documents": 21226,
+   "negated": 3556
+  },
+  {
+   "pattern_id": "ma_fe_art_80",
+   "tier": "sanction",
+   "hits": 17753,
+   "documents": 13741,
+   "negated": 1247
+  },
+  {
+   "pattern_id": "demandas_repetitivas",
+   "tier": "neighbour",
+   "hits": 18077,
+   "documents": 11223,
+   "negated": 466
+  },
+  {
+   "pattern_id": "oficio_oab_ou_mp",
+   "tier": "sanction",
+   "hits": 9469,
+   "documents": 7625,
+   "negated": 529
+  },
+  {
+   "pattern_id": "ato_atentatorio_art_77",
+   "tier": "sanction",
+   "hits": 10389,
+   "documents": 6937,
+   "negated": 616
+  },
+  {
+   "pattern_id": "recurso_protelatorio",
+   "tier": "neighbour",
+   "hits": 9021,
+   "documents": 5441,
+   "negated": 485
+  },
+  {
+   "pattern_id": "multa_ma_fe_art_81",
+   "tier": "sanction",
+   "hits": 7261,
+   "documents": 5314,
+   "negated": 409
+  },
+  {
+   "pattern_id": "causa_de_pedir_generica",
+   "tier": "conduct",
+   "hits": 6745,
+   "documents": 5280,
+   "negated": 179
+  },
+  {
+   "pattern_id": "pressao_beneficio_extraprocessual",
+   "tier": "conduct",
+   "hits": 5456,
+   "documents": 4614,
+   "negated": 1078
+  },
+  {
+   "pattern_id": "pedidos_vagos",
+   "tier": "conduct",
+   "hits": 5174,
+   "documents": 4215,
+   "negated": 212
+  },
+  {
+   "pattern_id": "ausencia_documentos_essenciais",
+   "tier": "conduct",
+   "hits": 4270,
+   "documents": 3730,
+   "negated": 174
+  },
+  {
+   "pattern_id": "gratuidade_sem_comprovacao",
+   "tier": "conduct",
+   "hits": 3676,
+   "documents": 3184,
+   "negated": 241
+  },
+  {
+   "pattern_id": "emenda_ou_indeferimento_inicial",
+   "tier": "sanction",
+   "hits": 4124,
+   "documents": 2687,
+   "negated": 66
+  },
+  {
+   "pattern_id": "procuracao_irregular",
+   "tier": "conduct",
+   "hits": 3603,
+   "documents": 2453,
+   "negated": 185
+  },
+  {
+   "pattern_id": "abuso_direito_acao",
+   "tier": "neighbour",
+   "hits": 3262,
+   "documents": 2303,
+   "negated": 572
+  },
+  {
+   "pattern_id": "documentos_desatualizados",
+   "tier": "conduct",
+   "hits": 2217,
+   "documents": 1816,
+   "negated": 62
+  },
+  {
+   "pattern_id": "litigancia_predatoria",
+   "tier": "strict",
+   "hits": 2986,
+   "documents": 1599,
+   "negated": 201
+  },
+  {
+   "pattern_id": "valor_causa_aleatorio",
+   "tier": "conduct",
+   "hits": 1871,
+   "documents": 1549,
+   "negated": 16
+  },
+  {
+   "pattern_id": "tema_1198",
+   "tier": "normative",
+   "hits": 2909,
+   "documents": 1282,
+   "negated": 199
+  },
+  {
+   "pattern_id": "captacao_indevida",
+   "tier": "conduct",
+   "hits": 1625,
+   "documents": 1268,
+   "negated": 51
+  },
+  {
+   "pattern_id": "advocacia_predatoria",
+   "tier": "strict",
+   "hits": 1609,
+   "documents": 1057,
+   "negated": 159
+  },
+  {
+   "pattern_id": "ausencia_pretensao_resistida",
+   "tier": "conduct",
+   "hits": 1295,
+   "documents": 937,
+   "negated": 422
+  },
+  {
+   "pattern_id": "numopede",
+   "tier": "normative",
+   "hits": 986,
+   "documents": 754,
+   "negated": 72
+  },
+  {
+   "pattern_id": "apuracao_indicios",
+   "tier": "sanction",
+   "hits": 1421,
+   "documents": 704,
+   "negated": 60
+  },
+  {
+   "pattern_id": "fracionamento",
+   "tier": "conduct",
+   "hits": 926,
+   "documents": 604,
+   "negated": 27
+  },
+  {
+   "pattern_id": "litigancia_abusiva",
+   "tier": "strict",
+   "hits": 956,
+   "documents": 466,
+   "negated": 18
+  },
+  {
+   "pattern_id": "demanda_artificial",
+   "tier": "strict",
+   "hits": 471,
+   "documents": 349,
+   "negated": 24
+  },
+  {
+   "pattern_id": "fracionamento_perifrase",
+   "tier": "conduct",
+   "hits": 221,
+   "documents": 184,
+   "negated": 4
+  },
+  {
+   "pattern_id": "comprovante_residencia_terceiro",
+   "tier": "conduct",
+   "hits": 205,
+   "documents": 171,
+   "negated": 15
+  },
+  {
+   "pattern_id": "art_286_ii",
+   "tier": "normative",
+   "hits": 326,
+   "documents": 166,
+   "negated": 6
+  },
+  {
+   "pattern_id": "lide_temeraria",
+   "tier": "neighbour",
+   "hits": 197,
+   "documents": 156,
+   "negated": 8
+  },
+  {
+   "pattern_id": "assinatura_nao_qualificada",
+   "tier": "conduct",
+   "hits": 126,
+   "documents": 82,
+   "negated": 9
+  },
+  {
+   "pattern_id": "peticoes_padronizadas",
+   "tier": "conduct",
+   "hits": 84,
+   "documents": 78,
+   "negated": 2
+  },
+  {
+   "pattern_id": "assedio_processual",
+   "tier": "strict",
+   "hits": 110,
+   "documents": 68,
+   "negated": 3
+  },
+  {
+   "pattern_id": "foro_distinto_domicilio",
+   "tier": "conduct",
+   "hits": 53,
+   "documents": 52,
+   "negated": 0
+  },
+  {
+   "pattern_id": "rec_cnj_159",
+   "tier": "normative",
+   "hits": 53,
+   "documents": 36,
+   "negated": 1
+  },
+  {
+   "pattern_id": "litigiosidade_artificial",
+   "tier": "strict",
+   "hits": 46,
+   "documents": 31,
+   "negated": 2
+  },
+  {
+   "pattern_id": "judicializacao_predatoria",
+   "tier": "strict",
+   "hits": 30,
+   "documents": 26,
+   "negated": 0
+  },
+  {
+   "pattern_id": "concentracao_poucos_patronos",
+   "tier": "conduct",
+   "hits": 26,
+   "documents": 26,
+   "negated": 3
+  },
+  {
+   "pattern_id": "notificacao_extrajudicial_sem_prova",
+   "tier": "conduct",
+   "hits": 18,
+   "documents": 14,
+   "negated": 0
+  },
+  {
+   "pattern_id": "desistencia_apos_indeferimento",
+   "tier": "conduct",
+   "hits": 13,
+   "documents": 12,
+   "negated": 3
+  },
+  {
+   "pattern_id": "cessao_direito_demandar",
+   "tier": "conduct",
+   "hits": 12,
+   "documents": 11,
+   "negated": 0
+  },
+  {
+   "pattern_id": "demanda_identica_sem_dependencia",
+   "tier": "conduct",
+   "hits": 3,
+   "documents": 3,
+   "negated": 0
+  },
+  {
+   "pattern_id": "res_cnj_615",
+   "tier": "normative",
+   "hits": 2,
+   "documents": 1,
+   "negated": 0
+  }
+ ],
+ "dropped_by_exclusion": [
+  {
+   "exclusion_id": "irdr_machinery",
+   "hits": 978
+  },
+  {
+   "exclusion_id": "captacao_financeira",
+   "hits": 142
+  }
+ ],
+ "strict_only_docs": 1554,
+ "docs_with_strict_and_conduct": 618,
+ "per_key_this_run": [
+  {
+   "key": "20210104",
+   "docs_scanned": 106,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 4,
+   "seconds": 0.05
+  },
+  {
+   "key": "20210105",
+   "docs_scanned": 185,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20210106",
+   "docs_scanned": 84,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 2,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210107",
+   "docs_scanned": 56,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 2,
+   "seconds": 0.03
+  },
+  {
+   "key": "20210111",
+   "docs_scanned": 116,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 2,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210112",
+   "docs_scanned": 31,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210113",
+   "docs_scanned": 261,
+   "prefiltered": 4,
+   "candidates": 4,
+   "hits": 4,
+   "seconds": 0.09
+  },
+  {
+   "key": "20210114",
+   "docs_scanned": 314,
+   "prefiltered": 14,
+   "candidates": 13,
+   "hits": 24,
+   "seconds": 0.13
+  },
+  {
+   "key": "20210115",
+   "docs_scanned": 32,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210118",
+   "docs_scanned": 278,
+   "prefiltered": 8,
+   "candidates": 7,
+   "hits": 10,
+   "seconds": 0.11
+  },
+  {
+   "key": "20210119",
+   "docs_scanned": 44,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.03
+  },
+  {
+   "key": "20210120",
+   "docs_scanned": 104,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 2,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210121",
+   "docs_scanned": 112,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20210122",
+   "docs_scanned": 76,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20210125",
+   "docs_scanned": 76,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210126",
+   "docs_scanned": 119,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 3,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210127",
+   "docs_scanned": 72,
+   "prefiltered": 3,
+   "candidates": 3,
+   "hits": 4,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210128",
+   "docs_scanned": 52,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210129",
+   "docs_scanned": 60,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210201",
+   "docs_scanned": 2739,
+   "prefiltered": 122,
+   "candidates": 116,
+   "hits": 249,
+   "seconds": 2.24
+  },
+  {
+   "key": "20210202",
+   "docs_scanned": 6261,
+   "prefiltered": 186,
+   "candidates": 169,
+   "hits": 307,
+   "seconds": 4.22
+  },
+  {
+   "key": "20210203",
+   "docs_scanned": 4273,
+   "prefiltered": 54,
+   "candidates": 49,
+   "hits": 96,
+   "seconds": 1.05
+  },
+  {
+   "key": "20210204",
+   "docs_scanned": 2171,
+   "prefiltered": 55,
+   "candidates": 49,
+   "hits": 65,
+   "seconds": 0.86
+  },
+  {
+   "key": "20210205",
+   "docs_scanned": 4935,
+   "prefiltered": 220,
+   "candidates": 215,
+   "hits": 283,
+   "seconds": 1.63
+  },
+  {
+   "key": "20210208",
+   "docs_scanned": 2465,
+   "prefiltered": 106,
+   "candidates": 100,
+   "hits": 176,
+   "seconds": 1.43
+  },
+  {
+   "key": "20210209",
+   "docs_scanned": 2775,
+   "prefiltered": 88,
+   "candidates": 84,
+   "hits": 149,
+   "seconds": 1.45
+  },
+  {
+   "key": "20210210",
+   "docs_scanned": 1174,
+   "prefiltered": 46,
+   "candidates": 41,
+   "hits": 63,
+   "seconds": 0.62
+  },
+  {
+   "key": "20210211",
+   "docs_scanned": 3775,
+   "prefiltered": 154,
+   "candidates": 146,
+   "hits": 306,
+   "seconds": 2.47
+  },
+  {
+   "key": "20210212",
+   "docs_scanned": 2753,
+   "prefiltered": 106,
+   "candidates": 100,
+   "hits": 223,
+   "seconds": 1.78
+  },
+  {
+   "key": "20210217",
+   "docs_scanned": 2627,
+   "prefiltered": 79,
+   "candidates": 75,
+   "hits": 162,
+   "seconds": 1.46
+  },
+  {
+   "key": "20210218",
+   "docs_scanned": 3433,
+   "prefiltered": 146,
+   "candidates": 138,
+   "hits": 251,
+   "seconds": 1.97
+  },
+  {
+   "key": "20210219",
+   "docs_scanned": 1719,
+   "prefiltered": 44,
+   "candidates": 39,
+   "hits": 79,
+   "seconds": 1.01
+  },
+  {
+   "key": "20210222",
+   "docs_scanned": 2069,
+   "prefiltered": 78,
+   "candidates": 75,
+   "hits": 125,
+   "seconds": 1.06
+  },
+  {
+   "key": "20210223",
+   "docs_scanned": 2469,
+   "prefiltered": 82,
+   "candidates": 76,
+   "hits": 153,
+   "seconds": 1.36
+  },
+  {
+   "key": "20210224",
+   "docs_scanned": 1555,
+   "prefiltered": 46,
+   "candidates": 44,
+   "hits": 83,
+   "seconds": 0.79
+  },
+  {
+   "key": "20210225",
+   "docs_scanned": 1736,
+   "prefiltered": 55,
+   "candidates": 53,
+   "hits": 126,
+   "seconds": 1.06
+  },
+  {
+   "key": "20210226",
+   "docs_scanned": 2118,
+   "prefiltered": 61,
+   "candidates": 54,
+   "hits": 74,
+   "seconds": 1.02
+  },
+  {
+   "key": "20210301",
+   "docs_scanned": 3637,
+   "prefiltered": 169,
+   "candidates": 162,
+   "hits": 286,
+   "seconds": 3.13
+  },
+  {
+   "key": "20210302",
+   "docs_scanned": 3766,
+   "prefiltered": 179,
+   "candidates": 171,
+   "hits": 302,
+   "seconds": 2.66
+  },
+  {
+   "key": "20210303",
+   "docs_scanned": 2019,
+   "prefiltered": 88,
+   "candidates": 84,
+   "hits": 180,
+   "seconds": 1.07
+  },
+  {
+   "key": "20210304",
+   "docs_scanned": 2523,
+   "prefiltered": 119,
+   "candidates": 113,
+   "hits": 215,
+   "seconds": 1.81
+  },
+  {
+   "key": "20210305",
+   "docs_scanned": 1841,
+   "prefiltered": 65,
+   "candidates": 57,
+   "hits": 75,
+   "seconds": 0.98
+  },
+  {
+   "key": "20210308",
+   "docs_scanned": 2072,
+   "prefiltered": 98,
+   "candidates": 84,
+   "hits": 157,
+   "seconds": 1.89
+  },
+  {
+   "key": "20210309",
+   "docs_scanned": 2254,
+   "prefiltered": 99,
+   "candidates": 93,
+   "hits": 189,
+   "seconds": 1.35
+  },
+  {
+   "key": "20210310",
+   "docs_scanned": 2529,
+   "prefiltered": 102,
+   "candidates": 86,
+   "hits": 154,
+   "seconds": 1.58
+  },
+  {
+   "key": "20210311",
+   "docs_scanned": 2082,
+   "prefiltered": 74,
+   "candidates": 66,
+   "hits": 174,
+   "seconds": 1.37
+  },
+  {
+   "key": "20210312",
+   "docs_scanned": 2252,
+   "prefiltered": 139,
+   "candidates": 137,
+   "hits": 211,
+   "seconds": 1.46
+  },
+  {
+   "key": "20210315",
+   "docs_scanned": 2035,
+   "prefiltered": 103,
+   "candidates": 100,
+   "hits": 182,
+   "seconds": 1.54
+  },
+  {
+   "key": "20210316",
+   "docs_scanned": 3122,
+   "prefiltered": 78,
+   "candidates": 75,
+   "hits": 172,
+   "seconds": 1.46
+  },
+  {
+   "key": "20210317",
+   "docs_scanned": 2290,
+   "prefiltered": 64,
+   "candidates": 59,
+   "hits": 124,
+   "seconds": 1.38
+  },
+  {
+   "key": "20210318",
+   "docs_scanned": 2207,
+   "prefiltered": 130,
+   "candidates": 120,
+   "hits": 200,
+   "seconds": 1.31
+  },
+  {
+   "key": "20210319",
+   "docs_scanned": 2075,
+   "prefiltered": 80,
+   "candidates": 78,
+   "hits": 199,
+   "seconds": 1.63
+  },
+  {
+   "key": "20210322",
+   "docs_scanned": 3157,
+   "prefiltered": 131,
+   "candidates": 126,
+   "hits": 205,
+   "seconds": 1.42
+  },
+  {
+   "key": "20210323",
+   "docs_scanned": 2049,
+   "prefiltered": 80,
+   "candidates": 73,
+   "hits": 142,
+   "seconds": 1.43
+  },
+  {
+   "key": "20210324",
+   "docs_scanned": 2494,
+   "prefiltered": 93,
+   "candidates": 91,
+   "hits": 155,
+   "seconds": 1.34
+  },
+  {
+   "key": "20210325",
+   "docs_scanned": 2965,
+   "prefiltered": 135,
+   "candidates": 131,
+   "hits": 237,
+   "seconds": 1.88
+  },
+  {
+   "key": "20210326",
+   "docs_scanned": 2615,
+   "prefiltered": 108,
+   "candidates": 104,
+   "hits": 260,
+   "seconds": 1.85
+  },
+  {
+   "key": "20210329",
+   "docs_scanned": 1794,
+   "prefiltered": 53,
+   "candidates": 47,
+   "hits": 118,
+   "seconds": 1.37
+  },
+  {
+   "key": "20210330",
+   "docs_scanned": 2708,
+   "prefiltered": 96,
+   "candidates": 94,
+   "hits": 195,
+   "seconds": 1.76
+  },
+  {
+   "key": "20210405",
+   "docs_scanned": 2964,
+   "prefiltered": 134,
+   "candidates": 130,
+   "hits": 286,
+   "seconds": 2.29
+  },
+  {
+   "key": "20210406",
+   "docs_scanned": 4522,
+   "prefiltered": 238,
+   "candidates": 231,
+   "hits": 477,
+   "seconds": 3.52
+  },
+  {
+   "key": "20210407",
+   "docs_scanned": 2233,
+   "prefiltered": 107,
+   "candidates": 103,
+   "hits": 185,
+   "seconds": 1.04
+  },
+  {
+   "key": "20210408",
+   "docs_scanned": 2071,
+   "prefiltered": 78,
+   "candidates": 72,
+   "hits": 134,
+   "seconds": 1.37
+  },
+  {
+   "key": "20210409",
+   "docs_scanned": 1466,
+   "prefiltered": 50,
+   "candidates": 44,
+   "hits": 70,
+   "seconds": 0.96
+  },
+  {
+   "key": "20210412",
+   "docs_scanned": 1786,
+   "prefiltered": 34,
+   "candidates": 33,
+   "hits": 82,
+   "seconds": 0.76
+  },
+  {
+   "key": "20210413",
+   "docs_scanned": 2218,
+   "prefiltered": 79,
+   "candidates": 77,
+   "hits": 147,
+   "seconds": 1.53
+  },
+  {
+   "key": "20210414",
+   "docs_scanned": 2054,
+   "prefiltered": 75,
+   "candidates": 72,
+   "hits": 121,
+   "seconds": 1.22
+  },
+  {
+   "key": "20210415",
+   "docs_scanned": 2288,
+   "prefiltered": 87,
+   "candidates": 83,
+   "hits": 193,
+   "seconds": 1.4
+  },
+  {
+   "key": "20210416",
+   "docs_scanned": 2507,
+   "prefiltered": 127,
+   "candidates": 116,
+   "hits": 217,
+   "seconds": 1.63
+  },
+  {
+   "key": "20210419",
+   "docs_scanned": 2124,
+   "prefiltered": 153,
+   "candidates": 149,
+   "hits": 194,
+   "seconds": 1.47
+  },
+  {
+   "key": "20210420",
+   "docs_scanned": 2388,
+   "prefiltered": 71,
+   "candidates": 65,
+   "hits": 110,
+   "seconds": 1.51
+  },
+  {
+   "key": "20210422",
+   "docs_scanned": 2049,
+   "prefiltered": 82,
+   "candidates": 76,
+   "hits": 164,
+   "seconds": 1.3
+  },
+  {
+   "key": "20210423",
+   "docs_scanned": 2428,
+   "prefiltered": 89,
+   "candidates": 83,
+   "hits": 203,
+   "seconds": 1.73
+  },
+  {
+   "key": "20210426",
+   "docs_scanned": 2078,
+   "prefiltered": 68,
+   "candidates": 63,
+   "hits": 98,
+   "seconds": 1.34
+  },
+  {
+   "key": "20210427",
+   "docs_scanned": 2337,
+   "prefiltered": 106,
+   "candidates": 102,
+   "hits": 190,
+   "seconds": 1.64
+  },
+  {
+   "key": "20210428",
+   "docs_scanned": 3795,
+   "prefiltered": 124,
+   "candidates": 120,
+   "hits": 221,
+   "seconds": 2.14
+  },
+  {
+   "key": "20210429",
+   "docs_scanned": 1695,
+   "prefiltered": 69,
+   "candidates": 63,
+   "hits": 120,
+   "seconds": 1.27
+  },
+  {
+   "key": "20210430",
+   "docs_scanned": 2996,
+   "prefiltered": 152,
+   "candidates": 149,
+   "hits": 263,
+   "seconds": 1.83
+  },
+  {
+   "key": "20210503",
+   "docs_scanned": 2804,
+   "prefiltered": 105,
+   "candidates": 98,
+   "hits": 191,
+   "seconds": 2.03
+  },
+  {
+   "key": "20210504",
+   "docs_scanned": 2669,
+   "prefiltered": 136,
+   "candidates": 122,
+   "hits": 205,
+   "seconds": 2.2
+  },
+  {
+   "key": "20210505",
+   "docs_scanned": 2313,
+   "prefiltered": 59,
+   "candidates": 53,
+   "hits": 95,
+   "seconds": 1.08
+  },
+  {
+   "key": "20210506",
+   "docs_scanned": 2400,
+   "prefiltered": 78,
+   "candidates": 76,
+   "hits": 166,
+   "seconds": 1.57
+  },
+  {
+   "key": "20210507",
+   "docs_scanned": 2045,
+   "prefiltered": 69,
+   "candidates": 63,
+   "hits": 118,
+   "seconds": 1.25
+  },
+  {
+   "key": "20210510",
+   "docs_scanned": 1937,
+   "prefiltered": 61,
+   "candidates": 55,
+   "hits": 109,
+   "seconds": 1.46
+  },
+  {
+   "key": "20210511",
+   "docs_scanned": 1870,
+   "prefiltered": 50,
+   "candidates": 44,
+   "hits": 98,
+   "seconds": 0.99
+  },
+  {
+   "key": "20210512",
+   "docs_scanned": 2832,
+   "prefiltered": 155,
+   "candidates": 151,
+   "hits": 265,
+   "seconds": 1.6
+  },
+  {
+   "key": "20210513",
+   "docs_scanned": 2605,
+   "prefiltered": 76,
+   "candidates": 70,
+   "hits": 155,
+   "seconds": 1.42
+  },
+  {
+   "key": "20210514",
+   "docs_scanned": 2266,
+   "prefiltered": 97,
+   "candidates": 94,
+   "hits": 236,
+   "seconds": 1.81
+  },
+  {
+   "key": "20210517",
+   "docs_scanned": 2374,
+   "prefiltered": 124,
+   "candidates": 117,
+   "hits": 211,
+   "seconds": 2.36
+  },
+  {
+   "key": "20210518",
+   "docs_scanned": 2424,
+   "prefiltered": 76,
+   "candidates": 70,
+   "hits": 148,
+   "seconds": 1.75
+  },
+  {
+   "key": "20210519",
+   "docs_scanned": 3106,
+   "prefiltered": 99,
+   "candidates": 91,
+   "hits": 191,
+   "seconds": 1.56
+  },
+  {
+   "key": "20210520",
+   "docs_scanned": 2996,
+   "prefiltered": 174,
+   "candidates": 164,
+   "hits": 271,
+   "seconds": 2.24
+  },
+  {
+   "key": "20210521",
+   "docs_scanned": 2076,
+   "prefiltered": 125,
+   "candidates": 121,
+   "hits": 172,
+   "seconds": 1.13
+  },
+  {
+   "key": "20210524",
+   "docs_scanned": 3290,
+   "prefiltered": 163,
+   "candidates": 152,
+   "hits": 375,
+   "seconds": 2.78
+  },
+  {
+   "key": "20210525",
+   "docs_scanned": 2963,
+   "prefiltered": 92,
+   "candidates": 86,
+   "hits": 168,
+   "seconds": 1.64
+  },
+  {
+   "key": "20210526",
+   "docs_scanned": 1885,
+   "prefiltered": 47,
+   "candidates": 41,
+   "hits": 75,
+   "seconds": 1.11
+  },
+  {
+   "key": "20210527",
+   "docs_scanned": 2990,
+   "prefiltered": 110,
+   "candidates": 105,
+   "hits": 256,
+   "seconds": 2.41
+  },
+  {
+   "key": "20210528",
+   "docs_scanned": 2547,
+   "prefiltered": 110,
+   "candidates": 104,
+   "hits": 247,
+   "seconds": 1.83
+  },
+  {
+   "key": "20210531",
+   "docs_scanned": 3562,
+   "prefiltered": 252,
+   "candidates": 247,
+   "hits": 365,
+   "seconds": 2.59
+  },
+  {
+   "key": "20210601",
+   "docs_scanned": 3310,
+   "prefiltered": 199,
+   "candidates": 196,
+   "hits": 305,
+   "seconds": 2.22
+  },
+  {
+   "key": "20210602",
+   "docs_scanned": 4504,
+   "prefiltered": 160,
+   "candidates": 157,
+   "hits": 315,
+   "seconds": 2.75
+  },
+  {
+   "key": "20210604",
+   "docs_scanned": 2079,
+   "prefiltered": 75,
+   "candidates": 72,
+   "hits": 163,
+   "seconds": 1.94
+  },
+  {
+   "key": "20210607",
+   "docs_scanned": 2257,
+   "prefiltered": 89,
+   "candidates": 82,
+   "hits": 187,
+   "seconds": 1.6
+  },
+  {
+   "key": "20210608",
+   "docs_scanned": 1927,
+   "prefiltered": 98,
+   "candidates": 91,
+   "hits": 177,
+   "seconds": 1.3
+  },
+  {
+   "key": "20210609",
+   "docs_scanned": 2392,
+   "prefiltered": 151,
+   "candidates": 146,
+   "hits": 214,
+   "seconds": 1.36
+  },
+  {
+   "key": "20210610",
+   "docs_scanned": 1961,
+   "prefiltered": 86,
+   "candidates": 82,
+   "hits": 171,
+   "seconds": 1.18
+  },
+  {
+   "key": "20210611",
+   "docs_scanned": 2407,
+   "prefiltered": 81,
+   "candidates": 75,
+   "hits": 194,
+   "seconds": 1.44
+  },
+  {
+   "key": "20210614",
+   "docs_scanned": 2190,
+   "prefiltered": 98,
+   "candidates": 90,
+   "hits": 198,
+   "seconds": 1.99
+  },
+  {
+   "key": "20210615",
+   "docs_scanned": 2081,
+   "prefiltered": 82,
+   "candidates": 81,
+   "hits": 149,
+   "seconds": 1.26
+  },
+  {
+   "key": "20210616",
+   "docs_scanned": 2952,
+   "prefiltered": 84,
+   "candidates": 78,
+   "hits": 148,
+   "seconds": 1.58
+  },
+  {
+   "key": "20210617",
+   "docs_scanned": 2434,
+   "prefiltered": 110,
+   "candidates": 100,
+   "hits": 236,
+   "seconds": 2.01
+  },
+  {
+   "key": "20210618",
+   "docs_scanned": 1761,
+   "prefiltered": 91,
+   "candidates": 88,
+   "hits": 178,
+   "seconds": 1.37
+  },
+  {
+   "key": "20210621",
+   "docs_scanned": 2397,
+   "prefiltered": 162,
+   "candidates": 157,
+   "hits": 256,
+   "seconds": 1.87
+  },
+  {
+   "key": "20210622",
+   "docs_scanned": 1519,
+   "prefiltered": 53,
+   "candidates": 49,
+   "hits": 112,
+   "seconds": 1.1
+  },
+  {
+   "key": "20210623",
+   "docs_scanned": 1699,
+   "prefiltered": 51,
+   "candidates": 45,
+   "hits": 88,
+   "seconds": 1.07
+  },
+  {
+   "key": "20210624",
+   "docs_scanned": 2596,
+   "prefiltered": 96,
+   "candidates": 91,
+   "hits": 200,
+   "seconds": 1.73
+  },
+  {
+   "key": "20210625",
+   "docs_scanned": 2829,
+   "prefiltered": 105,
+   "candidates": 102,
+   "hits": 264,
+   "seconds": 1.86
+  },
+  {
+   "key": "20210628",
+   "docs_scanned": 2377,
+   "prefiltered": 93,
+   "candidates": 78,
+   "hits": 165,
+   "seconds": 1.54
+  },
+  {
+   "key": "20210629",
+   "docs_scanned": 4442,
+   "prefiltered": 291,
+   "candidates": 283,
+   "hits": 615,
+   "seconds": 4.73
+  },
+  {
+   "key": "20210630",
+   "docs_scanned": 2825,
+   "prefiltered": 118,
+   "candidates": 112,
+   "hits": 238,
+   "seconds": 1.66
+  },
+  {
+   "key": "20210701",
+   "docs_scanned": 6784,
+   "prefiltered": 455,
+   "candidates": 439,
+   "hits": 999,
+   "seconds": 6.82
+  },
+  {
+   "key": "20210702",
+   "docs_scanned": 736,
+   "prefiltered": 19,
+   "candidates": 19,
+   "hits": 20,
+   "seconds": 0.12
+  },
+  {
+   "key": "20210705",
+   "docs_scanned": 76,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210706",
+   "docs_scanned": 61,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210707",
+   "docs_scanned": 57,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210708",
+   "docs_scanned": 104,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210709",
+   "docs_scanned": 71,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 2,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210712",
+   "docs_scanned": 138,
+   "prefiltered": 3,
+   "candidates": 2,
+   "hits": 3,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210713",
+   "docs_scanned": 187,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 6,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210714",
+   "docs_scanned": 110,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.03
+  },
+  {
+   "key": "20210715",
+   "docs_scanned": 157,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210716",
+   "docs_scanned": 296,
+   "prefiltered": 12,
+   "candidates": 12,
+   "hits": 21,
+   "seconds": 0.16
+  },
+  {
+   "key": "20210719",
+   "docs_scanned": 233,
+   "prefiltered": 6,
+   "candidates": 6,
+   "hits": 8,
+   "seconds": 0.08
+  },
+  {
+   "key": "20210720",
+   "docs_scanned": 106,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210721",
+   "docs_scanned": 67,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210722",
+   "docs_scanned": 74,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 5,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210723",
+   "docs_scanned": 76,
+   "prefiltered": 3,
+   "candidates": 3,
+   "hits": 7,
+   "seconds": 0.04
+  },
+  {
+   "key": "20210726",
+   "docs_scanned": 62,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210727",
+   "docs_scanned": 90,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20210728",
+   "docs_scanned": 64,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210729",
+   "docs_scanned": 50,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210730",
+   "docs_scanned": 83,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20210802",
+   "docs_scanned": 3165,
+   "prefiltered": 131,
+   "candidates": 117,
+   "hits": 210,
+   "seconds": 2.98
+  },
+  {
+   "key": "20210803",
+   "docs_scanned": 8650,
+   "prefiltered": 409,
+   "candidates": 386,
+   "hits": 689,
+   "seconds": 6.34
+  },
+  {
+   "key": "20210804",
+   "docs_scanned": 3067,
+   "prefiltered": 105,
+   "candidates": 95,
+   "hits": 167,
+   "seconds": 1.83
+  },
+  {
+   "key": "20210805",
+   "docs_scanned": 3308,
+   "prefiltered": 169,
+   "candidates": 166,
+   "hits": 259,
+   "seconds": 1.39
+  },
+  {
+   "key": "20210806",
+   "docs_scanned": 4781,
+   "prefiltered": 205,
+   "candidates": 193,
+   "hits": 342,
+   "seconds": 2.02
+  },
+  {
+   "key": "20210809",
+   "docs_scanned": 5836,
+   "prefiltered": 76,
+   "candidates": 73,
+   "hits": 134,
+   "seconds": 1.27
+  },
+  {
+   "key": "20210810",
+   "docs_scanned": 4598,
+   "prefiltered": 97,
+   "candidates": 91,
+   "hits": 158,
+   "seconds": 1.75
+  },
+  {
+   "key": "20210812",
+   "docs_scanned": 3947,
+   "prefiltered": 87,
+   "candidates": 84,
+   "hits": 202,
+   "seconds": 1.59
+  },
+  {
+   "key": "20210813",
+   "docs_scanned": 3454,
+   "prefiltered": 158,
+   "candidates": 150,
+   "hits": 310,
+   "seconds": 2.22
+  },
+  {
+   "key": "20210816",
+   "docs_scanned": 3070,
+   "prefiltered": 114,
+   "candidates": 109,
+   "hits": 198,
+   "seconds": 1.89
+  },
+  {
+   "key": "20210817",
+   "docs_scanned": 3235,
+   "prefiltered": 135,
+   "candidates": 130,
+   "hits": 267,
+   "seconds": 2.36
+  },
+  {
+   "key": "20210818",
+   "docs_scanned": 2420,
+   "prefiltered": 69,
+   "candidates": 64,
+   "hits": 138,
+   "seconds": 1.29
+  },
+  {
+   "key": "20210819",
+   "docs_scanned": 3138,
+   "prefiltered": 276,
+   "candidates": 271,
+   "hits": 438,
+   "seconds": 3.07
+  },
+  {
+   "key": "20210820",
+   "docs_scanned": 2682,
+   "prefiltered": 91,
+   "candidates": 77,
+   "hits": 153,
+   "seconds": 2.16
+  },
+  {
+   "key": "20210823",
+   "docs_scanned": 1778,
+   "prefiltered": 205,
+   "candidates": 196,
+   "hits": 303,
+   "seconds": 1.82
+  },
+  {
+   "key": "20210824",
+   "docs_scanned": 3079,
+   "prefiltered": 110,
+   "candidates": 102,
+   "hits": 189,
+   "seconds": 2.21
+  },
+  {
+   "key": "20210825",
+   "docs_scanned": 2278,
+   "prefiltered": 56,
+   "candidates": 50,
+   "hits": 105,
+   "seconds": 1.58
+  },
+  {
+   "key": "20210826",
+   "docs_scanned": 2420,
+   "prefiltered": 95,
+   "candidates": 86,
+   "hits": 201,
+   "seconds": 2.26
+  },
+  {
+   "key": "20210827",
+   "docs_scanned": 2889,
+   "prefiltered": 164,
+   "candidates": 152,
+   "hits": 308,
+   "seconds": 2.62
+  },
+  {
+   "key": "20210830",
+   "docs_scanned": 2847,
+   "prefiltered": 147,
+   "candidates": 136,
+   "hits": 222,
+   "seconds": 2.49
+  },
+  {
+   "key": "20210831",
+   "docs_scanned": 3446,
+   "prefiltered": 185,
+   "candidates": 172,
+   "hits": 371,
+   "seconds": 3.08
+  },
+  {
+   "key": "20210901",
+   "docs_scanned": 3600,
+   "prefiltered": 160,
+   "candidates": 155,
+   "hits": 313,
+   "seconds": 2.59
+  },
+  {
+   "key": "20210902",
+   "docs_scanned": 4683,
+   "prefiltered": 244,
+   "candidates": 235,
+   "hits": 392,
+   "seconds": 3.23
+  },
+  {
+   "key": "20210903",
+   "docs_scanned": 1558,
+   "prefiltered": 69,
+   "candidates": 68,
+   "hits": 120,
+   "seconds": 0.74
+  },
+  {
+   "key": "20210908",
+   "docs_scanned": 1770,
+   "prefiltered": 44,
+   "candidates": 42,
+   "hits": 65,
+   "seconds": 0.92
+  },
+  {
+   "key": "20210909",
+   "docs_scanned": 2593,
+   "prefiltered": 65,
+   "candidates": 59,
+   "hits": 119,
+   "seconds": 1.38
+  },
+  {
+   "key": "20210910",
+   "docs_scanned": 1998,
+   "prefiltered": 100,
+   "candidates": 97,
+   "hits": 164,
+   "seconds": 1.39
+  },
+  {
+   "key": "20210913",
+   "docs_scanned": 1691,
+   "prefiltered": 74,
+   "candidates": 69,
+   "hits": 171,
+   "seconds": 1.35
+  },
+  {
+   "key": "20210914",
+   "docs_scanned": 2050,
+   "prefiltered": 70,
+   "candidates": 66,
+   "hits": 147,
+   "seconds": 1.31
+  },
+  {
+   "key": "20210915",
+   "docs_scanned": 1401,
+   "prefiltered": 45,
+   "candidates": 43,
+   "hits": 80,
+   "seconds": 0.88
+  },
+  {
+   "key": "20210916",
+   "docs_scanned": 2432,
+   "prefiltered": 129,
+   "candidates": 121,
+   "hits": 223,
+   "seconds": 1.62
+  },
+  {
+   "key": "20210917",
+   "docs_scanned": 2113,
+   "prefiltered": 95,
+   "candidates": 95,
+   "hits": 130,
+   "seconds": 1.19
+  },
+  {
+   "key": "20210920",
+   "docs_scanned": 2644,
+   "prefiltered": 124,
+   "candidates": 120,
+   "hits": 199,
+   "seconds": 2.05
+  },
+  {
+   "key": "20210921",
+   "docs_scanned": 1499,
+   "prefiltered": 56,
+   "candidates": 55,
+   "hits": 91,
+   "seconds": 1.44
+  },
+  {
+   "key": "20210922",
+   "docs_scanned": 3355,
+   "prefiltered": 114,
+   "candidates": 106,
+   "hits": 266,
+   "seconds": 2.33
+  },
+  {
+   "key": "20210923",
+   "docs_scanned": 2413,
+   "prefiltered": 95,
+   "candidates": 88,
+   "hits": 214,
+   "seconds": 1.62
+  },
+  {
+   "key": "20210924",
+   "docs_scanned": 2290,
+   "prefiltered": 139,
+   "candidates": 135,
+   "hits": 210,
+   "seconds": 1.45
+  },
+  {
+   "key": "20210927",
+   "docs_scanned": 2815,
+   "prefiltered": 121,
+   "candidates": 117,
+   "hits": 194,
+   "seconds": 2.3
+  },
+  {
+   "key": "20210928",
+   "docs_scanned": 2832,
+   "prefiltered": 83,
+   "candidates": 80,
+   "hits": 157,
+   "seconds": 1.68
+  },
+  {
+   "key": "20210929",
+   "docs_scanned": 2247,
+   "prefiltered": 82,
+   "candidates": 78,
+   "hits": 154,
+   "seconds": 1.82
+  },
+  {
+   "key": "20210930",
+   "docs_scanned": 3984,
+   "prefiltered": 220,
+   "candidates": 204,
+   "hits": 382,
+   "seconds": 3.34
+  },
+  {
+   "key": "20211001",
+   "docs_scanned": 3866,
+   "prefiltered": 167,
+   "candidates": 161,
+   "hits": 328,
+   "seconds": 2.82
+  },
+  {
+   "key": "20211004",
+   "docs_scanned": 2478,
+   "prefiltered": 119,
+   "candidates": 110,
+   "hits": 168,
+   "seconds": 2.35
+  },
+  {
+   "key": "20211005",
+   "docs_scanned": 1985,
+   "prefiltered": 55,
+   "candidates": 50,
+   "hits": 102,
+   "seconds": 1.29
+  },
+  {
+   "key": "20211006",
+   "docs_scanned": 2058,
+   "prefiltered": 112,
+   "candidates": 106,
+   "hits": 180,
+   "seconds": 1.71
+  },
+  {
+   "key": "20211007",
+   "docs_scanned": 1897,
+   "prefiltered": 63,
+   "candidates": 61,
+   "hits": 108,
+   "seconds": 1.91
+  },
+  {
+   "key": "20211008",
+   "docs_scanned": 3342,
+   "prefiltered": 152,
+   "candidates": 147,
+   "hits": 238,
+   "seconds": 2.79
+  },
+  {
+   "key": "20211011",
+   "docs_scanned": 1523,
+   "prefiltered": 57,
+   "candidates": 50,
+   "hits": 92,
+   "seconds": 1.1
+  },
+  {
+   "key": "20211013",
+   "docs_scanned": 3232,
+   "prefiltered": 136,
+   "candidates": 125,
+   "hits": 220,
+   "seconds": 2.62
+  },
+  {
+   "key": "20211014",
+   "docs_scanned": 2701,
+   "prefiltered": 128,
+   "candidates": 123,
+   "hits": 225,
+   "seconds": 2.57
+  },
+  {
+   "key": "20211015",
+   "docs_scanned": 2051,
+   "prefiltered": 82,
+   "candidates": 77,
+   "hits": 174,
+   "seconds": 1.4
+  },
+  {
+   "key": "20211018",
+   "docs_scanned": 2340,
+   "prefiltered": 140,
+   "candidates": 134,
+   "hits": 224,
+   "seconds": 2.07
+  },
+  {
+   "key": "20211019",
+   "docs_scanned": 1608,
+   "prefiltered": 57,
+   "candidates": 53,
+   "hits": 91,
+   "seconds": 1.11
+  },
+  {
+   "key": "20211020",
+   "docs_scanned": 1613,
+   "prefiltered": 56,
+   "candidates": 53,
+   "hits": 89,
+   "seconds": 1.43
+  },
+  {
+   "key": "20211021",
+   "docs_scanned": 1282,
+   "prefiltered": 68,
+   "candidates": 66,
+   "hits": 124,
+   "seconds": 1.2
+  },
+  {
+   "key": "20211022",
+   "docs_scanned": 2844,
+   "prefiltered": 116,
+   "candidates": 111,
+   "hits": 241,
+   "seconds": 2.4
+  },
+  {
+   "key": "20211025",
+   "docs_scanned": 1621,
+   "prefiltered": 61,
+   "candidates": 57,
+   "hits": 108,
+   "seconds": 1.47
+  },
+  {
+   "key": "20211026",
+   "docs_scanned": 2933,
+   "prefiltered": 111,
+   "candidates": 100,
+   "hits": 220,
+   "seconds": 1.82
+  },
+  {
+   "key": "20211027",
+   "docs_scanned": 2222,
+   "prefiltered": 81,
+   "candidates": 79,
+   "hits": 142,
+   "seconds": 1.28
+  },
+  {
+   "key": "20211028",
+   "docs_scanned": 3575,
+   "prefiltered": 205,
+   "candidates": 203,
+   "hits": 528,
+   "seconds": 3.46
+  },
+  {
+   "key": "20211103",
+   "docs_scanned": 3421,
+   "prefiltered": 168,
+   "candidates": 161,
+   "hits": 320,
+   "seconds": 3.67
+  },
+  {
+   "key": "20211104",
+   "docs_scanned": 5313,
+   "prefiltered": 335,
+   "candidates": 322,
+   "hits": 742,
+   "seconds": 6.25
+  },
+  {
+   "key": "20211105",
+   "docs_scanned": 2404,
+   "prefiltered": 84,
+   "candidates": 82,
+   "hits": 150,
+   "seconds": 1.29
+  },
+  {
+   "key": "20211108",
+   "docs_scanned": 1835,
+   "prefiltered": 84,
+   "candidates": 81,
+   "hits": 116,
+   "seconds": 1.21
+  },
+  {
+   "key": "20211109",
+   "docs_scanned": 2189,
+   "prefiltered": 80,
+   "candidates": 77,
+   "hits": 127,
+   "seconds": 1.16
+  },
+  {
+   "key": "20211110",
+   "docs_scanned": 1202,
+   "prefiltered": 63,
+   "candidates": 61,
+   "hits": 78,
+   "seconds": 0.68
+  },
+  {
+   "key": "20211111",
+   "docs_scanned": 2211,
+   "prefiltered": 132,
+   "candidates": 128,
+   "hits": 225,
+   "seconds": 1.73
+  },
+  {
+   "key": "20211112",
+   "docs_scanned": 2285,
+   "prefiltered": 174,
+   "candidates": 167,
+   "hits": 420,
+   "seconds": 3.19
+  },
+  {
+   "key": "20211116",
+   "docs_scanned": 1748,
+   "prefiltered": 54,
+   "candidates": 52,
+   "hits": 74,
+   "seconds": 1.15
+  },
+  {
+   "key": "20211117",
+   "docs_scanned": 2353,
+   "prefiltered": 104,
+   "candidates": 99,
+   "hits": 167,
+   "seconds": 2.62
+  },
+  {
+   "key": "20211118",
+   "docs_scanned": 2245,
+   "prefiltered": 75,
+   "candidates": 72,
+   "hits": 111,
+   "seconds": 2.53
+  },
+  {
+   "key": "20211119",
+   "docs_scanned": 2861,
+   "prefiltered": 135,
+   "candidates": 132,
+   "hits": 275,
+   "seconds": 4.9
+  },
+  {
+   "key": "20211122",
+   "docs_scanned": 2163,
+   "prefiltered": 98,
+   "candidates": 90,
+   "hits": 229,
+   "seconds": 2.03
+  },
+  {
+   "key": "20211123",
+   "docs_scanned": 1719,
+   "prefiltered": 71,
+   "candidates": 71,
+   "hits": 130,
+   "seconds": 0.97
+  },
+  {
+   "key": "20211124",
+   "docs_scanned": 1605,
+   "prefiltered": 75,
+   "candidates": 72,
+   "hits": 149,
+   "seconds": 1.49
+  },
+  {
+   "key": "20211125",
+   "docs_scanned": 3847,
+   "prefiltered": 285,
+   "candidates": 280,
+   "hits": 699,
+   "seconds": 3.91
+  },
+  {
+   "key": "20211126",
+   "docs_scanned": 2443,
+   "prefiltered": 128,
+   "candidates": 127,
+   "hits": 293,
+   "seconds": 3.91
+  },
+  {
+   "key": "20211129",
+   "docs_scanned": 2689,
+   "prefiltered": 61,
+   "candidates": 57,
+   "hits": 109,
+   "seconds": 3.75
+  },
+  {
+   "key": "20211130",
+   "docs_scanned": 2179,
+   "prefiltered": 103,
+   "candidates": 97,
+   "hits": 219,
+   "seconds": 4.28
+  },
+  {
+   "key": "20211201",
+   "docs_scanned": 4699,
+   "prefiltered": 317,
+   "candidates": 312,
+   "hits": 864,
+   "seconds": 5.67
+  },
+  {
+   "key": "20211202",
+   "docs_scanned": 3680,
+   "prefiltered": 273,
+   "candidates": 269,
+   "hits": 641,
+   "seconds": 4.18
+  },
+  {
+   "key": "20211203",
+   "docs_scanned": 1328,
+   "prefiltered": 68,
+   "candidates": 65,
+   "hits": 191,
+   "seconds": 1.74
+  },
+  {
+   "key": "20211206",
+   "docs_scanned": 1525,
+   "prefiltered": 48,
+   "candidates": 47,
+   "hits": 80,
+   "seconds": 1.44
+  },
+  {
+   "key": "20211207",
+   "docs_scanned": 2471,
+   "prefiltered": 95,
+   "candidates": 90,
+   "hits": 169,
+   "seconds": 2.8
+  },
+  {
+   "key": "20211209",
+   "docs_scanned": 2701,
+   "prefiltered": 116,
+   "candidates": 110,
+   "hits": 259,
+   "seconds": 3.91
+  },
+  {
+   "key": "20211210",
+   "docs_scanned": 3407,
+   "prefiltered": 147,
+   "candidates": 143,
+   "hits": 283,
+   "seconds": 4.02
+  },
+  {
+   "key": "20211213",
+   "docs_scanned": 2014,
+   "prefiltered": 96,
+   "candidates": 90,
+   "hits": 160,
+   "seconds": 1.7
+  },
+  {
+   "key": "20211214",
+   "docs_scanned": 2295,
+   "prefiltered": 138,
+   "candidates": 134,
+   "hits": 239,
+   "seconds": 2.03
+  },
+  {
+   "key": "20211215",
+   "docs_scanned": 3898,
+   "prefiltered": 187,
+   "candidates": 183,
+   "hits": 519,
+   "seconds": 5.49
+  },
+  {
+   "key": "20211216",
+   "docs_scanned": 4689,
+   "prefiltered": 238,
+   "candidates": 227,
+   "hits": 582,
+   "seconds": 8.01
+  },
+  {
+   "key": "20211217",
+   "docs_scanned": 4667,
+   "prefiltered": 209,
+   "candidates": 195,
+   "hits": 459,
+   "seconds": 4.56
+  },
+  {
+   "key": "20211220",
+   "docs_scanned": 609,
+   "prefiltered": 27,
+   "candidates": 26,
+   "hits": 56,
+   "seconds": 0.24
+  },
+  {
+   "key": "20211221",
+   "docs_scanned": 97,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 2,
+   "seconds": 0.04
+  },
+  {
+   "key": "20211222",
+   "docs_scanned": 58,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 4,
+   "seconds": 0.04
+  },
+  {
+   "key": "20211223",
+   "docs_scanned": 98,
+   "prefiltered": 1,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20211224",
+   "docs_scanned": 111,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20211227",
+   "docs_scanned": 124,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20211228",
+   "docs_scanned": 238,
+   "prefiltered": 3,
+   "candidates": 2,
+   "hits": 2,
+   "seconds": 0.05
+  },
+  {
+   "key": "20211229",
+   "docs_scanned": 83,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20211230",
+   "docs_scanned": 150,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 2,
+   "seconds": 0.05
+  },
+  {
+   "key": "20211231",
+   "docs_scanned": 74,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20220103",
+   "docs_scanned": 33,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20220104",
+   "docs_scanned": 62,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20220105",
+   "docs_scanned": 50,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.03
+  },
+  {
+   "key": "20220106",
+   "docs_scanned": 27,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 5,
+   "seconds": 0.03
+  },
+  {
+   "key": "20220107",
+   "docs_scanned": 45,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20220110",
+   "docs_scanned": 91,
+   "prefiltered": 3,
+   "candidates": 2,
+   "hits": 5,
+   "seconds": 0.06
+  },
+  {
+   "key": "20220111",
+   "docs_scanned": 110,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 3,
+   "seconds": 0.05
+  },
+  {
+   "key": "20220112",
+   "docs_scanned": 197,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20220113",
+   "docs_scanned": 231,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20220114",
+   "docs_scanned": 65,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 3,
+   "seconds": 0.05
+  },
+  {
+   "key": "20220117",
+   "docs_scanned": 292,
+   "prefiltered": 3,
+   "candidates": 3,
+   "hits": 4,
+   "seconds": 0.04
+  },
+  {
+   "key": "20220118",
+   "docs_scanned": 51,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 3,
+   "seconds": 0.04
+  },
+  {
+   "key": "20220119",
+   "docs_scanned": 16,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.03
+  },
+  {
+   "key": "20220120",
+   "docs_scanned": 70,
+   "prefiltered": 4,
+   "candidates": 4,
+   "hits": 5,
+   "seconds": 0.06
+  },
+  {
+   "key": "20220121",
+   "docs_scanned": 47,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20220124",
+   "docs_scanned": 40,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20220125",
+   "docs_scanned": 120,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.05
+  },
+  {
+   "key": "20220126",
+   "docs_scanned": 53,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20220127",
+   "docs_scanned": 44,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.04
+  },
+  {
+   "key": "20220128",
+   "docs_scanned": 60,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.04
+  },
+  {
+   "key": "20220131",
+   "docs_scanned": 29,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.03
+  },
+  {
+   "key": "202202",
+   "docs_scanned": 60692,
+   "prefiltered": 2738,
+   "candidates": 2637,
+   "hits": 5125,
+   "seconds": 42.19
+  },
+  {
+   "key": "202203",
+   "docs_scanned": 59278,
+   "prefiltered": 2868,
+   "candidates": 2770,
+   "hits": 5374,
+   "seconds": 39.09
+  },
+  {
+   "key": "202204",
+   "docs_scanned": 43192,
+   "prefiltered": 1955,
+   "candidates": 1858,
+   "hits": 3800,
+   "seconds": 31.47
+  },
+  {
+   "key": "20220502",
+   "docs_scanned": 2530,
+   "prefiltered": 85,
+   "candidates": 83,
+   "hits": 135,
+   "seconds": 1.52
+  },
+  {
+   "key": "20220503",
+   "docs_scanned": 4241,
+   "prefiltered": 193,
+   "candidates": 188,
+   "hits": 424,
+   "seconds": 3.65
+  },
+  {
+   "key": "20220504",
+   "docs_scanned": 2519,
+   "prefiltered": 104,
+   "candidates": 98,
+   "hits": 158,
+   "seconds": 2.01
+  },
+  {
+   "key": "20220505",
+   "docs_scanned": 2779,
+   "prefiltered": 117,
+   "candidates": 113,
+   "hits": 189,
+   "seconds": 3.24
+  },
+  {
+   "key": "20220506",
+   "docs_scanned": 2008,
+   "prefiltered": 73,
+   "candidates": 71,
+   "hits": 162,
+   "seconds": 2.49
+  },
+  {
+   "key": "20220509",
+   "docs_scanned": 2216,
+   "prefiltered": 96,
+   "candidates": 95,
+   "hits": 178,
+   "seconds": 1.46
+  },
+  {
+   "key": "20220510",
+   "docs_scanned": 1548,
+   "prefiltered": 57,
+   "candidates": 52,
+   "hits": 117,
+   "seconds": 1.21
+  },
+  {
+   "key": "20220511",
+   "docs_scanned": 2763,
+   "prefiltered": 131,
+   "candidates": 129,
+   "hits": 280,
+   "seconds": 1.71
+  },
+  {
+   "key": "20220512",
+   "docs_scanned": 3155,
+   "prefiltered": 182,
+   "candidates": 177,
+   "hits": 310,
+   "seconds": 2.15
+  },
+  {
+   "key": "20220513",
+   "docs_scanned": 1995,
+   "prefiltered": 78,
+   "candidates": 71,
+   "hits": 150,
+   "seconds": 1.48
+  },
+  {
+   "key": "20220516",
+   "docs_scanned": 2408,
+   "prefiltered": 105,
+   "candidates": 104,
+   "hits": 149,
+   "seconds": 1.32
+  },
+  {
+   "key": "20220517",
+   "docs_scanned": 2547,
+   "prefiltered": 144,
+   "candidates": 136,
+   "hits": 233,
+   "seconds": 1.62
+  },
+  {
+   "key": "20220518",
+   "docs_scanned": 1755,
+   "prefiltered": 93,
+   "candidates": 91,
+   "hits": 158,
+   "seconds": 1.24
+  },
+  {
+   "key": "20220519",
+   "docs_scanned": 3698,
+   "prefiltered": 125,
+   "candidates": 122,
+   "hits": 294,
+   "seconds": 2.27
+  },
+  {
+   "key": "20220520",
+   "docs_scanned": 2045,
+   "prefiltered": 73,
+   "candidates": 67,
+   "hits": 105,
+   "seconds": 1.06
+  },
+  {
+   "key": "20220523",
+   "docs_scanned": 2010,
+   "prefiltered": 61,
+   "candidates": 57,
+   "hits": 89,
+   "seconds": 1.16
+  },
+  {
+   "key": "20220524",
+   "docs_scanned": 2462,
+   "prefiltered": 140,
+   "candidates": 138,
+   "hits": 268,
+   "seconds": 1.73
+  },
+  {
+   "key": "20220525",
+   "docs_scanned": 3526,
+   "prefiltered": 183,
+   "candidates": 173,
+   "hits": 307,
+   "seconds": 2.82
+  },
+  {
+   "key": "20220526",
+   "docs_scanned": 2731,
+   "prefiltered": 156,
+   "candidates": 146,
+   "hits": 243,
+   "seconds": 3.69
+  },
+  {
+   "key": "20220527",
+   "docs_scanned": 2796,
+   "prefiltered": 108,
+   "candidates": 100,
+   "hits": 244,
+   "seconds": 3.93
+  },
+  {
+   "key": "20220530",
+   "docs_scanned": 2533,
+   "prefiltered": 114,
+   "candidates": 110,
+   "hits": 210,
+   "seconds": 3.14
+  },
+  {
+   "key": "20220531",
+   "docs_scanned": 2598,
+   "prefiltered": 174,
+   "candidates": 170,
+   "hits": 404,
+   "seconds": 4.85
+  },
+  {
+   "key": "20220601",
+   "docs_scanned": 3676,
+   "prefiltered": 168,
+   "candidates": 162,
+   "hits": 327,
+   "seconds": 4.7
+  },
+  {
+   "key": "20220602",
+   "docs_scanned": 4006,
+   "prefiltered": 218,
+   "candidates": 211,
+   "hits": 481,
+   "seconds": 7.25
+  },
+  {
+   "key": "20220603",
+   "docs_scanned": 1494,
+   "prefiltered": 40,
+   "candidates": 36,
+   "hits": 75,
+   "seconds": 1.52
+  },
+  {
+   "key": "20220606",
+   "docs_scanned": 1472,
+   "prefiltered": 73,
+   "candidates": 73,
+   "hits": 89,
+   "seconds": 1.7
+  },
+  {
+   "key": "20220607",
+   "docs_scanned": 1839,
+   "prefiltered": 109,
+   "candidates": 102,
+   "hits": 186,
+   "seconds": 2.94
+  },
+  {
+   "key": "20220608",
+   "docs_scanned": 1875,
+   "prefiltered": 94,
+   "candidates": 91,
+   "hits": 224,
+   "seconds": 3.05
+  },
+  {
+   "key": "20220609",
+   "docs_scanned": 2445,
+   "prefiltered": 115,
+   "candidates": 112,
+   "hits": 206,
+   "seconds": 2.32
+  },
+  {
+   "key": "20220610",
+   "docs_scanned": 1916,
+   "prefiltered": 78,
+   "candidates": 72,
+   "hits": 150,
+   "seconds": 3.0
+  },
+  {
+   "key": "20220613",
+   "docs_scanned": 2459,
+   "prefiltered": 87,
+   "candidates": 84,
+   "hits": 132,
+   "seconds": 3.01
+  },
+  {
+   "key": "20220614",
+   "docs_scanned": 322,
+   "prefiltered": 12,
+   "candidates": 9,
+   "hits": 21,
+   "seconds": 0.63
+  },
+  {
+   "key": "20220615",
+   "docs_scanned": 673,
+   "prefiltered": 28,
+   "candidates": 26,
+   "hits": 75,
+   "seconds": 1.18
+  },
+  {
+   "key": "20220617",
+   "docs_scanned": 3067,
+   "prefiltered": 112,
+   "candidates": 107,
+   "hits": 215,
+   "seconds": 3.13
+  },
+  {
+   "key": "20220620",
+   "docs_scanned": 2387,
+   "prefiltered": 78,
+   "candidates": 77,
+   "hits": 123,
+   "seconds": 1.83
+  },
+  {
+   "key": "20220621",
+   "docs_scanned": 3523,
+   "prefiltered": 135,
+   "candidates": 127,
+   "hits": 255,
+   "seconds": 3.25
+  },
+  {
+   "key": "20220622",
+   "docs_scanned": 2658,
+   "prefiltered": 88,
+   "candidates": 87,
+   "hits": 174,
+   "seconds": 2.7
+  },
+  {
+   "key": "20220623",
+   "docs_scanned": 3399,
+   "prefiltered": 180,
+   "candidates": 170,
+   "hits": 422,
+   "seconds": 4.16
+  },
+  {
+   "key": "20220624",
+   "docs_scanned": 2786,
+   "prefiltered": 214,
+   "candidates": 209,
+   "hits": 377,
+   "seconds": 3.14
+  },
+  {
+   "key": "20220627",
+   "docs_scanned": 2933,
+   "prefiltered": 137,
+   "candidates": 130,
+   "hits": 235,
+   "seconds": 3.51
+  },
+  {
+   "key": "20220628",
+   "docs_scanned": 2699,
+   "prefiltered": 135,
+   "candidates": 133,
+   "hits": 243,
+   "seconds": 2.89
+  },
+  {
+   "key": "20220629",
+   "docs_scanned": 4197,
+   "prefiltered": 218,
+   "candidates": 214,
+   "hits": 487,
+   "seconds": 5.37
+  },
+  {
+   "key": "20220630",
+   "docs_scanned": 4032,
+   "prefiltered": 205,
+   "candidates": 198,
+   "hits": 321,
+   "seconds": 7.32
+  },
+  {
+   "key": "202207",
+   "docs_scanned": 8853,
+   "prefiltered": 383,
+   "candidates": 371,
+   "hits": 793,
+   "seconds": 12.73
+  },
+  {
+   "key": "20220801",
+   "docs_scanned": 4360,
+   "prefiltered": 165,
+   "candidates": 155,
+   "hits": 291,
+   "seconds": 8.36
+  },
+  {
+   "key": "20220802",
+   "docs_scanned": 4940,
+   "prefiltered": 260,
+   "candidates": 250,
+   "hits": 581,
+   "seconds": 11.87
+  },
+  {
+   "key": "20220803",
+   "docs_scanned": 4309,
+   "prefiltered": 166,
+   "candidates": 158,
+   "hits": 279,
+   "seconds": 6.5
+  },
+  {
+   "key": "20220804",
+   "docs_scanned": 6494,
+   "prefiltered": 115,
+   "candidates": 113,
+   "hits": 168,
+   "seconds": 3.56
+  },
+  {
+   "key": "20220805",
+   "docs_scanned": 4368,
+   "prefiltered": 128,
+   "candidates": 122,
+   "hits": 224,
+   "seconds": 5.55
+  },
+  {
+   "key": "20220808",
+   "docs_scanned": 3077,
+   "prefiltered": 77,
+   "candidates": 71,
+   "hits": 99,
+   "seconds": 3.5
+  },
+  {
+   "key": "20220809",
+   "docs_scanned": 1954,
+   "prefiltered": 63,
+   "candidates": 57,
+   "hits": 110,
+   "seconds": 3.3
+  },
+  {
+   "key": "20220810",
+   "docs_scanned": 3738,
+   "prefiltered": 269,
+   "candidates": 267,
+   "hits": 422,
+   "seconds": 4.68
+  },
+  {
+   "key": "20220812",
+   "docs_scanned": 2999,
+   "prefiltered": 120,
+   "candidates": 118,
+   "hits": 252,
+   "seconds": 3.01
+  },
+  {
+   "key": "20220815",
+   "docs_scanned": 4660,
+   "prefiltered": 188,
+   "candidates": 183,
+   "hits": 339,
+   "seconds": 3.8
+  },
+  {
+   "key": "20220816",
+   "docs_scanned": 2912,
+   "prefiltered": 109,
+   "candidates": 108,
+   "hits": 264,
+   "seconds": 2.47
+  },
+  {
+   "key": "20220817",
+   "docs_scanned": 2626,
+   "prefiltered": 124,
+   "candidates": 122,
+   "hits": 320,
+   "seconds": 2.21
+  },
+  {
+   "key": "20220818",
+   "docs_scanned": 4057,
+   "prefiltered": 178,
+   "candidates": 172,
+   "hits": 336,
+   "seconds": 3.41
+  },
+  {
+   "key": "20220819",
+   "docs_scanned": 2549,
+   "prefiltered": 100,
+   "candidates": 93,
+   "hits": 182,
+   "seconds": 2.17
+  },
+  {
+   "key": "20220822",
+   "docs_scanned": 3923,
+   "prefiltered": 250,
+   "candidates": 242,
+   "hits": 388,
+   "seconds": 3.82
+  },
+  {
+   "key": "20220823",
+   "docs_scanned": 3557,
+   "prefiltered": 134,
+   "candidates": 128,
+   "hits": 273,
+   "seconds": 5.27
+  },
+  {
+   "key": "20220824",
+   "docs_scanned": 1685,
+   "prefiltered": 85,
+   "candidates": 83,
+   "hits": 165,
+   "seconds": 3.8
+  },
+  {
+   "key": "20220825",
+   "docs_scanned": 2117,
+   "prefiltered": 95,
+   "candidates": 87,
+   "hits": 191,
+   "seconds": 5.27
+  },
+  {
+   "key": "20220826",
+   "docs_scanned": 2960,
+   "prefiltered": 142,
+   "candidates": 139,
+   "hits": 288,
+   "seconds": 5.39
+  },
+  {
+   "key": "20220829",
+   "docs_scanned": 1552,
+   "prefiltered": 58,
+   "candidates": 57,
+   "hits": 134,
+   "seconds": 4.03
+  },
+  {
+   "key": "20220830",
+   "docs_scanned": 3265,
+   "prefiltered": 171,
+   "candidates": 163,
+   "hits": 363,
+   "seconds": 7.37
+  },
+  {
+   "key": "20220831",
+   "docs_scanned": 3587,
+   "prefiltered": 207,
+   "candidates": 200,
+   "hits": 464,
+   "seconds": 7.36
+  },
+  {
+   "key": "20220901",
+   "docs_scanned": 3909,
+   "prefiltered": 137,
+   "candidates": 128,
+   "hits": 305,
+   "seconds": 5.7
+  },
+  {
+   "key": "20220902",
+   "docs_scanned": 2189,
+   "prefiltered": 139,
+   "candidates": 134,
+   "hits": 267,
+   "seconds": 4.99
+  },
+  {
+   "key": "20220905",
+   "docs_scanned": 2639,
+   "prefiltered": 186,
+   "candidates": 183,
+   "hits": 225,
+   "seconds": 2.58
+  },
+  {
+   "key": "20220906",
+   "docs_scanned": 2089,
+   "prefiltered": 102,
+   "candidates": 101,
+   "hits": 160,
+   "seconds": 2.27
+  },
+  {
+   "key": "20220908",
+   "docs_scanned": 2590,
+   "prefiltered": 94,
+   "candidates": 92,
+   "hits": 200,
+   "seconds": 3.59
+  },
+  {
+   "key": "20220909",
+   "docs_scanned": 2408,
+   "prefiltered": 228,
+   "candidates": 226,
+   "hits": 291,
+   "seconds": 2.66
+  },
+  {
+   "key": "20220912",
+   "docs_scanned": 1533,
+   "prefiltered": 74,
+   "candidates": 72,
+   "hits": 206,
+   "seconds": 1.24
+  },
+  {
+   "key": "20220913",
+   "docs_scanned": 2274,
+   "prefiltered": 98,
+   "candidates": 95,
+   "hits": 166,
+   "seconds": 1.45
+  },
+  {
+   "key": "20220914",
+   "docs_scanned": 2091,
+   "prefiltered": 164,
+   "candidates": 162,
+   "hits": 236,
+   "seconds": 1.36
+  },
+  {
+   "key": "20220915",
+   "docs_scanned": 2778,
+   "prefiltered": 134,
+   "candidates": 128,
+   "hits": 250,
+   "seconds": 2.59
+  },
+  {
+   "key": "20220916",
+   "docs_scanned": 1560,
+   "prefiltered": 82,
+   "candidates": 79,
+   "hits": 153,
+   "seconds": 1.64
+  },
+  {
+   "key": "20220919",
+   "docs_scanned": 2869,
+   "prefiltered": 184,
+   "candidates": 181,
+   "hits": 287,
+   "seconds": 2.46
+  },
+  {
+   "key": "20220920",
+   "docs_scanned": 2705,
+   "prefiltered": 140,
+   "candidates": 134,
+   "hits": 196,
+   "seconds": 1.85
+  },
+  {
+   "key": "20220921",
+   "docs_scanned": 1910,
+   "prefiltered": 112,
+   "candidates": 109,
+   "hits": 243,
+   "seconds": 2.05
+  },
+  {
+   "key": "20220922",
+   "docs_scanned": 2323,
+   "prefiltered": 148,
+   "candidates": 142,
+   "hits": 265,
+   "seconds": 2.77
+  },
+  {
+   "key": "20220923",
+   "docs_scanned": 2337,
+   "prefiltered": 151,
+   "candidates": 149,
+   "hits": 324,
+   "seconds": 4.92
+  },
+  {
+   "key": "20220926",
+   "docs_scanned": 1946,
+   "prefiltered": 125,
+   "candidates": 121,
+   "hits": 293,
+   "seconds": 4.7
+  },
+  {
+   "key": "20220927",
+   "docs_scanned": 3479,
+   "prefiltered": 203,
+   "candidates": 201,
+   "hits": 409,
+   "seconds": 5.4
+  },
+  {
+   "key": "20220928",
+   "docs_scanned": 746,
+   "prefiltered": 58,
+   "candidates": 56,
+   "hits": 131,
+   "seconds": 0.89
+  },
+  {
+   "key": "20220929",
+   "docs_scanned": 2481,
+   "prefiltered": 116,
+   "candidates": 109,
+   "hits": 268,
+   "seconds": 4.2
+  },
+  {
+   "key": "20220930",
+   "docs_scanned": 3431,
+   "prefiltered": 224,
+   "candidates": 216,
+   "hits": 484,
+   "seconds": 9.21
+  },
+  {
+   "key": "20221003",
+   "docs_scanned": 448,
+   "prefiltered": 16,
+   "candidates": 15,
+   "hits": 28,
+   "seconds": 0.85
+  },
+  {
+   "key": "20221004",
+   "docs_scanned": 3208,
+   "prefiltered": 145,
+   "candidates": 137,
+   "hits": 356,
+   "seconds": 5.64
+  },
+  {
+   "key": "20221005",
+   "docs_scanned": 1154,
+   "prefiltered": 77,
+   "candidates": 76,
+   "hits": 195,
+   "seconds": 1.95
+  },
+  {
+   "key": "20221006",
+   "docs_scanned": 636,
+   "prefiltered": 32,
+   "candidates": 32,
+   "hits": 80,
+   "seconds": 1.01
+  },
+  {
+   "key": "20221007",
+   "docs_scanned": 474,
+   "prefiltered": 33,
+   "candidates": 32,
+   "hits": 79,
+   "seconds": 1.52
+  },
+  {
+   "key": "20221010",
+   "docs_scanned": 624,
+   "prefiltered": 21,
+   "candidates": 20,
+   "hits": 31,
+   "seconds": 0.97
+  },
+  {
+   "key": "20221011",
+   "docs_scanned": 183,
+   "prefiltered": 24,
+   "candidates": 24,
+   "hits": 121,
+   "seconds": 0.76
+  },
+  {
+   "key": "20221013",
+   "docs_scanned": 1075,
+   "prefiltered": 58,
+   "candidates": 58,
+   "hits": 151,
+   "seconds": 2.22
+  },
+  {
+   "key": "20221014",
+   "docs_scanned": 316,
+   "prefiltered": 15,
+   "candidates": 15,
+   "hits": 32,
+   "seconds": 0.79
+  },
+  {
+   "key": "20221017",
+   "docs_scanned": 808,
+   "prefiltered": 54,
+   "candidates": 53,
+   "hits": 92,
+   "seconds": 1.64
+  },
+  {
+   "key": "20221018",
+   "docs_scanned": 326,
+   "prefiltered": 24,
+   "candidates": 21,
+   "hits": 48,
+   "seconds": 1.12
+  },
+  {
+   "key": "20221019",
+   "docs_scanned": 1073,
+   "prefiltered": 48,
+   "candidates": 48,
+   "hits": 100,
+   "seconds": 1.87
+  },
+  {
+   "key": "20221020",
+   "docs_scanned": 2775,
+   "prefiltered": 129,
+   "candidates": 123,
+   "hits": 235,
+   "seconds": 3.8
+  },
+  {
+   "key": "20221021",
+   "docs_scanned": 1526,
+   "prefiltered": 72,
+   "candidates": 71,
+   "hits": 169,
+   "seconds": 2.76
+  },
+  {
+   "key": "20221024",
+   "docs_scanned": 2095,
+   "prefiltered": 97,
+   "candidates": 95,
+   "hits": 251,
+   "seconds": 2.48
+  },
+  {
+   "key": "20221025",
+   "docs_scanned": 2819,
+   "prefiltered": 224,
+   "candidates": 221,
+   "hits": 607,
+   "seconds": 4.45
+  },
+  {
+   "key": "20221026",
+   "docs_scanned": 3285,
+   "prefiltered": 212,
+   "candidates": 209,
+   "hits": 404,
+   "seconds": 3.12
+  },
+  {
+   "key": "20221027",
+   "docs_scanned": 2068,
+   "prefiltered": 138,
+   "candidates": 136,
+   "hits": 298,
+   "seconds": 2.98
+  },
+  {
+   "key": "20221028",
+   "docs_scanned": 2838,
+   "prefiltered": 201,
+   "candidates": 193,
+   "hits": 594,
+   "seconds": 4.03
+  },
+  {
+   "key": "20221103",
+   "docs_scanned": 3363,
+   "prefiltered": 177,
+   "candidates": 171,
+   "hits": 425,
+   "seconds": 4.58
+  },
+  {
+   "key": "20221104",
+   "docs_scanned": 4276,
+   "prefiltered": 281,
+   "candidates": 265,
+   "hits": 607,
+   "seconds": 6.55
+  },
+  {
+   "key": "20221107",
+   "docs_scanned": 2263,
+   "prefiltered": 59,
+   "candidates": 58,
+   "hits": 80,
+   "seconds": 1.25
+  },
+  {
+   "key": "20221108",
+   "docs_scanned": 868,
+   "prefiltered": 74,
+   "candidates": 74,
+   "hits": 90,
+   "seconds": 1.13
+  },
+  {
+   "key": "20221109",
+   "docs_scanned": 1701,
+   "prefiltered": 91,
+   "candidates": 90,
+   "hits": 121,
+   "seconds": 1.53
+  },
+  {
+   "key": "20221110",
+   "docs_scanned": 1101,
+   "prefiltered": 67,
+   "candidates": 66,
+   "hits": 132,
+   "seconds": 1.8
+  },
+  {
+   "key": "20221111",
+   "docs_scanned": 1611,
+   "prefiltered": 92,
+   "candidates": 88,
+   "hits": 170,
+   "seconds": 2.33
+  },
+  {
+   "key": "20221114",
+   "docs_scanned": 1805,
+   "prefiltered": 81,
+   "candidates": 78,
+   "hits": 127,
+   "seconds": 1.82
+  },
+  {
+   "key": "20221116",
+   "docs_scanned": 2700,
+   "prefiltered": 96,
+   "candidates": 91,
+   "hits": 194,
+   "seconds": 2.91
+  },
+  {
+   "key": "20221117",
+   "docs_scanned": 2186,
+   "prefiltered": 103,
+   "candidates": 100,
+   "hits": 251,
+   "seconds": 2.71
+  },
+  {
+   "key": "20221118",
+   "docs_scanned": 3289,
+   "prefiltered": 142,
+   "candidates": 137,
+   "hits": 285,
+   "seconds": 3.4
+  },
+  {
+   "key": "20221121",
+   "docs_scanned": 1908,
+   "prefiltered": 93,
+   "candidates": 91,
+   "hits": 247,
+   "seconds": 2.65
+  },
+  {
+   "key": "20221122",
+   "docs_scanned": 2698,
+   "prefiltered": 157,
+   "candidates": 155,
+   "hits": 387,
+   "seconds": 4.61
+  },
+  {
+   "key": "20221123",
+   "docs_scanned": 2012,
+   "prefiltered": 110,
+   "candidates": 108,
+   "hits": 202,
+   "seconds": 2.19
+  },
+  {
+   "key": "20221124",
+   "docs_scanned": 2861,
+   "prefiltered": 149,
+   "candidates": 145,
+   "hits": 337,
+   "seconds": 3.93
+  },
+  {
+   "key": "20221125",
+   "docs_scanned": 1291,
+   "prefiltered": 87,
+   "candidates": 86,
+   "hits": 119,
+   "seconds": 1.4
+  },
+  {
+   "key": "20221128",
+   "docs_scanned": 1812,
+   "prefiltered": 89,
+   "candidates": 88,
+   "hits": 246,
+   "seconds": 2.85
+  },
+  {
+   "key": "20221129",
+   "docs_scanned": 3418,
+   "prefiltered": 103,
+   "candidates": 99,
+   "hits": 182,
+   "seconds": 2.52
+  },
+  {
+   "key": "20221130",
+   "docs_scanned": 3039,
+   "prefiltered": 174,
+   "candidates": 171,
+   "hits": 403,
+   "seconds": 4.89
+  },
+  {
+   "key": "20221201",
+   "docs_scanned": 1325,
+   "prefiltered": 73,
+   "candidates": 73,
+   "hits": 180,
+   "seconds": 2.12
+  },
+  {
+   "key": "20221202",
+   "docs_scanned": 3513,
+   "prefiltered": 183,
+   "candidates": 180,
+   "hits": 441,
+   "seconds": 5.14
+  },
+  {
+   "key": "20221205",
+   "docs_scanned": 396,
+   "prefiltered": 33,
+   "candidates": 33,
+   "hits": 75,
+   "seconds": 0.77
+  },
+  {
+   "key": "20221206",
+   "docs_scanned": 821,
+   "prefiltered": 38,
+   "candidates": 37,
+   "hits": 72,
+   "seconds": 1.06
+  },
+  {
+   "key": "20221207",
+   "docs_scanned": 2791,
+   "prefiltered": 269,
+   "candidates": 263,
+   "hits": 560,
+   "seconds": 5.0
+  },
+  {
+   "key": "20221209",
+   "docs_scanned": 2437,
+   "prefiltered": 132,
+   "candidates": 130,
+   "hits": 242,
+   "seconds": 2.82
+  },
+  {
+   "key": "20221212",
+   "docs_scanned": 2066,
+   "prefiltered": 118,
+   "candidates": 117,
+   "hits": 212,
+   "seconds": 2.69
+  },
+  {
+   "key": "20221213",
+   "docs_scanned": 1679,
+   "prefiltered": 82,
+   "candidates": 81,
+   "hits": 191,
+   "seconds": 2.26
+  },
+  {
+   "key": "20221214",
+   "docs_scanned": 1329,
+   "prefiltered": 97,
+   "candidates": 95,
+   "hits": 227,
+   "seconds": 2.74
+  },
+  {
+   "key": "20221215",
+   "docs_scanned": 1360,
+   "prefiltered": 71,
+   "candidates": 67,
+   "hits": 154,
+   "seconds": 2.0
+  },
+  {
+   "key": "20221216",
+   "docs_scanned": 1277,
+   "prefiltered": 71,
+   "candidates": 70,
+   "hits": 196,
+   "seconds": 2.11
+  },
+  {
+   "key": "20221219",
+   "docs_scanned": 4684,
+   "prefiltered": 201,
+   "candidates": 195,
+   "hits": 418,
+   "seconds": 6.12
+  },
+  {
+   "key": "20221220",
+   "docs_scanned": 2652,
+   "prefiltered": 167,
+   "candidates": 160,
+   "hits": 374,
+   "seconds": 5.94
+  },
+  {
+   "key": "20221221",
+   "docs_scanned": 2735,
+   "prefiltered": 113,
+   "candidates": 108,
+   "hits": 185,
+   "seconds": 5.16
+  },
+  {
+   "key": "20221222",
+   "docs_scanned": 238,
+   "prefiltered": 5,
+   "candidates": 5,
+   "hits": 6,
+   "seconds": 0.52
+  },
+  {
+   "key": "20221223",
+   "docs_scanned": 80,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.08
+  },
+  {
+   "key": "20221226",
+   "docs_scanned": 130,
+   "prefiltered": 5,
+   "candidates": 5,
+   "hits": 10,
+   "seconds": 0.13
+  },
+  {
+   "key": "20221227",
+   "docs_scanned": 340,
+   "prefiltered": 20,
+   "candidates": 20,
+   "hits": 28,
+   "seconds": 0.62
+  },
+  {
+   "key": "20221228",
+   "docs_scanned": 260,
+   "prefiltered": 11,
+   "candidates": 11,
+   "hits": 19,
+   "seconds": 0.46
+  },
+  {
+   "key": "20221230",
+   "docs_scanned": 168,
+   "prefiltered": 7,
+   "candidates": 7,
+   "hits": 11,
+   "seconds": 0.3
+  },
+  {
+   "key": "20230103",
+   "docs_scanned": 411,
+   "prefiltered": 25,
+   "candidates": 25,
+   "hits": 54,
+   "seconds": 0.81
+  },
+  {
+   "key": "20230104",
+   "docs_scanned": 12,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.05
+  },
+  {
+   "key": "20230105",
+   "docs_scanned": 82,
+   "prefiltered": 2,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.1
+  },
+  {
+   "key": "20230106",
+   "docs_scanned": 98,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.08
+  },
+  {
+   "key": "20230110",
+   "docs_scanned": 184,
+   "prefiltered": 6,
+   "candidates": 6,
+   "hits": 6,
+   "seconds": 0.21
+  },
+  {
+   "key": "20230111",
+   "docs_scanned": 708,
+   "prefiltered": 56,
+   "candidates": 55,
+   "hits": 56,
+   "seconds": 0.39
+  },
+  {
+   "key": "20230112",
+   "docs_scanned": 362,
+   "prefiltered": 13,
+   "candidates": 13,
+   "hits": 19,
+   "seconds": 0.48
+  },
+  {
+   "key": "20230113",
+   "docs_scanned": 597,
+   "prefiltered": 19,
+   "candidates": 19,
+   "hits": 26,
+   "seconds": 0.34
+  },
+  {
+   "key": "20230116",
+   "docs_scanned": 559,
+   "prefiltered": 25,
+   "candidates": 25,
+   "hits": 35,
+   "seconds": 0.42
+  },
+  {
+   "key": "20230117",
+   "docs_scanned": 250,
+   "prefiltered": 10,
+   "candidates": 9,
+   "hits": 17,
+   "seconds": 0.4
+  },
+  {
+   "key": "20230118",
+   "docs_scanned": 78,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.11
+  },
+  {
+   "key": "20230119",
+   "docs_scanned": 246,
+   "prefiltered": 14,
+   "candidates": 14,
+   "hits": 25,
+   "seconds": 0.59
+  },
+  {
+   "key": "20230120",
+   "docs_scanned": 64,
+   "prefiltered": 4,
+   "candidates": 4,
+   "hits": 5,
+   "seconds": 0.17
+  },
+  {
+   "key": "20230123",
+   "docs_scanned": 8,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 7,
+   "seconds": 0.08
+  },
+  {
+   "key": "20230124",
+   "docs_scanned": 133,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 12,
+   "seconds": 0.15
+  },
+  {
+   "key": "20230125",
+   "docs_scanned": 206,
+   "prefiltered": 7,
+   "candidates": 6,
+   "hits": 6,
+   "seconds": 0.39
+  },
+  {
+   "key": "20230126",
+   "docs_scanned": 114,
+   "prefiltered": 4,
+   "candidates": 4,
+   "hits": 12,
+   "seconds": 0.18
+  },
+  {
+   "key": "20230127",
+   "docs_scanned": 485,
+   "prefiltered": 29,
+   "candidates": 27,
+   "hits": 67,
+   "seconds": 0.97
+  },
+  {
+   "key": "20230130",
+   "docs_scanned": 171,
+   "prefiltered": 6,
+   "candidates": 4,
+   "hits": 13,
+   "seconds": 0.32
+  },
+  {
+   "key": "20230131",
+   "docs_scanned": 310,
+   "prefiltered": 7,
+   "candidates": 6,
+   "hits": 16,
+   "seconds": 0.48
+  },
+  {
+   "key": "20230201",
+   "docs_scanned": 864,
+   "prefiltered": 32,
+   "candidates": 28,
+   "hits": 43,
+   "seconds": 0.87
+  },
+  {
+   "key": "20230202",
+   "docs_scanned": 4735,
+   "prefiltered": 322,
+   "candidates": 315,
+   "hits": 447,
+   "seconds": 4.29
+  },
+  {
+   "key": "20230203",
+   "docs_scanned": 6491,
+   "prefiltered": 192,
+   "candidates": 180,
+   "hits": 392,
+   "seconds": 4.23
+  },
+  {
+   "key": "20230206",
+   "docs_scanned": 2224,
+   "prefiltered": 49,
+   "candidates": 45,
+   "hits": 78,
+   "seconds": 1.35
+  },
+  {
+   "key": "20230207",
+   "docs_scanned": 3235,
+   "prefiltered": 179,
+   "candidates": 171,
+   "hits": 237,
+   "seconds": 2.43
+  },
+  {
+   "key": "20230208",
+   "docs_scanned": 1941,
+   "prefiltered": 143,
+   "candidates": 138,
+   "hits": 213,
+   "seconds": 1.58
+  },
+  {
+   "key": "20230209",
+   "docs_scanned": 1701,
+   "prefiltered": 81,
+   "candidates": 78,
+   "hits": 121,
+   "seconds": 1.16
+  },
+  {
+   "key": "20230210",
+   "docs_scanned": 2458,
+   "prefiltered": 153,
+   "candidates": 146,
+   "hits": 233,
+   "seconds": 2.08
+  },
+  {
+   "key": "20230213",
+   "docs_scanned": 1288,
+   "prefiltered": 56,
+   "candidates": 55,
+   "hits": 97,
+   "seconds": 1.53
+  },
+  {
+   "key": "20230214",
+   "docs_scanned": 2849,
+   "prefiltered": 87,
+   "candidates": 84,
+   "hits": 152,
+   "seconds": 1.86
+  },
+  {
+   "key": "20230215",
+   "docs_scanned": 2049,
+   "prefiltered": 254,
+   "candidates": 248,
+   "hits": 557,
+   "seconds": 3.01
+  },
+  {
+   "key": "20230216",
+   "docs_scanned": 3764,
+   "prefiltered": 150,
+   "candidates": 146,
+   "hits": 331,
+   "seconds": 2.68
+  },
+  {
+   "key": "20230217",
+   "docs_scanned": 3985,
+   "prefiltered": 161,
+   "candidates": 153,
+   "hits": 336,
+   "seconds": 3.64
+  },
+  {
+   "key": "20230222",
+   "docs_scanned": 1367,
+   "prefiltered": 64,
+   "candidates": 58,
+   "hits": 107,
+   "seconds": 1.51
+  },
+  {
+   "key": "20230223",
+   "docs_scanned": 2840,
+   "prefiltered": 97,
+   "candidates": 90,
+   "hits": 195,
+   "seconds": 1.83
+  },
+  {
+   "key": "20230224",
+   "docs_scanned": 1657,
+   "prefiltered": 73,
+   "candidates": 69,
+   "hits": 130,
+   "seconds": 1.74
+  },
+  {
+   "key": "20230227",
+   "docs_scanned": 1662,
+   "prefiltered": 71,
+   "candidates": 70,
+   "hits": 167,
+   "seconds": 1.64
+  },
+  {
+   "key": "20230228",
+   "docs_scanned": 2942,
+   "prefiltered": 182,
+   "candidates": 173,
+   "hits": 296,
+   "seconds": 2.88
+  },
+  {
+   "key": "20230301",
+   "docs_scanned": 3301,
+   "prefiltered": 195,
+   "candidates": 178,
+   "hits": 386,
+   "seconds": 3.68
+  },
+  {
+   "key": "20230303",
+   "docs_scanned": 648,
+   "prefiltered": 30,
+   "candidates": 30,
+   "hits": 51,
+   "seconds": 0.68
+  },
+  {
+   "key": "20230306",
+   "docs_scanned": 1199,
+   "prefiltered": 53,
+   "candidates": 47,
+   "hits": 121,
+   "seconds": 1.27
+  },
+  {
+   "key": "20230307",
+   "docs_scanned": 1853,
+   "prefiltered": 149,
+   "candidates": 144,
+   "hits": 201,
+   "seconds": 1.99
+  },
+  {
+   "key": "20230308",
+   "docs_scanned": 1818,
+   "prefiltered": 80,
+   "candidates": 78,
+   "hits": 119,
+   "seconds": 1.38
+  },
+  {
+   "key": "20230309",
+   "docs_scanned": 3585,
+   "prefiltered": 617,
+   "candidates": 614,
+   "hits": 1991,
+   "seconds": 7.08
+  },
+  {
+   "key": "20230310",
+   "docs_scanned": 4061,
+   "prefiltered": 290,
+   "candidates": 277,
+   "hits": 531,
+   "seconds": 4.68
+  },
+  {
+   "key": "20230313",
+   "docs_scanned": 2382,
+   "prefiltered": 115,
+   "candidates": 114,
+   "hits": 236,
+   "seconds": 1.99
+  },
+  {
+   "key": "20230314",
+   "docs_scanned": 2170,
+   "prefiltered": 81,
+   "candidates": 76,
+   "hits": 121,
+   "seconds": 1.73
+  },
+  {
+   "key": "20230315",
+   "docs_scanned": 4573,
+   "prefiltered": 237,
+   "candidates": 233,
+   "hits": 460,
+   "seconds": 4.27
+  },
+  {
+   "key": "20230316",
+   "docs_scanned": 2637,
+   "prefiltered": 126,
+   "candidates": 121,
+   "hits": 290,
+   "seconds": 2.85
+  },
+  {
+   "key": "20230317",
+   "docs_scanned": 2082,
+   "prefiltered": 94,
+   "candidates": 91,
+   "hits": 146,
+   "seconds": 2.11
+  },
+  {
+   "key": "20230320",
+   "docs_scanned": 1901,
+   "prefiltered": 82,
+   "candidates": 79,
+   "hits": 133,
+   "seconds": 1.62
+  },
+  {
+   "key": "20230321",
+   "docs_scanned": 2625,
+   "prefiltered": 121,
+   "candidates": 115,
+   "hits": 218,
+   "seconds": 2.87
+  },
+  {
+   "key": "20230322",
+   "docs_scanned": 2527,
+   "prefiltered": 153,
+   "candidates": 149,
+   "hits": 272,
+   "seconds": 2.35
+  },
+  {
+   "key": "20230323",
+   "docs_scanned": 3343,
+   "prefiltered": 235,
+   "candidates": 232,
+   "hits": 367,
+   "seconds": 4.04
+  },
+  {
+   "key": "20230324",
+   "docs_scanned": 3260,
+   "prefiltered": 174,
+   "candidates": 167,
+   "hits": 403,
+   "seconds": 3.61
+  },
+  {
+   "key": "20230327",
+   "docs_scanned": 2643,
+   "prefiltered": 97,
+   "candidates": 95,
+   "hits": 212,
+   "seconds": 2.81
+  },
+  {
+   "key": "20230328",
+   "docs_scanned": 2703,
+   "prefiltered": 88,
+   "candidates": 86,
+   "hits": 148,
+   "seconds": 2.12
+  },
+  {
+   "key": "20230329",
+   "docs_scanned": 2829,
+   "prefiltered": 139,
+   "candidates": 135,
+   "hits": 269,
+   "seconds": 2.33
+  },
+  {
+   "key": "20230330",
+   "docs_scanned": 2800,
+   "prefiltered": 146,
+   "candidates": 143,
+   "hits": 284,
+   "seconds": 2.88
+  },
+  {
+   "key": "20230331",
+   "docs_scanned": 2862,
+   "prefiltered": 352,
+   "candidates": 349,
+   "hits": 1408,
+   "seconds": 7.57
+  },
+  {
+   "key": "20230403",
+   "docs_scanned": 3102,
+   "prefiltered": 193,
+   "candidates": 184,
+   "hits": 442,
+   "seconds": 3.96
+  },
+  {
+   "key": "20230404",
+   "docs_scanned": 4096,
+   "prefiltered": 190,
+   "candidates": 181,
+   "hits": 338,
+   "seconds": 3.84
+  },
+  {
+   "key": "20230410",
+   "docs_scanned": 2791,
+   "prefiltered": 174,
+   "candidates": 173,
+   "hits": 458,
+   "seconds": 3.05
+  },
+  {
+   "key": "20230411",
+   "docs_scanned": 3180,
+   "prefiltered": 192,
+   "candidates": 180,
+   "hits": 340,
+   "seconds": 3.73
+  },
+  {
+   "key": "20230412",
+   "docs_scanned": 2130,
+   "prefiltered": 166,
+   "candidates": 165,
+   "hits": 617,
+   "seconds": 3.1
+  },
+  {
+   "key": "20230413",
+   "docs_scanned": 2116,
+   "prefiltered": 103,
+   "candidates": 100,
+   "hits": 164,
+   "seconds": 1.88
+  },
+  {
+   "key": "20230414",
+   "docs_scanned": 1830,
+   "prefiltered": 122,
+   "candidates": 121,
+   "hits": 211,
+   "seconds": 2.08
+  },
+  {
+   "key": "20230417",
+   "docs_scanned": 187,
+   "prefiltered": 4,
+   "candidates": 4,
+   "hits": 10,
+   "seconds": 0.18
+  },
+  {
+   "key": "20230418",
+   "docs_scanned": 2029,
+   "prefiltered": 78,
+   "candidates": 75,
+   "hits": 130,
+   "seconds": 1.77
+  },
+  {
+   "key": "20230419",
+   "docs_scanned": 2655,
+   "prefiltered": 186,
+   "candidates": 180,
+   "hits": 567,
+   "seconds": 2.77
+  },
+  {
+   "key": "20230420",
+   "docs_scanned": 3128,
+   "prefiltered": 237,
+   "candidates": 231,
+   "hits": 728,
+   "seconds": 4.83
+  },
+  {
+   "key": "20230424",
+   "docs_scanned": 1703,
+   "prefiltered": 108,
+   "candidates": 100,
+   "hits": 145,
+   "seconds": 1.8
+  },
+  {
+   "key": "20230425",
+   "docs_scanned": 150,
+   "prefiltered": 11,
+   "candidates": 11,
+   "hits": 23,
+   "seconds": 0.43
+  },
+  {
+   "key": "20230426",
+   "docs_scanned": 4501,
+   "prefiltered": 436,
+   "candidates": 430,
+   "hits": 1600,
+   "seconds": 6.75
+  },
+  {
+   "key": "20230427",
+   "docs_scanned": 2299,
+   "prefiltered": 216,
+   "candidates": 210,
+   "hits": 488,
+   "seconds": 3.42
+  },
+  {
+   "key": "20230428",
+   "docs_scanned": 3389,
+   "prefiltered": 174,
+   "candidates": 169,
+   "hits": 286,
+   "seconds": 3.06
+  },
+  {
+   "key": "20230502",
+   "docs_scanned": 1843,
+   "prefiltered": 109,
+   "candidates": 105,
+   "hits": 260,
+   "seconds": 2.32
+  },
+  {
+   "key": "20230503",
+   "docs_scanned": 4144,
+   "prefiltered": 259,
+   "candidates": 253,
+   "hits": 423,
+   "seconds": 3.69
+  },
+  {
+   "key": "20230504",
+   "docs_scanned": 1879,
+   "prefiltered": 52,
+   "candidates": 51,
+   "hits": 110,
+   "seconds": 1.4
+  },
+  {
+   "key": "20230505",
+   "docs_scanned": 2897,
+   "prefiltered": 195,
+   "candidates": 184,
+   "hits": 340,
+   "seconds": 3.21
+  },
+  {
+   "key": "20230508",
+   "docs_scanned": 2002,
+   "prefiltered": 85,
+   "candidates": 81,
+   "hits": 174,
+   "seconds": 2.16
+  },
+  {
+   "key": "20230509",
+   "docs_scanned": 2506,
+   "prefiltered": 93,
+   "candidates": 92,
+   "hits": 116,
+   "seconds": 2.46
+  },
+  {
+   "key": "20230510",
+   "docs_scanned": 2742,
+   "prefiltered": 152,
+   "candidates": 147,
+   "hits": 371,
+   "seconds": 3.01
+  },
+  {
+   "key": "20230511",
+   "docs_scanned": 2254,
+   "prefiltered": 264,
+   "candidates": 255,
+   "hits": 538,
+   "seconds": 4.17
+  },
+  {
+   "key": "20230512",
+   "docs_scanned": 2478,
+   "prefiltered": 143,
+   "candidates": 132,
+   "hits": 326,
+   "seconds": 3.01
+  },
+  {
+   "key": "20230515",
+   "docs_scanned": 2173,
+   "prefiltered": 173,
+   "candidates": 170,
+   "hits": 233,
+   "seconds": 1.97
+  },
+  {
+   "key": "20230516",
+   "docs_scanned": 115,
+   "prefiltered": 3,
+   "candidates": 3,
+   "hits": 3,
+   "seconds": 0.27
+  },
+  {
+   "key": "20230517",
+   "docs_scanned": 3383,
+   "prefiltered": 278,
+   "candidates": 271,
+   "hits": 779,
+   "seconds": 4.93
+  },
+  {
+   "key": "20230518",
+   "docs_scanned": 2697,
+   "prefiltered": 163,
+   "candidates": 156,
+   "hits": 295,
+   "seconds": 2.89
+  },
+  {
+   "key": "20230519",
+   "docs_scanned": 1119,
+   "prefiltered": 49,
+   "candidates": 47,
+   "hits": 107,
+   "seconds": 1.06
+  },
+  {
+   "key": "20230522",
+   "docs_scanned": 799,
+   "prefiltered": 42,
+   "candidates": 42,
+   "hits": 102,
+   "seconds": 0.94
+  },
+  {
+   "key": "20230523",
+   "docs_scanned": 3475,
+   "prefiltered": 122,
+   "candidates": 111,
+   "hits": 189,
+   "seconds": 2.87
+  },
+  {
+   "key": "20230524",
+   "docs_scanned": 3247,
+   "prefiltered": 186,
+   "candidates": 181,
+   "hits": 348,
+   "seconds": 2.81
+  },
+  {
+   "key": "20230525",
+   "docs_scanned": 3170,
+   "prefiltered": 158,
+   "candidates": 152,
+   "hits": 343,
+   "seconds": 3.77
+  },
+  {
+   "key": "20230526",
+   "docs_scanned": 1933,
+   "prefiltered": 67,
+   "candidates": 61,
+   "hits": 116,
+   "seconds": 2.13
+  },
+  {
+   "key": "20230529",
+   "docs_scanned": 2375,
+   "prefiltered": 157,
+   "candidates": 152,
+   "hits": 302,
+   "seconds": 2.94
+  },
+  {
+   "key": "20230530",
+   "docs_scanned": 2866,
+   "prefiltered": 116,
+   "candidates": 111,
+   "hits": 228,
+   "seconds": 2.51
+  },
+  {
+   "key": "20230531",
+   "docs_scanned": 3248,
+   "prefiltered": 208,
+   "candidates": 203,
+   "hits": 339,
+   "seconds": 3.2
+  },
+  {
+   "key": "20230601",
+   "docs_scanned": 4738,
+   "prefiltered": 333,
+   "candidates": 321,
+   "hits": 777,
+   "seconds": 5.58
+  },
+  {
+   "key": "20230602",
+   "docs_scanned": 3165,
+   "prefiltered": 150,
+   "candidates": 143,
+   "hits": 253,
+   "seconds": 2.96
+  },
+  {
+   "key": "20230605",
+   "docs_scanned": 964,
+   "prefiltered": 58,
+   "candidates": 57,
+   "hits": 111,
+   "seconds": 1.27
+  },
+  {
+   "key": "20230606",
+   "docs_scanned": 2966,
+   "prefiltered": 203,
+   "candidates": 198,
+   "hits": 309,
+   "seconds": 2.01
+  },
+  {
+   "key": "20230607",
+   "docs_scanned": 2257,
+   "prefiltered": 89,
+   "candidates": 86,
+   "hits": 209,
+   "seconds": 1.77
+  },
+  {
+   "key": "20230609",
+   "docs_scanned": 2690,
+   "prefiltered": 186,
+   "candidates": 178,
+   "hits": 361,
+   "seconds": 3.21
+  },
+  {
+   "key": "20230612",
+   "docs_scanned": 2251,
+   "prefiltered": 90,
+   "candidates": 87,
+   "hits": 169,
+   "seconds": 1.95
+  },
+  {
+   "key": "20230613",
+   "docs_scanned": 1130,
+   "prefiltered": 45,
+   "candidates": 43,
+   "hits": 81,
+   "seconds": 0.84
+  },
+  {
+   "key": "20230614",
+   "docs_scanned": 2393,
+   "prefiltered": 91,
+   "candidates": 85,
+   "hits": 163,
+   "seconds": 1.89
+  },
+  {
+   "key": "20230615",
+   "docs_scanned": 3266,
+   "prefiltered": 242,
+   "candidates": 238,
+   "hits": 506,
+   "seconds": 3.46
+  },
+  {
+   "key": "20230616",
+   "docs_scanned": 2592,
+   "prefiltered": 110,
+   "candidates": 107,
+   "hits": 183,
+   "seconds": 2.06
+  },
+  {
+   "key": "20230619",
+   "docs_scanned": 685,
+   "prefiltered": 35,
+   "candidates": 32,
+   "hits": 86,
+   "seconds": 0.96
+  },
+  {
+   "key": "20230620",
+   "docs_scanned": 2178,
+   "prefiltered": 94,
+   "candidates": 91,
+   "hits": 139,
+   "seconds": 1.52
+  },
+  {
+   "key": "20230621",
+   "docs_scanned": 1677,
+   "prefiltered": 81,
+   "candidates": 73,
+   "hits": 155,
+   "seconds": 1.88
+  },
+  {
+   "key": "20230622",
+   "docs_scanned": 4430,
+   "prefiltered": 268,
+   "candidates": 263,
+   "hits": 452,
+   "seconds": 3.34
+  },
+  {
+   "key": "20230623",
+   "docs_scanned": 2566,
+   "prefiltered": 127,
+   "candidates": 122,
+   "hits": 228,
+   "seconds": 2.37
+  },
+  {
+   "key": "20230626",
+   "docs_scanned": 3186,
+   "prefiltered": 203,
+   "candidates": 195,
+   "hits": 363,
+   "seconds": 3.14
+  },
+  {
+   "key": "20230627",
+   "docs_scanned": 3089,
+   "prefiltered": 180,
+   "candidates": 178,
+   "hits": 323,
+   "seconds": 2.46
+  },
+  {
+   "key": "20230628",
+   "docs_scanned": 3619,
+   "prefiltered": 190,
+   "candidates": 181,
+   "hits": 344,
+   "seconds": 3.52
+  },
+  {
+   "key": "20230629",
+   "docs_scanned": 2855,
+   "prefiltered": 241,
+   "candidates": 235,
+   "hits": 396,
+   "seconds": 3.29
+  },
+  {
+   "key": "20230630",
+   "docs_scanned": 3403,
+   "prefiltered": 324,
+   "candidates": 316,
+   "hits": 1037,
+   "seconds": 5.18
+  },
+  {
+   "key": "20230703",
+   "docs_scanned": 4598,
+   "prefiltered": 261,
+   "candidates": 255,
+   "hits": 621,
+   "seconds": 4.79
+  },
+  {
+   "key": "20230704",
+   "docs_scanned": 1799,
+   "prefiltered": 79,
+   "candidates": 78,
+   "hits": 165,
+   "seconds": 1.59
+  },
+  {
+   "key": "20230705",
+   "docs_scanned": 62,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.05
+  },
+  {
+   "key": "20230706",
+   "docs_scanned": 124,
+   "prefiltered": 8,
+   "candidates": 7,
+   "hits": 7,
+   "seconds": 0.15
+  },
+  {
+   "key": "20230710",
+   "docs_scanned": 6,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20230711",
+   "docs_scanned": 10,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 5,
+   "seconds": 0.04
+  },
+  {
+   "key": "20230712",
+   "docs_scanned": 150,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 6,
+   "seconds": 0.1
+  },
+  {
+   "key": "20230713",
+   "docs_scanned": 127,
+   "prefiltered": 1,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.08
+  },
+  {
+   "key": "20230714",
+   "docs_scanned": 105,
+   "prefiltered": 4,
+   "candidates": 3,
+   "hits": 4,
+   "seconds": 0.08
+  },
+  {
+   "key": "20230717",
+   "docs_scanned": 318,
+   "prefiltered": 10,
+   "candidates": 9,
+   "hits": 17,
+   "seconds": 0.32
+  },
+  {
+   "key": "20230718",
+   "docs_scanned": 75,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 3,
+   "seconds": 0.13
+  },
+  {
+   "key": "20230719",
+   "docs_scanned": 1387,
+   "prefiltered": 103,
+   "candidates": 102,
+   "hits": 124,
+   "seconds": 0.84
+  },
+  {
+   "key": "20230720",
+   "docs_scanned": 1702,
+   "prefiltered": 49,
+   "candidates": 49,
+   "hits": 51,
+   "seconds": 0.17
+  },
+  {
+   "key": "20230724",
+   "docs_scanned": 718,
+   "prefiltered": 95,
+   "candidates": 94,
+   "hits": 109,
+   "seconds": 0.28
+  },
+  {
+   "key": "20230725",
+   "docs_scanned": 476,
+   "prefiltered": 40,
+   "candidates": 40,
+   "hits": 47,
+   "seconds": 0.27
+  },
+  {
+   "key": "20230726",
+   "docs_scanned": 13,
+   "prefiltered": 3,
+   "candidates": 3,
+   "hits": 3,
+   "seconds": 0.04
+  },
+  {
+   "key": "20230727",
+   "docs_scanned": 388,
+   "prefiltered": 35,
+   "candidates": 35,
+   "hits": 40,
+   "seconds": 0.7
+  },
+  {
+   "key": "20230728",
+   "docs_scanned": 1336,
+   "prefiltered": 96,
+   "candidates": 93,
+   "hits": 192,
+   "seconds": 1.14
+  },
+  {
+   "key": "20230731",
+   "docs_scanned": 985,
+   "prefiltered": 53,
+   "candidates": 53,
+   "hits": 80,
+   "seconds": 0.67
+  },
+  {
+   "key": "20230801",
+   "docs_scanned": 929,
+   "prefiltered": 41,
+   "candidates": 38,
+   "hits": 58,
+   "seconds": 0.88
+  },
+  {
+   "key": "20230802",
+   "docs_scanned": 70,
+   "prefiltered": 5,
+   "candidates": 5,
+   "hits": 14,
+   "seconds": 0.1
+  },
+  {
+   "key": "20230803",
+   "docs_scanned": 3178,
+   "prefiltered": 169,
+   "candidates": 165,
+   "hits": 334,
+   "seconds": 3.4
+  },
+  {
+   "key": "20230804",
+   "docs_scanned": 1648,
+   "prefiltered": 102,
+   "candidates": 99,
+   "hits": 208,
+   "seconds": 2.03
+  },
+  {
+   "key": "20230807",
+   "docs_scanned": 1989,
+   "prefiltered": 89,
+   "candidates": 83,
+   "hits": 133,
+   "seconds": 1.5
+  },
+  {
+   "key": "20230808",
+   "docs_scanned": 2052,
+   "prefiltered": 95,
+   "candidates": 92,
+   "hits": 151,
+   "seconds": 1.84
+  },
+  {
+   "key": "20230809",
+   "docs_scanned": 1796,
+   "prefiltered": 53,
+   "candidates": 52,
+   "hits": 92,
+   "seconds": 1.13
+  },
+  {
+   "key": "20230810",
+   "docs_scanned": 2057,
+   "prefiltered": 83,
+   "candidates": 80,
+   "hits": 144,
+   "seconds": 1.93
+  },
+  {
+   "key": "20230814",
+   "docs_scanned": 2157,
+   "prefiltered": 92,
+   "candidates": 86,
+   "hits": 178,
+   "seconds": 2.23
+  },
+  {
+   "key": "20230815",
+   "docs_scanned": 2418,
+   "prefiltered": 119,
+   "candidates": 116,
+   "hits": 241,
+   "seconds": 3.12
+  },
+  {
+   "key": "20230816",
+   "docs_scanned": 4703,
+   "prefiltered": 240,
+   "candidates": 234,
+   "hits": 472,
+   "seconds": 4.69
+  },
+  {
+   "key": "20230817",
+   "docs_scanned": 2891,
+   "prefiltered": 309,
+   "candidates": 299,
+   "hits": 417,
+   "seconds": 2.91
+  },
+  {
+   "key": "20230818",
+   "docs_scanned": 2588,
+   "prefiltered": 123,
+   "candidates": 120,
+   "hits": 240,
+   "seconds": 2.55
+  },
+  {
+   "key": "20230821",
+   "docs_scanned": 3673,
+   "prefiltered": 230,
+   "candidates": 228,
+   "hits": 331,
+   "seconds": 3.16
+  },
+  {
+   "key": "20230822",
+   "docs_scanned": 1602,
+   "prefiltered": 70,
+   "candidates": 68,
+   "hits": 163,
+   "seconds": 1.91
+  },
+  {
+   "key": "20230823",
+   "docs_scanned": 4296,
+   "prefiltered": 248,
+   "candidates": 239,
+   "hits": 449,
+   "seconds": 3.69
+  },
+  {
+   "key": "20230824",
+   "docs_scanned": 3282,
+   "prefiltered": 202,
+   "candidates": 194,
+   "hits": 391,
+   "seconds": 3.65
+  },
+  {
+   "key": "20230825",
+   "docs_scanned": 2869,
+   "prefiltered": 133,
+   "candidates": 132,
+   "hits": 289,
+   "seconds": 2.54
+  },
+  {
+   "key": "20230828",
+   "docs_scanned": 2193,
+   "prefiltered": 155,
+   "candidates": 152,
+   "hits": 305,
+   "seconds": 2.85
+  },
+  {
+   "key": "20230829",
+   "docs_scanned": 3061,
+   "prefiltered": 152,
+   "candidates": 146,
+   "hits": 288,
+   "seconds": 3.26
+  },
+  {
+   "key": "20230830",
+   "docs_scanned": 3871,
+   "prefiltered": 167,
+   "candidates": 163,
+   "hits": 335,
+   "seconds": 4.04
+  },
+  {
+   "key": "20230831",
+   "docs_scanned": 3965,
+   "prefiltered": 212,
+   "candidates": 203,
+   "hits": 436,
+   "seconds": 4.64
+  },
+  {
+   "key": "20230901",
+   "docs_scanned": 3264,
+   "prefiltered": 213,
+   "candidates": 206,
+   "hits": 461,
+   "seconds": 3.86
+  },
+  {
+   "key": "20230904",
+   "docs_scanned": 2121,
+   "prefiltered": 110,
+   "candidates": 107,
+   "hits": 228,
+   "seconds": 2.09
+  },
+  {
+   "key": "20230905",
+   "docs_scanned": 398,
+   "prefiltered": 24,
+   "candidates": 24,
+   "hits": 34,
+   "seconds": 0.52
+  },
+  {
+   "key": "20230906",
+   "docs_scanned": 3056,
+   "prefiltered": 151,
+   "candidates": 149,
+   "hits": 322,
+   "seconds": 2.44
+  },
+  {
+   "key": "20230908",
+   "docs_scanned": 2790,
+   "prefiltered": 128,
+   "candidates": 120,
+   "hits": 294,
+   "seconds": 3.09
+  },
+  {
+   "key": "20230911",
+   "docs_scanned": 1337,
+   "prefiltered": 60,
+   "candidates": 59,
+   "hits": 107,
+   "seconds": 1.37
+  },
+  {
+   "key": "20230912",
+   "docs_scanned": 2760,
+   "prefiltered": 130,
+   "candidates": 125,
+   "hits": 268,
+   "seconds": 2.66
+  },
+  {
+   "key": "20230913",
+   "docs_scanned": 2911,
+   "prefiltered": 178,
+   "candidates": 174,
+   "hits": 393,
+   "seconds": 2.28
+  },
+  {
+   "key": "20230914",
+   "docs_scanned": 2769,
+   "prefiltered": 133,
+   "candidates": 132,
+   "hits": 272,
+   "seconds": 3.09
+  },
+  {
+   "key": "20230915",
+   "docs_scanned": 2626,
+   "prefiltered": 131,
+   "candidates": 128,
+   "hits": 286,
+   "seconds": 2.52
+  },
+  {
+   "key": "20230918",
+   "docs_scanned": 2765,
+   "prefiltered": 98,
+   "candidates": 93,
+   "hits": 144,
+   "seconds": 1.98
+  },
+  {
+   "key": "20230919",
+   "docs_scanned": 1466,
+   "prefiltered": 111,
+   "candidates": 107,
+   "hits": 165,
+   "seconds": 1.39
+  },
+  {
+   "key": "20230920",
+   "docs_scanned": 2814,
+   "prefiltered": 138,
+   "candidates": 135,
+   "hits": 281,
+   "seconds": 2.37
+  },
+  {
+   "key": "20230921",
+   "docs_scanned": 4299,
+   "prefiltered": 264,
+   "candidates": 253,
+   "hits": 521,
+   "seconds": 5.07
+  },
+  {
+   "key": "20230922",
+   "docs_scanned": 1808,
+   "prefiltered": 244,
+   "candidates": 235,
+   "hits": 1200,
+   "seconds": 4.09
+  },
+  {
+   "key": "20230925",
+   "docs_scanned": 2394,
+   "prefiltered": 87,
+   "candidates": 84,
+   "hits": 111,
+   "seconds": 1.51
+  },
+  {
+   "key": "20230926",
+   "docs_scanned": 2195,
+   "prefiltered": 103,
+   "candidates": 100,
+   "hits": 157,
+   "seconds": 1.66
+  },
+  {
+   "key": "20230927",
+   "docs_scanned": 2187,
+   "prefiltered": 140,
+   "candidates": 135,
+   "hits": 337,
+   "seconds": 2.6
+  },
+  {
+   "key": "20230928",
+   "docs_scanned": 3262,
+   "prefiltered": 169,
+   "candidates": 166,
+   "hits": 306,
+   "seconds": 3.27
+  },
+  {
+   "key": "20230929",
+   "docs_scanned": 1995,
+   "prefiltered": 85,
+   "candidates": 84,
+   "hits": 220,
+   "seconds": 1.94
+  },
+  {
+   "key": "20231003",
+   "docs_scanned": 3936,
+   "prefiltered": 221,
+   "candidates": 214,
+   "hits": 423,
+   "seconds": 4.73
+  },
+  {
+   "key": "20231004",
+   "docs_scanned": 1653,
+   "prefiltered": 121,
+   "candidates": 121,
+   "hits": 301,
+   "seconds": 2.1
+  },
+  {
+   "key": "20231005",
+   "docs_scanned": 3374,
+   "prefiltered": 206,
+   "candidates": 202,
+   "hits": 421,
+   "seconds": 3.69
+  },
+  {
+   "key": "20231006",
+   "docs_scanned": 761,
+   "prefiltered": 211,
+   "candidates": 210,
+   "hits": 334,
+   "seconds": 2.3
+  },
+  {
+   "key": "20231009",
+   "docs_scanned": 183,
+   "prefiltered": 22,
+   "candidates": 22,
+   "hits": 47,
+   "seconds": 0.41
+  },
+  {
+   "key": "20231010",
+   "docs_scanned": 2071,
+   "prefiltered": 116,
+   "candidates": 114,
+   "hits": 175,
+   "seconds": 1.36
+  },
+  {
+   "key": "20231011",
+   "docs_scanned": 2685,
+   "prefiltered": 155,
+   "candidates": 151,
+   "hits": 320,
+   "seconds": 3.14
+  },
+  {
+   "key": "20231016",
+   "docs_scanned": 3003,
+   "prefiltered": 187,
+   "candidates": 182,
+   "hits": 460,
+   "seconds": 4.08
+  },
+  {
+   "key": "20231017",
+   "docs_scanned": 2731,
+   "prefiltered": 225,
+   "candidates": 215,
+   "hits": 361,
+   "seconds": 3.01
+  },
+  {
+   "key": "20231018",
+   "docs_scanned": 3485,
+   "prefiltered": 140,
+   "candidates": 133,
+   "hits": 250,
+   "seconds": 2.55
+  },
+  {
+   "key": "20231019",
+   "docs_scanned": 2178,
+   "prefiltered": 93,
+   "candidates": 89,
+   "hits": 211,
+   "seconds": 2.34
+  },
+  {
+   "key": "20231020",
+   "docs_scanned": 2274,
+   "prefiltered": 148,
+   "candidates": 144,
+   "hits": 294,
+   "seconds": 2.89
+  },
+  {
+   "key": "20231023",
+   "docs_scanned": 1755,
+   "prefiltered": 108,
+   "candidates": 105,
+   "hits": 200,
+   "seconds": 1.7
+  },
+  {
+   "key": "20231024",
+   "docs_scanned": 2224,
+   "prefiltered": 137,
+   "candidates": 132,
+   "hits": 196,
+   "seconds": 1.82
+  },
+  {
+   "key": "20231025",
+   "docs_scanned": 3304,
+   "prefiltered": 175,
+   "candidates": 172,
+   "hits": 363,
+   "seconds": 2.91
+  },
+  {
+   "key": "20231026",
+   "docs_scanned": 2803,
+   "prefiltered": 151,
+   "candidates": 146,
+   "hits": 307,
+   "seconds": 2.01
+  },
+  {
+   "key": "20231027",
+   "docs_scanned": 2417,
+   "prefiltered": 134,
+   "candidates": 132,
+   "hits": 277,
+   "seconds": 2.9
+  },
+  {
+   "key": "20231030",
+   "docs_scanned": 2877,
+   "prefiltered": 133,
+   "candidates": 127,
+   "hits": 223,
+   "seconds": 2.46
+  },
+  {
+   "key": "20231031",
+   "docs_scanned": 1933,
+   "prefiltered": 178,
+   "candidates": 178,
+   "hits": 388,
+   "seconds": 2.98
+  },
+  {
+   "key": "20231103",
+   "docs_scanned": 5234,
+   "prefiltered": 318,
+   "candidates": 314,
+   "hits": 661,
+   "seconds": 5.09
+  },
+  {
+   "key": "20231106",
+   "docs_scanned": 3113,
+   "prefiltered": 196,
+   "candidates": 182,
+   "hits": 363,
+   "seconds": 3.42
+  },
+  {
+   "key": "20231107",
+   "docs_scanned": 1356,
+   "prefiltered": 60,
+   "candidates": 58,
+   "hits": 103,
+   "seconds": 1.04
+  },
+  {
+   "key": "20231108",
+   "docs_scanned": 1156,
+   "prefiltered": 74,
+   "candidates": 73,
+   "hits": 115,
+   "seconds": 1.19
+  },
+  {
+   "key": "20231109",
+   "docs_scanned": 2266,
+   "prefiltered": 134,
+   "candidates": 130,
+   "hits": 185,
+   "seconds": 1.67
+  },
+  {
+   "key": "20231110",
+   "docs_scanned": 1295,
+   "prefiltered": 55,
+   "candidates": 55,
+   "hits": 97,
+   "seconds": 1.08
+  },
+  {
+   "key": "20231113",
+   "docs_scanned": 2568,
+   "prefiltered": 159,
+   "candidates": 156,
+   "hits": 231,
+   "seconds": 1.83
+  },
+  {
+   "key": "20231114",
+   "docs_scanned": 1590,
+   "prefiltered": 60,
+   "candidates": 55,
+   "hits": 111,
+   "seconds": 1.62
+  },
+  {
+   "key": "20231116",
+   "docs_scanned": 1073,
+   "prefiltered": 52,
+   "candidates": 50,
+   "hits": 121,
+   "seconds": 1.28
+  },
+  {
+   "key": "20231117",
+   "docs_scanned": 3690,
+   "prefiltered": 234,
+   "candidates": 230,
+   "hits": 415,
+   "seconds": 2.53
+  },
+  {
+   "key": "20231120",
+   "docs_scanned": 1780,
+   "prefiltered": 54,
+   "candidates": 53,
+   "hits": 110,
+   "seconds": 0.95
+  },
+  {
+   "key": "20231121",
+   "docs_scanned": 1839,
+   "prefiltered": 74,
+   "candidates": 72,
+   "hits": 170,
+   "seconds": 1.85
+  },
+  {
+   "key": "20231122",
+   "docs_scanned": 1817,
+   "prefiltered": 89,
+   "candidates": 84,
+   "hits": 167,
+   "seconds": 1.72
+  },
+  {
+   "key": "20231124",
+   "docs_scanned": 1611,
+   "prefiltered": 73,
+   "candidates": 71,
+   "hits": 129,
+   "seconds": 1.21
+  },
+  {
+   "key": "20231127",
+   "docs_scanned": 1635,
+   "prefiltered": 80,
+   "candidates": 79,
+   "hits": 139,
+   "seconds": 1.42
+  },
+  {
+   "key": "20231128",
+   "docs_scanned": 2858,
+   "prefiltered": 147,
+   "candidates": 143,
+   "hits": 264,
+   "seconds": 2.58
+  },
+  {
+   "key": "20231129",
+   "docs_scanned": 2591,
+   "prefiltered": 157,
+   "candidates": 154,
+   "hits": 352,
+   "seconds": 2.73
+  },
+  {
+   "key": "20231130",
+   "docs_scanned": 3228,
+   "prefiltered": 204,
+   "candidates": 189,
+   "hits": 382,
+   "seconds": 4.02
+  },
+  {
+   "key": "20231201",
+   "docs_scanned": 5524,
+   "prefiltered": 375,
+   "candidates": 361,
+   "hits": 758,
+   "seconds": 6.1
+  },
+  {
+   "key": "20231204",
+   "docs_scanned": 3167,
+   "prefiltered": 186,
+   "candidates": 185,
+   "hits": 596,
+   "seconds": 3.97
+  },
+  {
+   "key": "20231205",
+   "docs_scanned": 2140,
+   "prefiltered": 81,
+   "candidates": 79,
+   "hits": 157,
+   "seconds": 1.64
+  },
+  {
+   "key": "20231206",
+   "docs_scanned": 1929,
+   "prefiltered": 130,
+   "candidates": 127,
+   "hits": 284,
+   "seconds": 2.37
+  },
+  {
+   "key": "20231207",
+   "docs_scanned": 4293,
+   "prefiltered": 229,
+   "candidates": 225,
+   "hits": 512,
+   "seconds": 3.79
+  },
+  {
+   "key": "20231211",
+   "docs_scanned": 1620,
+   "prefiltered": 70,
+   "candidates": 68,
+   "hits": 147,
+   "seconds": 1.7
+  },
+  {
+   "key": "20231212",
+   "docs_scanned": 547,
+   "prefiltered": 33,
+   "candidates": 32,
+   "hits": 47,
+   "seconds": 0.84
+  },
+  {
+   "key": "20231213",
+   "docs_scanned": 1845,
+   "prefiltered": 42,
+   "candidates": 39,
+   "hits": 67,
+   "seconds": 1.25
+  },
+  {
+   "key": "20231214",
+   "docs_scanned": 1531,
+   "prefiltered": 70,
+   "candidates": 69,
+   "hits": 139,
+   "seconds": 1.85
+  },
+  {
+   "key": "20231215",
+   "docs_scanned": 5028,
+   "prefiltered": 301,
+   "candidates": 294,
+   "hits": 610,
+   "seconds": 5.32
+  },
+  {
+   "key": "20231218",
+   "docs_scanned": 3246,
+   "prefiltered": 232,
+   "candidates": 224,
+   "hits": 510,
+   "seconds": 4.34
+  },
+  {
+   "key": "20231219",
+   "docs_scanned": 3314,
+   "prefiltered": 126,
+   "candidates": 120,
+   "hits": 245,
+   "seconds": 3.49
+  },
+  {
+   "key": "20231220",
+   "docs_scanned": 6024,
+   "prefiltered": 363,
+   "candidates": 352,
+   "hits": 684,
+   "seconds": 6.75
+  },
+  {
+   "key": "20231221",
+   "docs_scanned": 2957,
+   "prefiltered": 178,
+   "candidates": 172,
+   "hits": 364,
+   "seconds": 3.99
+  },
+  {
+   "key": "20240110",
+   "docs_scanned": 1064,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.01
+  },
+  {
+   "key": "20240111",
+   "docs_scanned": 279,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 2,
+   "seconds": 0.06
+  },
+  {
+   "key": "20240112",
+   "docs_scanned": 162,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20240115",
+   "docs_scanned": 292,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.01
+  },
+  {
+   "key": "20240116",
+   "docs_scanned": 351,
+   "prefiltered": 6,
+   "candidates": 6,
+   "hits": 11,
+   "seconds": 0.16
+  },
+  {
+   "key": "20240117",
+   "docs_scanned": 62,
+   "prefiltered": 3,
+   "candidates": 3,
+   "hits": 7,
+   "seconds": 0.08
+  },
+  {
+   "key": "20240118",
+   "docs_scanned": 215,
+   "prefiltered": 13,
+   "candidates": 13,
+   "hits": 28,
+   "seconds": 0.3
+  },
+  {
+   "key": "20240119",
+   "docs_scanned": 95,
+   "prefiltered": 4,
+   "candidates": 3,
+   "hits": 7,
+   "seconds": 0.09
+  },
+  {
+   "key": "20240122",
+   "docs_scanned": 179,
+   "prefiltered": 5,
+   "candidates": 5,
+   "hits": 14,
+   "seconds": 0.1
+  },
+  {
+   "key": "20240123",
+   "docs_scanned": 92,
+   "prefiltered": 4,
+   "candidates": 4,
+   "hits": 7,
+   "seconds": 0.14
+  },
+  {
+   "key": "20240124",
+   "docs_scanned": 188,
+   "prefiltered": 8,
+   "candidates": 8,
+   "hits": 20,
+   "seconds": 0.24
+  },
+  {
+   "key": "20240125",
+   "docs_scanned": 179,
+   "prefiltered": 9,
+   "candidates": 7,
+   "hits": 13,
+   "seconds": 0.17
+  },
+  {
+   "key": "20240126",
+   "docs_scanned": 227,
+   "prefiltered": 9,
+   "candidates": 9,
+   "hits": 24,
+   "seconds": 0.21
+  },
+  {
+   "key": "20240129",
+   "docs_scanned": 347,
+   "prefiltered": 13,
+   "candidates": 13,
+   "hits": 27,
+   "seconds": 0.3
+  },
+  {
+   "key": "20240130",
+   "docs_scanned": 501,
+   "prefiltered": 21,
+   "candidates": 21,
+   "hits": 47,
+   "seconds": 0.53
+  },
+  {
+   "key": "20240131",
+   "docs_scanned": 516,
+   "prefiltered": 9,
+   "candidates": 7,
+   "hits": 7,
+   "seconds": 0.24
+  },
+  {
+   "key": "20240201",
+   "docs_scanned": 764,
+   "prefiltered": 29,
+   "candidates": 26,
+   "hits": 42,
+   "seconds": 0.56
+  },
+  {
+   "key": "20240202",
+   "docs_scanned": 3303,
+   "prefiltered": 143,
+   "candidates": 135,
+   "hits": 298,
+   "seconds": 3.96
+  },
+  {
+   "key": "20240205",
+   "docs_scanned": 4174,
+   "prefiltered": 252,
+   "candidates": 248,
+   "hits": 361,
+   "seconds": 2.7
+  },
+  {
+   "key": "20240206",
+   "docs_scanned": 4756,
+   "prefiltered": 281,
+   "candidates": 278,
+   "hits": 380,
+   "seconds": 2.9
+  },
+  {
+   "key": "20240207",
+   "docs_scanned": 837,
+   "prefiltered": 34,
+   "candidates": 30,
+   "hits": 56,
+   "seconds": 0.65
+  },
+  {
+   "key": "20240208",
+   "docs_scanned": 5946,
+   "prefiltered": 274,
+   "candidates": 271,
+   "hits": 382,
+   "seconds": 2.26
+  },
+  {
+   "key": "20240209",
+   "docs_scanned": 1247,
+   "prefiltered": 47,
+   "candidates": 44,
+   "hits": 81,
+   "seconds": 1.27
+  },
+  {
+   "key": "20240214",
+   "docs_scanned": 3604,
+   "prefiltered": 75,
+   "candidates": 74,
+   "hits": 140,
+   "seconds": 1.73
+  },
+  {
+   "key": "20240215",
+   "docs_scanned": 2848,
+   "prefiltered": 83,
+   "candidates": 79,
+   "hits": 140,
+   "seconds": 1.84
+  },
+  {
+   "key": "20240216",
+   "docs_scanned": 3447,
+   "prefiltered": 154,
+   "candidates": 148,
+   "hits": 234,
+   "seconds": 2.46
+  },
+  {
+   "key": "20240219",
+   "docs_scanned": 1505,
+   "prefiltered": 72,
+   "candidates": 69,
+   "hits": 151,
+   "seconds": 1.51
+  },
+  {
+   "key": "20240220",
+   "docs_scanned": 3906,
+   "prefiltered": 135,
+   "candidates": 129,
+   "hits": 250,
+   "seconds": 2.91
+  },
+  {
+   "key": "20240221",
+   "docs_scanned": 1399,
+   "prefiltered": 88,
+   "candidates": 86,
+   "hits": 169,
+   "seconds": 2.02
+  },
+  {
+   "key": "20240222",
+   "docs_scanned": 2654,
+   "prefiltered": 122,
+   "candidates": 115,
+   "hits": 196,
+   "seconds": 2.25
+  },
+  {
+   "key": "20240223",
+   "docs_scanned": 1780,
+   "prefiltered": 95,
+   "candidates": 90,
+   "hits": 132,
+   "seconds": 1.6
+  },
+  {
+   "key": "20240226",
+   "docs_scanned": 1764,
+   "prefiltered": 113,
+   "candidates": 112,
+   "hits": 152,
+   "seconds": 1.61
+  },
+  {
+   "key": "20240227",
+   "docs_scanned": 2400,
+   "prefiltered": 94,
+   "candidates": 89,
+   "hits": 182,
+   "seconds": 2.56
+  },
+  {
+   "key": "20240228",
+   "docs_scanned": 6196,
+   "prefiltered": 275,
+   "candidates": 261,
+   "hits": 565,
+   "seconds": 5.85
+  },
+  {
+   "key": "20240229",
+   "docs_scanned": 4443,
+   "prefiltered": 263,
+   "candidates": 255,
+   "hits": 729,
+   "seconds": 4.96
+  },
+  {
+   "key": "20240301",
+   "docs_scanned": 4850,
+   "prefiltered": 219,
+   "candidates": 212,
+   "hits": 378,
+   "seconds": 4.99
+  },
+  {
+   "key": "20240304",
+   "docs_scanned": 3116,
+   "prefiltered": 138,
+   "candidates": 133,
+   "hits": 304,
+   "seconds": 2.86
+  },
+  {
+   "key": "20240305",
+   "docs_scanned": 3483,
+   "prefiltered": 72,
+   "candidates": 68,
+   "hits": 127,
+   "seconds": 1.75
+  },
+  {
+   "key": "20240306",
+   "docs_scanned": 2658,
+   "prefiltered": 137,
+   "candidates": 133,
+   "hits": 263,
+   "seconds": 2.91
+  },
+  {
+   "key": "20240307",
+   "docs_scanned": 3857,
+   "prefiltered": 190,
+   "candidates": 186,
+   "hits": 408,
+   "seconds": 4.61
+  },
+  {
+   "key": "20240308",
+   "docs_scanned": 1732,
+   "prefiltered": 69,
+   "candidates": 67,
+   "hits": 147,
+   "seconds": 1.85
+  },
+  {
+   "key": "20240311",
+   "docs_scanned": 2814,
+   "prefiltered": 244,
+   "candidates": 237,
+   "hits": 359,
+   "seconds": 3.05
+  },
+  {
+   "key": "20240312",
+   "docs_scanned": 4200,
+   "prefiltered": 281,
+   "candidates": 271,
+   "hits": 384,
+   "seconds": 2.72
+  },
+  {
+   "key": "20240313",
+   "docs_scanned": 1667,
+   "prefiltered": 59,
+   "candidates": 56,
+   "hits": 129,
+   "seconds": 1.57
+  },
+  {
+   "key": "20240314",
+   "docs_scanned": 3224,
+   "prefiltered": 172,
+   "candidates": 165,
+   "hits": 348,
+   "seconds": 3.68
+  },
+  {
+   "key": "20240315",
+   "docs_scanned": 2880,
+   "prefiltered": 138,
+   "candidates": 136,
+   "hits": 247,
+   "seconds": 2.55
+  },
+  {
+   "key": "20240318",
+   "docs_scanned": 3484,
+   "prefiltered": 169,
+   "candidates": 168,
+   "hits": 359,
+   "seconds": 2.81
+  },
+  {
+   "key": "20240319",
+   "docs_scanned": 2416,
+   "prefiltered": 88,
+   "candidates": 85,
+   "hits": 174,
+   "seconds": 1.75
+  },
+  {
+   "key": "20240320",
+   "docs_scanned": 3882,
+   "prefiltered": 239,
+   "candidates": 233,
+   "hits": 316,
+   "seconds": 2.44
+  },
+  {
+   "key": "20240321",
+   "docs_scanned": 3758,
+   "prefiltered": 245,
+   "candidates": 241,
+   "hits": 363,
+   "seconds": 2.83
+  },
+  {
+   "key": "20240322",
+   "docs_scanned": 4251,
+   "prefiltered": 276,
+   "candidates": 269,
+   "hits": 462,
+   "seconds": 4.39
+  },
+  {
+   "key": "20240402",
+   "docs_scanned": 4985,
+   "prefiltered": 204,
+   "candidates": 197,
+   "hits": 375,
+   "seconds": 4.62
+  },
+  {
+   "key": "20240403",
+   "docs_scanned": 909,
+   "prefiltered": 50,
+   "candidates": 50,
+   "hits": 83,
+   "seconds": 0.89
+  },
+  {
+   "key": "20240404",
+   "docs_scanned": 2369,
+   "prefiltered": 175,
+   "candidates": 172,
+   "hits": 245,
+   "seconds": 2.07
+  },
+  {
+   "key": "20240405",
+   "docs_scanned": 1813,
+   "prefiltered": 110,
+   "candidates": 108,
+   "hits": 162,
+   "seconds": 1.66
+  },
+  {
+   "key": "20240408",
+   "docs_scanned": 2720,
+   "prefiltered": 138,
+   "candidates": 134,
+   "hits": 164,
+   "seconds": 1.67
+  },
+  {
+   "key": "20240409",
+   "docs_scanned": 1134,
+   "prefiltered": 73,
+   "candidates": 68,
+   "hits": 151,
+   "seconds": 1.64
+  },
+  {
+   "key": "20240410",
+   "docs_scanned": 2776,
+   "prefiltered": 67,
+   "candidates": 67,
+   "hits": 122,
+   "seconds": 1.43
+  },
+  {
+   "key": "20240411",
+   "docs_scanned": 6183,
+   "prefiltered": 358,
+   "candidates": 353,
+   "hits": 727,
+   "seconds": 7.63
+  },
+  {
+   "key": "20240412",
+   "docs_scanned": 2839,
+   "prefiltered": 110,
+   "candidates": 101,
+   "hits": 295,
+   "seconds": 2.36
+  },
+  {
+   "key": "20240415",
+   "docs_scanned": 2820,
+   "prefiltered": 174,
+   "candidates": 170,
+   "hits": 247,
+   "seconds": 2.59
+  },
+  {
+   "key": "20240416",
+   "docs_scanned": 2629,
+   "prefiltered": 107,
+   "candidates": 102,
+   "hits": 169,
+   "seconds": 2.09
+  },
+  {
+   "key": "20240417",
+   "docs_scanned": 3758,
+   "prefiltered": 276,
+   "candidates": 268,
+   "hits": 409,
+   "seconds": 2.63
+  },
+  {
+   "key": "20240418",
+   "docs_scanned": 4029,
+   "prefiltered": 276,
+   "candidates": 263,
+   "hits": 467,
+   "seconds": 4.91
+  },
+  {
+   "key": "20240419",
+   "docs_scanned": 3330,
+   "prefiltered": 206,
+   "candidates": 185,
+   "hits": 344,
+   "seconds": 4.36
+  },
+  {
+   "key": "20240422",
+   "docs_scanned": 1103,
+   "prefiltered": 31,
+   "candidates": 30,
+   "hits": 55,
+   "seconds": 0.88
+  },
+  {
+   "key": "20240423",
+   "docs_scanned": 4564,
+   "prefiltered": 236,
+   "candidates": 225,
+   "hits": 313,
+   "seconds": 3.04
+  },
+  {
+   "key": "20240424",
+   "docs_scanned": 1584,
+   "prefiltered": 116,
+   "candidates": 104,
+   "hits": 228,
+   "seconds": 2.19
+  },
+  {
+   "key": "20240425",
+   "docs_scanned": 3955,
+   "prefiltered": 238,
+   "candidates": 233,
+   "hits": 482,
+   "seconds": 3.62
+  },
+  {
+   "key": "20240426",
+   "docs_scanned": 2511,
+   "prefiltered": 125,
+   "candidates": 106,
+   "hits": 223,
+   "seconds": 2.05
+  },
+  {
+   "key": "20240429",
+   "docs_scanned": 2208,
+   "prefiltered": 141,
+   "candidates": 132,
+   "hits": 230,
+   "seconds": 1.97
+  },
+  {
+   "key": "20240430",
+   "docs_scanned": 2993,
+   "prefiltered": 159,
+   "candidates": 151,
+   "hits": 269,
+   "seconds": 2.8
+  },
+  {
+   "key": "20240502",
+   "docs_scanned": 9366,
+   "prefiltered": 571,
+   "candidates": 555,
+   "hits": 1202,
+   "seconds": 9.3
+  },
+  {
+   "key": "20240503",
+   "docs_scanned": 3027,
+   "prefiltered": 173,
+   "candidates": 165,
+   "hits": 277,
+   "seconds": 2.38
+  },
+  {
+   "key": "20240506",
+   "docs_scanned": 2200,
+   "prefiltered": 137,
+   "candidates": 135,
+   "hits": 232,
+   "seconds": 2.11
+  },
+  {
+   "key": "20240507",
+   "docs_scanned": 1424,
+   "prefiltered": 72,
+   "candidates": 67,
+   "hits": 126,
+   "seconds": 1.49
+  },
+  {
+   "key": "20240508",
+   "docs_scanned": 1812,
+   "prefiltered": 79,
+   "candidates": 73,
+   "hits": 114,
+   "seconds": 1.47
+  },
+  {
+   "key": "20240509",
+   "docs_scanned": 2493,
+   "prefiltered": 220,
+   "candidates": 214,
+   "hits": 284,
+   "seconds": 1.8
+  },
+  {
+   "key": "20240510",
+   "docs_scanned": 1469,
+   "prefiltered": 103,
+   "candidates": 90,
+   "hits": 131,
+   "seconds": 1.61
+  },
+  {
+   "key": "20240513",
+   "docs_scanned": 1620,
+   "prefiltered": 145,
+   "candidates": 137,
+   "hits": 215,
+   "seconds": 1.83
+  },
+  {
+   "key": "20240514",
+   "docs_scanned": 3279,
+   "prefiltered": 230,
+   "candidates": 228,
+   "hits": 286,
+   "seconds": 1.94
+  },
+  {
+   "key": "20240515",
+   "docs_scanned": 3815,
+   "prefiltered": 235,
+   "candidates": 229,
+   "hits": 573,
+   "seconds": 4.47
+  },
+  {
+   "key": "20240516",
+   "docs_scanned": 3478,
+   "prefiltered": 233,
+   "candidates": 230,
+   "hits": 377,
+   "seconds": 2.91
+  },
+  {
+   "key": "20240517",
+   "docs_scanned": 2169,
+   "prefiltered": 92,
+   "candidates": 85,
+   "hits": 191,
+   "seconds": 1.71
+  },
+  {
+   "key": "20240520",
+   "docs_scanned": 2315,
+   "prefiltered": 116,
+   "candidates": 111,
+   "hits": 153,
+   "seconds": 1.56
+  },
+  {
+   "key": "20240521",
+   "docs_scanned": 2939,
+   "prefiltered": 163,
+   "candidates": 159,
+   "hits": 300,
+   "seconds": 2.62
+  },
+  {
+   "key": "20240522",
+   "docs_scanned": 3650,
+   "prefiltered": 219,
+   "candidates": 212,
+   "hits": 380,
+   "seconds": 3.12
+  },
+  {
+   "key": "20240523",
+   "docs_scanned": 2378,
+   "prefiltered": 125,
+   "candidates": 116,
+   "hits": 216,
+   "seconds": 2.47
+  },
+  {
+   "key": "20240524",
+   "docs_scanned": 3508,
+   "prefiltered": 155,
+   "candidates": 141,
+   "hits": 337,
+   "seconds": 3.01
+  },
+  {
+   "key": "20240527",
+   "docs_scanned": 3014,
+   "prefiltered": 133,
+   "candidates": 125,
+   "hits": 193,
+   "seconds": 2.81
+  },
+  {
+   "key": "20240528",
+   "docs_scanned": 2304,
+   "prefiltered": 116,
+   "candidates": 111,
+   "hits": 178,
+   "seconds": 2.07
+  },
+  {
+   "key": "20240529",
+   "docs_scanned": 5880,
+   "prefiltered": 419,
+   "candidates": 394,
+   "hits": 784,
+   "seconds": 6.32
+  },
+  {
+   "key": "20240603",
+   "docs_scanned": 2252,
+   "prefiltered": 125,
+   "candidates": 118,
+   "hits": 218,
+   "seconds": 2.59
+  },
+  {
+   "key": "20240604",
+   "docs_scanned": 4169,
+   "prefiltered": 260,
+   "candidates": 246,
+   "hits": 514,
+   "seconds": 4.34
+  },
+  {
+   "key": "20240605",
+   "docs_scanned": 2528,
+   "prefiltered": 243,
+   "candidates": 237,
+   "hits": 385,
+   "seconds": 2.44
+  },
+  {
+   "key": "20240606",
+   "docs_scanned": 2694,
+   "prefiltered": 155,
+   "candidates": 149,
+   "hits": 303,
+   "seconds": 2.87
+  },
+  {
+   "key": "20240607",
+   "docs_scanned": 1501,
+   "prefiltered": 117,
+   "candidates": 116,
+   "hits": 165,
+   "seconds": 1.93
+  },
+  {
+   "key": "20240610",
+   "docs_scanned": 2543,
+   "prefiltered": 110,
+   "candidates": 109,
+   "hits": 147,
+   "seconds": 1.42
+  },
+  {
+   "key": "20240611",
+   "docs_scanned": 2318,
+   "prefiltered": 118,
+   "candidates": 113,
+   "hits": 180,
+   "seconds": 2.01
+  },
+  {
+   "key": "20240612",
+   "docs_scanned": 2840,
+   "prefiltered": 127,
+   "candidates": 122,
+   "hits": 262,
+   "seconds": 2.31
+  },
+  {
+   "key": "20240613",
+   "docs_scanned": 2560,
+   "prefiltered": 106,
+   "candidates": 104,
+   "hits": 208,
+   "seconds": 2.05
+  },
+  {
+   "key": "20240614",
+   "docs_scanned": 2998,
+   "prefiltered": 190,
+   "candidates": 182,
+   "hits": 234,
+   "seconds": 2.02
+  },
+  {
+   "key": "20240617",
+   "docs_scanned": 3244,
+   "prefiltered": 237,
+   "candidates": 234,
+   "hits": 325,
+   "seconds": 2.47
+  },
+  {
+   "key": "20240618",
+   "docs_scanned": 2563,
+   "prefiltered": 159,
+   "candidates": 152,
+   "hits": 249,
+   "seconds": 1.98
+  },
+  {
+   "key": "20240619",
+   "docs_scanned": 4151,
+   "prefiltered": 227,
+   "candidates": 216,
+   "hits": 398,
+   "seconds": 3.56
+  },
+  {
+   "key": "20240620",
+   "docs_scanned": 2802,
+   "prefiltered": 140,
+   "candidates": 129,
+   "hits": 241,
+   "seconds": 2.84
+  },
+  {
+   "key": "20240621",
+   "docs_scanned": 3320,
+   "prefiltered": 210,
+   "candidates": 201,
+   "hits": 378,
+   "seconds": 2.93
+  },
+  {
+   "key": "20240624",
+   "docs_scanned": 1591,
+   "prefiltered": 113,
+   "candidates": 108,
+   "hits": 208,
+   "seconds": 2.56
+  },
+  {
+   "key": "20240625",
+   "docs_scanned": 4104,
+   "prefiltered": 148,
+   "candidates": 138,
+   "hits": 181,
+   "seconds": 2.29
+  },
+  {
+   "key": "20240626",
+   "docs_scanned": 6505,
+   "prefiltered": 443,
+   "candidates": 427,
+   "hits": 768,
+   "seconds": 5.73
+  },
+  {
+   "key": "20240627",
+   "docs_scanned": 3002,
+   "prefiltered": 231,
+   "candidates": 219,
+   "hits": 480,
+   "seconds": 4.16
+  },
+  {
+   "key": "20240628",
+   "docs_scanned": 3641,
+   "prefiltered": 187,
+   "candidates": 179,
+   "hits": 391,
+   "seconds": 3.99
+  },
+  {
+   "key": "20240701",
+   "docs_scanned": 5490,
+   "prefiltered": 250,
+   "candidates": 237,
+   "hits": 344,
+   "seconds": 3.54
+  },
+  {
+   "key": "20240702",
+   "docs_scanned": 3929,
+   "prefiltered": 260,
+   "candidates": 251,
+   "hits": 385,
+   "seconds": 4.36
+  },
+  {
+   "key": "20240703",
+   "docs_scanned": 2669,
+   "prefiltered": 98,
+   "candidates": 94,
+   "hits": 137,
+   "seconds": 1.8
+  },
+  {
+   "key": "20240704",
+   "docs_scanned": 176,
+   "prefiltered": 31,
+   "candidates": 31,
+   "hits": 38,
+   "seconds": 0.34
+  },
+  {
+   "key": "20240705",
+   "docs_scanned": 250,
+   "prefiltered": 16,
+   "candidates": 16,
+   "hits": 21,
+   "seconds": 0.21
+  },
+  {
+   "key": "20240708",
+   "docs_scanned": 300,
+   "prefiltered": 24,
+   "candidates": 23,
+   "hits": 59,
+   "seconds": 0.39
+  },
+  {
+   "key": "20240709",
+   "docs_scanned": 360,
+   "prefiltered": 70,
+   "candidates": 70,
+   "hits": 78,
+   "seconds": 0.68
+  },
+  {
+   "key": "20240710",
+   "docs_scanned": 264,
+   "prefiltered": 13,
+   "candidates": 12,
+   "hits": 12,
+   "seconds": 0.28
+  },
+  {
+   "key": "20240711",
+   "docs_scanned": 202,
+   "prefiltered": 7,
+   "candidates": 7,
+   "hits": 10,
+   "seconds": 0.23
+  },
+  {
+   "key": "20240712",
+   "docs_scanned": 291,
+   "prefiltered": 27,
+   "candidates": 27,
+   "hits": 52,
+   "seconds": 0.39
+  },
+  {
+   "key": "20240715",
+   "docs_scanned": 347,
+   "prefiltered": 36,
+   "candidates": 36,
+   "hits": 50,
+   "seconds": 0.52
+  },
+  {
+   "key": "20240716",
+   "docs_scanned": 411,
+   "prefiltered": 12,
+   "candidates": 11,
+   "hits": 15,
+   "seconds": 0.42
+  },
+  {
+   "key": "20240717",
+   "docs_scanned": 234,
+   "prefiltered": 27,
+   "candidates": 26,
+   "hits": 36,
+   "seconds": 0.36
+  },
+  {
+   "key": "20240718",
+   "docs_scanned": 151,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.11
+  },
+  {
+   "key": "20240719",
+   "docs_scanned": 81,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.06
+  },
+  {
+   "key": "20240722",
+   "docs_scanned": 1575,
+   "prefiltered": 162,
+   "candidates": 162,
+   "hits": 165,
+   "seconds": 0.4
+  },
+  {
+   "key": "20240723",
+   "docs_scanned": 6339,
+   "prefiltered": 125,
+   "candidates": 121,
+   "hits": 149,
+   "seconds": 1.9
+  },
+  {
+   "key": "20240724",
+   "docs_scanned": 1869,
+   "prefiltered": 118,
+   "candidates": 113,
+   "hits": 126,
+   "seconds": 0.83
+  },
+  {
+   "key": "20240725",
+   "docs_scanned": 282,
+   "prefiltered": 23,
+   "candidates": 22,
+   "hits": 31,
+   "seconds": 0.31
+  },
+  {
+   "key": "20240726",
+   "docs_scanned": 1812,
+   "prefiltered": 156,
+   "candidates": 156,
+   "hits": 167,
+   "seconds": 0.55
+  },
+  {
+   "key": "20240729",
+   "docs_scanned": 363,
+   "prefiltered": 25,
+   "candidates": 22,
+   "hits": 33,
+   "seconds": 0.48
+  },
+  {
+   "key": "20240730",
+   "docs_scanned": 1350,
+   "prefiltered": 52,
+   "candidates": 51,
+   "hits": 66,
+   "seconds": 1.12
+  },
+  {
+   "key": "20240731",
+   "docs_scanned": 907,
+   "prefiltered": 98,
+   "candidates": 98,
+   "hits": 112,
+   "seconds": 0.45
+  },
+  {
+   "key": "20240801",
+   "docs_scanned": 598,
+   "prefiltered": 51,
+   "candidates": 50,
+   "hits": 60,
+   "seconds": 0.87
+  },
+  {
+   "key": "20240802",
+   "docs_scanned": 5715,
+   "prefiltered": 251,
+   "candidates": 222,
+   "hits": 447,
+   "seconds": 5.68
+  },
+  {
+   "key": "20240805",
+   "docs_scanned": 4426,
+   "prefiltered": 227,
+   "candidates": 209,
+   "hits": 335,
+   "seconds": 4.33
+  },
+  {
+   "key": "20240806",
+   "docs_scanned": 2918,
+   "prefiltered": 148,
+   "candidates": 125,
+   "hits": 253,
+   "seconds": 3.4
+  },
+  {
+   "key": "20240807",
+   "docs_scanned": 2581,
+   "prefiltered": 145,
+   "candidates": 139,
+   "hits": 193,
+   "seconds": 2.23
+  },
+  {
+   "key": "20240808",
+   "docs_scanned": 3107,
+   "prefiltered": 243,
+   "candidates": 235,
+   "hits": 289,
+   "seconds": 2.87
+  },
+  {
+   "key": "20240809",
+   "docs_scanned": 2430,
+   "prefiltered": 105,
+   "candidates": 103,
+   "hits": 163,
+   "seconds": 1.93
+  },
+  {
+   "key": "20240812",
+   "docs_scanned": 1809,
+   "prefiltered": 67,
+   "candidates": 60,
+   "hits": 114,
+   "seconds": 1.84
+  },
+  {
+   "key": "20240813",
+   "docs_scanned": 2602,
+   "prefiltered": 183,
+   "candidates": 175,
+   "hits": 234,
+   "seconds": 2.66
+  },
+  {
+   "key": "20240814",
+   "docs_scanned": 3491,
+   "prefiltered": 184,
+   "candidates": 179,
+   "hits": 325,
+   "seconds": 3.24
+  },
+  {
+   "key": "20240815",
+   "docs_scanned": 7134,
+   "prefiltered": 467,
+   "candidates": 457,
+   "hits": 808,
+   "seconds": 7.8
+  },
+  {
+   "key": "20240816",
+   "docs_scanned": 2055,
+   "prefiltered": 116,
+   "candidates": 97,
+   "hits": 165,
+   "seconds": 2.52
+  },
+  {
+   "key": "20240819",
+   "docs_scanned": 2406,
+   "prefiltered": 84,
+   "candidates": 74,
+   "hits": 143,
+   "seconds": 1.72
+  },
+  {
+   "key": "20240820",
+   "docs_scanned": 3706,
+   "prefiltered": 231,
+   "candidates": 205,
+   "hits": 414,
+   "seconds": 5.18
+  },
+  {
+   "key": "20240821",
+   "docs_scanned": 2247,
+   "prefiltered": 196,
+   "candidates": 183,
+   "hits": 269,
+   "seconds": 3.17
+  },
+  {
+   "key": "20240822",
+   "docs_scanned": 7657,
+   "prefiltered": 462,
+   "candidates": 435,
+   "hits": 1025,
+   "seconds": 8.02
+  },
+  {
+   "key": "20240823",
+   "docs_scanned": 3662,
+   "prefiltered": 224,
+   "candidates": 214,
+   "hits": 511,
+   "seconds": 4.28
+  },
+  {
+   "key": "20240826",
+   "docs_scanned": 1210,
+   "prefiltered": 60,
+   "candidates": 57,
+   "hits": 125,
+   "seconds": 1.43
+  },
+  {
+   "key": "20240827",
+   "docs_scanned": 2882,
+   "prefiltered": 211,
+   "candidates": 206,
+   "hits": 341,
+   "seconds": 3.67
+  },
+  {
+   "key": "20240828",
+   "docs_scanned": 2846,
+   "prefiltered": 194,
+   "candidates": 186,
+   "hits": 409,
+   "seconds": 3.17
+  },
+  {
+   "key": "20240829",
+   "docs_scanned": 2724,
+   "prefiltered": 167,
+   "candidates": 161,
+   "hits": 305,
+   "seconds": 3.31
+  },
+  {
+   "key": "20240830",
+   "docs_scanned": 5458,
+   "prefiltered": 189,
+   "candidates": 180,
+   "hits": 272,
+   "seconds": 3.43
+  },
+  {
+   "key": "20240902",
+   "docs_scanned": 3407,
+   "prefiltered": 195,
+   "candidates": 189,
+   "hits": 406,
+   "seconds": 3.69
+  },
+  {
+   "key": "20240903",
+   "docs_scanned": 4532,
+   "prefiltered": 249,
+   "candidates": 236,
+   "hits": 491,
+   "seconds": 4.97
+  },
+  {
+   "key": "20240904",
+   "docs_scanned": 4945,
+   "prefiltered": 310,
+   "candidates": 307,
+   "hits": 510,
+   "seconds": 3.94
+  },
+  {
+   "key": "20240905",
+   "docs_scanned": 2201,
+   "prefiltered": 166,
+   "candidates": 162,
+   "hits": 334,
+   "seconds": 3.44
+  },
+  {
+   "key": "20240906",
+   "docs_scanned": 2906,
+   "prefiltered": 134,
+   "candidates": 129,
+   "hits": 231,
+   "seconds": 2.75
+  },
+  {
+   "key": "20240909",
+   "docs_scanned": 1557,
+   "prefiltered": 86,
+   "candidates": 85,
+   "hits": 121,
+   "seconds": 1.3
+  },
+  {
+   "key": "20240910",
+   "docs_scanned": 1872,
+   "prefiltered": 121,
+   "candidates": 115,
+   "hits": 152,
+   "seconds": 1.99
+  },
+  {
+   "key": "20240911",
+   "docs_scanned": 2473,
+   "prefiltered": 199,
+   "candidates": 196,
+   "hits": 331,
+   "seconds": 2.61
+  },
+  {
+   "key": "20240912",
+   "docs_scanned": 3056,
+   "prefiltered": 153,
+   "candidates": 145,
+   "hits": 277,
+   "seconds": 3.62
+  },
+  {
+   "key": "20240913",
+   "docs_scanned": 2630,
+   "prefiltered": 172,
+   "candidates": 168,
+   "hits": 242,
+   "seconds": 2.12
+  },
+  {
+   "key": "20240916",
+   "docs_scanned": 1497,
+   "prefiltered": 95,
+   "candidates": 93,
+   "hits": 143,
+   "seconds": 1.73
+  },
+  {
+   "key": "20240917",
+   "docs_scanned": 2772,
+   "prefiltered": 173,
+   "candidates": 165,
+   "hits": 237,
+   "seconds": 2.66
+  },
+  {
+   "key": "20240918",
+   "docs_scanned": 3674,
+   "prefiltered": 202,
+   "candidates": 196,
+   "hits": 362,
+   "seconds": 3.73
+  },
+  {
+   "key": "20240919",
+   "docs_scanned": 2593,
+   "prefiltered": 105,
+   "candidates": 100,
+   "hits": 182,
+   "seconds": 2.3
+  },
+  {
+   "key": "20240920",
+   "docs_scanned": 1592,
+   "prefiltered": 55,
+   "candidates": 52,
+   "hits": 92,
+   "seconds": 1.35
+  },
+  {
+   "key": "20240923",
+   "docs_scanned": 1892,
+   "prefiltered": 162,
+   "candidates": 159,
+   "hits": 239,
+   "seconds": 2.18
+  },
+  {
+   "key": "20240924",
+   "docs_scanned": 3461,
+   "prefiltered": 193,
+   "candidates": 187,
+   "hits": 303,
+   "seconds": 3.28
+  },
+  {
+   "key": "20240925",
+   "docs_scanned": 4421,
+   "prefiltered": 254,
+   "candidates": 248,
+   "hits": 478,
+   "seconds": 4.0
+  },
+  {
+   "key": "20240926",
+   "docs_scanned": 1759,
+   "prefiltered": 97,
+   "candidates": 95,
+   "hits": 146,
+   "seconds": 1.54
+  },
+  {
+   "key": "20240927",
+   "docs_scanned": 2014,
+   "prefiltered": 108,
+   "candidates": 105,
+   "hits": 141,
+   "seconds": 1.97
+  },
+  {
+   "key": "20240930",
+   "docs_scanned": 2793,
+   "prefiltered": 182,
+   "candidates": 177,
+   "hits": 291,
+   "seconds": 2.7
+  },
+  {
+   "key": "20241001",
+   "docs_scanned": 4615,
+   "prefiltered": 327,
+   "candidates": 315,
+   "hits": 590,
+   "seconds": 5.32
+  },
+  {
+   "key": "20241002",
+   "docs_scanned": 4303,
+   "prefiltered": 253,
+   "candidates": 235,
+   "hits": 460,
+   "seconds": 4.36
+  },
+  {
+   "key": "20241003",
+   "docs_scanned": 3344,
+   "prefiltered": 201,
+   "candidates": 195,
+   "hits": 633,
+   "seconds": 3.48
+  },
+  {
+   "key": "20241004",
+   "docs_scanned": 1978,
+   "prefiltered": 126,
+   "candidates": 119,
+   "hits": 202,
+   "seconds": 1.6
+  },
+  {
+   "key": "20241007",
+   "docs_scanned": 1638,
+   "prefiltered": 56,
+   "candidates": 55,
+   "hits": 85,
+   "seconds": 1.52
+  },
+  {
+   "key": "20241008",
+   "docs_scanned": 1762,
+   "prefiltered": 90,
+   "candidates": 87,
+   "hits": 123,
+   "seconds": 1.8
+  },
+  {
+   "key": "20241009",
+   "docs_scanned": 3679,
+   "prefiltered": 185,
+   "candidates": 181,
+   "hits": 403,
+   "seconds": 3.28
+  },
+  {
+   "key": "20241010",
+   "docs_scanned": 2385,
+   "prefiltered": 127,
+   "candidates": 123,
+   "hits": 183,
+   "seconds": 2.25
+  },
+  {
+   "key": "20241011",
+   "docs_scanned": 2707,
+   "prefiltered": 254,
+   "candidates": 249,
+   "hits": 370,
+   "seconds": 2.91
+  },
+  {
+   "key": "20241014",
+   "docs_scanned": 2199,
+   "prefiltered": 205,
+   "candidates": 196,
+   "hits": 231,
+   "seconds": 2.19
+  },
+  {
+   "key": "20241015",
+   "docs_scanned": 2288,
+   "prefiltered": 115,
+   "candidates": 113,
+   "hits": 191,
+   "seconds": 2.02
+  },
+  {
+   "key": "20241016",
+   "docs_scanned": 2941,
+   "prefiltered": 166,
+   "candidates": 161,
+   "hits": 406,
+   "seconds": 2.92
+  },
+  {
+   "key": "20241017",
+   "docs_scanned": 2550,
+   "prefiltered": 140,
+   "candidates": 135,
+   "hits": 237,
+   "seconds": 2.24
+  },
+  {
+   "key": "20241018",
+   "docs_scanned": 2252,
+   "prefiltered": 107,
+   "candidates": 98,
+   "hits": 232,
+   "seconds": 2.69
+  },
+  {
+   "key": "20241021",
+   "docs_scanned": 2639,
+   "prefiltered": 153,
+   "candidates": 149,
+   "hits": 623,
+   "seconds": 3.07
+  },
+  {
+   "key": "20241022",
+   "docs_scanned": 3492,
+   "prefiltered": 225,
+   "candidates": 218,
+   "hits": 382,
+   "seconds": 4.94
+  },
+  {
+   "key": "20241023",
+   "docs_scanned": 3148,
+   "prefiltered": 363,
+   "candidates": 356,
+   "hits": 458,
+   "seconds": 5.68
+  },
+  {
+   "key": "20241024",
+   "docs_scanned": 2167,
+   "prefiltered": 92,
+   "candidates": 88,
+   "hits": 160,
+   "seconds": 2.06
+  },
+  {
+   "key": "20241025",
+   "docs_scanned": 3805,
+   "prefiltered": 230,
+   "candidates": 220,
+   "hits": 467,
+   "seconds": 4.25
+  },
+  {
+   "key": "20241028",
+   "docs_scanned": 3110,
+   "prefiltered": 165,
+   "candidates": 160,
+   "hits": 362,
+   "seconds": 4.13
+  },
+  {
+   "key": "20241029",
+   "docs_scanned": 3275,
+   "prefiltered": 286,
+   "candidates": 276,
+   "hits": 418,
+   "seconds": 4.82
+  },
+  {
+   "key": "20241030",
+   "docs_scanned": 4328,
+   "prefiltered": 341,
+   "candidates": 332,
+   "hits": 637,
+   "seconds": 6.22
+  },
+  {
+   "key": "20241104",
+   "docs_scanned": 4225,
+   "prefiltered": 250,
+   "candidates": 242,
+   "hits": 507,
+   "seconds": 5.3
+  },
+  {
+   "key": "20241105",
+   "docs_scanned": 4678,
+   "prefiltered": 358,
+   "candidates": 344,
+   "hits": 707,
+   "seconds": 6.87
+  },
+  {
+   "key": "20241106",
+   "docs_scanned": 2991,
+   "prefiltered": 188,
+   "candidates": 177,
+   "hits": 294,
+   "seconds": 4.15
+  },
+  {
+   "key": "20241107",
+   "docs_scanned": 2463,
+   "prefiltered": 143,
+   "candidates": 140,
+   "hits": 244,
+   "seconds": 2.47
+  },
+  {
+   "key": "20241108",
+   "docs_scanned": 1713,
+   "prefiltered": 96,
+   "candidates": 87,
+   "hits": 153,
+   "seconds": 1.71
+  },
+  {
+   "key": "20241111",
+   "docs_scanned": 2133,
+   "prefiltered": 196,
+   "candidates": 187,
+   "hits": 225,
+   "seconds": 3.18
+  },
+  {
+   "key": "20241112",
+   "docs_scanned": 2412,
+   "prefiltered": 197,
+   "candidates": 196,
+   "hits": 295,
+   "seconds": 3.22
+  },
+  {
+   "key": "20241113",
+   "docs_scanned": 2924,
+   "prefiltered": 207,
+   "candidates": 200,
+   "hits": 454,
+   "seconds": 3.31
+  },
+  {
+   "key": "20241114",
+   "docs_scanned": 3129,
+   "prefiltered": 189,
+   "candidates": 188,
+   "hits": 365,
+   "seconds": 3.03
+  },
+  {
+   "key": "20241118",
+   "docs_scanned": 2812,
+   "prefiltered": 284,
+   "candidates": 274,
+   "hits": 392,
+   "seconds": 4.41
+  },
+  {
+   "key": "20241119",
+   "docs_scanned": 2901,
+   "prefiltered": 279,
+   "candidates": 273,
+   "hits": 395,
+   "seconds": 5.08
+  },
+  {
+   "key": "20241121",
+   "docs_scanned": 811,
+   "prefiltered": 41,
+   "candidates": 41,
+   "hits": 110,
+   "seconds": 1.14
+  },
+  {
+   "key": "20241122",
+   "docs_scanned": 4417,
+   "prefiltered": 206,
+   "candidates": 194,
+   "hits": 374,
+   "seconds": 3.94
+  },
+  {
+   "key": "20241125",
+   "docs_scanned": 2958,
+   "prefiltered": 218,
+   "candidates": 213,
+   "hits": 279,
+   "seconds": 3.51
+  },
+  {
+   "key": "20241126",
+   "docs_scanned": 2053,
+   "prefiltered": 120,
+   "candidates": 115,
+   "hits": 246,
+   "seconds": 3.09
+  },
+  {
+   "key": "20241127",
+   "docs_scanned": 2197,
+   "prefiltered": 176,
+   "candidates": 170,
+   "hits": 258,
+   "seconds": 2.57
+  },
+  {
+   "key": "20241129",
+   "docs_scanned": 5880,
+   "prefiltered": 278,
+   "candidates": 273,
+   "hits": 590,
+   "seconds": 6.18
+  },
+  {
+   "key": "20241202",
+   "docs_scanned": 3834,
+   "prefiltered": 239,
+   "candidates": 234,
+   "hits": 462,
+   "seconds": 5.18
+  },
+  {
+   "key": "20241203",
+   "docs_scanned": 3469,
+   "prefiltered": 209,
+   "candidates": 196,
+   "hits": 475,
+   "seconds": 4.99
+  },
+  {
+   "key": "20241204",
+   "docs_scanned": 3681,
+   "prefiltered": 383,
+   "candidates": 373,
+   "hits": 506,
+   "seconds": 5.99
+  },
+  {
+   "key": "20241205",
+   "docs_scanned": 2539,
+   "prefiltered": 157,
+   "candidates": 142,
+   "hits": 311,
+   "seconds": 2.94
+  },
+  {
+   "key": "20241206",
+   "docs_scanned": 2507,
+   "prefiltered": 129,
+   "candidates": 122,
+   "hits": 272,
+   "seconds": 3.22
+  },
+  {
+   "key": "20241209",
+   "docs_scanned": 5252,
+   "prefiltered": 349,
+   "candidates": 339,
+   "hits": 538,
+   "seconds": 5.92
+  },
+  {
+   "key": "20241210",
+   "docs_scanned": 1905,
+   "prefiltered": 115,
+   "candidates": 108,
+   "hits": 191,
+   "seconds": 2.48
+  },
+  {
+   "key": "20241211",
+   "docs_scanned": 2275,
+   "prefiltered": 147,
+   "candidates": 143,
+   "hits": 204,
+   "seconds": 2.68
+  },
+  {
+   "key": "20241212",
+   "docs_scanned": 2624,
+   "prefiltered": 225,
+   "candidates": 220,
+   "hits": 364,
+   "seconds": 3.63
+  },
+  {
+   "key": "20241213",
+   "docs_scanned": 3714,
+   "prefiltered": 247,
+   "candidates": 242,
+   "hits": 417,
+   "seconds": 4.25
+  },
+  {
+   "key": "20241216",
+   "docs_scanned": 2906,
+   "prefiltered": 243,
+   "candidates": 235,
+   "hits": 351,
+   "seconds": 4.62
+  },
+  {
+   "key": "20241217",
+   "docs_scanned": 3013,
+   "prefiltered": 371,
+   "candidates": 362,
+   "hits": 475,
+   "seconds": 5.41
+  },
+  {
+   "key": "20241218",
+   "docs_scanned": 3661,
+   "prefiltered": 294,
+   "candidates": 284,
+   "hits": 440,
+   "seconds": 4.76
+  },
+  {
+   "key": "20241219",
+   "docs_scanned": 2646,
+   "prefiltered": 166,
+   "candidates": 160,
+   "hits": 336,
+   "seconds": 3.02
+  },
+  {
+   "key": "20241220",
+   "docs_scanned": 3802,
+   "prefiltered": 216,
+   "candidates": 207,
+   "hits": 563,
+   "seconds": 3.76
+  },
+  {
+   "key": "20241223",
+   "docs_scanned": 7830,
+   "prefiltered": 572,
+   "candidates": 563,
+   "hits": 852,
+   "seconds": 10.0
+  },
+  {
+   "key": "20241224",
+   "docs_scanned": 470,
+   "prefiltered": 21,
+   "candidates": 20,
+   "hits": 57,
+   "seconds": 0.4
+  },
+  {
+   "key": "20241226",
+   "docs_scanned": 296,
+   "prefiltered": 5,
+   "candidates": 5,
+   "hits": 9,
+   "seconds": 0.19
+  },
+  {
+   "key": "20241227",
+   "docs_scanned": 161,
+   "prefiltered": 4,
+   "candidates": 3,
+   "hits": 7,
+   "seconds": 0.11
+  },
+  {
+   "key": "20241230",
+   "docs_scanned": 190,
+   "prefiltered": 3,
+   "candidates": 2,
+   "hits": 3,
+   "seconds": 0.15
+  },
+  {
+   "key": "20241231",
+   "docs_scanned": 219,
+   "prefiltered": 5,
+   "candidates": 5,
+   "hits": 7,
+   "seconds": 0.16
+  },
+  {
+   "key": "20250103",
+   "docs_scanned": 1011,
+   "prefiltered": 70,
+   "candidates": 68,
+   "hits": 185,
+   "seconds": 1.33
+  },
+  {
+   "key": "20250106",
+   "docs_scanned": 177,
+   "prefiltered": 7,
+   "candidates": 7,
+   "hits": 7,
+   "seconds": 0.17
+  },
+  {
+   "key": "20250107",
+   "docs_scanned": 93,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.05
+  },
+  {
+   "key": "20250108",
+   "docs_scanned": 175,
+   "prefiltered": 6,
+   "candidates": 6,
+   "hits": 6,
+   "seconds": 0.07
+  },
+  {
+   "key": "20250109",
+   "docs_scanned": 306,
+   "prefiltered": 42,
+   "candidates": 42,
+   "hits": 48,
+   "seconds": 0.15
+  },
+  {
+   "key": "20250110",
+   "docs_scanned": 350,
+   "prefiltered": 10,
+   "candidates": 10,
+   "hits": 10,
+   "seconds": 0.14
+  },
+  {
+   "key": "20250113",
+   "docs_scanned": 720,
+   "prefiltered": 28,
+   "candidates": 28,
+   "hits": 28,
+   "seconds": 0.24
+  },
+  {
+   "key": "20250114",
+   "docs_scanned": 309,
+   "prefiltered": 10,
+   "candidates": 10,
+   "hits": 11,
+   "seconds": 0.18
+  },
+  {
+   "key": "20250115",
+   "docs_scanned": 1037,
+   "prefiltered": 57,
+   "candidates": 56,
+   "hits": 78,
+   "seconds": 0.35
+  },
+  {
+   "key": "20250116",
+   "docs_scanned": 434,
+   "prefiltered": 47,
+   "candidates": 46,
+   "hits": 61,
+   "seconds": 0.44
+  },
+  {
+   "key": "20250117",
+   "docs_scanned": 575,
+   "prefiltered": 14,
+   "candidates": 14,
+   "hits": 35,
+   "seconds": 0.23
+  },
+  {
+   "key": "20250120",
+   "docs_scanned": 940,
+   "prefiltered": 52,
+   "candidates": 52,
+   "hits": 68,
+   "seconds": 0.67
+  },
+  {
+   "key": "20250121",
+   "docs_scanned": 862,
+   "prefiltered": 75,
+   "candidates": 74,
+   "hits": 77,
+   "seconds": 0.33
+  },
+  {
+   "key": "20250122",
+   "docs_scanned": 971,
+   "prefiltered": 38,
+   "candidates": 37,
+   "hits": 43,
+   "seconds": 0.35
+  },
+  {
+   "key": "20250123",
+   "docs_scanned": 419,
+   "prefiltered": 24,
+   "candidates": 21,
+   "hits": 21,
+   "seconds": 0.35
+  },
+  {
+   "key": "20250124",
+   "docs_scanned": 1724,
+   "prefiltered": 88,
+   "candidates": 85,
+   "hits": 122,
+   "seconds": 0.72
+  },
+  {
+   "key": "20250127",
+   "docs_scanned": 1027,
+   "prefiltered": 58,
+   "candidates": 56,
+   "hits": 62,
+   "seconds": 0.77
+  },
+  {
+   "key": "20250128",
+   "docs_scanned": 1014,
+   "prefiltered": 41,
+   "candidates": 41,
+   "hits": 53,
+   "seconds": 0.56
+  },
+  {
+   "key": "20250129",
+   "docs_scanned": 1608,
+   "prefiltered": 56,
+   "candidates": 51,
+   "hits": 75,
+   "seconds": 0.82
+  },
+  {
+   "key": "20250130",
+   "docs_scanned": 1009,
+   "prefiltered": 31,
+   "candidates": 26,
+   "hits": 41,
+   "seconds": 0.7
+  },
+  {
+   "key": "20250131",
+   "docs_scanned": 666,
+   "prefiltered": 29,
+   "candidates": 28,
+   "hits": 50,
+   "seconds": 0.72
+  },
+  {
+   "key": "20250203",
+   "docs_scanned": 587,
+   "prefiltered": 26,
+   "candidates": 25,
+   "hits": 50,
+   "seconds": 0.54
+  },
+  {
+   "key": "20250204",
+   "docs_scanned": 3009,
+   "prefiltered": 94,
+   "candidates": 91,
+   "hits": 154,
+   "seconds": 1.89
+  },
+  {
+   "key": "20250205",
+   "docs_scanned": 6934,
+   "prefiltered": 258,
+   "candidates": 249,
+   "hits": 483,
+   "seconds": 5.8
+  },
+  {
+   "key": "20250206",
+   "docs_scanned": 4409,
+   "prefiltered": 176,
+   "candidates": 171,
+   "hits": 252,
+   "seconds": 4.16
+  },
+  {
+   "key": "20250207",
+   "docs_scanned": 2176,
+   "prefiltered": 130,
+   "candidates": 124,
+   "hits": 217,
+   "seconds": 2.43
+  },
+  {
+   "key": "20250210",
+   "docs_scanned": 1927,
+   "prefiltered": 94,
+   "candidates": 91,
+   "hits": 127,
+   "seconds": 1.77
+  },
+  {
+   "key": "20250211",
+   "docs_scanned": 1478,
+   "prefiltered": 83,
+   "candidates": 79,
+   "hits": 162,
+   "seconds": 1.53
+  },
+  {
+   "key": "20250213",
+   "docs_scanned": 3817,
+   "prefiltered": 224,
+   "candidates": 213,
+   "hits": 300,
+   "seconds": 3.44
+  },
+  {
+   "key": "20250214",
+   "docs_scanned": 5539,
+   "prefiltered": 263,
+   "candidates": 256,
+   "hits": 453,
+   "seconds": 4.64
+  },
+  {
+   "key": "20250217",
+   "docs_scanned": 4168,
+   "prefiltered": 294,
+   "candidates": 285,
+   "hits": 465,
+   "seconds": 4.58
+  },
+  {
+   "key": "20250218",
+   "docs_scanned": 2607,
+   "prefiltered": 125,
+   "candidates": 121,
+   "hits": 212,
+   "seconds": 2.31
+  },
+  {
+   "key": "20250219",
+   "docs_scanned": 3454,
+   "prefiltered": 173,
+   "candidates": 170,
+   "hits": 309,
+   "seconds": 3.07
+  },
+  {
+   "key": "20250220",
+   "docs_scanned": 3824,
+   "prefiltered": 173,
+   "candidates": 162,
+   "hits": 437,
+   "seconds": 3.91
+  },
+  {
+   "key": "20250221",
+   "docs_scanned": 3460,
+   "prefiltered": 210,
+   "candidates": 205,
+   "hits": 451,
+   "seconds": 3.28
+  },
+  {
+   "key": "20250224",
+   "docs_scanned": 3854,
+   "prefiltered": 254,
+   "candidates": 246,
+   "hits": 430,
+   "seconds": 5.21
+  },
+  {
+   "key": "20250225",
+   "docs_scanned": 3894,
+   "prefiltered": 259,
+   "candidates": 254,
+   "hits": 384,
+   "seconds": 3.8
+  },
+  {
+   "key": "20250226",
+   "docs_scanned": 2507,
+   "prefiltered": 120,
+   "candidates": 115,
+   "hits": 200,
+   "seconds": 2.45
+  },
+  {
+   "key": "20250227",
+   "docs_scanned": 3513,
+   "prefiltered": 308,
+   "candidates": 292,
+   "hits": 542,
+   "seconds": 5.02
+  },
+  {
+   "key": "20250228",
+   "docs_scanned": 3190,
+   "prefiltered": 188,
+   "candidates": 185,
+   "hits": 434,
+   "seconds": 3.42
+  },
+  {
+   "key": "20250305",
+   "docs_scanned": 4992,
+   "prefiltered": 457,
+   "candidates": 444,
+   "hits": 692,
+   "seconds": 7.28
+  },
+  {
+   "key": "20250306",
+   "docs_scanned": 4990,
+   "prefiltered": 299,
+   "candidates": 290,
+   "hits": 533,
+   "seconds": 5.15
+  },
+  {
+   "key": "20250307",
+   "docs_scanned": 2555,
+   "prefiltered": 105,
+   "candidates": 94,
+   "hits": 182,
+   "seconds": 2.47
+  },
+  {
+   "key": "20250310",
+   "docs_scanned": 2278,
+   "prefiltered": 151,
+   "candidates": 142,
+   "hits": 185,
+   "seconds": 1.94
+  },
+  {
+   "key": "20250311",
+   "docs_scanned": 2732,
+   "prefiltered": 133,
+   "candidates": 130,
+   "hits": 194,
+   "seconds": 1.96
+  },
+  {
+   "key": "20250312",
+   "docs_scanned": 2856,
+   "prefiltered": 123,
+   "candidates": 119,
+   "hits": 206,
+   "seconds": 2.48
+  },
+  {
+   "key": "20250313",
+   "docs_scanned": 2064,
+   "prefiltered": 112,
+   "candidates": 107,
+   "hits": 201,
+   "seconds": 1.91
+  },
+  {
+   "key": "20250314",
+   "docs_scanned": 2322,
+   "prefiltered": 103,
+   "candidates": 101,
+   "hits": 132,
+   "seconds": 2.21
+  },
+  {
+   "key": "20250317",
+   "docs_scanned": 1622,
+   "prefiltered": 61,
+   "candidates": 58,
+   "hits": 114,
+   "seconds": 1.39
+  },
+  {
+   "key": "20250318",
+   "docs_scanned": 3252,
+   "prefiltered": 185,
+   "candidates": 182,
+   "hits": 343,
+   "seconds": 3.02
+  },
+  {
+   "key": "20250319",
+   "docs_scanned": 2958,
+   "prefiltered": 154,
+   "candidates": 150,
+   "hits": 223,
+   "seconds": 2.89
+  },
+  {
+   "key": "20250320",
+   "docs_scanned": 4003,
+   "prefiltered": 254,
+   "candidates": 251,
+   "hits": 626,
+   "seconds": 4.85
+  },
+  {
+   "key": "20250321",
+   "docs_scanned": 3877,
+   "prefiltered": 209,
+   "candidates": 205,
+   "hits": 450,
+   "seconds": 3.75
+  },
+  {
+   "key": "20250324",
+   "docs_scanned": 3537,
+   "prefiltered": 203,
+   "candidates": 194,
+   "hits": 438,
+   "seconds": 3.69
+  },
+  {
+   "key": "20250325",
+   "docs_scanned": 3687,
+   "prefiltered": 153,
+   "candidates": 148,
+   "hits": 321,
+   "seconds": 3.04
+  },
+  {
+   "key": "20250326",
+   "docs_scanned": 3339,
+   "prefiltered": 164,
+   "candidates": 157,
+   "hits": 230,
+   "seconds": 3.27
+  },
+  {
+   "key": "20250327",
+   "docs_scanned": 4215,
+   "prefiltered": 224,
+   "candidates": 219,
+   "hits": 479,
+   "seconds": 4.01
+  },
+  {
+   "key": "20250328",
+   "docs_scanned": 3995,
+   "prefiltered": 192,
+   "candidates": 186,
+   "hits": 528,
+   "seconds": 3.95
+  },
+  {
+   "key": "20250331",
+   "docs_scanned": 3243,
+   "prefiltered": 177,
+   "candidates": 162,
+   "hits": 337,
+   "seconds": 3.59
+  },
+  {
+   "key": "20250401",
+   "docs_scanned": 3491,
+   "prefiltered": 161,
+   "candidates": 158,
+   "hits": 349,
+   "seconds": 3.23
+  },
+  {
+   "key": "20250402",
+   "docs_scanned": 3997,
+   "prefiltered": 181,
+   "candidates": 180,
+   "hits": 416,
+   "seconds": 3.53
+  },
+  {
+   "key": "20250403",
+   "docs_scanned": 3917,
+   "prefiltered": 222,
+   "candidates": 215,
+   "hits": 502,
+   "seconds": 3.82
+  },
+  {
+   "key": "20250404",
+   "docs_scanned": 2537,
+   "prefiltered": 131,
+   "candidates": 123,
+   "hits": 293,
+   "seconds": 3.3
+  },
+  {
+   "key": "20250407",
+   "docs_scanned": 2856,
+   "prefiltered": 159,
+   "candidates": 158,
+   "hits": 258,
+   "seconds": 2.48
+  },
+  {
+   "key": "20250408",
+   "docs_scanned": 2158,
+   "prefiltered": 76,
+   "candidates": 71,
+   "hits": 133,
+   "seconds": 1.94
+  },
+  {
+   "key": "20250409",
+   "docs_scanned": 2297,
+   "prefiltered": 95,
+   "candidates": 93,
+   "hits": 145,
+   "seconds": 1.55
+  },
+  {
+   "key": "20250410",
+   "docs_scanned": 4272,
+   "prefiltered": 218,
+   "candidates": 209,
+   "hits": 569,
+   "seconds": 4.25
+  },
+  {
+   "key": "20250411",
+   "docs_scanned": 2757,
+   "prefiltered": 125,
+   "candidates": 119,
+   "hits": 308,
+   "seconds": 2.55
+  },
+  {
+   "key": "20250414",
+   "docs_scanned": 2969,
+   "prefiltered": 151,
+   "candidates": 139,
+   "hits": 232,
+   "seconds": 2.92
+  },
+  {
+   "key": "20250415",
+   "docs_scanned": 3278,
+   "prefiltered": 148,
+   "candidates": 144,
+   "hits": 244,
+   "seconds": 2.51
+  },
+  {
+   "key": "20250422",
+   "docs_scanned": 1796,
+   "prefiltered": 81,
+   "candidates": 77,
+   "hits": 136,
+   "seconds": 1.68
+  },
+  {
+   "key": "20250423",
+   "docs_scanned": 1309,
+   "prefiltered": 83,
+   "candidates": 81,
+   "hits": 177,
+   "seconds": 1.42
+  },
+  {
+   "key": "20250424",
+   "docs_scanned": 223,
+   "prefiltered": 14,
+   "candidates": 14,
+   "hits": 21,
+   "seconds": 0.33
+  },
+  {
+   "key": "20250425",
+   "docs_scanned": 293,
+   "prefiltered": 19,
+   "candidates": 18,
+   "hits": 47,
+   "seconds": 0.3
+  },
+  {
+   "key": "20250428",
+   "docs_scanned": 2916,
+   "prefiltered": 210,
+   "candidates": 204,
+   "hits": 419,
+   "seconds": 3.04
+  },
+  {
+   "key": "20250429",
+   "docs_scanned": 2234,
+   "prefiltered": 83,
+   "candidates": 81,
+   "hits": 160,
+   "seconds": 1.94
+  },
+  {
+   "key": "20250430",
+   "docs_scanned": 3529,
+   "prefiltered": 149,
+   "candidates": 142,
+   "hits": 326,
+   "seconds": 3.22
+  },
+  {
+   "key": "20250505",
+   "docs_scanned": 5234,
+   "prefiltered": 307,
+   "candidates": 295,
+   "hits": 795,
+   "seconds": 5.18
+  },
+  {
+   "key": "20250506",
+   "docs_scanned": 4322,
+   "prefiltered": 252,
+   "candidates": 229,
+   "hits": 569,
+   "seconds": 5.22
+  },
+  {
+   "key": "20250507",
+   "docs_scanned": 4436,
+   "prefiltered": 228,
+   "candidates": 217,
+   "hits": 435,
+   "seconds": 4.71
+  },
+  {
+   "key": "20250508",
+   "docs_scanned": 3988,
+   "prefiltered": 273,
+   "candidates": 262,
+   "hits": 598,
+   "seconds": 3.84
+  },
+  {
+   "key": "20250509",
+   "docs_scanned": 3108,
+   "prefiltered": 175,
+   "candidates": 167,
+   "hits": 291,
+   "seconds": 2.84
+  },
+  {
+   "key": "20250512",
+   "docs_scanned": 2471,
+   "prefiltered": 115,
+   "candidates": 108,
+   "hits": 207,
+   "seconds": 1.95
+  },
+  {
+   "key": "20250513",
+   "docs_scanned": 2570,
+   "prefiltered": 87,
+   "candidates": 81,
+   "hits": 136,
+   "seconds": 1.85
+  },
+  {
+   "key": "20250514",
+   "docs_scanned": 2620,
+   "prefiltered": 89,
+   "candidates": 84,
+   "hits": 150,
+   "seconds": 2.04
+  },
+  {
+   "key": "20250515",
+   "docs_scanned": 3284,
+   "prefiltered": 144,
+   "candidates": 136,
+   "hits": 333,
+   "seconds": 2.82
+  },
+  {
+   "key": "20250516",
+   "docs_scanned": 2761,
+   "prefiltered": 107,
+   "candidates": 102,
+   "hits": 244,
+   "seconds": 2.28
+  },
+  {
+   "key": "20250519",
+   "docs_scanned": 4191,
+   "prefiltered": 178,
+   "candidates": 173,
+   "hits": 381,
+   "seconds": 4.09
+  },
+  {
+   "key": "20250520",
+   "docs_scanned": 2933,
+   "prefiltered": 95,
+   "candidates": 93,
+   "hits": 184,
+   "seconds": 2.15
+  },
+  {
+   "key": "20250521",
+   "docs_scanned": 2718,
+   "prefiltered": 131,
+   "candidates": 121,
+   "hits": 174,
+   "seconds": 2.41
+  },
+  {
+   "key": "20250522",
+   "docs_scanned": 3873,
+   "prefiltered": 180,
+   "candidates": 168,
+   "hits": 367,
+   "seconds": 2.82
+  },
+  {
+   "key": "20250523",
+   "docs_scanned": 2182,
+   "prefiltered": 123,
+   "candidates": 121,
+   "hits": 279,
+   "seconds": 2.11
+  },
+  {
+   "key": "20250526",
+   "docs_scanned": 4405,
+   "prefiltered": 248,
+   "candidates": 235,
+   "hits": 432,
+   "seconds": 3.54
+  },
+  {
+   "key": "20250527",
+   "docs_scanned": 2118,
+   "prefiltered": 79,
+   "candidates": 75,
+   "hits": 133,
+   "seconds": 2.08
+  },
+  {
+   "key": "20250528",
+   "docs_scanned": 2856,
+   "prefiltered": 117,
+   "candidates": 113,
+   "hits": 162,
+   "seconds": 2.26
+  },
+  {
+   "key": "20250529",
+   "docs_scanned": 5471,
+   "prefiltered": 291,
+   "candidates": 284,
+   "hits": 700,
+   "seconds": 5.35
+  },
+  {
+   "key": "20250530",
+   "docs_scanned": 3632,
+   "prefiltered": 220,
+   "candidates": 214,
+   "hits": 451,
+   "seconds": 2.64
+  },
+  {
+   "key": "20250602",
+   "docs_scanned": 2529,
+   "prefiltered": 163,
+   "candidates": 158,
+   "hits": 301,
+   "seconds": 3.34
+  },
+  {
+   "key": "20250603",
+   "docs_scanned": 3508,
+   "prefiltered": 169,
+   "candidates": 160,
+   "hits": 314,
+   "seconds": 3.73
+  },
+  {
+   "key": "20250604",
+   "docs_scanned": 3625,
+   "prefiltered": 170,
+   "candidates": 167,
+   "hits": 332,
+   "seconds": 3.71
+  },
+  {
+   "key": "20250605",
+   "docs_scanned": 3125,
+   "prefiltered": 133,
+   "candidates": 128,
+   "hits": 251,
+   "seconds": 2.53
+  },
+  {
+   "key": "20250606",
+   "docs_scanned": 1646,
+   "prefiltered": 65,
+   "candidates": 62,
+   "hits": 116,
+   "seconds": 2.02
+  },
+  {
+   "key": "20250609",
+   "docs_scanned": 2260,
+   "prefiltered": 110,
+   "candidates": 100,
+   "hits": 167,
+   "seconds": 2.11
+  },
+  {
+   "key": "20250610",
+   "docs_scanned": 2197,
+   "prefiltered": 77,
+   "candidates": 72,
+   "hits": 144,
+   "seconds": 2.09
+  },
+  {
+   "key": "20250611",
+   "docs_scanned": 2311,
+   "prefiltered": 108,
+   "candidates": 103,
+   "hits": 216,
+   "seconds": 1.94
+  },
+  {
+   "key": "20250612",
+   "docs_scanned": 3962,
+   "prefiltered": 227,
+   "candidates": 212,
+   "hits": 441,
+   "seconds": 3.99
+  },
+  {
+   "key": "20250613",
+   "docs_scanned": 2497,
+   "prefiltered": 163,
+   "candidates": 162,
+   "hits": 377,
+   "seconds": 2.13
+  },
+  {
+   "key": "20250616",
+   "docs_scanned": 2920,
+   "prefiltered": 129,
+   "candidates": 126,
+   "hits": 297,
+   "seconds": 3.39
+  },
+  {
+   "key": "20250617",
+   "docs_scanned": 2603,
+   "prefiltered": 137,
+   "candidates": 130,
+   "hits": 354,
+   "seconds": 2.57
+  },
+  {
+   "key": "20250618",
+   "docs_scanned": 2868,
+   "prefiltered": 134,
+   "candidates": 129,
+   "hits": 250,
+   "seconds": 2.58
+  },
+  {
+   "key": "20250623",
+   "docs_scanned": 3864,
+   "prefiltered": 177,
+   "candidates": 167,
+   "hits": 379,
+   "seconds": 3.56
+  },
+  {
+   "key": "20250624",
+   "docs_scanned": 4020,
+   "prefiltered": 270,
+   "candidates": 260,
+   "hits": 588,
+   "seconds": 3.72
+  },
+  {
+   "key": "20250625",
+   "docs_scanned": 4403,
+   "prefiltered": 213,
+   "candidates": 201,
+   "hits": 482,
+   "seconds": 5.01
+  },
+  {
+   "key": "20250626",
+   "docs_scanned": 5955,
+   "prefiltered": 313,
+   "candidates": 297,
+   "hits": 629,
+   "seconds": 6.59
+  },
+  {
+   "key": "20250627",
+   "docs_scanned": 2956,
+   "prefiltered": 105,
+   "candidates": 99,
+   "hits": 193,
+   "seconds": 2.61
+  },
+  {
+   "key": "20250630",
+   "docs_scanned": 3182,
+   "prefiltered": 161,
+   "candidates": 155,
+   "hits": 266,
+   "seconds": 2.89
+  },
+  {
+   "key": "20250701",
+   "docs_scanned": 2954,
+   "prefiltered": 175,
+   "candidates": 170,
+   "hits": 356,
+   "seconds": 3.08
+  },
+  {
+   "key": "20250702",
+   "docs_scanned": 4053,
+   "prefiltered": 243,
+   "candidates": 234,
+   "hits": 486,
+   "seconds": 4.81
+  },
+  {
+   "key": "20250703",
+   "docs_scanned": 4469,
+   "prefiltered": 246,
+   "candidates": 238,
+   "hits": 536,
+   "seconds": 4.25
+  },
+  {
+   "key": "20250704",
+   "docs_scanned": 1598,
+   "prefiltered": 74,
+   "candidates": 73,
+   "hits": 138,
+   "seconds": 1.53
+  },
+  {
+   "key": "20250707",
+   "docs_scanned": 836,
+   "prefiltered": 96,
+   "candidates": 95,
+   "hits": 537,
+   "seconds": 1.89
+  },
+  {
+   "key": "20250708",
+   "docs_scanned": 249,
+   "prefiltered": 13,
+   "candidates": 13,
+   "hits": 38,
+   "seconds": 0.25
+  },
+  {
+   "key": "20250709",
+   "docs_scanned": 328,
+   "prefiltered": 17,
+   "candidates": 16,
+   "hits": 30,
+   "seconds": 0.46
+  },
+  {
+   "key": "20250710",
+   "docs_scanned": 359,
+   "prefiltered": 18,
+   "candidates": 17,
+   "hits": 30,
+   "seconds": 0.43
+  },
+  {
+   "key": "20250711",
+   "docs_scanned": 413,
+   "prefiltered": 21,
+   "candidates": 20,
+   "hits": 34,
+   "seconds": 0.38
+  },
+  {
+   "key": "20250714",
+   "docs_scanned": 290,
+   "prefiltered": 17,
+   "candidates": 17,
+   "hits": 40,
+   "seconds": 0.33
+  },
+  {
+   "key": "20250715",
+   "docs_scanned": 316,
+   "prefiltered": 13,
+   "candidates": 13,
+   "hits": 25,
+   "seconds": 0.42
+  },
+  {
+   "key": "20250716",
+   "docs_scanned": 367,
+   "prefiltered": 11,
+   "candidates": 10,
+   "hits": 15,
+   "seconds": 0.47
+  },
+  {
+   "key": "20250717",
+   "docs_scanned": 446,
+   "prefiltered": 26,
+   "candidates": 25,
+   "hits": 56,
+   "seconds": 0.54
+  },
+  {
+   "key": "20250718",
+   "docs_scanned": 257,
+   "prefiltered": 10,
+   "candidates": 10,
+   "hits": 12,
+   "seconds": 0.23
+  },
+  {
+   "key": "20250721",
+   "docs_scanned": 290,
+   "prefiltered": 15,
+   "candidates": 14,
+   "hits": 15,
+   "seconds": 0.36
+  },
+  {
+   "key": "20250722",
+   "docs_scanned": 399,
+   "prefiltered": 18,
+   "candidates": 18,
+   "hits": 35,
+   "seconds": 0.34
+  },
+  {
+   "key": "20250723",
+   "docs_scanned": 290,
+   "prefiltered": 20,
+   "candidates": 19,
+   "hits": 37,
+   "seconds": 0.47
+  },
+  {
+   "key": "20250724",
+   "docs_scanned": 442,
+   "prefiltered": 33,
+   "candidates": 32,
+   "hits": 77,
+   "seconds": 0.68
+  },
+  {
+   "key": "20250725",
+   "docs_scanned": 9053,
+   "prefiltered": 318,
+   "candidates": 317,
+   "hits": 375,
+   "seconds": 1.96
+  },
+  {
+   "key": "20250728",
+   "docs_scanned": 1922,
+   "prefiltered": 143,
+   "candidates": 139,
+   "hits": 292,
+   "seconds": 2.2
+  },
+  {
+   "key": "20250729",
+   "docs_scanned": 851,
+   "prefiltered": 23,
+   "candidates": 23,
+   "hits": 39,
+   "seconds": 0.43
+  },
+  {
+   "key": "20250730",
+   "docs_scanned": 1296,
+   "prefiltered": 62,
+   "candidates": 58,
+   "hits": 86,
+   "seconds": 1.02
+  },
+  {
+   "key": "20250731",
+   "docs_scanned": 1666,
+   "prefiltered": 68,
+   "candidates": 67,
+   "hits": 147,
+   "seconds": 1.1
+  },
+  {
+   "key": "20250801",
+   "docs_scanned": 1675,
+   "prefiltered": 47,
+   "candidates": 44,
+   "hits": 83,
+   "seconds": 0.94
+  },
+  {
+   "key": "20250804",
+   "docs_scanned": 1594,
+   "prefiltered": 49,
+   "candidates": 48,
+   "hits": 72,
+   "seconds": 0.9
+  },
+  {
+   "key": "20250805",
+   "docs_scanned": 5275,
+   "prefiltered": 248,
+   "candidates": 234,
+   "hits": 462,
+   "seconds": 6.52
+  },
+  {
+   "key": "20250806",
+   "docs_scanned": 2821,
+   "prefiltered": 116,
+   "candidates": 115,
+   "hits": 211,
+   "seconds": 2.46
+  },
+  {
+   "key": "20250807",
+   "docs_scanned": 2354,
+   "prefiltered": 79,
+   "candidates": 77,
+   "hits": 164,
+   "seconds": 1.53
+  },
+  {
+   "key": "20250808",
+   "docs_scanned": 1808,
+   "prefiltered": 46,
+   "candidates": 45,
+   "hits": 91,
+   "seconds": 1.35
+  },
+  {
+   "key": "20250812",
+   "docs_scanned": 1925,
+   "prefiltered": 61,
+   "candidates": 55,
+   "hits": 120,
+   "seconds": 1.48
+  },
+  {
+   "key": "20250813",
+   "docs_scanned": 2133,
+   "prefiltered": 67,
+   "candidates": 67,
+   "hits": 119,
+   "seconds": 1.48
+  },
+  {
+   "key": "20250814",
+   "docs_scanned": 3388,
+   "prefiltered": 151,
+   "candidates": 137,
+   "hits": 306,
+   "seconds": 3.9
+  },
+  {
+   "key": "20250815",
+   "docs_scanned": 5528,
+   "prefiltered": 238,
+   "candidates": 230,
+   "hits": 611,
+   "seconds": 4.15
+  },
+  {
+   "key": "20250818",
+   "docs_scanned": 4352,
+   "prefiltered": 222,
+   "candidates": 211,
+   "hits": 622,
+   "seconds": 5.14
+  },
+  {
+   "key": "20250819",
+   "docs_scanned": 3521,
+   "prefiltered": 177,
+   "candidates": 166,
+   "hits": 363,
+   "seconds": 4.02
+  },
+  {
+   "key": "20250820",
+   "docs_scanned": 2623,
+   "prefiltered": 102,
+   "candidates": 100,
+   "hits": 209,
+   "seconds": 2.07
+  },
+  {
+   "key": "20250821",
+   "docs_scanned": 4264,
+   "prefiltered": 246,
+   "candidates": 240,
+   "hits": 719,
+   "seconds": 4.98
+  },
+  {
+   "key": "20250822",
+   "docs_scanned": 4508,
+   "prefiltered": 256,
+   "candidates": 250,
+   "hits": 604,
+   "seconds": 4.88
+  },
+  {
+   "key": "20250825",
+   "docs_scanned": 3019,
+   "prefiltered": 143,
+   "candidates": 134,
+   "hits": 292,
+   "seconds": 3.47
+  },
+  {
+   "key": "20250826",
+   "docs_scanned": 2647,
+   "prefiltered": 132,
+   "candidates": 126,
+   "hits": 184,
+   "seconds": 1.87
+  },
+  {
+   "key": "20250827",
+   "docs_scanned": 3062,
+   "prefiltered": 158,
+   "candidates": 151,
+   "hits": 267,
+   "seconds": 2.72
+  },
+  {
+   "key": "20250828",
+   "docs_scanned": 5615,
+   "prefiltered": 327,
+   "candidates": 317,
+   "hits": 924,
+   "seconds": 5.7
+  },
+  {
+   "key": "20250829",
+   "docs_scanned": 5010,
+   "prefiltered": 235,
+   "candidates": 231,
+   "hits": 669,
+   "seconds": 3.98
+  },
+  {
+   "key": "20250901",
+   "docs_scanned": 3507,
+   "prefiltered": 236,
+   "candidates": 228,
+   "hits": 536,
+   "seconds": 4.51
+  },
+  {
+   "key": "20250902",
+   "docs_scanned": 3567,
+   "prefiltered": 209,
+   "candidates": 202,
+   "hits": 398,
+   "seconds": 3.48
+  },
+  {
+   "key": "20250903",
+   "docs_scanned": 2910,
+   "prefiltered": 141,
+   "candidates": 137,
+   "hits": 278,
+   "seconds": 2.93
+  },
+  {
+   "key": "20250904",
+   "docs_scanned": 3649,
+   "prefiltered": 237,
+   "candidates": 233,
+   "hits": 555,
+   "seconds": 3.63
+  },
+  {
+   "key": "20250905",
+   "docs_scanned": 3203,
+   "prefiltered": 221,
+   "candidates": 219,
+   "hits": 534,
+   "seconds": 3.63
+  },
+  {
+   "key": "20250908",
+   "docs_scanned": 3764,
+   "prefiltered": 160,
+   "candidates": 154,
+   "hits": 283,
+   "seconds": 4.03
+  },
+  {
+   "key": "20250909",
+   "docs_scanned": 3402,
+   "prefiltered": 183,
+   "candidates": 172,
+   "hits": 272,
+   "seconds": 2.87
+  },
+  {
+   "key": "20250910",
+   "docs_scanned": 2442,
+   "prefiltered": 103,
+   "candidates": 101,
+   "hits": 207,
+   "seconds": 2.49
+  },
+  {
+   "key": "20250911",
+   "docs_scanned": 3455,
+   "prefiltered": 184,
+   "candidates": 179,
+   "hits": 434,
+   "seconds": 3.35
+  },
+  {
+   "key": "20250912",
+   "docs_scanned": 3011,
+   "prefiltered": 135,
+   "candidates": 132,
+   "hits": 315,
+   "seconds": 2.62
+  },
+  {
+   "key": "20250915",
+   "docs_scanned": 3237,
+   "prefiltered": 148,
+   "candidates": 145,
+   "hits": 302,
+   "seconds": 3.14
+  },
+  {
+   "key": "20250916",
+   "docs_scanned": 1700,
+   "prefiltered": 68,
+   "candidates": 68,
+   "hits": 155,
+   "seconds": 1.39
+  },
+  {
+   "key": "20250917",
+   "docs_scanned": 2859,
+   "prefiltered": 164,
+   "candidates": 151,
+   "hits": 323,
+   "seconds": 2.8
+  },
+  {
+   "key": "20250918",
+   "docs_scanned": 4390,
+   "prefiltered": 225,
+   "candidates": 220,
+   "hits": 609,
+   "seconds": 3.75
+  },
+  {
+   "key": "20250919",
+   "docs_scanned": 2442,
+   "prefiltered": 126,
+   "candidates": 118,
+   "hits": 254,
+   "seconds": 2.63
+  },
+  {
+   "key": "20250922",
+   "docs_scanned": 2920,
+   "prefiltered": 224,
+   "candidates": 218,
+   "hits": 446,
+   "seconds": 3.45
+  },
+  {
+   "key": "20250923",
+   "docs_scanned": 3664,
+   "prefiltered": 200,
+   "candidates": 191,
+   "hits": 380,
+   "seconds": 4.03
+  },
+  {
+   "key": "20250924",
+   "docs_scanned": 2510,
+   "prefiltered": 103,
+   "candidates": 100,
+   "hits": 222,
+   "seconds": 2.12
+  },
+  {
+   "key": "20250925",
+   "docs_scanned": 3865,
+   "prefiltered": 230,
+   "candidates": 221,
+   "hits": 490,
+   "seconds": 4.22
+  },
+  {
+   "key": "20250926",
+   "docs_scanned": 3125,
+   "prefiltered": 217,
+   "candidates": 214,
+   "hits": 573,
+   "seconds": 3.56
+  },
+  {
+   "key": "20250929",
+   "docs_scanned": 3219,
+   "prefiltered": 146,
+   "candidates": 139,
+   "hits": 326,
+   "seconds": 3.38
+  },
+  {
+   "key": "20250930",
+   "docs_scanned": 2265,
+   "prefiltered": 152,
+   "candidates": 146,
+   "hits": 249,
+   "seconds": 2.19
+  },
+  {
+   "key": "20251001",
+   "docs_scanned": 3172,
+   "prefiltered": 155,
+   "candidates": 146,
+   "hits": 300,
+   "seconds": 3.45
+  },
+  {
+   "key": "20251002",
+   "docs_scanned": 7132,
+   "prefiltered": 541,
+   "candidates": 526,
+   "hits": 1299,
+   "seconds": 9.19
+  },
+  {
+   "key": "20251003",
+   "docs_scanned": 2411,
+   "prefiltered": 123,
+   "candidates": 120,
+   "hits": 298,
+   "seconds": 2.34
+  },
+  {
+   "key": "20251006",
+   "docs_scanned": 2087,
+   "prefiltered": 109,
+   "candidates": 109,
+   "hits": 177,
+   "seconds": 1.5
+  },
+  {
+   "key": "20251007",
+   "docs_scanned": 1990,
+   "prefiltered": 108,
+   "candidates": 103,
+   "hits": 174,
+   "seconds": 1.77
+  },
+  {
+   "key": "20251008",
+   "docs_scanned": 2071,
+   "prefiltered": 82,
+   "candidates": 79,
+   "hits": 121,
+   "seconds": 1.41
+  },
+  {
+   "key": "20251009",
+   "docs_scanned": 2451,
+   "prefiltered": 111,
+   "candidates": 106,
+   "hits": 225,
+   "seconds": 2.3
+  },
+  {
+   "key": "20251010",
+   "docs_scanned": 2380,
+   "prefiltered": 102,
+   "candidates": 100,
+   "hits": 178,
+   "seconds": 2.26
+  },
+  {
+   "key": "20251013",
+   "docs_scanned": 3778,
+   "prefiltered": 170,
+   "candidates": 168,
+   "hits": 297,
+   "seconds": 2.66
+  },
+  {
+   "key": "20251014",
+   "docs_scanned": 2383,
+   "prefiltered": 97,
+   "candidates": 95,
+   "hits": 224,
+   "seconds": 2.26
+  },
+  {
+   "key": "20251015",
+   "docs_scanned": 2813,
+   "prefiltered": 116,
+   "candidates": 110,
+   "hits": 183,
+   "seconds": 2.35
+  },
+  {
+   "key": "20251016",
+   "docs_scanned": 5046,
+   "prefiltered": 367,
+   "candidates": 359,
+   "hits": 883,
+   "seconds": 6.18
+  },
+  {
+   "key": "20251017",
+   "docs_scanned": 3271,
+   "prefiltered": 167,
+   "candidates": 163,
+   "hits": 384,
+   "seconds": 3.03
+  },
+  {
+   "key": "20251020",
+   "docs_scanned": 2746,
+   "prefiltered": 151,
+   "candidates": 146,
+   "hits": 306,
+   "seconds": 3.28
+  },
+  {
+   "key": "20251021",
+   "docs_scanned": 2793,
+   "prefiltered": 120,
+   "candidates": 114,
+   "hits": 213,
+   "seconds": 1.88
+  },
+  {
+   "key": "20251022",
+   "docs_scanned": 2705,
+   "prefiltered": 133,
+   "candidates": 127,
+   "hits": 274,
+   "seconds": 2.93
+  },
+  {
+   "key": "20251023",
+   "docs_scanned": 4920,
+   "prefiltered": 298,
+   "candidates": 290,
+   "hits": 758,
+   "seconds": 5.42
+  },
+  {
+   "key": "20251024",
+   "docs_scanned": 2112,
+   "prefiltered": 137,
+   "candidates": 136,
+   "hits": 333,
+   "seconds": 2.37
+  },
+  {
+   "key": "20251027",
+   "docs_scanned": 4584,
+   "prefiltered": 213,
+   "candidates": 207,
+   "hits": 388,
+   "seconds": 3.67
+  },
+  {
+   "key": "20251028",
+   "docs_scanned": 3864,
+   "prefiltered": 199,
+   "candidates": 194,
+   "hits": 433,
+   "seconds": 4.1
+  },
+  {
+   "key": "20251029",
+   "docs_scanned": 3105,
+   "prefiltered": 201,
+   "candidates": 196,
+   "hits": 477,
+   "seconds": 4.77
+  },
+  {
+   "key": "20251030",
+   "docs_scanned": 4728,
+   "prefiltered": 289,
+   "candidates": 279,
+   "hits": 658,
+   "seconds": 5.72
+  },
+  {
+   "key": "20251103",
+   "docs_scanned": 3830,
+   "prefiltered": 225,
+   "candidates": 219,
+   "hits": 487,
+   "seconds": 4.54
+  },
+  {
+   "key": "20251104",
+   "docs_scanned": 25,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 3,
+   "seconds": 0.07
+  },
+  {
+   "key": "20251105",
+   "docs_scanned": 19,
+   "prefiltered": 5,
+   "candidates": 5,
+   "hits": 9,
+   "seconds": 0.08
+  },
+  {
+   "key": "20251106",
+   "docs_scanned": 9,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20251107",
+   "docs_scanned": 3,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.01
+  },
+  {
+   "key": "20251110",
+   "docs_scanned": 10,
+   "prefiltered": 3,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.07
+  },
+  {
+   "key": "20251111",
+   "docs_scanned": 5,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20251112",
+   "docs_scanned": 2353,
+   "prefiltered": 88,
+   "candidates": 88,
+   "hits": 188,
+   "seconds": 2.16
+  },
+  {
+   "key": "20251113",
+   "docs_scanned": 3135,
+   "prefiltered": 212,
+   "candidates": 208,
+   "hits": 585,
+   "seconds": 3.65
+  },
+  {
+   "key": "20251114",
+   "docs_scanned": 3067,
+   "prefiltered": 134,
+   "candidates": 131,
+   "hits": 298,
+   "seconds": 2.86
+  },
+  {
+   "key": "20251117",
+   "docs_scanned": 3183,
+   "prefiltered": 180,
+   "candidates": 170,
+   "hits": 412,
+   "seconds": 4.53
+  },
+  {
+   "key": "20251118",
+   "docs_scanned": 3582,
+   "prefiltered": 187,
+   "candidates": 178,
+   "hits": 412,
+   "seconds": 4.46
+  },
+  {
+   "key": "20251119",
+   "docs_scanned": 3119,
+   "prefiltered": 144,
+   "candidates": 136,
+   "hits": 360,
+   "seconds": 3.25
+  },
+  {
+   "key": "20251124",
+   "docs_scanned": 4114,
+   "prefiltered": 293,
+   "candidates": 289,
+   "hits": 767,
+   "seconds": 5.94
+  },
+  {
+   "key": "20251125",
+   "docs_scanned": 3384,
+   "prefiltered": 215,
+   "candidates": 211,
+   "hits": 474,
+   "seconds": 4.08
+  },
+  {
+   "key": "20251126",
+   "docs_scanned": 4219,
+   "prefiltered": 260,
+   "candidates": 250,
+   "hits": 675,
+   "seconds": 5.8
+  },
+  {
+   "key": "20251127",
+   "docs_scanned": 6602,
+   "prefiltered": 465,
+   "candidates": 453,
+   "hits": 1117,
+   "seconds": 9.58
+  },
+  {
+   "key": "20251128",
+   "docs_scanned": 2840,
+   "prefiltered": 173,
+   "candidates": 169,
+   "hits": 322,
+   "seconds": 3.52
+  },
+  {
+   "key": "20251201",
+   "docs_scanned": 3598,
+   "prefiltered": 175,
+   "candidates": 169,
+   "hits": 413,
+   "seconds": 3.4
+  },
+  {
+   "key": "20251202",
+   "docs_scanned": 2894,
+   "prefiltered": 157,
+   "candidates": 148,
+   "hits": 248,
+   "seconds": 3.0
+  },
+  {
+   "key": "20251203",
+   "docs_scanned": 2986,
+   "prefiltered": 225,
+   "candidates": 220,
+   "hits": 555,
+   "seconds": 4.04
+  },
+  {
+   "key": "20251204",
+   "docs_scanned": 4072,
+   "prefiltered": 285,
+   "candidates": 276,
+   "hits": 723,
+   "seconds": 4.8
+  },
+  {
+   "key": "20251205",
+   "docs_scanned": 1568,
+   "prefiltered": 99,
+   "candidates": 95,
+   "hits": 133,
+   "seconds": 1.75
+  },
+  {
+   "key": "20251209",
+   "docs_scanned": 3137,
+   "prefiltered": 182,
+   "candidates": 176,
+   "hits": 355,
+   "seconds": 3.66
+  },
+  {
+   "key": "20251210",
+   "docs_scanned": 1046,
+   "prefiltered": 65,
+   "candidates": 63,
+   "hits": 156,
+   "seconds": 1.41
+  },
+  {
+   "key": "20251211",
+   "docs_scanned": 376,
+   "prefiltered": 20,
+   "candidates": 19,
+   "hits": 41,
+   "seconds": 0.38
+  },
+  {
+   "key": "20251212",
+   "docs_scanned": 323,
+   "prefiltered": 11,
+   "candidates": 11,
+   "hits": 16,
+   "seconds": 0.32
+  },
+  {
+   "key": "20251215",
+   "docs_scanned": 3587,
+   "prefiltered": 220,
+   "candidates": 215,
+   "hits": 590,
+   "seconds": 4.44
+  },
+  {
+   "key": "20251216",
+   "docs_scanned": 3262,
+   "prefiltered": 173,
+   "candidates": 168,
+   "hits": 393,
+   "seconds": 2.94
+  },
+  {
+   "key": "20251217",
+   "docs_scanned": 3289,
+   "prefiltered": 161,
+   "candidates": 159,
+   "hits": 401,
+   "seconds": 3.36
+  },
+  {
+   "key": "20251218",
+   "docs_scanned": 5042,
+   "prefiltered": 354,
+   "candidates": 340,
+   "hits": 902,
+   "seconds": 6.26
+  },
+  {
+   "key": "20251219",
+   "docs_scanned": 6909,
+   "prefiltered": 545,
+   "candidates": 532,
+   "hits": 1326,
+   "seconds": 10.34
+  },
+  {
+   "key": "20251222",
+   "docs_scanned": 7030,
+   "prefiltered": 491,
+   "candidates": 476,
+   "hits": 1349,
+   "seconds": 10.16
+  },
+  {
+   "key": "20251223",
+   "docs_scanned": 5785,
+   "prefiltered": 387,
+   "candidates": 379,
+   "hits": 785,
+   "seconds": 7.17
+  },
+  {
+   "key": "20251224",
+   "docs_scanned": 1676,
+   "prefiltered": 91,
+   "candidates": 87,
+   "hits": 192,
+   "seconds": 2.16
+  },
+  {
+   "key": "20251226",
+   "docs_scanned": 2,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.01
+  },
+  {
+   "key": "20251229",
+   "docs_scanned": 218,
+   "prefiltered": 7,
+   "candidates": 7,
+   "hits": 13,
+   "seconds": 0.11
+  },
+  {
+   "key": "20251230",
+   "docs_scanned": 140,
+   "prefiltered": 12,
+   "candidates": 12,
+   "hits": 31,
+   "seconds": 0.11
+  },
+  {
+   "key": "20251231",
+   "docs_scanned": 184,
+   "prefiltered": 5,
+   "candidates": 5,
+   "hits": 10,
+   "seconds": 0.09
+  },
+  {
+   "key": "20260102",
+   "docs_scanned": 122,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.04
+  },
+  {
+   "key": "20260105",
+   "docs_scanned": 119,
+   "prefiltered": 3,
+   "candidates": 3,
+   "hits": 7,
+   "seconds": 0.08
+  },
+  {
+   "key": "20260106",
+   "docs_scanned": 428,
+   "prefiltered": 7,
+   "candidates": 7,
+   "hits": 9,
+   "seconds": 0.2
+  },
+  {
+   "key": "20260107",
+   "docs_scanned": 205,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 2,
+   "seconds": 0.07
+  },
+  {
+   "key": "20260108",
+   "docs_scanned": 147,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.05
+  },
+  {
+   "key": "20260109",
+   "docs_scanned": 105,
+   "prefiltered": 3,
+   "candidates": 3,
+   "hits": 3,
+   "seconds": 0.09
+  },
+  {
+   "key": "20260112",
+   "docs_scanned": 367,
+   "prefiltered": 40,
+   "candidates": 40,
+   "hits": 58,
+   "seconds": 0.4
+  },
+  {
+   "key": "20260113",
+   "docs_scanned": 821,
+   "prefiltered": 45,
+   "candidates": 45,
+   "hits": 69,
+   "seconds": 0.41
+  },
+  {
+   "key": "20260114",
+   "docs_scanned": 8,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20260115",
+   "docs_scanned": 10,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 12,
+   "seconds": 0.03
+  },
+  {
+   "key": "20260116",
+   "docs_scanned": 7,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20260119",
+   "docs_scanned": 475,
+   "prefiltered": 20,
+   "candidates": 19,
+   "hits": 34,
+   "seconds": 0.28
+  },
+  {
+   "key": "20260120",
+   "docs_scanned": 924,
+   "prefiltered": 48,
+   "candidates": 47,
+   "hits": 71,
+   "seconds": 0.88
+  },
+  {
+   "key": "20260121",
+   "docs_scanned": 1278,
+   "prefiltered": 92,
+   "candidates": 92,
+   "hits": 150,
+   "seconds": 0.99
+  },
+  {
+   "key": "20260122",
+   "docs_scanned": 233,
+   "prefiltered": 12,
+   "candidates": 11,
+   "hits": 36,
+   "seconds": 0.29
+  },
+  {
+   "key": "20260123",
+   "docs_scanned": 236,
+   "prefiltered": 11,
+   "candidates": 10,
+   "hits": 13,
+   "seconds": 0.29
+  },
+  {
+   "key": "20260126",
+   "docs_scanned": 0,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.01
+  },
+  {
+   "key": "20260127",
+   "docs_scanned": 441,
+   "prefiltered": 24,
+   "candidates": 24,
+   "hits": 59,
+   "seconds": 0.55
+  },
+  {
+   "key": "20260128",
+   "docs_scanned": 1243,
+   "prefiltered": 44,
+   "candidates": 41,
+   "hits": 79,
+   "seconds": 1.17
+  },
+  {
+   "key": "20260129",
+   "docs_scanned": 603,
+   "prefiltered": 37,
+   "candidates": 35,
+   "hits": 100,
+   "seconds": 0.69
+  },
+  {
+   "key": "20260130",
+   "docs_scanned": 894,
+   "prefiltered": 61,
+   "candidates": 61,
+   "hits": 159,
+   "seconds": 1.27
+  },
+  {
+   "key": "20260202",
+   "docs_scanned": 636,
+   "prefiltered": 47,
+   "candidates": 43,
+   "hits": 97,
+   "seconds": 0.86
+  },
+  {
+   "key": "20260203",
+   "docs_scanned": 5,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.01
+  },
+  {
+   "key": "20260204",
+   "docs_scanned": 32,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 2,
+   "seconds": 0.06
+  },
+  {
+   "key": "20260205",
+   "docs_scanned": 22,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.04
+  },
+  {
+   "key": "20260206",
+   "docs_scanned": 12,
+   "prefiltered": 3,
+   "candidates": 3,
+   "hits": 4,
+   "seconds": 0.06
+  },
+  {
+   "key": "20260209",
+   "docs_scanned": 5,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 5,
+   "seconds": 0.03
+  },
+  {
+   "key": "20260210",
+   "docs_scanned": 11,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.03
+  },
+  {
+   "key": "20260211",
+   "docs_scanned": 1,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.01
+  },
+  {
+   "key": "20260212",
+   "docs_scanned": 1,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.01
+  },
+  {
+   "key": "20260213",
+   "docs_scanned": 3,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.03
+  },
+  {
+   "key": "20260218",
+   "docs_scanned": 48,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.04
+  },
+  {
+   "key": "20260219",
+   "docs_scanned": 6,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20260220",
+   "docs_scanned": 39,
+   "prefiltered": 6,
+   "candidates": 4,
+   "hits": 4,
+   "seconds": 0.08
+  },
+  {
+   "key": "20260223",
+   "docs_scanned": 53,
+   "prefiltered": 3,
+   "candidates": 3,
+   "hits": 3,
+   "seconds": 0.07
+  },
+  {
+   "key": "20260224",
+   "docs_scanned": 34,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20260225",
+   "docs_scanned": 23,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20260226",
+   "docs_scanned": 5,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.04
+  },
+  {
+   "key": "20260227",
+   "docs_scanned": 84,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 2,
+   "seconds": 0.09
+  },
+  {
+   "key": "20260302",
+   "docs_scanned": 522,
+   "prefiltered": 34,
+   "candidates": 33,
+   "hits": 62,
+   "seconds": 0.53
+  },
+  {
+   "key": "20260303",
+   "docs_scanned": 533,
+   "prefiltered": 28,
+   "candidates": 26,
+   "hits": 92,
+   "seconds": 0.64
+  },
+  {
+   "key": "20260304",
+   "docs_scanned": 374,
+   "prefiltered": 35,
+   "candidates": 33,
+   "hits": 118,
+   "seconds": 0.64
+  },
+  {
+   "key": "20260305",
+   "docs_scanned": 569,
+   "prefiltered": 39,
+   "candidates": 39,
+   "hits": 199,
+   "seconds": 0.74
+  },
+  {
+   "key": "20260306",
+   "docs_scanned": 367,
+   "prefiltered": 23,
+   "candidates": 23,
+   "hits": 40,
+   "seconds": 0.36
+  },
+  {
+   "key": "20260309",
+   "docs_scanned": 17,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 4,
+   "seconds": 0.06
+  },
+  {
+   "key": "20260310",
+   "docs_scanned": 17,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.04
+  },
+  {
+   "key": "20260311",
+   "docs_scanned": 17,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 6,
+   "seconds": 0.05
+  },
+  {
+   "key": "20260312",
+   "docs_scanned": 42,
+   "prefiltered": 4,
+   "candidates": 4,
+   "hits": 12,
+   "seconds": 0.08
+  },
+  {
+   "key": "20260313",
+   "docs_scanned": 600,
+   "prefiltered": 18,
+   "candidates": 15,
+   "hits": 49,
+   "seconds": 0.73
+  },
+  {
+   "key": "20260316",
+   "docs_scanned": 876,
+   "prefiltered": 75,
+   "candidates": 73,
+   "hits": 107,
+   "seconds": 0.97
+  },
+  {
+   "key": "20260317",
+   "docs_scanned": 2041,
+   "prefiltered": 70,
+   "candidates": 64,
+   "hits": 127,
+   "seconds": 1.59
+  },
+  {
+   "key": "20260318",
+   "docs_scanned": 1269,
+   "prefiltered": 81,
+   "candidates": 81,
+   "hits": 116,
+   "seconds": 1.02
+  },
+  {
+   "key": "20260319",
+   "docs_scanned": 497,
+   "prefiltered": 26,
+   "candidates": 24,
+   "hits": 29,
+   "seconds": 0.58
+  },
+  {
+   "key": "20260320",
+   "docs_scanned": 1108,
+   "prefiltered": 87,
+   "candidates": 84,
+   "hits": 114,
+   "seconds": 0.79
+  },
+  {
+   "key": "20260323",
+   "docs_scanned": 772,
+   "prefiltered": 48,
+   "candidates": 38,
+   "hits": 109,
+   "seconds": 0.91
+  },
+  {
+   "key": "20260324",
+   "docs_scanned": 2162,
+   "prefiltered": 88,
+   "candidates": 85,
+   "hits": 210,
+   "seconds": 1.6
+  },
+  {
+   "key": "20260325",
+   "docs_scanned": 1474,
+   "prefiltered": 47,
+   "candidates": 42,
+   "hits": 106,
+   "seconds": 0.9
+  },
+  {
+   "key": "20260326",
+   "docs_scanned": 1550,
+   "prefiltered": 59,
+   "candidates": 56,
+   "hits": 147,
+   "seconds": 1.1
+  },
+  {
+   "key": "20260327",
+   "docs_scanned": 790,
+   "prefiltered": 48,
+   "candidates": 46,
+   "hits": 138,
+   "seconds": 1.28
+  },
+  {
+   "key": "20260330",
+   "docs_scanned": 944,
+   "prefiltered": 37,
+   "candidates": 36,
+   "hits": 67,
+   "seconds": 0.91
+  },
+  {
+   "key": "20260331",
+   "docs_scanned": 572,
+   "prefiltered": 28,
+   "candidates": 26,
+   "hits": 40,
+   "seconds": 0.62
+  },
+  {
+   "key": "20260406",
+   "docs_scanned": 3264,
+   "prefiltered": 180,
+   "candidates": 174,
+   "hits": 386,
+   "seconds": 3.45
+  },
+  {
+   "key": "20260407",
+   "docs_scanned": 4981,
+   "prefiltered": 327,
+   "candidates": 315,
+   "hits": 839,
+   "seconds": 5.41
+  },
+  {
+   "key": "20260408",
+   "docs_scanned": 3734,
+   "prefiltered": 265,
+   "candidates": 255,
+   "hits": 620,
+   "seconds": 4.49
+  },
+  {
+   "key": "20260409",
+   "docs_scanned": 1189,
+   "prefiltered": 58,
+   "candidates": 52,
+   "hits": 70,
+   "seconds": 1.07
+  },
+  {
+   "key": "20260410",
+   "docs_scanned": 1582,
+   "prefiltered": 38,
+   "candidates": 35,
+   "hits": 86,
+   "seconds": 0.85
+  },
+  {
+   "key": "20260413",
+   "docs_scanned": 1623,
+   "prefiltered": 61,
+   "candidates": 55,
+   "hits": 100,
+   "seconds": 1.75
+  },
+  {
+   "key": "20260414",
+   "docs_scanned": 473,
+   "prefiltered": 27,
+   "candidates": 24,
+   "hits": 35,
+   "seconds": 0.74
+  },
+  {
+   "key": "20260415",
+   "docs_scanned": 449,
+   "prefiltered": 22,
+   "candidates": 18,
+   "hits": 24,
+   "seconds": 0.63
+  },
+  {
+   "key": "20260416",
+   "docs_scanned": 409,
+   "prefiltered": 8,
+   "candidates": 8,
+   "hits": 19,
+   "seconds": 0.33
+  },
+  {
+   "key": "20260417",
+   "docs_scanned": 638,
+   "prefiltered": 20,
+   "candidates": 16,
+   "hits": 27,
+   "seconds": 0.73
+  },
+  {
+   "key": "20260422",
+   "docs_scanned": 3487,
+   "prefiltered": 208,
+   "candidates": 195,
+   "hits": 396,
+   "seconds": 4.25
+  },
+  {
+   "key": "20260423",
+   "docs_scanned": 2131,
+   "prefiltered": 61,
+   "candidates": 56,
+   "hits": 110,
+   "seconds": 1.84
+  },
+  {
+   "key": "20260424",
+   "docs_scanned": 2663,
+   "prefiltered": 159,
+   "candidates": 150,
+   "hits": 247,
+   "seconds": 2.93
+  },
+  {
+   "key": "20260427",
+   "docs_scanned": 5179,
+   "prefiltered": 406,
+   "candidates": 395,
+   "hits": 959,
+   "seconds": 8.13
+  },
+  {
+   "key": "20260428",
+   "docs_scanned": 1242,
+   "prefiltered": 57,
+   "candidates": 53,
+   "hits": 96,
+   "seconds": 1.49
+  },
+  {
+   "key": "20260429",
+   "docs_scanned": 782,
+   "prefiltered": 29,
+   "candidates": 27,
+   "hits": 37,
+   "seconds": 1.09
+  },
+  {
+   "key": "20260430",
+   "docs_scanned": 1360,
+   "prefiltered": 92,
+   "candidates": 90,
+   "hits": 242,
+   "seconds": 1.42
+  },
+  {
+   "key": "20260504",
+   "docs_scanned": 1728,
+   "prefiltered": 63,
+   "candidates": 61,
+   "hits": 134,
+   "seconds": 1.37
+  },
+  {
+   "key": "20260505",
+   "docs_scanned": 842,
+   "prefiltered": 33,
+   "candidates": 30,
+   "hits": 37,
+   "seconds": 1.29
+  },
+  {
+   "key": "20260506",
+   "docs_scanned": 730,
+   "prefiltered": 34,
+   "candidates": 31,
+   "hits": 53,
+   "seconds": 1.02
+  },
+  {
+   "key": "20260507",
+   "docs_scanned": 610,
+   "prefiltered": 24,
+   "candidates": 20,
+   "hits": 27,
+   "seconds": 0.69
+  },
+  {
+   "key": "20260508",
+   "docs_scanned": 479,
+   "prefiltered": 19,
+   "candidates": 17,
+   "hits": 20,
+   "seconds": 0.6
+  },
+  {
+   "key": "20260511",
+   "docs_scanned": 1733,
+   "prefiltered": 88,
+   "candidates": 87,
+   "hits": 181,
+   "seconds": 2.3
+  },
+  {
+   "key": "20260512",
+   "docs_scanned": 2082,
+   "prefiltered": 134,
+   "candidates": 132,
+   "hits": 298,
+   "seconds": 2.66
+  },
+  {
+   "key": "20260513",
+   "docs_scanned": 2127,
+   "prefiltered": 87,
+   "candidates": 86,
+   "hits": 183,
+   "seconds": 1.83
+  },
+  {
+   "key": "20260514",
+   "docs_scanned": 95,
+   "prefiltered": 3,
+   "candidates": 3,
+   "hits": 3,
+   "seconds": 0.12
+  },
+  {
+   "key": "20260515",
+   "docs_scanned": 1720,
+   "prefiltered": 90,
+   "candidates": 87,
+   "hits": 196,
+   "seconds": 1.63
+  },
+  {
+   "key": "20260518",
+   "docs_scanned": 2328,
+   "prefiltered": 154,
+   "candidates": 142,
+   "hits": 251,
+   "seconds": 2.49
+  },
+  {
+   "key": "20260519",
+   "docs_scanned": 557,
+   "prefiltered": 18,
+   "candidates": 14,
+   "hits": 26,
+   "seconds": 0.81
+  },
+  {
+   "key": "20260520",
+   "docs_scanned": 634,
+   "prefiltered": 22,
+   "candidates": 20,
+   "hits": 31,
+   "seconds": 1.0
+  },
+  {
+   "key": "20260521",
+   "docs_scanned": 362,
+   "prefiltered": 17,
+   "candidates": 16,
+   "hits": 26,
+   "seconds": 0.51
+  },
+  {
+   "key": "20260522",
+   "docs_scanned": 469,
+   "prefiltered": 18,
+   "candidates": 17,
+   "hits": 21,
+   "seconds": 0.54
+  },
+  {
+   "key": "20260525",
+   "docs_scanned": 2070,
+   "prefiltered": 84,
+   "candidates": 81,
+   "hits": 179,
+   "seconds": 2.87
+  },
+  {
+   "key": "20260526",
+   "docs_scanned": 2937,
+   "prefiltered": 169,
+   "candidates": 158,
+   "hits": 222,
+   "seconds": 2.59
+  },
+  {
+   "key": "20260527",
+   "docs_scanned": 1013,
+   "prefiltered": 53,
+   "candidates": 50,
+   "hits": 101,
+   "seconds": 1.49
+  },
+  {
+   "key": "20260528",
+   "docs_scanned": 2677,
+   "prefiltered": 107,
+   "candidates": 103,
+   "hits": 246,
+   "seconds": 2.23
+  },
+  {
+   "key": "20260529",
+   "docs_scanned": 1216,
+   "prefiltered": 57,
+   "candidates": 56,
+   "hits": 88,
+   "seconds": 1.64
+  },
+  {
+   "key": "20260601",
+   "docs_scanned": 3203,
+   "prefiltered": 184,
+   "candidates": 177,
+   "hits": 423,
+   "seconds": 3.65
+  },
+  {
+   "key": "20260602",
+   "docs_scanned": 1683,
+   "prefiltered": 101,
+   "candidates": 96,
+   "hits": 224,
+   "seconds": 2.11
+  },
+  {
+   "key": "20260603",
+   "docs_scanned": 2512,
+   "prefiltered": 157,
+   "candidates": 155,
+   "hits": 581,
+   "seconds": 3.92
+  },
+  {
+   "key": "20260608",
+   "docs_scanned": 1858,
+   "prefiltered": 87,
+   "candidates": 84,
+   "hits": 193,
+   "seconds": 1.67
+  },
+  {
+   "key": "20260609",
+   "docs_scanned": 655,
+   "prefiltered": 31,
+   "candidates": 20,
+   "hits": 28,
+   "seconds": 0.82
+  },
+  {
+   "key": "20260610",
+   "docs_scanned": 769,
+   "prefiltered": 44,
+   "candidates": 38,
+   "hits": 58,
+   "seconds": 1.25
+  },
+  {
+   "key": "20260612",
+   "docs_scanned": 1,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20260616",
+   "docs_scanned": 1,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20260617",
+   "docs_scanned": 2,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20260618",
+   "docs_scanned": 7,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20260619",
+   "docs_scanned": 6,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 8,
+   "seconds": 0.07
+  },
+  {
+   "key": "20260622",
+   "docs_scanned": 18,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.04
+  },
+  {
+   "key": "20260623",
+   "docs_scanned": 3,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20260624",
+   "docs_scanned": 5,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.02
+  },
+  {
+   "key": "20260625",
+   "docs_scanned": 727,
+   "prefiltered": 22,
+   "candidates": 20,
+   "hits": 30,
+   "seconds": 0.82
+  },
+  {
+   "key": "20260626",
+   "docs_scanned": 3310,
+   "prefiltered": 229,
+   "candidates": 220,
+   "hits": 663,
+   "seconds": 3.78
+  },
+  {
+   "key": "20260629",
+   "docs_scanned": 1464,
+   "prefiltered": 91,
+   "candidates": 81,
+   "hits": 194,
+   "seconds": 2.21
+  },
+  {
+   "key": "20260630",
+   "docs_scanned": 1496,
+   "prefiltered": 106,
+   "candidates": 104,
+   "hits": 326,
+   "seconds": 2.34
+  },
+  {
+   "key": "20260701",
+   "docs_scanned": 1511,
+   "prefiltered": 83,
+   "candidates": 75,
+   "hits": 178,
+   "seconds": 2.1
+  },
+  {
+   "key": "20260702",
+   "docs_scanned": 3760,
+   "prefiltered": 304,
+   "candidates": 291,
+   "hits": 733,
+   "seconds": 6.48
+  },
+  {
+   "key": "20260703",
+   "docs_scanned": 3234,
+   "prefiltered": 143,
+   "candidates": 139,
+   "hits": 419,
+   "seconds": 3.52
+  },
+  {
+   "key": "20260706",
+   "docs_scanned": 1249,
+   "prefiltered": 72,
+   "candidates": 72,
+   "hits": 268,
+   "seconds": 1.53
+  },
+  {
+   "key": "20260707",
+   "docs_scanned": 766,
+   "prefiltered": 37,
+   "candidates": 36,
+   "hits": 81,
+   "seconds": 0.72
+  },
+  {
+   "key": "20260708",
+   "docs_scanned": 797,
+   "prefiltered": 57,
+   "candidates": 54,
+   "hits": 125,
+   "seconds": 1.34
+  },
+  {
+   "key": "20260709",
+   "docs_scanned": 275,
+   "prefiltered": 22,
+   "candidates": 22,
+   "hits": 152,
+   "seconds": 0.53
+  },
+  {
+   "key": "20260710",
+   "docs_scanned": 337,
+   "prefiltered": 59,
+   "candidates": 58,
+   "hits": 174,
+   "seconds": 1.02
+  },
+  {
+   "key": "20260713",
+   "docs_scanned": 110,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 1,
+   "seconds": 0.06
+  },
+  {
+   "key": "20260714",
+   "docs_scanned": 184,
+   "prefiltered": 4,
+   "candidates": 4,
+   "hits": 6,
+   "seconds": 0.12
+  },
+  {
+   "key": "20260715",
+   "docs_scanned": 185,
+   "prefiltered": 5,
+   "candidates": 5,
+   "hits": 15,
+   "seconds": 0.14
+  },
+  {
+   "key": "20260716",
+   "docs_scanned": 283,
+   "prefiltered": 8,
+   "candidates": 7,
+   "hits": 20,
+   "seconds": 0.32
+  },
+  {
+   "key": "20260717",
+   "docs_scanned": 267,
+   "prefiltered": 14,
+   "candidates": 11,
+   "hits": 14,
+   "seconds": 0.74
+  },
+  {
+   "key": "20260720",
+   "docs_scanned": 244,
+   "prefiltered": 17,
+   "candidates": 16,
+   "hits": 39,
+   "seconds": 0.36
+  },
+  {
+   "key": "20260721",
+   "docs_scanned": 829,
+   "prefiltered": 20,
+   "candidates": 19,
+   "hits": 35,
+   "seconds": 0.42
+  },
+  {
+   "key": "20260722",
+   "docs_scanned": 621,
+   "prefiltered": 18,
+   "candidates": 17,
+   "hits": 35,
+   "seconds": 0.79
+  },
+  {
+   "key": "20260723",
+   "docs_scanned": 1254,
+   "prefiltered": 79,
+   "candidates": 77,
+   "hits": 115,
+   "seconds": 1.13
+  },
+  {
+   "key": "20260724",
+   "docs_scanned": 2031,
+   "prefiltered": 249,
+   "candidates": 247,
+   "hits": 280,
+   "seconds": 1.24
+  },
+  {
+   "key": "20260727",
+   "docs_scanned": 1144,
+   "prefiltered": 120,
+   "candidates": 119,
+   "hits": 266,
+   "seconds": 1.07
+  },
+  {
+   "key": "20260728",
+   "docs_scanned": 751,
+   "prefiltered": 128,
+   "candidates": 127,
+   "hits": 157,
+   "seconds": 0.73
+  },
+  {
+   "key": "20260729",
+   "docs_scanned": 627,
+   "prefiltered": 101,
+   "candidates": 100,
+   "hits": 178,
+   "seconds": 0.81
+  },
+  {
+   "key": "20260730",
+   "docs_scanned": 1722,
+   "prefiltered": 61,
+   "candidates": 57,
+   "hits": 147,
+   "seconds": 1.5
+  },
+  {
+   "key": "20260731",
+   "docs_scanned": 1150,
+   "prefiltered": 86,
+   "candidates": 85,
+   "hits": 263,
+   "seconds": 1.52
+  },
+  {
+   "key": "20260803",
+   "docs_scanned": 962,
+   "prefiltered": 41,
+   "candidates": 39,
+   "hits": 88,
+   "seconds": 0.81
+  },
+  {
+   "key": "20260804",
+   "docs_scanned": 610,
+   "prefiltered": 23,
+   "candidates": 20,
+   "hits": 23,
+   "seconds": 0.42
+  },
+  {
+   "key": "20260805",
+   "docs_scanned": 560,
+   "prefiltered": 14,
+   "candidates": 13,
+   "hits": 25,
+   "seconds": 0.42
+  },
+  {
+   "key": "20260806",
+   "docs_scanned": 828,
+   "prefiltered": 26,
+   "candidates": 24,
+   "hits": 34,
+   "seconds": 0.76
+  },
+  {
+   "key": "20260807",
+   "docs_scanned": 14,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 2,
+   "seconds": 0.04
+  },
+  {
+   "key": "20260812",
+   "docs_scanned": 13,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 3,
+   "seconds": 0.04
+  },
+  {
+   "key": "20260813",
+   "docs_scanned": 11,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 2,
+   "seconds": 0.05
+  },
+  {
+   "key": "20260814",
+   "docs_scanned": 34,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.04
+  },
+  {
+   "key": "20260817",
+   "docs_scanned": 15,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 3,
+   "seconds": 0.06
+  },
+  {
+   "key": "20260818",
+   "docs_scanned": 74,
+   "prefiltered": 1,
+   "candidates": 1,
+   "hits": 3,
+   "seconds": 0.08
+  },
+  {
+   "key": "20260819",
+   "docs_scanned": 48,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 4,
+   "seconds": 0.07
+  },
+  {
+   "key": "20260820",
+   "docs_scanned": 20,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 3,
+   "seconds": 0.05
+  },
+  {
+   "key": "20260821",
+   "docs_scanned": 76,
+   "prefiltered": 10,
+   "candidates": 10,
+   "hits": 59,
+   "seconds": 0.13
+  },
+  {
+   "key": "20260824",
+   "docs_scanned": 4,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20260825",
+   "docs_scanned": 228,
+   "prefiltered": 16,
+   "candidates": 16,
+   "hits": 40,
+   "seconds": 0.4
+  },
+  {
+   "key": "20260826",
+   "docs_scanned": 412,
+   "prefiltered": 17,
+   "candidates": 15,
+   "hits": 30,
+   "seconds": 0.53
+  },
+  {
+   "key": "20260827",
+   "docs_scanned": 261,
+   "prefiltered": 7,
+   "candidates": 7,
+   "hits": 11,
+   "seconds": 0.35
+  },
+  {
+   "key": "20260828",
+   "docs_scanned": 449,
+   "prefiltered": 10,
+   "candidates": 8,
+   "hits": 19,
+   "seconds": 0.48
+  },
+  {
+   "key": "20260831",
+   "docs_scanned": 23,
+   "prefiltered": 0,
+   "candidates": 0,
+   "hits": 0,
+   "seconds": 0.03
+  },
+  {
+   "key": "20260901",
+   "docs_scanned": 33,
+   "prefiltered": 4,
+   "candidates": 4,
+   "hits": 14,
+   "seconds": 0.1
+  },
+  {
+   "key": "20260902",
+   "docs_scanned": 79,
+   "prefiltered": 7,
+   "candidates": 7,
+   "hits": 23,
+   "seconds": 0.14
+  },
+  {
+   "key": "20260903",
+   "docs_scanned": 37,
+   "prefiltered": 5,
+   "candidates": 5,
+   "hits": 15,
+   "seconds": 0.09
+  },
+  {
+   "key": "20260904",
+   "docs_scanned": 31,
+   "prefiltered": 2,
+   "candidates": 2,
+   "hits": 8,
+   "seconds": 0.07
+  }
+ ]
+}
