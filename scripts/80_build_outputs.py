@@ -8,11 +8,17 @@ which tables it could not build. `scripts/90_export_overleaf.py` then turns thes
 Aggregates only: no snippet, no party, no rapporteur, and cells with fewer than 5 documents are suppressed
 (CLAUDE.md §4).
 
-Usage:  uv run python scripts/80_build_outputs.py
+A validation run on a partial gold set (logs/22 with ``annotation_complete: false``, e.g. only the `strict`
+stratum annotated) is NOT turned into manuscript tables or numbers by default: its rates describe the annotated
+strata, not the instrument. ``--allow-partial-gold`` includes them anyway (for a preview), and the summary says
+so; metrics that log 22 marks as not estimable are null there and therefore never become a macro.
+
+Usage:  uv run python scripts/80_build_outputs.py [--allow-partial-gold]
 """
 
 from __future__ import annotations
 
+import argparse
 import csv
 import datetime as dt
 import json
@@ -30,6 +36,7 @@ LOG = ROOT / "logs"
 OUT = ROOT / "outputs"
 TABLES = OUT / "tables"
 K_MIN = 5  # minimum cell size for a published row
+VALIDATION_TABLES = ("go_no_go", "pattern_precision", "grounds_frequency")  # built from logs/22 only
 _DIGIT_WORDS = str.maketrans({d: w for d, w in zip("0123456789",
     ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"], strict=True)})
 
@@ -60,9 +67,14 @@ def write_table(name: str, header: list[str], rows: list[list]) -> bool:
     return True
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--allow-partial-gold", action="store_true",
+                    help="also export the validation of an incomplete gold set (preview only)")
+    args = ap.parse_args(argv)
     built: list[str] = []
     missing: list[str] = []
+    notes: list[str] = []
     numbers: dict[str, object] = {}
 
     lex = load_lexicon(ROOT / "config" / "lexicon_v2.yaml")
@@ -158,6 +170,16 @@ def main() -> int:
         missing.append("11_ingest_stj_espelhos.json")
 
     validation = read_log("22_lexicon_validation.json")
+    partial = bool(validation) and validation.get("annotation_complete") is False
+    if partial and not args.allow_partial_gold:
+        notes.append("logs/22 comes from a partial gold set: validation tables and numbers left out "
+                     "(re-run with --allow-partial-gold for a preview)")
+        validation = None
+        missing.append("22_lexicon_validation.json (partial gold set)")
+        for stale in VALIDATION_TABLES:  # a previous preview must not reach Overleaf through step 90
+            (TABLES / f"{stale}.csv").unlink(missing_ok=True)
+    elif partial:
+        notes.append("PREVIEW: validation tables and numbers come from a partial gold set (provisional)")
     if validation:
         rows = [[r["criterion"], "" if r["value"] is None else r["value"], r["threshold_go"], r["verdict"]]
                 for r in validation.get("go_no_go", [])]
@@ -186,7 +208,7 @@ def main() -> int:
                        if not r.get("suppressed_k_lt_5")]
         if write_table("grounds_frequency", ["annex_a_item", "documents"], ground_rows):
             built.append("grounds_frequency")
-    else:
+    elif not partial:
         missing.append("22_lexicon_validation.json")
 
     numbers = {macro(k): v for k, v in numbers.items() if v is not None}
@@ -198,6 +220,7 @@ def main() -> int:
         "logs_missing": missing,
         "numbers": len(numbers),
         "note": f"cells with fewer than {K_MIN} documents are suppressed (CLAUDE.md 4)",
+        "gold_notes": notes,
     }
     json.dump(summary, open(LOG / "80_build_outputs.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(json.dumps(summary, ensure_ascii=False, indent=1))

@@ -105,6 +105,22 @@ def task_validate():
     return {"actions": [run], "task_dep": ["annotation_sample"], "uptodate": [False]}
 
 
+def task_check_annotation():
+    """27 - check the worksheet being annotated and show the progress (produces no label)."""
+
+    def run() -> bool:
+        ann = DATA / "annotations"
+        if not any((ann / n).exists() for n in ("gold_v1.xlsx", "gold_v1.csv", "gold_v1_sample.csv")):
+            print("skipped: no worksheet in data/annotations yet (run task annotation_sample)")
+            return True
+        import subprocess
+
+        subprocess.run([PY, str(ROOT / "scripts" / "27_check_worksheet.py")], check=False)
+        return True  # errors are listed for the researcher; they never stop the DAG
+
+    return {"actions": [run], "uptodate": [False]}
+
+
 def task_views():
     """19 - rebuild the DuckDB views from the Parquet files."""
     return {"actions": [_script("19_refresh_duckdb_views.py")], "uptodate": [False]}

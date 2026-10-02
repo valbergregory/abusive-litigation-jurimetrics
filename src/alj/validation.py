@@ -217,3 +217,99 @@ def go_no_go(
          "threshold_go": 0.70, "verdict": verdict(bridge_rate, 0.70, 0.40),
          "note": "40-70% -> partial design B; < 40% -> design A"},
     ]
+
+
+# ------------------------------------------------------------------------------------------ staged validation
+# The gold set is annotated stratum by stratum (docs/COMO_ANOTAR.md §4), and the first validation is run on the
+# `strict` stratum alone. The arithmetic above does not know that: with no unflagged control annotated, every
+# signalled document is a true positive and recall comes out as a meaningless 1.0. The functions below say which
+# estimates the strata annotated so far can support, and the script masks the others.
+
+#: strata whose documents the lexicon made candidates (by construction of scripts/21_export_annotation_sample.py)
+FLAGGED_STRATA = frozenset({"strict", "strict_negated", "conduct_multi", "conduct_sanction"})
+#: strata of documents the lexicon did not make candidates: they hold the false negatives
+UNFLAGGED_STRATA = frozenset({"control_flagged", "control_unflagged"})
+RECALL_STRATUM = "control_unflagged"
+
+
+def effective_weights(strata_log: list[dict], rows: list[Annotated]) -> dict[str, float]:
+    """``available / labelled`` per stratum: the inverse sampling fraction of what was actually annotated.
+
+    While a stratum is half done, ``available / sampled`` would under-weight it; dividing by the rows that carry a
+    label (``NA`` included, since NA rows were drawn and read) keeps the Horvitz–Thompson weights right at every
+    stage, and equals :func:`stratum_weights` once the stratum is complete.
+    """
+    labelled = Counter(r.stratum for r in rows)
+    out: dict[str, float] = {}
+    for row in strata_log:
+        n = labelled.get(row["stratum"], 0)
+        out[row["stratum"]] = (row.get("available") or 0) / n if n else 0.0
+    return out
+
+
+def estimability(rows: list[Annotated], strata_log: list[dict] | None = None) -> dict:
+    """Which metrics the annotated strata support, and why the others are not estimable yet.
+
+    * **precision** needs usable rows from at least one flagged stratum; it is the precision *of the annotated
+      flagged strata* (``scope``) and becomes the precision of the whole candidate set only when every flagged
+      stratum of the sample has been annotated (``complete``);
+    * **recall / F1** need, besides that, usable rows of ``control_unflagged`` (the never-flagged documents of
+      the corpus): without them the false negatives are unknown, not zero;
+    * per-pattern precision and the Annex A frequencies only need annotated rows (k ≥ 5 still applies).
+    """
+    usable = Counter(r.stratum for r in rows if r.usable)
+    labelled = Counter(r.stratum for r in rows)
+    sampled = {row["stratum"]: row.get("sampled") or 0 for row in (strata_log or [])}
+    flagged_done = sorted(s for s in FLAGGED_STRATA if usable.get(s))
+    flagged_in_sample = sorted(s for s in FLAGGED_STRATA if sampled.get(s)) if sampled else sorted(FLAGGED_STRATA)
+    complete = {s: (labelled.get(s, 0) >= sampled[s]) for s in sampled} if sampled else {}
+    precision_ok = bool(flagged_done)
+    recall_ok = precision_ok and bool(usable.get(RECALL_STRATUM))
+    reasons = []
+    if not precision_ok:
+        reasons.append("precision: no usable row from a flagged stratum (strict, strict_negated, conduct_*) yet")
+    if not recall_ok:
+        reasons.append(f"recall/F1: need annotated rows of '{RECALL_STRATUM}' (the recall denominator)"
+                       if precision_ok else "recall/F1: need flagged strata and the unflagged control")
+    all_flagged_complete = bool(sampled) and all(complete.get(s, False) for s in flagged_in_sample)
+    all_complete = bool(sampled) and all(complete.values())
+    return {
+        "precision": precision_ok,
+        "precision_scope": flagged_done,
+        "precision_covers_all_candidates": all_flagged_complete,
+        "recall": recall_ok,
+        "f1": recall_ok,
+        "recall_partial_control_flagged": recall_ok and not complete.get("control_flagged", True),
+        "per_pattern_precision": bool(usable),
+        "grounds_frequency": bool(usable),
+        "strata_complete": complete,
+        "annotation_complete": all_complete,
+        "not_estimable_because": reasons,
+    }
+
+
+def mask_metrics(m: dict, est: dict) -> dict:
+    """Blank out what :func:`estimability` says the annotated strata cannot support (never a fake 1.0)."""
+    out = dict(m)
+    if not est["precision"]:
+        out["precision"] = None
+    if not est["recall"]:
+        out["recall"] = None
+        out["f1"] = None
+    return out
+
+
+def go_no_go_staged(table: list[dict], complete: bool) -> list[dict]:
+    """Mark the §7 verdicts provisional while the annotation is incomplete.
+
+    A count criterion (documents reviewed, confirmed cases) that already reached its ``go`` threshold stays
+    ``go``; below it, an incomplete annotation reads ``in progress`` instead of a premature ``no-go``.
+    """
+    out = []
+    for row in table:
+        r = dict(row, provisional=not complete)
+        if not complete and r["criterion"] in {"candidates reviewed", "confirmed with reasons (S3 or S2)"}:
+            if r["value"] is not None and r["verdict"] != "go":
+                r["verdict"] = "in progress"
+        out.append(r)
+    return out
