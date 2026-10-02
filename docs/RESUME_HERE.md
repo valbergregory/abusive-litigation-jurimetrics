@@ -9,13 +9,41 @@
 > 5. Conferência do léxico: passo a passo em `docs/COMO_CONFERIR_O_LEXICO.md`.
 > 6. **Push feito** em 23/09 (6 commits, `b5afe2b..d8bab88`).
 
-Atualizado em 22/09/2026, ao fim da sessão "faça tudo que puder sem minha permissão".
+Atualizado em 02/10/2026 (sessão "dê continuidade no que puder sem minha intervenção").
 Leia este arquivo primeiro; o detalhe técnico está em `docs/feasibility_report.md` §11 e em `docs/RUNBOOK.md`.
 
 ## Em uma frase
 
-O corpus e o instrumento de medição estão prontos e rodados de ponta a ponta; **falta você decidir o desenho,
-revisar o protocolo e anotar** — nenhum rótulo, modelo ou resultado existe, por regra (CLAUDE.md §2).
+Desenho B decidido, atas ingeridas e protocolo v0.1 confirmado (D-1, D-2 e D-3 resolvidas em 23/09): **só falta a
+sua anotação** — 1.443 documentos de `gold_v1_sample.csv` e, ≥ 2 semanas depois, os 144 da rodada cega. Tudo o que
+vem depois dos rótulos (validação → tabelas → figuras → Overleaf) já roda e está testado com dados sintéticos;
+nenhum rótulo, modelo ou resultado existe, por regra (CLAUDE.md §2).
+
+## Próximos passos (02/10) — ferramentas novas para anotar mais rápido
+
+Nenhuma delas gera, sugere ou corrige rótulo; só leem o que você digitou.
+
+1. **Plano de lotes** (uma vez, antes de começar):
+   `uv run python scripts/28_plan_batches.py --start 2026-10-05` → `data/annotations/plano_lotes.csv`
+   (25 documentos por dia útil, na ordem do `COMO_ANOTAR.md` §4; ≈ 58 dias úteis). Dentro de cada estrato a ordem
+   é pseudoaleatória fixa, para que parar no meio de um estrato deixe uma subamostra aleatória (a planilha original
+   é ordenada por data, e parar nela enviesaria a validação parcial). `--ordered-worksheet` grava também
+   `gold_v1_sample_ordenado.csv` com as colunas `lote` e `ordem` — útil só se você ainda não começou.
+2. **Conferência diária** (ao fim de cada sessão, lê direto o `gold_v1.xlsx`, sem precisar salvar CSV):
+   `uv run python scripts/27_check_worksheet.py` → erros (código fora do protocolo, coluna faltando, `doc_id`
+   repetido, data ilegível), avisos de combinação improvável (S3 com M0, S3/S2 sem fundamento, S0 com fundamento,
+   MAFE com itens A, NA com fundamento, justificativa vazia), progresso por estrato, horas restantes a 2–4 min/doc
+   e no seu ritmo medido, o **próximo lote** e a **data mínima da rodada cega** (≥ 14 dias após a última anotação
+   dos 144 documentos dela). A lista linha a linha fica em `data/annotations/_verificacao.csv` (git-ignored).
+3. **Validação parcial** — assim que o `strict` (600) estiver pronto, salve `gold_v1.csv` (vírgula **ou**
+   ponto e vírgula, tanto faz) e rode `uv run python scripts/22_validate_lexicon.py`. Ele diz o que já é
+   estimável: **precisão sim** (só dos estratos anotados), **revocação e F1 não** até haver `control_unflagged`
+   anotado (antes saía um 1,0 falso; agora sai nulo). O go/no-go fica marcado como provisório, e o passo 80 não
+   leva números parciais ao Overleaf (salvo `--allow-partial-gold`, para prévia).
+4. **Rodada cega (κ)**: só abra `gold_v1_reannotation.csv` na data que o passo 27 indicar; salve como
+   `gold_v1_reannotation_done.csv`. O passo 22 calcula o κ e avisa se algum par foi refeito com menos de 14 dias.
+5. **Ao terminar**: `uv run python scripts/22_validate_lexicon.py`, depois `80_build_outputs.py`,
+   `81_build_figures.py` e `90_export_overleaf.py` (ou `uv run doit`).
 
 ## Suas decisões, em ordem de impacto
 
@@ -47,13 +75,22 @@ protocolo ético seu e, pelo volume medido, tende a não acrescentar poder expli
 risco — a estimativa da §3 se confirmou (≈ 2.950 documentos com termo estrito em 2021–2026, não centenas de
 milhares).
 
+### ✅ D-3 RESOLVIDA (23/09) — protocolo v0.1 confirmado
+
+<details><summary>pergunta original (mantida para registro)</summary>
+
 ### D-3. Protocolo de anotação: confirma as escalas?
 
 `docs/annotation_protocol.md` continua o **seu** rascunho v0.1 (S3/S2/S1/S0/NA; A1–A20 + T1198 + MAFE; M0–M5;
 D1–D5). O apêndice A, que eu acrescentei, só registra como o código o operacionaliza — colunas da planilha,
 estratos e métricas. Se você mudar uma escala, mude ali e eu ajusto `src/alj/annotation.py` e `src/alj/validation.py`.
 
-### D-4. Anotar 1.349 documentos (é o gargalo do artigo)
+</details>
+
+### D-4. Anotar 1.443 documentos (é o gargalo do artigo) — ver "Próximos passos" acima
+
+(A tabela abaixo é a da primeira amostra, de 1.349; a amostra regerada com o léxico v2.2 tem 1.443, com
+`strict_negated` 115 e `control_flagged` 100 — números de `logs/21_export_annotation_sample.json`.)
 
 `data/annotations/gold_v1_sample.csv` (abre no Excel, já com BOM; a pasta é git-ignored porque traz trechos de
 decisões). Ordem sugerida no `README_annotation.md` da mesma pasta:
@@ -99,6 +136,16 @@ Os padrões campeões de volume são de linguagem processual comum (`extincao_se
 quiser que a camada de conduta seja mais restritiva, é melhor ajustar `config/lexicon_v2.yaml` **antes** de anotar —
 uma nova varredura completa custa 49 min e repovoa o estrato `control_flagged`, hoje vazio.
 
+## O que eu fiz em 02/10 (sem depender de você)
+
+- **Passo 22 em etapas**: roda sobre a planilha parcial; pesos `disponíveis / anotados` por estrato; bloco
+  `estimable` no log (precisão com escopo, revocação/F1 nulos sem `control_unflagged`); go/no-go `provisional`;
+  lê CSV com `,` ou `;`; sem o Parquet de candidatos, deduz `flagged` do estrato (idêntico por construção).
+- **Passos 27 (conferência) e 28 (lotes)**, novos; `src/alj/worksheet.py`; `openpyxl` para ler o `.xlsx`.
+- **Passo 80** não exporta validação parcial (salvo `--allow-partial-gold`) e apaga prévias antigas.
+- **Testes**: 247 (21 novos), incluindo o encadeamento 27 → 28 → 22 → 80 → 81 → 90 com padrão-ouro sintético,
+  parcial (só `strict`) e completo.
+
 ## O que eu fiz em 23/09 pela manhã (sem depender de você)
 
 - **Espelhos completos**: sondei o ZIP inicial (`scripts/11b`), descobri que não era duplicata e reingeri tudo —
@@ -128,4 +175,4 @@ uma nova varredura completa custa 49 min e repovoa o estrato `control_flagged`, 
 2. Passo 30 (`30_fetch_datajud_trajectories.py`) não escrito — só faz sentido depois de D-1.
 3. ~~Espelhos: ZIPs iniciais~~ **RESOLVIDO em 23/09** — não eram duplicata: traziam o acervo histórico desde
    1989. Corpus de espelhos foi de 165.850 para **877.353** registros (§12.1 do relatório).
-4. Commit local de 22/09 **sem push** — o repositório é público e o push é decisão sua.
+4. ~~Commit local de 22/09 sem push~~ **RESOLVIDO em 23/09** (push autorizado).

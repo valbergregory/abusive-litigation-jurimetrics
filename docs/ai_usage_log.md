@@ -15,7 +15,7 @@ pesquisador (`docs/annotation_protocol.md`; `CLAUDE.md` §2).
   (`CLAUDE.md` §11).
 - **Entrada:** o repositório, os dados abertos baixados e as instruções do pesquisador.
 - **Saída:** `scripts/`, `src/alj/`, `tests/`, `docs/`, `config/lexicon_v2.yaml`, `dodo.py`.
-- **Verificação:** 224 testes automatizados, `ruff` limpo, todo número do manuscrito gerado por
+- **Verificação:** 247 testes automatizados (02/10/2026), `ruff` limpo, todo número do manuscrito gerado por
   `scripts/80_build_outputs.py` + `scripts/90_export_overleaf.py`.
 
 ## 2. Jus IA (Jusbrasil) — 2026-09-22, uso pontual, na conta do pesquisador

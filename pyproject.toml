@@ -18,6 +18,7 @@ dependencies = [
   "pandas>=2.2",
   "pyyaml>=6.0",       # config/lexicon_v2.yaml is the versioned measurement instrument
   "matplotlib>=3.9",   # scripts/81_build_figures.py (PDF for LaTeX + PNG)
+  "openpyxl>=3.1",     # the annotation checker reads the gold_v1.xlsx the researcher works in (scripts/27)
 ]
 
 [project.optional-dependencies]

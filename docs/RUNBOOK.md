@@ -39,7 +39,9 @@ Result: `docs/feasibility_report.md`.
 | 20 | `uv run python scripts/20_lexicon_candidates.py [--keys FROM TO] [--sample N] [--force]` (**written and run 2026-09-22**) | `data/interim/stj_integras/text/*.parquet` + `config/lexicon_v2.yaml` (v2.0.0, 47 patterns; 36 in the candidate tiers) | `data/interim/candidates/{docs,hits}/<key>.parquet` (one row per candidate document; one row per hit with a ±320-char context window, the exclusion that fired and the negation hint), views `candidates`, `candidate_hits`, table `lexicon_run_log`, `logs/20_lexicon_candidates.json` | ~1.8 s per publication day (≈ 40 min for the 1.285 days), resumable per key |
 | 21 | `uv run python scripts/21_export_annotation_sample.py [--seed N] [--size NAME=N] [--max-year 2025]` (**written and run 2026-09-22**) | the candidate Parquet + the íntegras metadata (reads Parquet directly, so it never locks the database) | `data/annotations/gold_v1_sample.csv` (stratified worksheet with empty label columns), `gold_v1_reannotation.csv` (10 %, hints stripped, for κ), `README_annotation.md`, `logs/21_export_annotation_sample.json` | ~1 min |
 | 21b | **researcher's manual review** — fill `label1_status` (S3/S2/S1/S0/NA), `label2_grounds` (A1…A20/T1198/MAFE), `label3_measure` (M0…M5), `label4_domain` (D1…D5) and `justification`, per `docs/annotation_protocol.md` §§2–6; save as `data/annotations/gold_v1.csv` (git-ignored) | the worksheet | the gold set | days, by hand |
-| 22 | `uv run python scripts/22_validate_lexicon.py [--gold FILE] [--self-test]` (**written 2026-09-22; `--self-test` passes, real run waits for the gold set**) | `data/annotations/gold_v1.csv` (+ the blind round, if any), `logs/21_…json` for the inverse-sampling weights | precision/recall/F1 raw **and** weighted back to the population, per-pattern precision (k ≥ 5), Cohen's κ and the §7 go/no-go verdicts → `logs/22_lexicon_validation.json` | 1 min |
+| 22 | `uv run python scripts/22_validate_lexicon.py [--gold FILE] [--self-test]` (**written 2026-09-22; staged runs 2026-10-02; `--self-test` passes, real run waits for the gold set**) | `data/annotations/gold_v1.csv` (`,` or `;`; partial files allowed — blank rows are "not annotated") (+ the blind round, if any), `logs/21_…json` for the inverse-sampling weights (`available / labelled` per stratum), the candidate Parquet (if absent, `flagged` is read from the stratum) | precision/recall/F1 raw **and** weighted back to the population, per-pattern precision (k ≥ 5), Cohen's κ (+ pairs re-annotated < 14 days), `estimable` (which metrics the annotated strata support: recall/F1 stay null until `control_unflagged` has labels) and the §7 go/no-go verdicts, `provisional` while incomplete → `logs/22_lexicon_validation.json` | 1 min |
+| 27 | `uv run python scripts/27_check_worksheet.py [--gold FILE]` (**written 2026-10-02**; annotation aid, produces no label) | `gold_v1.xlsx` (else `gold_v1.csv`), `gold_v1_reannotation*.csv`, `plano_lotes.csv` | errors (codes outside the protocol, missing columns, duplicated `doc_id`), warnings (unlikely combinations), progress per stratum with hours left, next batch, earliest date of the blind round → terminal, `data/annotations/_verificacao.csv` (git-ignored), `logs/27_check_worksheet.json` (counts only); exit 1 on errors | seconds |
+| 28 | `uv run python scripts/28_plan_batches.py [--per-day 25] [--start AAAA-MM-DD] [--all-days] [--ordered-worksheet] [--force]` (**written 2026-10-02**) | the worksheet + the seed of step 21 | `data/annotations/plano_lotes.csv` (batch, date, order, stratum, doc_id; strata in the COMO_ANOTAR order, fixed pseudo-random order inside each stratum so any prefix is a random subsample), optional `gold_v1_sample_ordenado.csv`, `logs/28_plan_batches.json`; never overwrites without `--force` | seconds |
 | 23 | `uv run python scripts/23_lexicon_espelhos.py [--orgaos …]` (**written 2026-09-22**) | `data/interim/espelhos/espelhos/*.parquet` (ementa + decisão + notas) and the same lexicon | `data/interim/candidates_espelhos/{docs,hits}/*.parquet`, views `espelho_candidates`, `espelho_candidate_hits`, `logs/23_lexicon_espelhos.json` | ~2 min; needs step 11 |
 | 24 | `uv run python scripts/24_crosscheck_integras_espelhos.py` (**written and run 2026-09-23**) | `candidates`, `espelho_candidates`, metadata | agreement between the two public sources on the same `numeroRegistro` → `logs/24_crosscheck_integras_espelhos.json` (**when the íntegra names the phenomenon the espelho names it in 29,4 % of the shared cases**) | ~2 min |
 | 30 | `30_fetch_datajud_trajectories.py` (not written) | bridge + DataJud (STJ + origin) | `trajectories.parquet`, table `movements` | hours, background |
@@ -71,6 +73,7 @@ from it by stratified sampling in step 21, and step 22 weights the estimates bac
 
 ```bash
 uv run python scripts/80_build_outputs.py      # logs/*.json + the lexicon YAML -> outputs/tables/*.csv + outputs/numbers.json
+                                               # (a partial gold set is left out; --allow-partial-gold for a preview)
 uv run python scripts/81_build_figures.py      # logs/*.json -> outputs/figures/*.{pdf,png} (4 descriptive figures)
 uv run python scripts/90_export_overleaf.py    # -> outputs/overleaf/{tables/*.tex, figures/, numbers.tex}
 ```
@@ -80,7 +83,13 @@ cells with fewer than 5 documents and writes no table for a log that does not ex
 `src/alj/export_overleaf.py`) turns the CSVs into booktabs tables and the numbers into one `\newcommand` each.
 Copy `outputs/overleaf/` to Overleaf; never type a number by hand (policy §13).
 
-## Phase 1 status (2026-09-22)
+Tested end to end on synthetic fixtures (`tests/test_pipeline_after_annotation.py`): 27 → 28 → 22 → 80 → 81 → 90,
+with a partial gold set (`strict` only) and a complete one.
+
+## Phase 1 status (2026-10-02)
+
+Design B, the atas and protocol v0.1 were decided on 2026-09-23; the only open step is the manual annotation
+(21b) and its blind round. The status line below is the one of 2026-09-22, kept for the record.
 
 Done: 10, 11 (JSON + ZIP backlog), 11b, 12 (acervo), 19, 20, 21, 23, 24, 80, 81, 90 — plus `22 --self-test`. Waiting on the researcher: the design
 choice (A / B / B+C), the review of `docs/annotation_protocol.md`, the manual annotation (step 21b) and the

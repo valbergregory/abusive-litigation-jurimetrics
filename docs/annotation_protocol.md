@@ -86,3 +86,14 @@ feasibility report). Sizes are overridable (`--size strict=800`).
   (inverse sampling fraction), which is the only way the population precision and recall are interpretable;
 * per-pattern precision and Annex A frequencies are published only for cells with ≥ 5 documents (CLAUDE.md §4);
 * Cohen's κ on `label1_status` (and on the grounds set) from the blind round of §6.3.
+
+### A.4 Staged validation and annotation aids (added 2026-10-02 by Claude Code)
+
+* Step 22 accepts a partially filled worksheet. Blank `label1_status` = not annotated. The weights become
+  `available / labelled` per stratum, and the log states which estimates the strata annotated so far support:
+  precision once a candidate stratum has labels (scoped to those strata), recall and F1 only once
+  `control_unflagged` has labels. Verdicts of the §7 table are `provisional` until every stratum is complete.
+* `scripts/27_check_worksheet.py` checks the codes of §§2–5 and flags unlikely combinations for review; it never
+  writes to the worksheet. `scripts/28_plan_batches.py` orders the work by stratum (COMO_ANOTAR §4) and, inside
+  each stratum, by a fixed pseudo-random key, so that any prefix of a stratum is a random subsample of it.
+* §6.3 timing: the blind round of a document starts ≥ 14 days after its first-round `annotation_date`.
