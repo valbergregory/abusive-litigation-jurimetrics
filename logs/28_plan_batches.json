@@ -1,0 +1,61 @@
+{
+ "run_at": "2026-10-09T20:32:09",
+ "source": "gold_v1_sample.csv",
+ "documents": 1443,
+ "per_day": 25,
+ "batches": 58,
+ "weekdays_only": true,
+ "first_date": "2026-10-12",
+ "last_date": "2026-12-30",
+ "seed": 20260922,
+ "by_stratum": {
+  "strict": {
+   "documents": 600,
+   "batches": [
+    1,
+    24
+   ]
+  },
+  "strict_negated": {
+   "documents": 115,
+   "batches": [
+    25,
+    29
+   ]
+  },
+  "conduct_multi": {
+   "documents": 300,
+   "batches": [
+    29,
+    41
+   ]
+  },
+  "conduct_sanction": {
+   "documents": 179,
+   "batches": [
+    41,
+    48
+   ]
+  },
+  "control_flagged": {
+   "documents": 99,
+   "batches": [
+    48,
+    52
+   ]
+  },
+  "control_unflagged": {
+   "documents": 150,
+   "batches": [
+    52,
+    58
+   ]
+  }
+ },
+ "already_done": 0,
+ "blind_round": {
+  "docs": 144,
+  "last_first_round_planned": "2026-12-30",
+  "earliest_blind_start": "2027-01-13"
+ }
+}

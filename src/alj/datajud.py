@@ -35,7 +35,7 @@ WIKI_URL = "https://datajud-wiki.cnj.jus.br/api-publica/acesso/"
 SEARCH_URL = "https://api-publica.datajud.cnj.jus.br/{alias}/_search"
 
 _T = TypeVar("_T")
-LICENCE = "Dados Abertos CNJ / DataJud (Res. CNJ 331/2020)"
+LICENCE = "Dados Abertos CNJ / DataJud (Res. CNJ 331/2020, alterada pela Res. 437/2021)"
 
 #: the only keys read from each ``_source``; a new field at the source is reported, never ingested
 CASE_FIELDS: tuple[str, ...] = (

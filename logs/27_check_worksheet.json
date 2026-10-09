@@ -1,0 +1,82 @@
+{
+ "run_at": "2026-10-09T20:32:30",
+ "worksheet": "gold_v1_sample.csv",
+ "rows": 1443,
+ "errors": 0,
+ "warnings": 0,
+ "issues_by_column": {},
+ "progress": {
+  "total": 1443,
+  "done": 0,
+  "remaining": 1443,
+  "pct_done": 0.0,
+  "hours_left_at_2_to_4_min": [
+   48.1,
+   96.2
+  ],
+  "own_pace_min_per_doc": null,
+  "hours_left_at_own_pace": null,
+  "by_stratum": [
+   {
+    "stratum": "strict",
+    "total": 600,
+    "done": 0,
+    "remaining": 600,
+    "pct": 0.0,
+    "na": 0
+   },
+   {
+    "stratum": "strict_negated",
+    "total": 115,
+    "done": 0,
+    "remaining": 115,
+    "pct": 0.0,
+    "na": 0
+   },
+   {
+    "stratum": "conduct_multi",
+    "total": 300,
+    "done": 0,
+    "remaining": 300,
+    "pct": 0.0,
+    "na": 0
+   },
+   {
+    "stratum": "conduct_sanction",
+    "total": 179,
+    "done": 0,
+    "remaining": 179,
+    "pct": 0.0,
+    "na": 0
+   },
+   {
+    "stratum": "control_flagged",
+    "total": 99,
+    "done": 0,
+    "remaining": 99,
+    "pct": 0.0,
+    "na": 0
+   },
+   {
+    "stratum": "control_unflagged",
+    "total": 150,
+    "done": 0,
+    "remaining": 150,
+    "pct": 0.0,
+    "na": 0
+   }
+  ]
+ },
+ "reannotation": {
+  "reannotation_docs": 144,
+  "missing_from_gold": 0,
+  "done_in_first_round": 0,
+  "pending_in_first_round": 144,
+  "done_without_date": 0,
+  "last_first_round_date": null,
+  "earliest_blind_start": null,
+  "min_days": 14
+ },
+ "reannotation_timing": null,
+ "note": "counts only; the per-row list stays in data/annotations/_verificacao.csv (git-ignored)"
+}

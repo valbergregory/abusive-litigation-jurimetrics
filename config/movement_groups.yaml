@@ -6,7 +6,10 @@
 # "não sinalizado", nunca "legítimo" (§3).
 #
 # Fonte dos códigos: tabela de movimentos da TPU (Tabelas Processuais Unificadas) do CNJ, espelhada em
-# `data/raw/cnj/sgt/movimentos.csv` (964 códigos, UTF-8, `;`-separado, SHA-256 em `logs/raw_hashes.tsv`).
+# `data/raw/cnj/sgt/movimentos.csv` (964 códigos, UTF-8, `;`-separado, SHA-256 em `logs/raw_hashes.tsv`),
+# baixada em 05/09/2026 do SGT (https://www.cnj.jus.br/sgt/consulta_publica_movimentos.php). ATENÇÃO: o SGT
+# publicou nova versão da tabela em 06/10/2026 — os códigos abaixo são os da cópia de 05/09; conferir antes de
+# subir a versão deste instrumento.
 # Os dois grupos grandes são o **pai da TPU expandido nos filhos ativos** — 218 "Sem Resolução de Mérito"
 # (78 códigos) e 385 "Com Resolução do Mérito" (193 códigos). As listas ficam escritas aqui, e não resolvidas em
 # tempo de execução, porque `data/` é git-ignored: o instrumento tem de ser reproduzível a partir do repositório.
