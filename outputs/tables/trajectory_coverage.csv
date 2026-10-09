@@ -1,0 +1,13 @@
+year,group,targets,found,pct
+2021,candidato,376,346,92.0
+2021,comparacao_nao_sinalizado,376,354,94.1
+2022,candidato,727,676,93.0
+2022,comparacao_nao_sinalizado,605,570,94.2
+2023,candidato,7026,6811,96.9
+2023,comparacao_nao_sinalizado,7026,6821,97.1
+2024,candidato,28877,28079,97.2
+2024,comparacao_nao_sinalizado,28877,28105,97.3
+2025,candidato,27029,26048,96.4
+2025,comparacao_nao_sinalizado,27029,25931,95.9
+2026,candidato,6265,6100,97.4
+2026,comparacao_nao_sinalizado,6265,6100,97.4

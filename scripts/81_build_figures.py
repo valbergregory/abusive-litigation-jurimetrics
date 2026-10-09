@@ -7,6 +7,7 @@ figures are the ones the Data section needs:
   fig_candidates_by_tier    candidates per year split by tier, showing that the conduct/sanction tiers dominate
   fig_bridge_coverage       share of candidates resolvable to a CNJ number with the acervo snapshot alone
   fig_pattern_hits          the most frequent patterns, by documents, with the neighbouring tier marked apart
+  fig_trajectory_groups     share of cases carrying each movement group, signalled against not signalled (step 31)
 
 Every value is read from logs/*.json (the step that measured it); a missing log simply skips its figure.
 Output: PDF (vector, for LaTeX) + PNG (for slides) in outputs/figures/, picked up by scripts/90_export_overleaf.py.
@@ -151,15 +152,54 @@ def fig_pattern_hits(cand: dict, top: int = 14) -> str | None:
     return save(fig, "fig_pattern_hits")
 
 
+def fig_trajectory_groups(feats: dict, top: int = 20) -> str | None:
+    """Share of cases carrying each movement group, signalled against not signalled.
+
+    Descriptive and unmatched, and that is said on the figure: the two groups differ in court, class and year as
+    well, so the bars measure the groups' trajectories, not an effect of anything (CLAUDE.md §§2–3).
+    """
+    blocks = {b["grupo"]: b for b in (feats.get("comparison_by_group") or [])}
+    signalled, other = blocks.get("candidato"), blocks.get("comparacao_nao_sinalizado")
+    groups = feats.get("movement_groups") or []
+    if not signalled or not other or not groups:
+        return None
+    rows = []
+    for group in groups:
+        a, b = signalled.get(f"pct_{group['id']}"), other.get(f"pct_{group['id']}")
+        if a is None or b is None:
+            continue
+        label = group.get("label_en") or group["label"]
+        rows.append((label.split(" (")[0], a, b))
+    if not rows:
+        return None
+    rows = sorted(rows, key=lambda r: max(r[1], r[2]))[-top:]
+    labels = [r[0] for r in rows]
+    positions = range(len(rows))
+    fig, ax = plt.subplots(figsize=(6.2, 0.42 * len(rows) + 1.6))
+    ax.barh([p + 0.19 for p in positions], [r[1] for r in rows], height=0.36, color=ACCENT, label="signalled")
+    ax.barh([p - 0.19 for p in positions], [r[2] for r in rows], height=0.36, color=GREY, label="not signalled")
+    ax.set_yticks(list(positions), labels, fontsize=8)
+    ax.set_xlabel("% of cases with at least one such movement", fontsize=9)
+    style(ax)
+    ax.grid(axis="y", visible=False)
+    ax.grid(axis="x", color=GREY, alpha=0.25, linewidth=0.6)
+    ax.legend(frameon=False, fontsize=8, loc="lower right")
+    ax.text(0.0, 1.02, "descriptive and unmatched: the groups also differ in court, class and year",
+            transform=ax.transAxes, fontsize=7.5, color=GREY, va="bottom")
+    return save(fig, "fig_trajectory_groups")
+
+
 def main() -> int:
     cand = read_log("20_lexicon_candidates.json")
     bridge = read_log("12_ingest_stj_bridge.json")
+    feats = read_log("31_trajectory_features.json")
     built, skipped = [], []
     for name, fn, src in (
         ("fig_strict_by_year", fig_strict_by_year, cand),
         ("fig_candidates_by_tier", fig_candidates_by_tier, cand),
         ("fig_bridge_coverage", fig_bridge_coverage, bridge),
         ("fig_pattern_hits", fig_pattern_hits, cand),
+        ("fig_trajectory_groups", fig_trajectory_groups, feats),
     ):
         if src is None:
             skipped.append({"figure": name, "why": "log not found"})

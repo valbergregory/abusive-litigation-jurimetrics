@@ -37,5 +37,14 @@
  "BridgeDistinctRegistrations": 1604423,
  "Espelhos": 877353,
  "EspelhoCitations": 1786090,
- "EspelhoLegislation": 1151705
+ "EspelhoLegislation": 1151705,
+ "TrajectoryTargetCases": 140478,
+ "TrajectoryCasesFound": 135941,
+ "TrajectoryCaseDocuments": 213075,
+ "TrajectoryMovements": 16754078,
+ "TrajectoryCourts": 34,
+ "TrajectoryComparisonRatio": 1.0,
+ "TrajectoryFeatureRows": 140478,
+ "MovementGroupsVersion": "0.1.0",
+ "MovementGroups": 14
 }

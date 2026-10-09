@@ -169,6 +169,45 @@ def main(argv: list[str] | None = None) -> int:
     else:
         missing.append("11_ingest_stj_espelhos.json")
 
+    traj = read_log("30_fetch_datajud_trajectories.json")
+    if traj:
+        rows = [[r["pub_year"], r["grupo"], r["targets"], r["found"], r["pct"]]
+                for r in traj.get("coverage_by_year_and_group_k_ge_5") or []]
+        if write_table("trajectory_coverage", ["year", "group", "targets", "found", "pct"], rows):
+            built.append("trajectory_coverage")
+        numbers["TrajectoryTargetCases"] = traj.get("target_cases")
+        numbers["TrajectoryCasesFound"] = traj.get("found_cases")
+        numbers["TrajectoryCaseDocuments"] = traj.get("documents")
+        numbers["TrajectoryMovements"] = traj.get("movements")
+        numbers["TrajectoryCourts"] = traj.get("aliases")
+        numbers["TrajectoryComparisonRatio"] = traj.get("comparison_ratio")
+    else:
+        missing.append("30_fetch_datajud_trajectories.json")
+
+    feats = read_log("31_trajectory_features.json")
+    if feats:
+        # tidy, not wide: one row per (group, metric), so the table stays readable in the manuscript
+        metrics = (("casos", "cases"), ("media_movimentos", "mean movements"),
+                   ("mediana_movimentos", "median movements"), ("mediana_dias", "median days (movements)"),
+                   ("mediana_dias_ajuizamento", "median days since filing"), ("media_orgaos", "mean judging bodies"))
+        rows = []
+        for block in feats.get("comparison_by_group") or []:
+            for key, label in metrics:
+                if block.get(key) is not None:
+                    rows.append([block["grupo"], label, block[key]])
+            for group in feats.get("movement_groups") or []:
+                value = block.get(f"pct_{group['id']}")
+                if value is not None:
+                    label = group.get("label_en") or group["label"]
+                    rows.append([block["grupo"], f"% with {label}", value])
+        if write_table("trajectory_comparison", ["group", "metric", "value"], rows):
+            built.append("trajectory_comparison")
+        numbers["TrajectoryFeatureRows"] = feats.get("feature_rows")
+        numbers["MovementGroupsVersion"] = feats.get("movement_groups_version")
+        numbers["MovementGroups"] = len(feats.get("movement_groups") or []) or None
+    else:
+        missing.append("31_trajectory_features.json")
+
     validation = read_log("22_lexicon_validation.json")
     partial = bool(validation) and validation.get("annotation_complete") is False
     if partial and not args.allow_partial_gold:

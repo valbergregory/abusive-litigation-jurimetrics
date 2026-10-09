@@ -1,0 +1,41 @@
+group,metric,value
+candidato,cases,70300
+candidato,mean movements,105.7
+candidato,median movements,71.0
+candidato,median days (movements),822.0
+candidato,median days since filing,814.0
+candidato,mean judging bodies,1.55
+candidato,% with Terminated without a decision on the merits (CNJ TPU 218),35.0
+candidato,% with Decided on the merits (CNJ TPU 385),72.3
+candidato,% with Initial petition rejected (TPU 454),3.5
+candidato,% with Order to amend the initial petition,2.7
+candidato,% with Abandonment or negligence of the parties,0.7
+candidato,"% with Withdrawal (of the claim, the request or the appeal)",0.9
+candidato,% with Free legal aid (gratuidade da justiça),2.9
+candidato,% with Court costs,6.7
+candidato,"% with Repetitive-demands machinery (IRDR, repetitive appeals)",0.6
+candidato,% with Stay of proceedings,7.8
+candidato,% with Final and unappealable (trânsito em julgado),39.7
+candidato,"% with Limitation, lapse or perempção",1.0
+candidato,"% with Conciliation, mediation or settlement approval",6.1
+candidato,% with Service of process failed,0.0
+comparacao_nao_sinalizado,cases,70178
+comparacao_nao_sinalizado,mean movements,118.4
+comparacao_nao_sinalizado,median movements,83.0
+comparacao_nao_sinalizado,median days (movements),913.0
+comparacao_nao_sinalizado,median days since filing,907.0
+comparacao_nao_sinalizado,mean judging bodies,1.58
+comparacao_nao_sinalizado,% with Terminated without a decision on the merits (CNJ TPU 218),20.5
+comparacao_nao_sinalizado,% with Decided on the merits (CNJ TPU 385),81.8
+comparacao_nao_sinalizado,% with Initial petition rejected (TPU 454),1.3
+comparacao_nao_sinalizado,% with Order to amend the initial petition,2.0
+comparacao_nao_sinalizado,% with Abandonment or negligence of the parties,0.2
+comparacao_nao_sinalizado,"% with Withdrawal (of the claim, the request or the appeal)",0.9
+comparacao_nao_sinalizado,% with Free legal aid (gratuidade da justiça),2.7
+comparacao_nao_sinalizado,% with Court costs,7.0
+comparacao_nao_sinalizado,"% with Repetitive-demands machinery (IRDR, repetitive appeals)",0.3
+comparacao_nao_sinalizado,% with Stay of proceedings,7.9
+comparacao_nao_sinalizado,% with Final and unappealable (trânsito em julgado),44.4
+comparacao_nao_sinalizado,"% with Limitation, lapse or perempção",1.4
+comparacao_nao_sinalizado,"% with Conciliation, mediation or settlement approval",5.8
+comparacao_nao_sinalizado,% with Service of process failed,0.0

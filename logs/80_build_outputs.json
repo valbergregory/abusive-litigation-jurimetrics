@@ -1,5 +1,5 @@
 {
- "run_at": "2026-09-23T11:49:46",
+ "run_at": "2026-10-09T20:14:19",
  "tables_built": [
   "annotation_strata",
   "bridge_coverage",
@@ -8,11 +8,13 @@
   "dropped_by_exclusion",
   "espelhos_by_year",
   "lexicon_patterns",
-  "pattern_hits"
+  "pattern_hits",
+  "trajectory_comparison",
+  "trajectory_coverage"
  ],
  "logs_missing": [
   "22_lexicon_validation.json"
  ],
- "numbers": 30,
+ "numbers": 39,
  "note": "cells with fewer than 5 documents are suppressed (CLAUDE.md 4)"
 }
