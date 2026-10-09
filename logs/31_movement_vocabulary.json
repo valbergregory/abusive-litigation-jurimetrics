@@ -1,0 +1,293 @@
+{
+ "run_at": "2026-10-09T20:12:08",
+ "counts": {
+  "cases": 213075,
+  "movements": 16754078,
+  "targets": 140478
+ },
+ "k_anonymity_floor": 5,
+ "codes": [
+  {
+   "codigo": 85,
+   "nome": "Petição",
+   "casos_sinalizados": 67110,
+   "casos_nao_sinalizados": 66974,
+   "casos": 134084
+  },
+  {
+   "codigo": 51,
+   "nome": "Conclusão",
+   "casos_sinalizados": 65750,
+   "casos_nao_sinalizados": 65897,
+   "casos": 131647
+  },
+  {
+   "codigo": 26,
+   "nome": "Distribuição",
+   "casos_sinalizados": 64882,
+   "casos_nao_sinalizados": 65526,
+   "casos": 130408
+  },
+  {
+   "codigo": 92,
+   "nome": "Publicação",
+   "casos_sinalizados": 58369,
+   "casos_nao_sinalizados": 58375,
+   "casos": 116744
+  },
+  {
+   "codigo": 11383,
+   "nome": "Ato ordinatório",
+   "casos_sinalizados": 55842,
+   "casos_nao_sinalizados": 56239,
+   "casos": 112081
+  },
+  {
+   "codigo": 132,
+   "nome": "Recebimento",
+   "casos_sinalizados": 54112,
+   "casos_nao_sinalizados": 55908,
+   "casos": 110020
+  },
+  {
+   "codigo": 123,
+   "nome": "Remessa",
+   "casos_sinalizados": 54972,
+   "casos_nao_sinalizados": 54726,
+   "casos": 109698
+  },
+  {
+   "codigo": 60,
+   "nome": "Expedição de documento",
+   "casos_sinalizados": 51123,
+   "casos_nao_sinalizados": 52214,
+   "casos": 103337
+  },
+  {
+   "codigo": 581,
+   "nome": "Documento",
+   "casos_sinalizados": 51179,
+   "casos_nao_sinalizados": 49843,
+   "casos": 101022
+  },
+  {
+   "codigo": 11010,
+   "nome": "Mero expediente",
+   "casos_sinalizados": 38837,
+   "casos_nao_sinalizados": 40172,
+   "casos": 79009
+  },
+  {
+   "codigo": 246,
+   "nome": "Definitivo",
+   "casos_sinalizados": 37546,
+   "casos_nao_sinalizados": 37958,
+   "casos": 75504
+  },
+  {
+   "codigo": 1061,
+   "nome": "Disponibilização no Diário da Justiça Eletrônico",
+   "casos_sinalizados": 37496,
+   "casos_nao_sinalizados": 37562,
+   "casos": 75058
+  },
+  {
+   "codigo": 22,
+   "nome": "Baixa Definitiva",
+   "casos_sinalizados": 30513,
+   "casos_nao_sinalizados": 33156,
+   "casos": 63669
+  },
+  {
+   "codigo": 12164,
+   "nome": "Outras Decisões",
+   "casos_sinalizados": 29332,
+   "casos_nao_sinalizados": 31594,
+   "casos": 60926
+  },
+  {
+   "codigo": 848,
+   "nome": "Trânsito em julgado",
+   "casos_sinalizados": 27891,
+   "casos_nao_sinalizados": 31171,
+   "casos": 59062
+  },
+  {
+   "codigo": 433,
+   "nome": "Recurso Especial",
+   "casos_sinalizados": 26424,
+   "casos_nao_sinalizados": 27545,
+   "casos": 53969
+  },
+  {
+   "codigo": 1051,
+   "nome": "Decurso de Prazo",
+   "casos_sinalizados": 26408,
+   "casos_nao_sinalizados": 25846,
+   "casos": 52254
+  },
+  {
+   "codigo": 239,
+   "nome": "Não-Provimento",
+   "casos_sinalizados": 26185,
+   "casos_nao_sinalizados": 25950,
+   "casos": 52135
+  },
+  {
+   "codigo": 36,
+   "nome": "Redistribuição",
+   "casos_sinalizados": 24725,
+   "casos_nao_sinalizados": 23466,
+   "casos": 48191
+  },
+  {
+   "codigo": 12265,
+   "nome": "Expedida/certificada",
+   "casos_sinalizados": 19174,
+   "casos_nao_sinalizados": 21318,
+   "casos": 40492
+  },
+  {
+   "codigo": 200,
+   "nome": "Não-Acolhimento de Embargos de Declaração",
+   "casos_sinalizados": 21373,
+   "casos_nao_sinalizados": 18489,
+   "casos": 39862
+  },
+  {
+   "codigo": 118,
+   "nome": "Protocolo de Petição",
+   "casos_sinalizados": 18838,
+   "casos_nao_sinalizados": 19248,
+   "casos": 38086
+  },
+  {
+   "codigo": 12313,
+   "nome": "Pedido de inclusão em pauta virtual",
+   "casos_sinalizados": 17993,
+   "casos_nao_sinalizados": 17985,
+   "casos": 35978
+  },
+  {
+   "codigo": 12266,
+   "nome": "Confirmada",
+   "casos_sinalizados": 15857,
+   "casos_nao_sinalizados": 17540,
+   "casos": 33397
+  },
+  {
+   "codigo": 417,
+   "nome": "Inclusão em pauta",
+   "casos_sinalizados": 16394,
+   "casos_nao_sinalizados": 14583,
+   "casos": 30977
+  },
+  {
+   "codigo": 982,
+   "nome": "Remessa",
+   "casos_sinalizados": 13580,
+   "casos_nao_sinalizados": 14670,
+   "casos": 28250
+  },
+  {
+   "codigo": 193,
+   "nome": "Julgamento",
+   "casos_sinalizados": 12833,
+   "casos_nao_sinalizados": 12720,
+   "casos": 25553
+  },
+  {
+   "codigo": 981,
+   "nome": "Recebimento",
+   "casos_sinalizados": 12637,
+   "casos_nao_sinalizados": 12858,
+   "casos": 25495
+  },
+  {
+   "codigo": 12104,
+   "nome": "Inclusão em pauta",
+   "casos_sinalizados": 12574,
+   "casos_nao_sinalizados": 12354,
+   "casos": 24928
+  },
+  {
+   "codigo": 12200,
+   "nome": "Mérito",
+   "casos_sinalizados": 12425,
+   "casos_nao_sinalizados": 12460,
+   "casos": 24885
+  },
+  {
+   "codigo": 12282,
+   "nome": "Expedida/Certificada",
+   "casos_sinalizados": 11951,
+   "casos_nao_sinalizados": 12045,
+   "casos": 23996
+  },
+  {
+   "codigo": 219,
+   "nome": "Procedência",
+   "casos_sinalizados": 9084,
+   "casos_nao_sinalizados": 13451,
+   "casos": 22535
+  },
+  {
+   "codigo": 106,
+   "nome": "Mandado",
+   "casos_sinalizados": 8028,
+   "casos_nao_sinalizados": 11243,
+   "casos": 19271
+  },
+  {
+   "codigo": 12311,
+   "nome": "Pedido de inclusão",
+   "casos_sinalizados": 9533,
+   "casos_nao_sinalizados": 9637,
+   "casos": 19170
+  },
+  {
+   "codigo": 493,
+   "nome": "Entrega em carga/vista",
+   "casos_sinalizados": 7705,
+   "casos_nao_sinalizados": 10497,
+   "casos": 18202
+  },
+  {
+   "codigo": 792,
+   "nome": "Liminar",
+   "casos_sinalizados": 8008,
+   "casos_nao_sinalizados": 8868,
+   "casos": 16876
+  },
+  {
+   "codigo": 220,
+   "nome": "Improcedência",
+   "casos_sinalizados": 6836,
+   "casos_nao_sinalizados": 9553,
+   "casos": 16389
+  },
+  {
+   "codigo": 12115,
+   "nome": "Para julgamento de mérito",
+   "casos_sinalizados": 7599,
+   "casos_nao_sinalizados": 7208,
+   "casos": 14807
+  },
+  {
+   "codigo": 221,
+   "nome": "Procedência em Parte",
+   "casos_sinalizados": 5639,
+   "casos_nao_sinalizados": 8127,
+   "casos": 13766
+  },
+  {
+   "codigo": 14739,
+   "nome": "Evolução da Classe Processual",
+   "casos_sinalizados": 5183,
+   "casos_nao_sinalizados": 7793,
+   "casos": 12976
+  }
+ ],
+ "note": "case counts per movement code; the two groups are 'signalled by the lexicon' and 'not signalled' — never 'abusive' and 'legitimate' (CLAUDE.md §§2-3)",
+ "next": "write config/movement_groups.yaml with the codes that matter, then run step 31 without --vocabulary"
+}
