@@ -64,7 +64,11 @@ from alj.worksheet import progress, read_worksheet, reannotation_gaps  # noqa: E
 
 ANN = ROOT / "data" / "annotations"
 CAND = (ROOT / "data" / "interim" / "candidates" / "docs" / "*.parquet").as_posix()
+META = (ROOT / "data" / "interim" / "stj_integras" / "meta" / "*.parquet").as_posix()
+BRIDGE = (ROOT / "data" / "interim" / "bridge" / "*.parquet").as_posix()
+DJ_CASES = (ROOT / "data" / "interim" / "datajud" / "cases" / "*.parquet").as_posix()
 LOG = ROOT / "logs"
+DESIGN_B_YEARS = ("2024", "2025")  # the window the researcher declared on 2026-09-23 (feasibility §13.2)
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
@@ -205,6 +209,51 @@ def self_test() -> dict:
     }
 
 
+def measure_linkage(confirmed_ids: list[str]) -> dict | None:
+    """For the confirmed cases (S3/S2): do they resolve to a CNJ number, and is the case really in DataJud?
+
+    Two different things, and §7 needs both: the *atas* resolve the number, but the public index is incomplete in
+    some courts, so a resolved number may still have no trajectory. Returns ``None`` when the bridge has not been
+    built yet. The denominator is the publication window of design B (2024–2025), because the distribution date
+    of an unbridged case is precisely what is unknown.
+    """
+    if not list(Path(BRIDGE).parent.glob("*.parquet")) or not confirmed_ids:
+        return None
+    con = duckdb.connect()
+    con.execute("CREATE TABLE gold (key VARCHAR, seq INTEGER)")
+    con.executemany("INSERT INTO gold VALUES (?, ?)",
+                    [(d.rsplit("-", 1)[0], int(d.rsplit("-", 1)[1])) for d in confirmed_ids if "-" in d])
+    has_trajectory = bool(list(Path(DJ_CASES).parent.glob("*.parquet")))
+    trajectory_cte = (f"SELECT DISTINCT numero_processo FROM read_parquet('{DJ_CASES}')"
+                      if has_trajectory else "SELECT NULL::VARCHAR AS numero_processo WHERE false")
+    years = ", ".join(f"'{y}'" for y in DESIGN_B_YEARS)
+    row = con.execute(
+        f"""WITH m AS (SELECT DISTINCT key, seq_documento, numero_registro FROM read_parquet('{META}')),
+                 b AS (SELECT DISTINCT numero_registro, cnj_digits FROM read_parquet('{BRIDGE}') WHERE cnj_valid),
+                 c AS ({trajectory_cte}),
+                 g AS (SELECT gold.key, gold.seq, m.numero_registro, substr(gold.key, 1, 4) AS pub_year
+                       FROM gold LEFT JOIN m ON m.key = gold.key AND m.seq_documento = gold.seq)
+            SELECT count(*) AS confirmed,
+                   count(*) FILTER (WHERE pub_year IN ({years})) AS confirmed_window,
+                   count(b.cnj_digits) FILTER (WHERE pub_year IN ({years})) AS bridged_window,
+                   count(c.numero_processo) FILTER (WHERE pub_year IN ({years})) AS with_trajectory_window
+            FROM g LEFT JOIN b ON b.numero_registro = g.numero_registro
+                   LEFT JOIN c ON c.numero_processo = b.cnj_digits"""
+    ).fetchone()
+    con.close()
+    confirmed, window, bridged, with_traj = row
+    return {
+        "window": list(DESIGN_B_YEARS),
+        "confirmed_documents": confirmed,
+        "confirmed_in_window": window,
+        "bridged_in_window": bridged,
+        "with_trajectory_in_window": with_traj,
+        "bridge_rate": round(bridged / window, 4) if window else None,
+        "trajectory_rate": round(with_traj / bridged, 4) if bridged else None,
+        "trajectory_collected": has_trajectory,
+    }
+
+
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
     LOG.mkdir(exist_ok=True)
@@ -262,6 +311,7 @@ def main(argv: list[str] | None = None) -> int:
     headline = est["s3_s2"]
     precision = (headline["weighted"] or headline["raw"])["precision"]
     complete = est_ok["annotation_complete"]
+    linkage = measure_linkage([a.doc_id for a in annotated if a.usable and a.status in ("S3", "S2")])
     out = {
         "run_at": dt.datetime.now().isoformat(timespec="seconds"),
         "gold": gold.name,
@@ -283,9 +333,12 @@ def main(argv: list[str] | None = None) -> int:
         "per_pattern_precision": per_pattern_precision(annotated),
         "grounds_frequency": grounds_frequency(annotated),
         "kappa": {"n_pairs": kappa_n, "status": kappa, "grounds": kappa_grounds, "timing": gaps},
+        "linkage_of_confirmed_cases": linkage,
         "go_no_go": go_no_go_staged(
             go_no_go(reviewed=sum(a.usable for a in annotated), confirmed=headline["confirmed"],
-                     precision=precision, kappa=kappa),
+                     precision=precision, kappa=kappa,
+                     bridge_rate=(linkage or {}).get("bridge_rate"),
+                     trajectory_rate=(linkage or {}).get("trajectory_rate")),
             complete,
         ),
     }

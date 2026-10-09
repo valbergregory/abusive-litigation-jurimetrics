@@ -1,5 +1,5 @@
 {
- "run_at": "2026-09-22T22:41:34",
+ "run_at": "2026-10-09T19:32:27",
  "mode": "self-test",
  "rows": 7,
  "estimates": {
@@ -62,14 +62,14 @@
    "suppressed_k_lt_5": false
   },
   {
-   "pattern_id": "gratuidade_sem_comprovacao",
+   "pattern_id": "peticoes_padronizadas",
    "annotated": 1,
    "signalled": 0,
    "precision": 0.0,
    "suppressed_k_lt_5": false
   },
   {
-   "pattern_id": "peticoes_padronizadas",
+   "pattern_id": "gratuidade_sem_comprovacao",
    "annotated": 1,
    "signalled": 0,
    "precision": 0.0,
@@ -126,6 +126,13 @@
    "threshold_go": 0.7,
    "verdict": "not measured yet",
    "note": "40-70% -> partial design B; < 40% -> design A"
+  },
+  {
+   "criterion": "trajectory actually found in DataJud for the bridged confirmed cases",
+   "value": null,
+   "threshold_go": 0.7,
+   "verdict": "not measured yet",
+   "note": "added 2026-10-09: the public index is incomplete in some courts, so the number resolving is not enough; 40-70% -> design B on the courts that do answer"
   }
  ]
 }

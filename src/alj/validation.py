@@ -193,8 +193,14 @@ def go_no_go(
     precision: float | None,
     kappa: float | None,
     bridge_rate: float | None = None,
+    trajectory_rate: float | None = None,
 ) -> list[dict]:
-    """The §7 table of the feasibility report, evaluated on real counts. Verdicts: go / reformulate / no-go."""
+    """The §7 table of the feasibility report, evaluated on real counts. Verdicts: go / reformulate / no-go.
+
+    ``trajectory_rate`` extends §7 after the collection of 2026-10-09: having the CNJ number is not the same as
+    having the case in the DataJud public index, and design B needs the second one (the index is incomplete in
+    some courts — 23,6 % of the TJDFT targets came back, against 97–99 % in most others).
+    """
 
     def verdict(value, go, reformulate) -> str:
         if value is None:
@@ -216,6 +222,10 @@ def go_no_go(
         {"criterion": "bridge to DataJud for confirmed cases distributed >= 2023-06-30", "value": bridge_rate,
          "threshold_go": 0.70, "verdict": verdict(bridge_rate, 0.70, 0.40),
          "note": "40-70% -> partial design B; < 40% -> design A"},
+        {"criterion": "trajectory actually found in DataJud for the bridged confirmed cases",
+         "value": trajectory_rate, "threshold_go": 0.70, "verdict": verdict(trajectory_rate, 0.70, 0.40),
+         "note": "added 2026-10-09: the public index is incomplete in some courts, so the number resolving is "
+                 "not enough; 40-70% -> design B on the courts that do answer"},
     ]
 
 

@@ -146,7 +146,7 @@ def test_cohen_kappa_known_values():
 
 def test_go_no_go_verdicts_follow_section_7():
     table = {r["criterion"]: r for r in go_no_go(reviewed=1200, confirmed=310, precision=0.42, kappa=0.8,
-                                                 bridge_rate=0.75)}
+                                                 bridge_rate=0.75, trajectory_rate=0.92)}
     assert all(r["verdict"] == "go" for r in table.values())
     weak = {r["criterion"]: r for r in go_no_go(reviewed=700, confirmed=200, precision=0.2, kappa=0.65)}
     assert weak["candidates reviewed"]["verdict"] == "reformulate"
@@ -154,8 +154,10 @@ def test_go_no_go_verdicts_follow_section_7():
     assert weak["lexical trigger precision"]["verdict"] == "reformulate"
     assert weak["annotation agreement (Cohen kappa)"]["verdict"] == "reformulate"
     bad = {r["criterion"]: r for r in go_no_go(reviewed=100, confirmed=10, precision=0.05, kappa=0.1)}
-    assert all(r["verdict"] == "no-go" for k, r in bad.items() if "bridge" not in k)
+    assert all(r["verdict"] == "no-go" for k, r in bad.items() if "bridge" not in k and "trajectory" not in k)
     assert bad["bridge to DataJud for confirmed cases distributed >= 2023-06-30"]["verdict"] == "not measured yet"
+    assert bad["trajectory actually found in DataJud for the bridged confirmed cases"]["verdict"] == (
+        "not measured yet")
 
 
 def test_worksheet_layout_matches_the_protocol_labels():
