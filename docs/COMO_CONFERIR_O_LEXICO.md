@@ -7,6 +7,18 @@ Tempo: **30 a 45 minutos** para uma conferência honesta. Não precisa olhar os 
 
 ---
 
+> **Se o terminal disser que `uv` não é reconhecido** (conferido em 09/10/2026: o `uv` está em
+> `%APPDATA%\Python\Python313\Scripts`, que não está no PATH desta máquina), use uma destas duas formas — as duas
+> funcionam hoje, e valem para todo comando `uv run python ...` destes guias:
+>
+> ```bash
+> python -m uv run python scripts/26_inspect_pattern.py --all
+> ```
+>
+> ```bash
+> .\.venv\Scripts\python.exe scripts/26_inspect_pattern.py --all
+> ```
+
 ## 1. Ver o retrato geral (2 minutos)
 
 ```bash

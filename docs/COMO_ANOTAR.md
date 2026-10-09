@@ -65,6 +65,11 @@ O protocolo (§6.1) exige ler a decisão, não a janela de contexto. Para abrir 
 uv run python scripts/25_show_document.py 20210208-120488078
 ```
 
+> **Se o terminal disser que `uv` não é reconhecido** (conferido em 09/10/2026: o `uv` está em
+> `%APPDATA%\Python\Python313\Scripts`, fora do PATH desta máquina), troque `uv run python` por
+> `python -m uv run python`, ou chame o interpretador do projeto direto:
+> `.\.venv\Scripts\python.exe scripts/25_show_document.py 20210208-120488078`.
+
 (substitua pelo `doc_id` da linha). Ele imprime o texto completo no terminal e grava
 `data/annotations/_leitura/<doc_id>.txt`, que você pode abrir no Bloco de Notas. Nada sai da máquina.
 

@@ -389,3 +389,119 @@ com 2021–2023 entrando apenas na parte textual (desenho A dentro do B).
 
 Completude da série: 1.000 dias entre 30/06/2023 e 09/09/2026; as doze lacunas maiores que quatro dias coincidem
 com recesso forense (a maior é 30/06 → 01/08/2023) e feriados.
+
+---
+
+## 14. Atualização de 09/10/2026 — fase 2: trajetórias processuais coletadas (desenho B)
+
+O desenho B tem duas metades: a sinalização judicial, que vem do texto (fase 1), e a **trajetória processual**,
+que vem do DataJud. A segunda metade passou a existir hoje: `scripts/30_fetch_datajud_trajectories.py` (novo) e
+`scripts/31_trajectory_features.py` (novo), com `config/movement_groups.yaml` como **segundo instrumento de
+medida versionado**.
+
+### 14.1 O que foi coletado
+
+| | |
+|---|---|
+| processos-alvo | **140.478** (70.300 candidatos + 70.178 de comparação nunca sinalizados) |
+| tribunais consultados | 34 endpoints públicos |
+| processos encontrados | **135.941 (96,8 %)** |
+| documentos de processo (caso × grau) | 213.075 |
+| **movimentos** | **16.754.078** |
+| tempo / erros | 60,8 min / **zero** |
+
+O grupo de comparação é sorteado com semente fixa (`20261009`) nas **mesmas células ano de publicação ×
+tribunal** dos candidatos, e a ordenação é por `hash(numero_processo || semente)`: aumentar a proporção depois
+um processo com qualquer decisão candidata nunca entra nele.
+
+Cobertura por ano, candidatos e comparação (k ≥ 5):
+
+| ano | candidatos | % encontrados | comparação | % encontrados |
+|---|---|---|---|---|
+| 2021 | 376 | 92,0 % | 376 | 94,1 % |
+| 2022 | 727 | 93,0 % | 605 | 94,2 % |
+| 2023 | 7.026 | 96,9 % | 7.026 | 97,1 % |
+| 2024 | 28.877 | **97,2 %** | 28.877 | 97,3 % |
+| 2025 | 27.029 | **96,4 %** | 27.029 | 95,9 % |
+| 2026 | 6.265 | 97,4 % | 6.265 | 97,4 % |
+
+As duas colunas andam juntas — o grupo de comparação não é mais fácil de encontrar que o de candidatos, o que
+seria um viés de seleção silencioso.
+
+### 14.2 Um tribunal fora da curva: o TJDFT
+
+Trinta e três dos trinta e quatro tribunais devolveram **90,1 % a 99,9 %** dos processos pedidos. O TJDFT
+devolveu **23,6 %** (769 de 3.254). Conferi por amostragem: consultas por prefixo do número sequencial mostram
+que o índice público do TJDFT **tem** processos vizinhos, mas **não tem** os números que a ponte aponta — não é
+erro de formatação nosso, é cobertura incompleta da fonte.
+
+Consequência: qualquer análise de trajetória deve declarar a cobertura por tribunal, e o TJDFT fica
+sub-representado. Por isso a §7 ganhou um critério novo (§14.5).
+
+### 14.3 Três medições que mudaram decisões técnicas
+
+1. **O custo da API é por consulta, não por processo.** Medido em uma conexão ao `api_publica_tjsp`: 50 números
+   por requisição → 42 s e 1,2 processos/s; 200 → 22 s e 9,1; 500 → 13 s e 38,9; 1.000 → 24 s e 42,1. O lote
+   passou a 500 (≈ 10 MB por resposta) e a coleta inteira coube em uma hora. Reduzir o `_source` aos campos-folha
+   que gravamos corta 28 % do tráfego e **não** muda o tempo, então pedimos a lista inteira e guardamos o bruto.
+2. **A TPU do CNJ não tem movimento para litigância de má-fé.** Varrendo os 964 movimentos da tabela por
+   *litigância*, *má-fé*, *abuso*, *ato atentatório*, *temerári…*, *protelatóri…* e *multa*, sobram **dois**, ambos
+   eleitorais (mesário faltoso). **A sanção por litigância abusiva não deixa rastro na trajetória** — só no texto
+   da decisão. É a justificativa empírica de o léxico textual continuar sendo o instrumento primário, e um limite
+   da fonte que o artigo deve declarar.
+3. **O mesmo processo aparece no DataJud como vários documentos do mesmo grau.** 6.500 processos (4,6 % dos
+   coletados) têm dois ou mais documentos no mesmo grau, com listas de movimentos sobrepostas — um processo do
+   TJAL tem três, de 29, 40 e 86 movimentos, começando no mesmo instante. Contar linhas inflaria o volume em
+   **6,4 %**. O passo 31 identifica movimento por `código + data/hora + órgão` antes de contar, com teste fixando
+   o comportamento.
+
+### 14.4 O retrato descritivo (não é rótulo, não é efeito)
+
+`config/movement_groups.yaml` v0.1.0 define 14 grupos de movimentos a partir da TPU — os dois ramos de desfecho
+são o pai expandido nos filhos (218 "Sem Resolução de Mérito", 78 códigos; 385 "Com Resolução do Mérito", 193).
+Com eles, o passo 31 produz uma linha por processo (140.478) e o seguinte retrato:
+
+| medida | sinalizados | não sinalizados |
+|---|---|---|
+| processos | 70.300 | 70.178 |
+| mediana de movimentos | **71** | **83** |
+| mediana de dias entre o primeiro e o último movimento | **822** | **913** |
+| **% com extinção sem resolução de mérito** | **35,0 %** | **20,5 %** |
+| % com resolução de mérito | 72,3 % | 81,8 % |
+| % com indeferimento da inicial | **3,5 %** | **1,3 %** |
+| % com abandono/negligência | **0,7 %** | **0,2 %** |
+| % com emenda à inicial | 2,7 % | 2,0 % |
+| % com trânsito em julgado | 39,7 % | 44,4 % |
+| % com maquinaria de repetitividade | 0,6 % | 0,3 % |
+
+Dentro dos candidatos, os 2.197 processos cujo texto traz o **termo estrito** têm mediana de 85 movimentos e 940
+dias, contra 70 e 816 dos demais.
+
+**O que isso é e o que não é.** É uma medição de covariáveis em dois grupos definidos pelo instrumento textual —
+efeito** e **não é pareado**: os grupos também diferem em tribunal, classe, assunto e ano, e a direção das duas
+primeiras linhas (sinalizados são mais curtos e com menos movimentos) é exatamente o que se esperaria de
+processos extintos cedo sem mérito — o que a terceira linha mostra. O pareamento vem depois do padrão-ouro, e é
+dele que sai qualquer afirmação causal ou preditiva.
+
+### 14.5 A §7 ganhou um critério
+
+Ter o número CNJ não é ter o processo: a §7 media só a ponte. Depois do TJDFT, `go_no_go()` passou a avaliar
+**duas** coisas, e o passo 22 as mede sobre os casos **confirmados** pelo pesquisador (S3/S2), não sobre os
+candidatos:
+
+| critério | limiar "go" | como é medido |
+|---|---|---|
+| ponte para o DataJud nos confirmados (2024–2025) | ≥ 70 % | confirmados com número CNJ válido ÷ confirmados publicados na janela |
+| **trajetória efetivamente encontrada** (novo) | ≥ 70 % | confirmados com processo no DataJud ÷ confirmados com número CNJ |
+
+O denominador é a janela de publicação 2024–2025 porque a data de distribuição de um caso **sem** ponte é
+justamente o que não se conhece — a alternativa seria um denominador imaginário.
+
+### 14.6 O que isso libera e o que continua travado
+
+Liberado: as covariáveis de trajetória existem para 96,8 % dos processos-alvo, com grupo de comparação sorteado e
+auditável; `datajud_features` está na base; a figura `fig_trajectory_groups` e a tabela `trajectory_comparison`
+
+Travado, como antes: **não existe rótulo**. Precisão, revocação, F1, κ e a tabela §7 continuam esperando o
+padrão-ouro do pesquisador (`docs/COMO_ANOTAR.md`), e a conferência do léxico (`docs/COMO_CONFERIR_O_LEXICO.md`)
+continua sendo o passo barato que vale fazer **antes** da anotação.

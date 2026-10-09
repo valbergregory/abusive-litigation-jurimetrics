@@ -21,6 +21,18 @@ logs/*_run*.err
 .doit.db
 .doit.db.*
 
+# LaTeX build artefacts of the skeleton (the manuscript is written in Overleaf)
+article/*.aux
+article/*.bbl
+article/*.blg
+article/*.log
+article/*.out
+article/*.pdf
+article/*.synctex.gz
+article/*.fls
+article/*.fdb_latexmk
+article/*.toc
+
 # --- Texto do artigo (local; nao versionado). Publicar apenas o PDF final em artigo/ ---
 overleaf/
 article/

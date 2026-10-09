@@ -14,6 +14,12 @@ python -m uv run pytest -q               # unit tests (no network, no data)
 
 Writes: `.venv/` (git-ignored), `uv.lock` (committed). ~2 min. Optional extras: `uv sync --extra nlp` (PyTorch + sentence-transformers, ~3 GB), `--extra stats`, `--extra graph`, `--extra dev`.
 
+> **On the reference machine (checked 2026-10-09) `uv` is installed but not on PATH** (`pip install --user`
+> puts it in `%APPDATA%\Python\Python313\Scripts`). Every `uv run python …` command below therefore also works as
+> `python -m uv run python …`, or directly as `.\.venv\Scripts\python.exe …` — the virtual environment is intact
+> and carries the dev extra (226 tests pass with it). `uv sync` **without** `--extra dev` removes pytest and ruff:
+> always `uv sync --extra dev` when refreshing the environment.
+
 ## Phase 0 — feasibility (done 2026-09-05)
 
 | # | Command | Reads | Writes | Time |
@@ -43,7 +49,24 @@ Result: `docs/feasibility_report.md`.
 | 28 | `uv run python scripts/28_plan_batches.py [--per-day 25] [--start AAAA-MM-DD] [--all-days] [--ordered-worksheet] [--force]` (**written 2026-10-02**) | the worksheet + the seed of step 21 | `data/annotations/plano_lotes.csv` (batch, date, order, stratum, doc_id; strata in the COMO_ANOTAR order, fixed pseudo-random order inside each stratum so any prefix is a random subsample), optional `gold_v1_sample_ordenado.csv`, `logs/28_plan_batches.json`; never overwrites without `--force` | seconds |
 | 23 | `uv run python scripts/23_lexicon_espelhos.py [--orgaos …]` (**written 2026-09-22**) | `data/interim/espelhos/espelhos/*.parquet` (ementa + decisão + notas) and the same lexicon | `data/interim/candidates_espelhos/{docs,hits}/*.parquet`, views `espelho_candidates`, `espelho_candidate_hits`, `logs/23_lexicon_espelhos.json` | ~2 min; needs step 11 |
 | 24 | `uv run python scripts/24_crosscheck_integras_espelhos.py` (**written and run 2026-09-23**) | `candidates`, `espelho_candidates`, metadata | agreement between the two public sources on the same `numeroRegistro` → `logs/24_crosscheck_integras_espelhos.json` (**when the íntegra names the phenomenon the espelho names it in 29,4 % of the shared cases**) | ~2 min |
-| 30 | `30_fetch_datajud_trajectories.py` (not written) | bridge + DataJud (STJ + origin) | `trajectories.parquet`, table `movements` | hours, background |
+### Phase 2 — procedural trajectory (design B, written and run 2026-10-09)
+
+Measured in the first full run: **140.478 target cases** (70.300 candidates + 70.178 unsignalled comparison),
+34 courts, **135.941 found (96,8 %)**, 213.075 case documents, **16.754.078 movements**, 60,8 min, zero errors;
+step 31 then wrote 140.478 feature rows in 0,3 min. Details and caveats in `docs/feasibility_report.md` §14.
+
+| # | Command | Reads | Writes | Time |
+|---|---|---|---|---|
+| 30 | `uv run python scripts/30_fetch_datajud_trajectories.py [--years 2024,2025] [--comparison-ratio 1.0] [--batch 500] [--workers 4] [--only ALIAS] [--limit N] [--force]` | `data/interim/bridge/*.parquet` + the candidate set, then the DataJud public API (key read from the wiki at run time, 34 court endpoints) | `data/interim/datajud/{targets,cases,movimentos}/*.parquet` (views `datajud_targets`, `datajud_cases`, `datajud_movimentos`), `data/raw/datajud/trajectories/<alias>.jsonl.gz` + SHA-256 in `logs/raw_hashes.tsv`, `logs/30_fetch_datajud_trajectories.json` | ~1.000 cases/min; resumable per court against the recorded request (`<alias>.request.json`) |
+| 31 | `uv run python scripts/31_trajectory_features.py [--vocabulary --top 60]` | the three `datajud_*` views + `config/movement_groups.yaml` | `data/interim/datajud/features/features.parquet` (view `datajud_features`), `logs/31_trajectory_features.json`, `logs/31_movement_vocabulary.json` | ~1–3 min |
+
+**Measured on 2026-10-09 (one connection, `api_publica_tjsp`): the API cost is per *query*, not per case** — 50
+numbers per request give 1,2 cases/s, 500 give 38,9 and 1.000 give 42,1. Hence `--batch 500` by default; a batch
+whose result would overflow `--size` is split, never paginated. Trimming the `_source` to the stored leaf fields
+cuts the payload 28 % and saves no time, so the whole allow-list is requested and kept in the raw shard.
+
+Order: run 30 once, then `31 --vocabulary` (it lists the movement codes this corpus actually uses, with case
+counts per group, k ≥ 5), write/extend `config/movement_groups.yaml` from that evidence, then run 31.
 
 ### Running the whole thing
 

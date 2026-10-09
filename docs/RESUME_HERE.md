@@ -9,13 +9,19 @@
 > 5. Conferência do léxico: passo a passo em `docs/COMO_CONFERIR_O_LEXICO.md`.
 > 6. **Push feito** em 23/09 (6 commits, `b5afe2b..d8bab88`).
 
-Atualizado em 02/10/2026 (sessão "dê continuidade no que puder sem minha intervenção").
-Leia este arquivo primeiro; o detalhe técnico está em `docs/feasibility_report.md` §11 e em `docs/RUNBOOK.md`.
+Atualizado em **09/10/2026** (fase 2: trajetórias processuais coletadas). Leia este arquivo primeiro; o
+detalhe técnico está em `docs/feasibility_report.md` — §13 (ponte), **§14 (trajetórias)** — e em
+`docs/RUNBOOK.md`.
+
+> **Se o terminal disser que `uv` não é reconhecido** (conferido em 09/10/2026: o `uv` está em
+> `%APPDATA%\Python\Python313\Scripts`, fora do PATH desta máquina), troque `uv run python` por
+> `python -m uv run python`, ou chame `.\.venv\Scripts\python.exe` direto. O ambiente está íntegro:
+> 272 testes passam, ruff limpo.
 
 ## Em uma frase
 
-Desenho B decidido, atas ingeridas e protocolo v0.1 confirmado (D-1, D-2 e D-3 resolvidas em 23/09): **só falta a
-sua anotação** — 1.443 documentos de `gold_v1_sample.csv` e, ≥ 2 semanas depois, os 144 da rodada cega. Tudo o que
+Desenho B decidido, atas ingeridas, protocolo v0.1 confirmado e, desde 09/10, **as trajetórias processuais do
+DataJud coletadas** (135.941 processos, 16,75 M movimentos): **só falta a sua anotação** — 1.443 documentos de `gold_v1_sample.csv` e, ≥ 2 semanas depois, os 144 da rodada cega. Tudo o que
 
 ## Próximos passos (02/10) — ferramentas novas para anotar mais rápido
 
@@ -128,7 +134,39 @@ trocar o instrumento é agora, antes da anotação.
 Os padrões campeões de volume são de linguagem processual comum (`extincao_sem_merito` 63 k documentos,
 `representacao_irregular` 33 k). Isso é intencional (o Anexo A descreve condutas, não termos de arte), mas se você
 quiser que a camada de conduta seja mais restritiva, é melhor ajustar `config/lexicon_v2.yaml` **antes** de anotar —
-uma nova varredura completa custa 49 min e repovoa o estrato `control_flagged`, hoje vazio.
+uma nova varredura completa custa 49 min e refaz o estrato `control_flagged` (hoje com 100 sorteados de
+6.250 disponíveis).
+
+## O que eu fiz em 09/10 (fase 2 — as trajetórias, sem depender de você)
+
+- **Passo 30 (novo)** — trajetórias do DataJud: **140.478 processos-alvo** (70.300 candidatos + 70.178 de
+  comparação **nunca sinalizados**, sorteados com semente fixa nas mesmas células ano × tribunal), 34 tribunais,
+  **135.941 encontrados (96,8 %)**, 213.075 documentos, **16.754.078 movimentos**, 60,8 min, **zero erros**.
+- **Passo 31 (novo)** — uma linha por processo com as covariáveis de trajetória, a partir de
+  `config/movement_groups.yaml` v0.1.0 (**segundo instrumento versionado**: 14 grupos de movimentos da TPU do
+  CNJ). Todas as verificações de integridade em zero.
+- **Três medições que mudaram decisões** (§14.3 do relatório): o custo da API é **por consulta** (lote de 500 é
+  35× mais rápido que lote de 50); a TPU **não tem movimento** para litigância de má-fé — a sanção só existe no
+  texto da decisão; e o mesmo processo aparece como vários documentos do mesmo grau (6.500 casos), o que inflaria
+  o volume em 6,4 % se os movimentos não fossem deduplicados por `código + data/hora + órgão`.
+- **TJDFT devolveu só 23,6 %** dos processos pedidos (os outros 33 tribunais, 90,1 %–99,9 %). Conferi: os números
+  não estão no índice público. Por isso a §7 ganhou um critério novo — "trajetória efetivamente encontrada" —, e
+  o passo 22 passou a medir **ponte e trajetória sobre os seus casos confirmados** (S3/S2), não sobre candidatos.
+  `fig_trajectory_groups`, 39 macros em `numbers.tex`.
+
+### O retrato descritivo (covariáveis, **não** rótulo e **não** efeito)
+
+| medida | sinalizados | não sinalizados |
+|---|---|---|
+| processos | 70.300 | 70.178 |
+| mediana de movimentos | 71 | 83 |
+| mediana de dias (1º → último movimento) | 822 | 913 |
+| % com extinção **sem** resolução de mérito | **35,0 %** | **20,5 %** |
+| % com indeferimento da inicial | 3,5 % | 1,3 % |
+| % com abandono/negligência | 0,7 % | 0,2 % |
+
+Os grupos também diferem em tribunal, classe e ano: isso é descrição, não comparação pareada. O pareamento vem
+depois do seu padrão-ouro, e é dele que sai qualquer afirmação.
 
 ## O que eu fiz em 02/10 (sem depender de você)
 
@@ -163,8 +201,12 @@ uma nova varredura completa custa 49 min e repovoa o estrato `control_flagged`, 
 
 ## Pendências técnicas minhas (não dependem de você)
 
-1. `control_flagged` vazio até a próxima varredura completa (o passo 20 agora grava os quase-acertos).
-2. Passo 30 (`30_fetch_datajud_trajectories.py`) não escrito — só faz sentido depois de D-1.
+1. ~~`control_flagged` vazio~~ **RESOLVIDO em 23/09**: o passo 20 grava os quase-acertos e o estrato tem 100
+   documentos sorteados de 6.250 disponíveis.
+2. ~~Passo 30 não escrito~~ **RESOLVIDO em 09/10**: passos 30 e 31 escritos e rodados (§14 do relatório).
+   O que sobra da fase 2 é modelagem, e modelagem só depois do padrão-ouro, por regra.
 3. ~~Espelhos: ZIPs iniciais~~ **RESOLVIDO em 23/09** — não eram duplicata: traziam o acervo histórico desde
    1989. Corpus de espelhos foi de 165.850 para **877.353** registros (§12.1 do relatório).
 4. ~~Commit local de 22/09 sem push~~ **RESOLVIDO em 23/09** (push autorizado).
+5. Confirmar edição/editora/ISBN dos livros brasileiros do mapa de literatura — espera sua aprovação da
+   lista (`docs/literature_map.md` §6).

@@ -62,6 +62,33 @@ Temas: `sequencialPrecedente`, `tipoPrecedente`, `numeroPrecedente`, `dataPrimei
 
 Not present: parties, lawyers, documents, judge names beyond órgão.
 
+**What step 30 stores (confirmed 2026-10-09, `src/alj/datajud.py`).** The request asks for the allow-list above
+only, so nothing else reaches disk; `@timestamp` is known Elasticsearch bookkeeping and is deliberately dropped.
+
+| Parquet | Grain | Columns |
+|---|---|---|
+| `datajud_targets` | case × court | `numero_processo`, `alias`, `grupo` (`candidato` / `comparacao_nao_sinalizado`), `pub_year`, `strict_hit`, `n_documentos` (STJ decisions behind the row) |
+| `datajud_cases` | case × grau | `alias`, `numero_processo`, `tribunal`, `grau`, `es_id`, `data_ajuizamento`, `nivel_sigilo`, `classe_{codigo,nome}`, `orgao_{codigo,nome}`, `municipio_ibge`, `sistema_nome`, `formato_nome`, `assuntos_{codigos,nomes}`, `n_movimentos`, `primeiro_movimento`, `ultimo_movimento`, `atualizado_em` |
+| `datajud_movimentos` | movement | `alias`, `numero_processo`, `grau`, `es_id`, `ordem` (chronological, assigned here), `codigo`, `nome`, `data_hora`, `orgao_codigo`, `complementos` (`codigo:valor`, `;`-joined) |
+| `datajud_features` | case × court | the step-31 covariates: durations from the movements, counts per movement group of `config/movement_groups.yaml`, `nao_encontrado_no_datajud` |
+
+A case's time window is `primeiro_movimento` → `ultimo_movimento`; `dias_desde_ajuizamento` is only computed when
+the client-side parse of `dataAjuizamento` is plausible (≥ 1990 and not after the last movement), because the
+server returns years such as 2571 for large result sets (§1.2 of the feasibility report).
+
+The movement codes are the CNJ **TPU** codes already mirrored in `data/raw/cnj/sgt/movimentos.csv` (964 rows,
+**UTF-8** — not cp1252, checked byte by byte on 2026-10-09 — `;`-separated; `cod_pai`/`cod_filhos` carry the
+hierarchy). Two parents organise most of the outcome vocabulary: **218 "Sem Resolução de Mérito"**
+(77 children, among them 454 indeferimento da petição inicial, 456 extinção, 458 abandono, 463 desistência) and
+**385 "Com Resolução do Mérito"** (192 children, among them 219/220/221 procedência/improcedência and 471
+prescrição). `config/movement_groups.yaml` stores the expanded code lists so the instrument does not depend on a
+git-ignored file at run time.
+
 ## CNJ — SGT tables (`data/raw/cnj/sgt/*.csv`, `;`-separated)
 
-`assuntos.csv` (5,601 rows), `classes.csv` (849), `movimentos.csv` (964): `situacao`, `dat_alteracao`, `codigo`, `descricao`, (`sigla`, `natureza` for classes), `cod_pai`, `cod_filhos`, `cod_filhos_ativos`, `nivel`.
+`assuntos.csv` (5,601 rows), `classes.csv` (849), `movimentos.csv` (964): `situacao`, `dat_alteracao`, `codigo`, `descricao`, (`sigla`, `natureza` for classes), `cod_pai`, `cod_filhos`, `cod_filhos_ativos`, `nivel`. **UTF-8**, `;`-separated.
+
+Searching the whole movement table for *litigância de má-fé*, *abuso processual*, *ato atentatório*, *temerári…*,
+*protelatóri…* and *multa* returns **two** movements, both electoral and about an absent polling officer. The
+procedural-abuse sanction therefore has **no movement code**: it exists in the decision text and in the judgment
+metadata, never in the trajectory. Recorded here because it bounds what design B can measure.

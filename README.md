@@ -2,11 +2,14 @@
 
 *An Explainable and Human-Centered Jurimetric Framework* — research repository (Python + SQL).
 
-**Status (2026-09-22):** phase 0 (feasibility) closed on 2026-09-05; phase 1 corpus work runs end to end —
-the íntegras (3.48 M documents), the espelhos de acórdãos (165.8 k, with their citations and legislative
-references), the `numeroRegistro` ↔ CNJ bridge from the acervo snapshot, the versioned lexicon v2 and the
-stratified annotation worksheet. **No label, no model and no result exists yet**: the gold set is annotated by
-the researcher (`docs/annotation_protocol.md`), and the study design (A / B / B+C) is still his decision.
+**Status (2026-10-09):** phase 0 (feasibility) closed on 2026-09-05; phase 1 runs end to end — the íntegras
+(3.48 M documents), the espelhos de acórdãos (877.4 k, back to 1989, with their citations and legislative
+references), the `numeroRegistro` ↔ CNJ bridge (2.54 M pairs after the *atas de distribuição*), the versioned
+lexicon v2.2 and the stratified annotation worksheet. The researcher chose **design B** on 2026-09-23, and
+phase 2 collected the procedural trajectories from the DataJud public API for the bridged candidate cases and
+for a seeded comparison group of cases the lexicon never signalled. **No label, no model and no result exists
+yet**: the gold set is annotated by the researcher (`docs/annotation_protocol.md`), and precision, recall and the
+go/no-go table wait for it.
 Read [docs/feasibility_report.md](docs/feasibility_report.md) (Portuguese, the decision document) and
 [docs/RESUME_HERE.md](docs/RESUME_HERE.md) before anything else.
 
@@ -27,10 +30,12 @@ A jurimetric study of Brazilian judicial decisions that *explicitly* recognise i
 ## Layout
 
 ```
-scripts/        numbered, reproducible steps (00–02 feasibility probes; 10–23 phase 1; 80/90 study export)
+scripts/        numbered, reproducible steps (00–02 feasibility probes; 10–26 phase 1; 30–31 phase 2 trajectories;
+                80/81/90/91 study export and reference verification)
 dodo.py         doit DAG wiring the steps (`uv run doit list`)
-src/alj/        shared modules: cnj, stj_integras, espelhos, bridge, lexicon, annotation, validation, db, manifest
-config/         versioned measurement instruments — `lexicon_v2.yaml` (47 patterns in five tiers)
+src/alj/        shared modules: cnj, stj_integras, espelhos, bridge, lexicon, annotation, validation, datajud,
+config/         versioned measurement instruments — `lexicon_v2.yaml` (53 patterns in five tiers) and
+                `movement_groups.yaml` (CNJ TPU movement groups used as trajectory covariates)
 data/raw/       downloads (git-ignored; SHA-256 in logs/raw_hashes.tsv)
 data/interim/   parquet / duckdb intermediates (git-ignored)
 logs/           JSON logs of every probe and pipeline step (never containing personal data)
