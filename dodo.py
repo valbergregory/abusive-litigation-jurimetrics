@@ -61,6 +61,16 @@ def task_bridge():
     }
 
 
+def task_trajectories():
+    """30 - DataJud trajectories for the bridged cases (NETWORK: ask for this task by name)."""
+    return {
+        "actions": [_script("30_fetch_datajud_trajectories.py")],
+        "targets": [LOG / "30_fetch_datajud_trajectories.json"],
+        "task_dep": ["bridge", "candidates"],
+        "uptodate": [False],  # resumable per court against the recorded request
+    }
+
+
 def task_candidates():
     """20 - apply config/lexicon_v2.yaml to the corpus and write the candidate set."""
     return {

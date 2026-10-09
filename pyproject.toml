@@ -16,7 +16,7 @@ dependencies = [
   "networkx>=3.4",
   "doit>=0.36",
   "pandas>=2.2",
-  "pyyaml>=6.0",       # config/lexicon_v2.yaml is the versioned measurement instrument
+  "pyyaml>=6.0",       # config/lexicon_v2.yaml and config/movement_groups.yaml (versioned instruments)
   "matplotlib>=3.9",   # scripts/81_build_figures.py (PDF for LaTeX + PNG)
   "openpyxl>=3.1",     # the annotation checker reads the gold_v1.xlsx the researcher works in (scripts/27)
 ]

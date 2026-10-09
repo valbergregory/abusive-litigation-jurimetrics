@@ -25,6 +25,10 @@ VIEW_SOURCES: dict[str, str] = {
     "espelhos": "data/interim/espelhos/espelhos/*.parquet",
     "espelho_citations": "data/interim/espelhos/citations/*.parquet",
     "espelho_legislation": "data/interim/espelhos/legislation/*.parquet",
+    "datajud_targets": "data/interim/datajud/targets/*.parquet",
+    "datajud_cases": "data/interim/datajud/cases/*.parquet",
+    "datajud_movimentos": "data/interim/datajud/movimentos/*.parquet",
+    "datajud_features": "data/interim/datajud/features/*.parquet",
 }
 
 

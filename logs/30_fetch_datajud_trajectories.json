@@ -1,0 +1,467 @@
+{
+ "run_at": "2026-10-09T20:11:38",
+ "design": "B — judicial signalling + procedural trajectory (researcher's decision of 2026-09-23)",
+ "years": "all bridged years",
+ "comparison_ratio": 1.0,
+ "seed": "20261009",
+ "target_cases": 140478,
+ "targets_by_group": {
+  "comparacao_nao_sinalizado": 70178,
+  "candidato": 70300
+ },
+ "aliases": 34,
+ "requested": 140478,
+ "found_cases": 135941,
+ "documents": 213075,
+ "movements": 16754078,
+ "per_alias": [
+  {
+   "alias": "api_publica_stj",
+   "requested": 32940,
+   "found_cases": 32907,
+   "documents": 32907,
+   "movements": 999081,
+   "coverage_pct": 99.9,
+   "seconds": 573.3,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjac",
+   "requested": 182,
+   "found_cases": 168,
+   "documents": 284,
+   "movements": 28356,
+   "coverage_pct": 92.3,
+   "seconds": 12.7,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjal",
+   "requested": 1788,
+   "found_cases": 1754,
+   "documents": 5956,
+   "movements": 474067,
+   "coverage_pct": 98.1,
+   "seconds": 56.1,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjam",
+   "requested": 552,
+   "found_cases": 538,
+   "documents": 906,
+   "movements": 127431,
+   "coverage_pct": 97.5,
+   "seconds": 36.4,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjap",
+   "requested": 208,
+   "found_cases": 202,
+   "documents": 359,
+   "movements": 59625,
+   "coverage_pct": 97.1,
+   "seconds": 22.2,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjba",
+   "requested": 2438,
+   "found_cases": 2411,
+   "documents": 4591,
+   "movements": 499712,
+   "coverage_pct": 98.9,
+   "seconds": 79.1,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjce",
+   "requested": 1614,
+   "found_cases": 1591,
+   "documents": 2866,
+   "movements": 333597,
+   "coverage_pct": 98.6,
+   "seconds": 48.5,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjdft",
+   "requested": 3254,
+   "found_cases": 769,
+   "documents": 822,
+   "movements": 136254,
+   "coverage_pct": 23.6,
+   "seconds": 66.0,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjes",
+   "requested": 884,
+   "found_cases": 879,
+   "documents": 1450,
+   "movements": 133823,
+   "coverage_pct": 99.4,
+   "seconds": 26.2,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjgo",
+   "requested": 3824,
+   "found_cases": 3775,
+   "documents": 6312,
+   "movements": 612562,
+   "coverage_pct": 98.7,
+   "seconds": 55.4,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjma",
+   "requested": 1686,
+   "found_cases": 1685,
+   "documents": 2906,
+   "movements": 258455,
+   "coverage_pct": 99.9,
+   "seconds": 27.1,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjmg",
+   "requested": 6564,
+   "found_cases": 6499,
+   "documents": 14075,
+   "movements": 1204749,
+   "coverage_pct": 99.0,
+   "seconds": 146.9,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjms",
+   "requested": 3154,
+   "found_cases": 3141,
+   "documents": 5223,
+   "movements": 643783,
+   "coverage_pct": 99.6,
+   "seconds": 72.0,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjmt",
+   "requested": 2796,
+   "found_cases": 2745,
+   "documents": 4482,
+   "movements": 623055,
+   "coverage_pct": 98.2,
+   "seconds": 102.3,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjpa",
+   "requested": 1050,
+   "found_cases": 1030,
+   "documents": 1780,
+   "movements": 158660,
+   "coverage_pct": 98.1,
+   "seconds": 41.0,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjpb",
+   "requested": 1828,
+   "found_cases": 1794,
+   "documents": 3249,
+   "movements": 236319,
+   "coverage_pct": 98.1,
+   "seconds": 37.0,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjpe",
+   "requested": 1346,
+   "found_cases": 1337,
+   "documents": 2321,
+   "movements": 230454,
+   "coverage_pct": 99.3,
+   "seconds": 42.1,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjpi",
+   "requested": 680,
+   "found_cases": 656,
+   "documents": 1067,
+   "movements": 109099,
+   "coverage_pct": 96.5,
+   "seconds": 37.6,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjpr",
+   "requested": 5542,
+   "found_cases": 5487,
+   "documents": 9007,
+   "movements": 1011514,
+   "coverage_pct": 99.0,
+   "seconds": 152.5,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjrj",
+   "requested": 5488,
+   "found_cases": 5442,
+   "documents": 9201,
+   "movements": 921588,
+   "coverage_pct": 99.2,
+   "seconds": 114.4,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjrn",
+   "requested": 1120,
+   "found_cases": 1116,
+   "documents": 1919,
+   "movements": 190801,
+   "coverage_pct": 99.6,
+   "seconds": 50.8,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjro",
+   "requested": 584,
+   "found_cases": 578,
+   "documents": 986,
+   "movements": 135459,
+   "coverage_pct": 99.0,
+   "seconds": 57.2,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjrr",
+   "requested": 280,
+   "found_cases": 270,
+   "documents": 474,
+   "movements": 66479,
+   "coverage_pct": 96.4,
+   "seconds": 28.2,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjrs",
+   "requested": 4494,
+   "found_cases": 4047,
+   "documents": 7129,
+   "movements": 606609,
+   "coverage_pct": 90.1,
+   "seconds": 78.2,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjsc",
+   "requested": 4540,
+   "found_cases": 4329,
+   "documents": 7919,
+   "movements": 920149,
+   "coverage_pct": 95.4,
+   "seconds": 137.1,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjse",
+   "requested": 1000,
+   "found_cases": 971,
+   "documents": 1612,
+   "movements": 125705,
+   "coverage_pct": 97.1,
+   "seconds": 61.0,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjsp",
+   "requested": 33264,
+   "found_cases": 32680,
+   "documents": 54524,
+   "movements": 3980038,
+   "coverage_pct": 98.2,
+   "seconds": 719.8,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_tjto",
+   "requested": 864,
+   "found_cases": 833,
+   "documents": 1477,
+   "movements": 149018,
+   "coverage_pct": 96.4,
+   "seconds": 44.8,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_trf1",
+   "requested": 2312,
+   "found_cases": 2278,
+   "documents": 3604,
+   "movements": 317870,
+   "coverage_pct": 98.5,
+   "seconds": 78.2,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_trf2",
+   "requested": 2688,
+   "found_cases": 2652,
+   "documents": 4624,
+   "movements": 69853,
+   "coverage_pct": 98.7,
+   "seconds": 99.7,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_trf3",
+   "requested": 4936,
+   "found_cases": 4909,
+   "documents": 8030,
+   "movements": 414232,
+   "coverage_pct": 99.5,
+   "seconds": 303.6,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_trf4",
+   "requested": 3628,
+   "found_cases": 3562,
+   "documents": 6008,
+   "movements": 540655,
+   "coverage_pct": 98.2,
+   "seconds": 129.6,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_trf5",
+   "requested": 2900,
+   "found_cases": 2860,
+   "documents": 4947,
+   "movements": 431307,
+   "coverage_pct": 98.6,
+   "seconds": 74.1,
+   "skipped": false
+  },
+  {
+   "alias": "api_publica_trf6",
+   "requested": 50,
+   "found_cases": 46,
+   "documents": 58,
+   "movements": 3719,
+   "coverage_pct": 92.0,
+   "seconds": 36.2,
+   "skipped": false
+  }
+ ],
+ "coverage_by_year_and_group_k_ge_5": [
+  {
+   "pub_year": "2021",
+   "grupo": "candidato",
+   "targets": 376,
+   "found": 346,
+   "pct": 92.0
+  },
+  {
+   "pub_year": "2021",
+   "grupo": "comparacao_nao_sinalizado",
+   "targets": 376,
+   "found": 354,
+   "pct": 94.1
+  },
+  {
+   "pub_year": "2022",
+   "grupo": "candidato",
+   "targets": 727,
+   "found": 676,
+   "pct": 93.0
+  },
+  {
+   "pub_year": "2022",
+   "grupo": "comparacao_nao_sinalizado",
+   "targets": 605,
+   "found": 570,
+   "pct": 94.2
+  },
+  {
+   "pub_year": "2023",
+   "grupo": "candidato",
+   "targets": 7026,
+   "found": 6811,
+   "pct": 96.9
+  },
+  {
+   "pub_year": "2023",
+   "grupo": "comparacao_nao_sinalizado",
+   "targets": 7026,
+   "found": 6821,
+   "pct": 97.1
+  },
+  {
+   "pub_year": "2024",
+   "grupo": "candidato",
+   "targets": 28877,
+   "found": 28079,
+   "pct": 97.2
+  },
+  {
+   "pub_year": "2024",
+   "grupo": "comparacao_nao_sinalizado",
+   "targets": 28877,
+   "found": 28105,
+   "pct": 97.3
+  },
+  {
+   "pub_year": "2025",
+   "grupo": "candidato",
+   "targets": 27029,
+   "found": 26048,
+   "pct": 96.4
+  },
+  {
+   "pub_year": "2025",
+   "grupo": "comparacao_nao_sinalizado",
+   "targets": 27029,
+   "found": 25931,
+   "pct": 95.9
+  },
+  {
+   "pub_year": "2026",
+   "grupo": "candidato",
+   "targets": 6265,
+   "found": 6100,
+   "pct": 97.4
+  },
+  {
+   "pub_year": "2026",
+   "grupo": "comparacao_nao_sinalizado",
+   "targets": 6265,
+   "found": 6100,
+   "pct": 97.4
+  }
+ ],
+ "movements_by_group_k_ge_5": [
+  {
+   "grupo": "candidato",
+   "cases": 68060,
+   "mean_movements": 76.1,
+   "median_movements": 56.0,
+   "max_movements": 4693
+  },
+  {
+   "grupo": "comparacao_nao_sinalizado",
+   "cases": 67881,
+   "mean_movements": 81.1,
+   "median_movements": 58.0,
+   "max_movements": 19593
+  }
+ ],
+ "new_fields_at_the_source": null,
+ "errors": [],
+ "views_created": true,
+ "note": "trajectories are covariates measured identically for both groups; they are not labels, and the comparison group is 'not signalled', never 'legitimate' (CLAUDE.md §§2-3)",
+ "minutes": 60.8,
+ "next": "uv run python scripts/19_refresh_duckdb_views.py   # then step 22 once the gold set exists"
+}
