@@ -1,5 +1,5 @@
 {
- "run_at": "2026-10-09T20:14:19",
+ "run_at": "2026-10-09T20:26:28",
  "tables_built": [
   "annotation_strata",
   "bridge_coverage",
@@ -16,5 +16,6 @@
   "22_lexicon_validation.json"
  ],
  "numbers": 39,
- "note": "cells with fewer than 5 documents are suppressed (CLAUDE.md 4)"
+ "note": "cells with fewer than 5 documents are suppressed (CLAUDE.md 4)",
+ "gold_notes": []
 }
